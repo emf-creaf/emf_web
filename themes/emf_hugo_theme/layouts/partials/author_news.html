@@ -1,0 +1,4 @@
+{{ $author_name := .author.name }}
+{{ $author_surname := .author.surname }}
+{{ $author_text := (print $author_name " " $author_surname) }}
+<span>{{ $author_text }} ·</span>

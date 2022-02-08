@@ -1,0 +1,15 @@
+{{ $type := .Type }}
+{{ if eq $type "resource_tags" }}
+    {{ $type = .Parent.Section }}
+{{ end }}
+{{ $type_data := index .Site.Data.page_types_data $type }}
+{{ $icon := index .Site.Data.resources_icons $type }}
+
+<div class="container-fluid g-0 vh-25" id="{{ $type_data.header_id }}">
+    <div class="d-flex align-items-center justify-content-center text-light" style="height: 200px;">
+        {{ if $icon }}
+            {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "x" $icon.x "y" $icon.y "margin_class" "me-2" "icon_class" "header_icon" "fill" "currentColor") }}
+        {{ end }}
+        <span><h1 class="fw-bold ls-10 mb-0">{{ upper .Title }}</h1></span>
+    </div>    
+</div>

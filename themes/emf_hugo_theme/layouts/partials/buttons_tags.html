@@ -1,0 +1,4 @@
+{{ $section := .Section }}
+{{ range (.GetTerms "tags") }}
+<a class="btn btn-xs btn-{{ $section }} me-2 mb-2" href="{{ .Permalink }}" role="button">{{ .LinkTitle }}</a>
+{{ end }}

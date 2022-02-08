@@ -1,0 +1,14 @@
+<div class="container-fluid py-5" id="emf-home-news">
+    <div class='container'>
+        <div class="row mb-3">
+            <div class="col">
+                <h1 class="display-6 text-center emf-blue fw-bold ls-10">LATEST NEWS</h1>
+            </div>  
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-3 p-5 m-0">
+            {{ range first 3 (where site.RegularPages.ByDate.Reverse "Type" "in" "news") }}
+            {{ partial "card_news.html" . }}        
+            {{ end }}
+        </div>
+    </div>
+</div>

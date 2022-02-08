@@ -1,0 +1,43 @@
+{{/* images resources */}}
+{{ $emf_logo := resources.Get "img/emf_logo.svg" }}
+
+{{/* navbar background as it changes from home to others */}}
+{{ $type := .Type }}
+{{ if eq $type "resource_tags" }}
+    {{ $type = .Parent.Section }}
+{{ end }}
+
+{{ $navbar_light := "navbar-light" }}
+{{ $type_data := index .Site.Data.page_types_data $type }}
+{{ $navbar_style := $type_data.navbar_style | safeCSS }}
+{{ if .IsHome }}
+    {{ $navbar_light = "navbar-dark" }}
+    {{ $type_data := index .Site.Data.page_types_data "home" }}
+    {{ $navbar_style = $type_data.navbar_style | safeCSS }}
+{{ else if in (slice "tags" "categories" "about") $type }}
+    {{ $navbar_light = "navbar-dark" }}
+{{ else if eq .Title "404 Page not found" }}
+    {{ $navbar_light = "navbar-dark" }}
+    {{ $type_data := index .Site.Data.page_types_data "not_found" }}
+    {{ $navbar_style = $type_data.navbar_style | safeCSS }}
+{{ end }}
+
+<nav class="navbar navbar-expand-md {{ $navbar_light }} emf-navbar" style="{{ $navbar_style }}">
+    <a class="navbar-brand" href="{{ "/" | relLangURL }}">
+        <img src="{{ $emf_logo.RelPermalink }}" width="150px" height="30px" class="d-inline-block align-top" alt="" loading="lazy">
+    </a>
+    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#emf_nav" aria-controls="emf_nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-3" id="emf_nav">
+      <ul class="navbar-nav">
+          {{ range .Site.Menus.main }}
+          <li class="nav-item">
+              <a class="nav-link" href="{{ .URL }}" title="{{ .Name }}">
+                  {{ .Name }}
+              </a>
+          </li>
+          {{ end }}
+      </ul>
+    </div>
+</nav>

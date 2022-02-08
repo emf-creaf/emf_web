@@ -1,0 +1,22 @@
+{{ $authors := .Params.authors }}
+{{ $tags := .Params.tags}}
+{{ $summary := .Params.summary }}
+{{ $links := .Params.links }}
+{{ $featured_file := .Params.image.file | default "featured.png" }}
+{{ $featured_caption := .Params.image.caption | default .Title }}
+{{ $url := .RelPermalink}}
+
+
+<div class="container-fluid px-5">
+    <h3>{{ .Title }}</h3>
+    <p><small>{{ .Date | time.Format ":date_short" }}</small></p>
+    {{ with .Resources.GetMatch $featured_file }}
+        <img class="news-image mb-3" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $featured_caption }}" alt="{{ $featured_caption }}">
+    {{ end }}
+
+    <div class="d-flex flex-wrap mb-3">
+        {{ partial "buttons_links.html" . }}
+    </div>
+
+    
+</div>

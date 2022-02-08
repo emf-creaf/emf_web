@@ -1,0 +1,46 @@
+{{ $links := .Params.links }}
+{{ $button_biblio := 0 }}
+{{ if eq .Section "publications" }}
+    {{ $button_biblio = 1 }}
+{{ end }}
+
+{{ if $links }}
+    {{ if $links.url_source }}
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-source{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $links.url_source | relURL }}" role="button" target="_blank" rel="noopener">SOURCE</a>
+    {{ end }}
+
+    {{ if $links.url_data }}
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-data{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $links.url_data | relURL }}" role="button" target="_blank" rel="noopener">DATA</a>
+    {{ end }}
+
+    {{ if $links.url_docs }}
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-docs{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $links.url_docs | relURL }}" role="button" target="_blank" rel="noopener">DOCUMENTATION</a>
+    {{ end }}
+
+    {{ if $links.url_doi }}
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-doi{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $links.url_doi | relURL }}" role="button" target="_blank" rel="noopener">DOI</a>
+    {{ end }}
+
+    {{ if $links.url_pdf }}    
+    {{ $resource := .Resources.GetMatch $links.url_pdf }}
+    {{ $pdf := "" }}
+    {{ if $resource }}
+        {{ $pdf = $resource.RelPermalink }}
+    {{ else }}
+        {{ $pdf = $links.url_pdf | relURL }}
+    {{ end }}
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-pdf{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $pdf }}" role="button" target="_blank" rel="noopener">DOWNLOAD PDF</a>
+    {{ end }}
+
+    {{ if $links.url_bib }}    
+    {{ $resource := .Resources.GetMatch $links.url_bib }}
+    {{ $bib := "" }}
+    {{ if $resource }}
+        {{ $bib = $resource.RelPermalink }}
+    {{ else }}
+        {{ $bib = $links.url_bib | relURL }}
+    {{ end }}
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-bib{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $bib }}" role="button" target="_blank" rel="noopener">BIBTEX FILE</a>
+    {{ end }}
+{{ end }}
+

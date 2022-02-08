@@ -1,0 +1,6 @@
+{{/* css minified and bundled */}}
+
+{{ $options := (dict "targetPath" "css/emf_web.css" "outputStyle" "compressed") }}
+{{ $sass_template := resources.Get "sass/main.scss" }}
+{{ $style := $sass_template | resources.ExecuteAsTemplate "main.scss" . | toCSS  $options | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">

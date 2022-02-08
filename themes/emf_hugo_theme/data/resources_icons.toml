@@ -1,0 +1,81 @@
+[models]
+    featurette = true
+    name = "MODELS"
+    url = "/models/"
+    text = "Models related to terrestrial ecology processes (soil, hydrology, ecophysiology…)"
+    weight = 1
+    type = "models"
+    color = "#5254EF"
+    x = 6
+    y = 6
+[external_models]
+    featurette = false
+    name = "MODELS"
+    url = "/models/"
+    text = "Models related to terrestrial ecology processes (soil, hydrology, ecophysiology…)"
+    weight = 1
+    type = "models"
+    color = "#7B9AF7"
+    x = 6
+    y = 6
+[workflows]
+    featurette = true
+    name = "WORKFLOWS"
+    url = "/workflows/"
+    text = "Learn to access datasets around the world, use R packages and more…"
+    weight = 2
+    type = "workflows"
+    color = "#52C99E"
+    x = 6
+    y = 4
+[data]
+    featurette = true
+    name = "DATA"
+    url = "/data/"
+    text = "Interesting datasets within easy reach"
+    weight = 3
+    type = "data"
+    color = "#EB9455"
+    x = 16
+    y = 8
+[external_data]
+    featurette = false
+    name = "DATA"
+    url = "/data/"
+    text = "Interesting datasets within easy reach"
+    weight = 3
+    type = "data"
+    color = "#EFAA77"
+    x = 16
+    y = 8
+[software]
+    featurette = true
+    name = "SOFTWARE"
+    url = "/software/"
+    text = "Software provided by the EMF"
+    weight = 4
+    type = "software"
+    color = "#ED51C1"
+    x = 6
+    y = 11 
+[tech_docs]
+    featurette = true
+    name = "TECHNICAL DOCS"
+    url = "/tech_docs/"
+    text = "Technical documents provided by the EMF"
+    weight = 5
+    type = "tech_support"
+    color = "#5AE2DA"
+    x = 0
+    y = 0
+[tags]
+    featurette = false
+    name = "TAGS"
+    url = "/tags/"
+    text = "Collection of EMF tags"
+    type = "tags"
+    x = 10
+    y = 10
+
+
+    

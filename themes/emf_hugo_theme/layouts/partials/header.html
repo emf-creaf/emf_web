@@ -1,0 +1,23 @@
+{{/* images resources */}}
+{{ $creaf_logo := resources.Get "img/creaf_logo.svg" }}
+
+<div class="fixed-top">
+    {{/* creaf navbar */}}
+    <nav class="navbar navbar-expand navbar-light bg-light py-0 creaf-navbar">
+        <ul class="navbar-nav ms-auto align-items-center">
+            <li class="d-none d-sm-block nav-item">
+                <a class="nav-link text-nowrap" href="https://www.creaf.cat/"><small>CREAF WEB</small></a>
+            </li>
+            <li class="d-none d-sm-block nav-item">
+                <a class="nav-link text-nowrap" href="http://blog.creaf.cat/en/"><small>CREAF BLOG</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="https://www.creaf.cat/">
+                    <img src="{{ $creaf_logo.RelPermalink }}" width="150px" height="30px" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    {{/* emf navbar */}}
+    {{ partial "navbar_emf.html" . }}
+</div>

@@ -1,0 +1,64 @@
+baseURL = 'http://emf.creaf.cat/'
+languageCode = 'en-us'
+title = 'EMF Web'
+
+theme = "emf_hugo_theme"
+
+[menu]
+    [[menu.main]]
+        name = "News"
+        url = "/news/"
+        weight = 1
+    [[menu.main]]
+        name = "Models"
+        url = "/models/"
+        weight = 2
+    [[menu.main]]
+        name = "Workflows"
+        url = "/workflows/"
+        weight = 3
+    [[menu.main]]
+        name = "Data"
+        url = "/data/"
+        weight = 4
+    [[menu.main]]
+        name = "Software"
+        url = "/software/"
+        weight = 5
+    [[menu.main]]
+        name = "Tech Docs"
+        url = "/tech_docs/"
+        weight = 6
+    [[menu.main]]
+        name = "Publications"
+        url = "/publications/"
+        weight = 7
+    [[menu.main]]
+        name = "Training"
+        url = "/training/"
+        weight = 8
+    [[menu.main]]
+        name = "About EMF"
+        url = "/about/"
+        weight = 9
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+    [markup.highlight]
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = true
+        hl_Lines = ''
+        lineAnchors = ''
+        lineNoStart = 1
+        lineNos = true
+        lineNumbersInTable = false
+        noClasses = true
+        style = 'solarized-light'
+        tabWidth = 2
+    [markup.tableOfContents]
+        endLevel = 2
+        ordered = false
+        startLevel = 1

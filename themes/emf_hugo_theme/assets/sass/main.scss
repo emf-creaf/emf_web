@@ -1,0 +1,71 @@
+/* resources images */
+{{ $abstract_overlay_resource := resources.Get "img/abstract_background_overlay.png" }}
+{{ $abstract_overlay_lighter_resource := resources.Get "img/abstract_background_overlay_lighter.png" }}
+$abstract_background_overlay: "{{ $abstract_overlay_resource.RelPermalink }}";
+$abstract_background_lighter_overlay: "{{ $abstract_overlay_lighter_resource.RelPermalink }}";
+/* fonts */
+{{ $atc_regular_woff2 := resources.Get "fonts/ATCOverlook-Regular.woff2" }}
+{{ $atc_regular_woff := resources.Get "fonts/ATCOverlook-Regular.woff" }}
+{{ $atc_bold_woff2 := resources.Get "fonts/ATCOverlook-Bold.woff2" }}
+{{ $atc_bold_woff := resources.Get "fonts/ATCOverlook-Bold.woff" }}
+{{ $atc_light_woff2 := resources.Get "fonts/ATCOverlook-Light.woff2" }}
+{{ $atc_light_woff := resources.Get "fonts/ATCOverlook-Light.woff" }}
+{{ $atc_regular_italic_woff2 := resources.Get "fonts/ATCOverlook-RegularItalic.woff2" }}
+{{ $atc_regular_italic_woff := resources.Get "fonts/ATCOverlook-RegularItalic.woff" }}
+{{ $atc_bold_italic_woff2 := resources.Get "fonts/ATCOverlook-BoldItalic.woff2" }}
+{{ $atc_bold_italic_woff := resources.Get "fonts/ATCOverlook-BoldItalic.woff" }}
+{{ $atc_light_italic_woff2 := resources.Get "fonts/ATCOverlook-LightItalic.woff2" }}
+{{ $atc_light_italic_woff := resources.Get "fonts/ATCOverlook-LightItalic.woff" }}
+
+{{ $roboto_regular_woff2 := resources.Get "fonts/roboto-regular-webfont.woff2" }}
+{{ $roboto_regular_woff := resources.Get "fonts/roboto-regular-webfont.woff" }}
+{{ $roboto_bold_woff2 := resources.Get "fonts/roboto-bold-webfont.woff2" }}
+{{ $roboto_bold_woff := resources.Get "fonts/roboto-bold-webfont.woff" }}
+{{ $roboto_light_woff2 := resources.Get "fonts/roboto-light-webfont.woff2" }}
+{{ $roboto_light_woff := resources.Get "fonts/roboto-light-webfont.woff" }}
+{{ $roboto_regular_italic_woff2 := resources.Get "fonts/roboto-italic-webfont.woff2" }}
+{{ $roboto_regular_italic_woff := resources.Get "fonts/roboto-italic-webfont.woff" }}
+{{ $roboto_bold_italic_woff2 := resources.Get "fonts/roboto-bolditalic-webfont.woff2" }}
+{{ $roboto_bold_italic_woff := resources.Get "fonts/roboto-bolditalic-webfont.woff" }}
+{{ $roboto_light_italic_woff2 := resources.Get "fonts/roboto-lightitalic-webfont.woff2" }}
+{{ $roboto_light_italic_woff := resources.Get "fonts/roboto-lightitalic-webfont.woff" }}
+
+{{ $roboto_mono_ttf := resources.Get "fonts/RobotoMono-Regular.ttf" }}
+{{/* $roboto_mono_woff2 := resources.Get "fonts/RobotoMono-Regular.woff2" */}}
+{{/* $roboto_mono_woff := resources.Get "fonts/RobotoMono-Regular.woff" */}}
+
+$atc_regular_woff2: "{{ $atc_regular_woff2.RelPermalink }}";
+$atc_regular_woff: "{{ $atc_regular_woff.RelPermalink }}";
+$atc_bold_woff2: "{{ $atc_bold_woff2.RelPermalink }}";
+$atc_bold_woff: "{{ $atc_bold_woff.RelPermalink }}";
+$atc_light_woff2: "{{ $atc_light_woff2.RelPermalink }}";
+$atc_light_woff: "{{ $atc_light_woff.RelPermalink }}";
+$atc_regular_italic_woff2: "{{ $atc_regular_italic_woff2.RelPermalink }}";
+$atc_regular_italic_woff: "{{ $atc_regular_italic_woff.RelPermalink }}";
+$atc_bold_italic_woff2: "{{ $atc_bold_italic_woff2.RelPermalink }}";
+$atc_bold_italic_woff: "{{ $atc_bold_italic_woff.RelPermalink }}";
+$atc_light_italic_woff2: "{{ $atc_light_italic_woff2.RelPermalink }}";
+$atc_light_italic_woff: "{{ $atc_light_italic_woff.RelPermalink }}";
+$roboto_regular_woff2: "{{ $roboto_regular_woff2.RelPermalink }}";
+$roboto_regular_woff: "{{ $roboto_regular_woff.RelPermalink }}";
+$roboto_bold_woff2: "{{ $roboto_bold_woff2.RelPermalink }}";
+$roboto_bold_woff: "{{ $roboto_bold_woff.RelPermalink }}";
+$roboto_light_woff2: "{{ $roboto_light_woff2.RelPermalink }}";
+$roboto_light_woff: "{{ $roboto_light_woff.RelPermalink }}";
+$roboto_regular_italic_woff2: "{{ $roboto_regular_italic_woff2.RelPermalink }}";
+$roboto_regular_italic_woff: "{{ $roboto_regular_italic_woff.RelPermalink }}";
+$roboto_bold_italic_woff2: "{{ $roboto_bold_italic_woff2.RelPermalink }}";
+$roboto_bold_italic_woff: "{{ $roboto_bold_italic_woff.RelPermalink }}";
+$roboto_light_italic_woff2: "{{ $roboto_light_italic_woff2.RelPermalink }}";
+$roboto_light_italic_woff: "{{ $roboto_light_italic_woff.RelPermalink }}";
+$roboto_mono_ttf: "{{ $roboto_mono_ttf.RelPermalink }}";
+{{/*
+$roboto_mono_woff2: "{{ $roboto_mono_woff2.RelPermalink }}";
+$roboto_mono_woff: "{{ $roboto_mono_woff.RelPermalink }}";
+*/}}
+
+{{ $bootstrap_scss := "themes/emf_hugo_theme/assets/sass/bootstrap/scss/bootstrap.scss" }}
+
+@import "{{ $bootstrap_scss }}";
+@import "local_fonts";
+@import "emf_modifications";

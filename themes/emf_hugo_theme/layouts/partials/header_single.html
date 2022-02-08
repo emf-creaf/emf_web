@@ -1,0 +1,8 @@
+{{ $type_data := index .Site.Data.page_types_data .Type }}
+
+<div class="container-fluid g-0 vh-25 mb-4" id="{{ $type_data.header_id }}">
+    <div style="height: 100px;"></div>    
+</div>
+
+{{/* Include the corresponing content partial */}}
+{{ partial $type_data.partial . }}

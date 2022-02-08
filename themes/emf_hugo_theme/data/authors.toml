@@ -1,0 +1,46 @@
+[emf]
+    id = "emf"
+    name = "Ecosystem Modelling Facility"
+    surname = ""
+    affiliation = "Ecosystem Modelling Facility - CREAF"
+    aff_link = ""
+    summary = "Feugiat sed volutpat sollicitudin sed amet, orci orci. Enim massa gravida integer in et. Sit viverra vel feugiat ultrices tincidunt sed lectus non. Lectus hendrerit gravida blandit et. Nisl etiam ac eget lectus pellentesque integer quis egestas."
+    image = "img/authors/default.png"
+    core = false
+
+[vgranda]
+    id = "vgranda"
+    weight = 3
+    name = "Víctor"
+    surname = "Granda-García"
+    affiliation = "Ecosystem Modelling Facility - CREAF"
+    aff_link = ""
+    summary = "Plant biologist turned into data scientist. Open source and data enthusiast with a knack for programming in R."
+    image = "img/authors/vgranda.png"
+    core = true
+    position = "Data Scientist"
+
+[mcaceres]
+    id = "mcaceres"
+    weight = 1
+    name = "Miquel"
+    surname = "de Cáceres"
+    affiliation = "Ecosystem Modelling Facility - CREAF"
+    aff_link = ""
+    summary = "Feugiat sed volutpat sollicitudin sed amet, orci orci. Enim massa gravida integer in et. Sit viverra vel feugiat ultrices tincidunt sed lectus non. Lectus hendrerit gravida blandit et. Nisl etiam ac eget lectus pellentesque integer quis egestas."
+    image = "img/authors/mcaceres.png"
+    core = true
+    position = "EMF Coordinator"
+
+[rmolowny]
+    id = "rmolowny"
+    weight = 2
+    name = "Roberto"
+    surname = "Molowny-Horas"
+    affiliation = "Ecosystem Modelling Facility - CREAF"
+    aff_link = ""
+    summary = "Feugiat sed volutpat sollicitudin sed amet, orci orci. Enim massa gravida integer in et. Sit viverra vel feugiat ultrices tincidunt sed lectus non. Lectus hendrerit gravida blandit et. Nisl etiam ac eget lectus pellentesque integer quis egestas."
+    image = "img/authors/rmolowny.png"
+    core = true
+    position = "Modeller"
+

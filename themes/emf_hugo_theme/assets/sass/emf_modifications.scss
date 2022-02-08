@@ -1,0 +1,537 @@
+/* resources colors */
+$workflows: #52C99E;
+$models: #5254EF;
+$external_models: #7B9AF7;
+$data: #EB9455;
+$external_data: #EFAA77;
+$tech_docs: #5AE2DA;
+$software: #ED51C1;
+$training: #99D392;
+$publications: #E9E165;
+$term: #13ABCD;
+$emf-blue: #13ABCD;
+
+/* mixins */
+@mixin header-background {
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/* Content base_of */
+#content {
+    /* relative position because of fixed top bars */
+    position: relative;
+    top: 96px;    
+}
+
+/* navbar */
+.creaf-navbar {
+    height: 40px;
+}
+
+.creaf-navbar li {
+    font-size: 0.87rem;
+}
+
+.creaf-navbar a:hover {
+    font-weight: 700;
+}
+
+.emf-navbar {
+    box-shadow:
+    0px 0.7px 3.5px rgba(0, 0, 0, 0.006),
+    0px 1.7px 6px rgba(0, 0, 0, 0.021),
+    0px 3.2px 8.1px rgba(0, 0, 0, 0.046),
+    0px 5.6px 10.5px rgba(0, 0, 0, 0.077),
+    0px 10.5px 14.5px rgba(0, 0, 0, 0.101),
+    0px 25px 25px rgba(0, 0, 0, 0.11);
+}
+
+#emf_nav li {
+    font-size: 0.87rem;
+}
+
+#emf_nav a:hover {
+    font-weight: 700;
+}
+
+#emf_nav a.active {
+    font-weight: 700;
+}
+
+/* icons classes */
+.featurette_icon {
+    width: 40%;
+}
+
+.header_icon {
+    width: 4em;
+}
+
+.button_icon {
+    width: 2em;
+}
+
+/* particles div */    
+#container-particles {
+    background-image: linear-gradient(to right, #4A6463 , #5E6A5E , #706F50);
+}
+
+#tsparticles {
+    height: 450px;
+}
+
+/* emf home short-description */
+@media (max-width: 768px) {
+    #emf-home-short-description {min-width: 75%;}
+}
+
+/* emf home featurettes */
+#emf-home-featurettes, #emf-about-authors {
+    background: rgba(255, 255, 255, 0.8);
+    background-image: url($abstract_background_lighter_overlay), linear-gradient(90deg, $emf-blue -0.4%, $publications 100.4%);
+    background-blend-mode: normal, overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* news */
+.news-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+a > .news-image {
+    height: 20vh
+}
+
+/* Section headers */
+#news_header {
+    background-image: linear-gradient(90deg, $emf-blue -0.4%, $publications 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
+#workflows_header {
+    background-image: linear-gradient(90deg, #15D19E -0.4%, #B1FBCB 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
+#models_header {
+    background-image: linear-gradient(90deg, #6F92F8 -0.4%, #DFDEE6 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
+#data_header {
+    background-image: linear-gradient(90deg, #C1894D -0.4%, #FCDAAE 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
+#software_header {
+    background-image: linear-gradient(90deg, #D168D0 -0.4%, #FCD2DA 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
+#tags_header, #about_header, #not_found_header {
+    background-image: linear-gradient(to right, #4A6463 , #5E6A5E , #706F50), url($abstract_background_overlay);
+    @include header-background;
+}
+
+#tech_docs_header {
+    background-image: linear-gradient(to right, #10CBC7 -0.4% , #A7FBE1 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
+/*
+    emf color classes
+*/
+
+.emf-blue {
+    color: $emf-blue;
+}
+
+.color-workflows {
+    background-color: $workflows;
+}
+
+.color-models {
+    background-color: $models;
+}
+
+.color-external_models {
+    background-color: $external_models;
+}
+
+.color-data {
+    background-color: $data;
+}
+
+.color-external_data {
+    background-color: $external_data;
+}
+
+.color-software {
+    background-color: $software;
+}
+
+.color-tech_docs {
+    background-color: $tech_docs;
+}
+
+.color-training {
+    background-color: $training;
+}
+
+.color-publications {
+    background-color: $publications;
+}
+
+.color-tag {
+    background-color: $term;
+}
+
+/* letter spacing classes */
+.ls-5 {
+    letter-spacing: 0.05em;
+}
+.ls-10 {
+    letter-spacing: 0.1em;
+}
+
+.ls-20 {
+    letter-spacing: 0.2em;
+}
+
+/* 404 and about */
+.text-404, .text-about {
+    height: 250px;
+}
+
+/* site footer */
+.site-footer {
+    background-color: #444444;
+    /* relative position because of fixed top bars */
+    position: relative;
+    top: 88px;
+    font-size: 0.8rem;
+}
+
+/* resource cards */
+@media (prefers-reduced-motion: no-preference) {
+    .card {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 0;
+    }
+
+    .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow:
+              0.7px 1.4px 6.9px rgba(0, 0, 0, 0.006),
+              1.7px 3.3px 11.9px rgba(0, 0, 0, 0.021),
+              3.1px 6.3px 16.2px rgba(0, 0, 0, 0.046),
+              5.6px 11.2px 21px rgba(0, 0, 0, 0.077),
+              10.4px 20.9px 28.5px rgba(0, 0, 0, 0.101),
+              25px 50px 50px rgba(0, 0, 0, 0.11)
+        ;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+        -webkit-transform: scale(1.15, 1.15);
+        transform: scale(1.15, 1.15);
+        z-index: 2;
+    }
+
+    .card:hover::after {
+        opacity: 1;
+    }
+}
+
+.card-separator {
+    height: 15px;
+}
+
+.resource-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.featured-card {
+    height: 20vh
+}
+
+.emf-card {
+    border: 0px;
+    background-color: var(--bs-light);
+}
+
+.emf-card-vertical {
+    border: 0px;
+    background-color: inherit;
+}
+
+.emf-card-vertical.color-data {
+    border-left: 15px solid $data;
+    background-color: var(--bs-light);
+}
+
+.emf-card-vertical.color-external_data {
+    border-left: 15px solid $external_data;
+    background-color: var(--bs-light);
+}
+
+.emf-card-vertical.color-external_models {
+    border-left: 15px solid $external_models;
+    background-color: var(--bs-light);
+}
+
+.emf-card-vertical.color-publications {
+    border-left: 15px solid $publications;
+}
+
+.card-term {
+    border-left: 15px solid $term;
+}
+
+.card-term.card-models {
+    border-left: 15px solid $models;
+}
+
+.card-term.card-external_models {
+    border-left: 15px solid $external_models;
+}
+
+.card-term.card-workflows {
+    border-left: 15px solid $workflows;
+}
+
+.card-term.card-data {
+    border-left: 15px solid $data;
+}
+
+.card-term.card-external_data {
+    border-left: 15px solid $external_data;
+}
+
+.card-term.card-software {
+    border-left: 15px solid $software;
+}
+
+.card-term.card-tech_docs {
+    border-left: 15px solid $tech_docs;
+}
+
+.card-tags {
+    border: none;
+    background-color: var(--bs-light);
+    z-index: 100;
+}
+
+.card-tags#card-vertical-tags {
+    background-color: inherit;
+}
+
+/* Buttons */
+.btn-xs {
+    @include button-size(0.25rem, 0.5rem, 0.7rem, 1rem)
+}
+
+.btn-workflows {
+    @include button-variant($workflows, $workflows);
+    border-radius: 1.2em;
+}
+
+.btn-models {
+    @include button-variant($models, $models);
+    border-radius: 1.2em;
+}
+
+.btn-external_models {
+    @include button-variant($external_models, $external_models);
+    border-radius: 1.2em;
+}
+
+.btn-data {
+    @include button-variant($data, $data);
+    border-radius: 1.2em;
+}
+
+.btn-external_data {
+    @include button-variant($external_data, $external_data);
+    border-radius: 1.2em;
+}
+
+.btn-software {
+    @include button-variant($software, $software);
+    border-radius: 1.2em;
+}
+
+.btn-tech_docs {
+    @include button-variant($tech_docs, $tech_docs);
+    border-radius: 1.2em;
+}
+
+.btn-training {
+    @include button-variant($training, $training);
+    border-radius: 1.2em;
+}
+
+.btn-docs {
+    @include button-variant($emf-blue, $emf-blue);
+    border-radius: 0.12em;
+}
+
+.btn-source {
+    @include button-variant(#99D392, #99D392);
+    border-radius: 0.12em;
+}
+
+.btn-doi {
+    @include button-variant(#99D392, #99D392);
+    border-radius: 0.12em;
+}
+
+.btn-pdf {
+    @include button-variant(#99D392, #99D392);
+    border-radius: 0.12em;
+}
+
+.btn-bib {
+    @include button-variant(#99D392, #99D392);
+    border-radius: 0.12em;
+}
+
+.btn-biblio {
+    @include button-variant($publications, $publications);
+    border-radius: 1.2em;
+}
+
+.btn-external {
+    border-radius: 0.2em;
+}
+
+/* single tocs */
+.emf_single_toc {
+    position: sticky;
+    top: 8rem;
+    background-color: var(--bs-light);
+    align-self: start;
+}
+#emf_single_toc a {
+    text-decoration: none;
+    color: $body-color;
+    font-size: 0.9rem;
+}
+#emf_single_toc a:hover {
+    font-weight: 700;
+}
+#emf_single_toc li {
+    list-style: none;
+}
+#emf_single_toc li.active>a {
+    font-weight: 700;
+}
+#emf_single_toc ul {
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+}
+#emf_single_toc li>ul {
+    padding: 0.5rem;
+}
+#emf_single_toc li>ul>li>a {
+    font-size: .8rem;
+}
+
+/* authors */
+.author-image {
+    border-radius: 50%;
+    width: 5em;
+}
+
+.author-image-xl {
+    border-radius: 50%;
+    width: 8em;
+}
+
+/* code blocks */
+pre {
+    padding: 1em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+/* single page figures */
+figure.single-image {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.single-image img {
+    object-fit: scale-down;
+    width: 100%;
+}
+
+/*
+Pagination
+*/
+
+#emf-pagination .pagination {
+    justify-content: center;
+}
+
+.pagination .page-link {
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+}
+
+.page-item.disabled .page-link {
+    background-color: var(--bs-light);
+    font-weight: 300;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    background-color: #4A6463;
+    border-color: #4A6463;
+    color: var(--bs-light);
+}
+
+/*
+ANIMATIONS OFF IF USER OPT OUT IN BROWSER SETTINGS
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+    }
+}
+*/
+
+/* debug 
+div {
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+
+*/

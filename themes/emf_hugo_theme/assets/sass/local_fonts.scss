@@ -1,0 +1,132 @@
+/* ATCOverlook fonts */
+@font-face {
+    font-family: "ATCOverlook";
+    font-style: normal;
+    font-weight: 400;
+    src: url($atc_regular_woff2) format("woff2"),
+         url($atc_regular_woff) format("woff");
+}
+
+@font-face {
+    font-family: "ATCOverlook";
+    font-style: normal;
+    font-weight: 700;
+    src: url($atc_bold_woff2) format("woff2"),
+         url($atc_bold_woff) format("woff");
+}
+
+@font-face {
+    font-family: "ATCOverlook";
+    font-style: normal;
+    font-weight: 300;
+    src: url($atc_light_woff2) format("woff2"),
+         url($atc_light_woff) format("woff");
+}
+
+@font-face {
+    font-family: "ATCOverlook";
+    font-style: italic;
+    font-weight: 400;
+    src: url($atc_regular_italic_woff2) format("woff2"),
+         url($atc_regular_italic_woff) format("woff");
+}
+
+@font-face {
+    font-family: "ATCOverlook";
+    font-style: italic;
+    font-weight: 700;
+    src: url($atc_bold_italic_woff2) format("woff2"),
+         url($atc_bold_italic_woff) format("woff");
+}
+
+@font-face {
+    font-family: "ATCOverlook";
+    font-style: italic;
+    font-weight: 300;
+    src: url($atc_light_italic_woff2) format("woff2"),
+         url($atc_light_italic_woff) format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url($roboto_regular_woff2) format("woff2"),
+         url($roboto_regular_woff) format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url($roboto_bold_woff2) format("woff2"),
+         url($roboto_bold_woff) format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url($roboto_light_woff2) format("woff2"),
+         url($roboto_light_woff) format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    src: url($roboto_regular_italic_woff2) format("woff2"),
+         url($roboto_regular_italic_woff) format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 700;
+    src: url($roboto_bold_italic_woff2) format("woff2"),
+         url($roboto_bold_italic_woff) format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    src: url($roboto_light_italic_woff2) format("woff2"),
+         url($roboto_light_italic_woff) format("woff");
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: normal;
+    font-weight: 400;
+    src: url($roboto_mono_ttf) format("ttf");
+}
+
+$emf-font-family-body: Roboto, sans-serif !default;
+$emf-font-family-heading: ATCOverlook, sans-serif !default;
+$emf-font-family-monospace: RobotoMono, monospace !default;
+
+/* Body */
+body {
+    font-family: $emf-font-family-body;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $emf-font-family-heading;
+}
+
+/* Code (monospace) */
+pre, code {
+    font-family: $emf-font-family-monospace;
+}
+
+/* Customs */
+.atc {
+    font-family: $emf-font-family-heading;
+}

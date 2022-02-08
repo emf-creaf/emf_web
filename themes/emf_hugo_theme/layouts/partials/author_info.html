@@ -1,0 +1,30 @@
+{{ $author_name := .author.name}}
+
+{{ if eq .type "about" }}
+<div class="col px-5 mb-5">
+    {{ with resources.Get .author.image }}
+    <img class="author-image-xl mb-3" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $author_name }}" alt="{{ $author_name }}">
+    {{ end }}
+    <h5> {{ .author.name }} {{ .author.surname }}</h5>
+    <h6> {{ .author.position }}</h6>
+    <p class="mb-0"><small>{{ .author.summary }}</small></p>
+</div>
+
+{{ else }}
+<div class="d-flex justify-content-start align-items-center flex-wrap flex-md-nowrap mb-3 {{ if ne (.type) ("news") }}pe-4{{ end }}">
+    <div class="mb-3 mb-md-0 me-2 me-md-0">
+        {{ with resources.Get .author.image }}
+        <img class="author-image" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $author_name }}" alt="{{ $author_name }}">
+        {{ end }}
+    </div>
+    <div class="align-self-center ps-0 ps-md-3">
+        <h6> {{ .author.name }} {{ .author.surname }}</h6>
+        {{ if eq .type "news" }}
+        <p class="mb-0"><small>{{ .author.summary }}</small></p>
+        {{ else }}
+        <a href="{{ .author.aff_link }}" class="mb-0"><small>{{ .author.affiliation }}</small></a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+

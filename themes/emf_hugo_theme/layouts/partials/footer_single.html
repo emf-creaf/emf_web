@@ -1,0 +1,9 @@
+{{ $authors := .Params.authors | default "emf" }}
+{{ $type := .Type }}
+
+{{ if eq .Type "news" }}
+    {{ range $authors }}
+        {{ $author := index site.Data.authors . }}
+        {{ partial "author_info.html" (dict "author" $author "type" $type) }}
+    {{ end }}
+{{ end }}

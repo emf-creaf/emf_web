@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{/* Each page has a different header based on type */}}
+{{ $type_data := index .Site.Data.page_types_data .Type }}
+
+<div class="container-fluid g-0 vh-25 mb-4" id="{{ $type_data.header_id }}">
+    <div style="height: 100px;"></div>    
+</div>
+
+<div class="container">
+    {{/* Include the corresponing content partial */}}
+    {{ partial $type_data.header_partial . }}
+    
+    {{/* content */}}
+    {{ if eq .Type "news" }}
+        <div class="container-fluid px-5 mb-5">
+        {{ .Content }}
+        </div>
+    {{ else }}
+        {{ partial $type_data.content_partial . }}
+    {{ end }}
+    
+    {{/* some pages has footer (i.e. news) */}}
+    <div class="container-fluid px-5 mb-5">
+    {{ partial "footer_single.html" . }}
+    </div>
+</div>
+
+{{ end }}

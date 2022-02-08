@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+{{ partial "header_list.html" . }}
+
+<div class="container">
+    <div class="container-fluid p-5">
+        {{ if eq .Kind "taxonomy" }}
+            <div class="row row-cols-1 row-cols-md-4 g-3">
+                {{ range .Data.Terms.ByCount }}
+                    {{ partial "card_tags.html" . }}
+                {{ end }}
+            </div>
+        {{ else if eq .Type "publications" }}
+            <div class="row row-cols-1 g-3">
+                {{ range (.Paginate .RegularPagesRecursive 30).Pages }}
+                {{ partial "card_publication.html" . }}
+                {{ end }}
+            </div>
+        {{ else }}
+            {{ partial "buttons_externals.html" . }}
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+            {{ range (.Paginate .RegularPagesRecursive 30).Pages }}
+                {{ if eq .Type "news" }}
+                    {{ partial "card_news.html" . }}
+                {{ else if in (slice "models" "workflows" "software" "tech_docs" "training") .Type }}
+                    {{ partial "card_resource.html" . }}
+                {{ else if in (slice "data" "external_data" "external_models") .Type }}
+                    {{ partial "card_resource_vertical.html" . }}
+                {{ end }}
+            {{ end }}
+            </div>
+        {{ end }}
+        <nav aria-label="Pages" class="mt-4" id="emf-pagination">
+            {{ template "_internal/pagination.html" . }}
+        </nav>
+    </div>
+</div>
+{{/* end of define */}}
+{{ end }}
+    
+

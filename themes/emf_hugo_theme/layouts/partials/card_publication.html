@@ -1,0 +1,21 @@
+{{ $title := .Title }}
+{{ $authors := .Params.authors }}
+{{ $journal := .Params.journal }}
+{{ $year := .Params.year }}
+{{ $url := .RelPermalink}}
+{{ $section := .Section}}
+{{ $links := .Params.links }}
+
+<div class="row pb-5">
+    <div class="emf-card-vertical color-{{ $section }} w-75 mx-auto">
+        <p>
+            <span class='atc fs-5 text-uppercase fw-light'>{{ $title }}.</span>
+            <span class='atc fs-6 fw-bold'>{{ $authors }} </span>
+            <span class='atc fs-6 fw-bold'>({{ $year }})</span>
+            <span class='atc fs-6 text-capitalize fst-italic'>{{ $journal }}</span>
+        </p>
+
+        {{ partial "buttons_links.html" . }}
+
+    </div>
+</div>

@@ -1,0 +1,38 @@
+{{ $featured_file := .Params.image.file | default "featured.png" }}
+{{ $featured_caption := .Params.image.caption | default .Title }}
+{{ $section := .Section}}
+{{ $links := .Params.links }}
+{{ $authors := .Params.authors }}
+{{ $type := .Type }}
+
+<div class="container-fluid px-5">
+    <h3>{{ .Title }}</h3>
+    <p><small>{{ .Date | time.Format ":date_short" }}</small></p>
+    <div class="d-flex flex-wrap pb-3">
+        {{ partial "buttons_tags.html" . }}
+    </div>
+
+    {{ with .Resources.GetMatch $featured_file }}
+        <img class="resource-image mb-3" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $featured_caption }}" alt="{{ $featured_caption }}">
+    {{ end }}
+
+    <div class="d-flex flex-wrap mb-3">
+        {{ partial "buttons_nodes.html" (dict "page" . "is_list" 0) }}
+    </div>
+
+    <div class="d-flex flex-wrap mb-3">
+        {{ partial "buttons_links.html" . }}
+    </div>
+    
+    {{ if $authors }}
+    <div class="d-flex py-4 flex-wrap flex-md-nowrap">
+    {{ range $authors }}
+    {{ $author := index site.Data.authors . }}
+    {{ if $author }}
+    {{ partial "author_info.html" (dict "author" $author "type" $type) }}
+    {{ end }}
+    {{ end }}
+    </div>
+    {{ end }}
+    
+</div>

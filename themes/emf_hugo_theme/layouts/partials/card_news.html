@@ -1,0 +1,33 @@
+{{ $title := .Title }}
+{{ $authors := .Params.authors }}
+{{ $date := .Date }}
+{{ $tags := .Params.tags}}
+{{ $summary := .Params.summary }}
+{{ $links := .Params.links }}
+{{ $featured_file := .Params.image.file | default "featured.png" }}
+{{ $featured_caption := .Params.image.caption | default .Title }}
+{{ $url := .RelPermalink}}
+<div class="col">
+    <div class="card h-100 emf-card">
+        {{ with .Resources.GetMatch $featured_file }}
+        <a href="{{ $url }}" class="stretched-link">
+            <img class="card-img-top news-image" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $featured_caption }}" alt="{{ $featured_caption }}">
+        </a>
+        {{ end }}
+        <div class="card-body news-body fw-light">
+            <p class="card-text ls-5">
+                <small class="text-muted">
+                    {{ range $authors }}
+                    {{ $author := index site.Data.authors . }}
+                    {{ if $author }}
+                    {{ partial "author_news.html" (dict "author" $author) }}
+                    {{ end }}
+                    {{ end }}
+                    <span>{{ $date | time.Format ":date_short" }}</span>
+                </small>
+            </p>
+            <h5 class="card-title fw-light ls-5">{{ $title }}</h5>
+            <p class="card-text fw-light ls-5"><small>{{ $summary | markdownify }}</small></p>
+        </div>
+    </div>
+</div>

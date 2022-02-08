@@ -1,0 +1,41 @@
+---
+title: "meteospain available!"
+authors: ["vgranda", "mcaceres", "rmolowny"]
+date: 2021-06-08T15:16:14-05:00
+
+
+categories: ["news"]
+tags: ["news", "software", "r", "data"]
+
+url_source: "https://www.github.com/emf-creaf/meteospain"
+url_code: "https://emf-creaf.github.io/meteospain/"
+  
+image:
+  caption: 'Temperature in Spain, April 10, 2020'
+summary: "`meteospain`, the R package to access the data of spanish meteorology stations is now available *via* [github](https://github.com/emf-creaf/meteospain)."  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+`meteospain`, the R package to access the data of spanish meteorology stations is now available
+*via* [github](https://github.com/emf-creaf/meteospain).
+
+Want to access meteorology stations data quickly? Just install the package and **get the meteo**:
+
+```{r, galicia_april_tenth}
+library(meteospain)
+library(ggplot2)
+library(units)
+
+get_meteo_from(
+  'meteogalicia',
+  meteogalicia_options('daily', start_date = as.Date('2020-04-10'))
+) %>%
+  drop_units() %>%
+  ggplot(aes(colour = mean_temperature)) +
+  geom_sf()
+```
+
+Don't forget to check the docs [here](https://emf-creaf.github.io/meteospain/)

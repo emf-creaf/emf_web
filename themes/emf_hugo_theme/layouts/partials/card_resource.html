@@ -1,0 +1,24 @@
+{{ $title := .Title }}
+{{ $summary := .Params.summary }}
+{{ $featured_file := .Params.image.file | default "featured.png" }}
+{{ $featured_caption := .Params.image.caption | default .Title }}
+{{ $url := .RelPermalink}}
+{{ $section := .Section}}
+<div class="col">
+    <div class="card h-100 emf-card">
+        {{ with .Resources.GetMatch $featured_file }}
+        <img class="card-img-top resource-image featured-card" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $featured_caption }}" alt="{{ $featured_caption }}">
+        {{ end }}
+        <div class="card-separator color-{{ .Section }} m-0 p-0 b-0"></div>
+        <div class="card-body position-relative">
+            <a href="{{ $url }}" class="stretched-link"></a>            
+            <div class="fw-light">
+                <h5 class="card-title fw-light ls-5">{{ $title }}</h5>
+                <p class="card-text fw-light ls-5"><small>{{ $summary | markdownify }}</small></p>
+            </div>
+        </div>
+        <div class="card-footer card-tags">
+            {{ partial "buttons_tags.html" . }}
+        </div>
+    </div>
+</div>

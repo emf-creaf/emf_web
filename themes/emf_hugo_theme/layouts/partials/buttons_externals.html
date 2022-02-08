@@ -1,0 +1,23 @@
+{{ $type := .Type }}
+{{ $section := .Section}}
+{{ $creaf_name := $type }}
+{{ $creaf_url := (.GetPage $creaf_name).RelPermalink }}
+{{ $external_name := printf "external_%s" $creaf_name }}
+{{ $external_url := (.GetPage $external_name).RelPermalink }}
+{{ $tags_page_link := printf "/%s/tags" $section }}
+{{ $search_by_tag_page := (.GetPage $tags_page_link) }}
+
+<div class="d-md-flex pb-4 flex-wrap">
+    {{ if and (eq .Kind "section") (in (slice "models" "data") .Type) }}
+    <a class="btn btn-{{ if eq $type $section }}{{$creaf_name}}{{ else }}{{$external_name}}{{ end }} btn-external px-4 me-1 mb-1 fw-bold {{ if eq $type "models" }}text-light{{end}}" href="{{ $creaf_url }}" role="button">CREAF</a>
+    <a class="btn btn-{{ if eq $type $section }}{{$external_name}}{{ else }}{{$creaf_name}}{{ end }} btn-external px-4 me-1 mb-1 fw-bold {{ if eq $type "models" }}text-light{{end}}" href="{{ $external_url }}" role="button">OTHER</a>
+    {{ end }}
+    {{ if $search_by_tag_page }}
+    <a class="btn btn-{{ if eq $type $section }}{{$creaf_name}}{{ else }}{{$external_name}}{{ end }} px-4 ms-auto me-1 mb-1 fw-bold {{ if eq $type "models" }}text-light{{end}}" href="{{ $search_by_tag_page.RelPermalink }}" role="button">SEARCH BY TAG</a>
+    {{ end }}
+</div>
+{{ if eq $section $external_name }}
+<p class="text-muted text-center mb-4">
+    This is a curated selection of external available {{ $type | safeHTML }} for ecology
+</p>
+{{ end }}

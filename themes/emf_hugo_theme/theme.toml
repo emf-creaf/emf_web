@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "EMF Hugo Theme"
+license = "MIT"
+licenselink = "https://github.com/emf-creaf/emf_hugo_theme/blob/main/LICENSE"
+description = "Tailored theme for EMF web"
+homepage = "http://example.com/"
+tags = ["EMF", "web"]
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Victor Granda"
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

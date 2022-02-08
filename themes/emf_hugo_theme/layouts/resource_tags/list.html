@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+{{ partial "header_list.html" . }}
+
+{{ $section := .Section}}
+
+<div class="container">
+    <div class="container-fluid p-5">
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+            {{ range where .Site.Taxonomies.tags ".Page.Section" $section }}
+                {{ partial "card_section_tags.html" (dict "tag" . "section" $section) }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{/* end of define */}}
+{{ end }}

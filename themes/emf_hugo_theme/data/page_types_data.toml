@@ -1,0 +1,94 @@
+[home]
+    id = "home"
+    navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"
+
+[news]
+    id = 'news'
+    navbar_style = "background-image: linear-gradient(to right, #EDF4F5 , #F2F5F3 , #F6F6F1);"
+    header_id = "news_header"
+    header_partial = "header_single_news.html"
+
+[models]
+    id = 'models'
+    navbar_style = "background-image: linear-gradient(to right, #F0F2F6 , #F1F2F5 , #DFDEE6);"
+    header_id = "models_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[external_models]
+    id = 'models'
+    navbar_style = "background-image: linear-gradient(to right, #F0F2F6 , #F1F2F5 , #DFDEE6);"
+    header_id = "models_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[data]
+    id = "data"
+    navbar_style = "background-image: linear-gradient(to right, #F4F1EF , #F4F4F3 , #F6F5F3);"
+    header_id = "data_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[external_data]
+    id = "data"
+    navbar_style = "background-image: linear-gradient(to right, #F4F1EF , #F4F4F3 , #F6F5F3);"
+    header_id = "data_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[workflows]
+    id = "workflows"
+    navbar_style = "background-image: linear-gradient(to right, #EDF5F2 , #F2F5F4 , #F3F6F4);"
+    header_id = "workflows_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[software]
+    id = "software"
+    navbar_style = "background-image: linear-gradient(to right, #F5F0F5 , #F5F3F3 , #F6F4F5);"
+    header_id = "software_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[tech_docs]
+    id = "tech_docs"
+    navbar_style = "background-image: linear-gradient(to right, #ECF4F4 , #F2F5F4 , #F3F6F5);"
+    header_id = "tech_docs_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
+
+[tags]
+    id = "tags"
+    navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"
+    header_id = "tags_header"
+
+[categories]
+    id = "categories"
+    navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"
+    header_id = "tags_header"
+
+[training]
+    id = 'training'
+    navbar_style = "background-image: linear-gradient(to right, #EDF4F5 , #F2F5F3 , #F6F6F1);"
+    header_id = "news_header"
+    header_partial = "header_single_news.html"
+    content_partial = "content_single_resource.html"
+
+[publications]
+    id = 'publications'
+    navbar_style = "background-image: linear-gradient(to right, #EDF4F5 , #F2F5F3 , #F6F6F1);"
+    header_id = "news_header"
+    header_partial = "header_single_news.html"
+    content_partial = "content_single_resource.html"
+
+[about]
+    id = 'about'
+    navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"
+    header_id = "tags_header"
+    header_partial = "header_single_news.html"
+    content_partial = "content_single_resource.html"
+
+[not_found]
+    id = "not_found"
+    navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"
+    header_id = "tags_header"

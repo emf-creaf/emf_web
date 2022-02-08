@@ -1,0 +1,25 @@
+{{/*
+    First of all, check if in list (section) and then
+    only show the data repository button if any
+*/}}
+
+{{ $page := .page }}
+{{ $is_list := .is_list }}
+{{ $data_repository := $page.Params.data_repository }}
+{{ $model_repository := $page.Params.model_repository }}
+{{ $section := $page.Section }}
+
+{{ if $data_repository }}
+<a class="btn btn-{{ $section }} me-1 mb-1" href="{{ $data_repository | relURL }}" role="button" target="_blank" rel="noopener">Go to the Data</a>
+{{ end }}
+{{ if $model_repository }}
+<a class="btn btn-{{ $section }} me-1 mb-1" href="{{ $model_repository | relURL }}" role="button" target="_blank" rel="noopener">Go to the Model</a>
+{{ end }}
+{{/* If is not a list, rest of nodes */}}
+{{ if not $is_list }}
+{{ range $page.Params.nodes }}
+    {{ with site.GetPage . }}
+    <a class="btn btn-{{ .Type }} me-1 mb-1" href="{{ .RelPermalink }}" role="button">{{ .Title }}</a>
+    {{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,29 @@
+{{ $title := .Title }}
+{{ $summary := .Params.summary }}
+{{ $featured_file := .Params.image.file | default "featured.png" }}
+{{ $featured_caption := .Params.image.caption | default .Title }}
+{{ $url := .RelPermalink}}
+{{ $section := .Section}}
+{{ $data_repository := .Params.data_repository }}
+{{ $model_repository := .Params.model_repository }}
+
+<div class="col">
+    <div class="card h-100 emf-card-vertical color-{{ $section }}">
+        <div class="card-body position-relative">
+            <div class="fw-light">
+                <h5 class="card-title fw-light ls-5">
+                    <a href="{{ $url }}" class="stretched-link text-decoration-none text-dark"></a>{{ $title }}</a>
+                </h5>
+                <p class="card-text fw-light ls-5"><small>{{ $summary | markdownify }}</small></p>
+            </div>
+        </div>
+        <div class="card-footer card-tags" id="card-vertical-tags">
+            {{ partial "buttons_tags.html" . }}
+        </div>
+        {{ if or $data_repository $model_repository }}
+        <div class="card-footer card-tags" id="card-vertical-tags">
+            {{ partial "buttons_nodes.html" (dict "page" . "is_list" 1) }}
+        </div>
+        {{ end }}
+    </div>
+</div>

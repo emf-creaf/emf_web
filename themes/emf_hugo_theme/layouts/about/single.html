@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container-fluid g-0" id="about_header">
+    <div class="text-about d-flex align-items-center justify-content-center">
+        <h1 class="fw-bold ls-10 mb-0 text-light">{{upper .Title }}</h1>
+    </div>
+</div>
+
+<div class="container-fluid p-5 my-5">
+    <p class="mx-auto w-50 text-center mb-0" id="emf-home-short-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur urna varius felis facilisis magna. Fames enim habitant nullam dolor dignissim ac mauris senectus. At amet et euismod in elementum convallis porttitor. Purus sit faucibus volutpat non tristique platea. Dignissim tellus sit nulla a. Enim, id hac non nunc tellus sed. Diam massa enim, tincidunt turpis tellus, pellentesque. Et eros eu convallis sed nullam. Orci nullam risus mauris, turpis blandit convallis eu risus, facilisis. Morbi in nisl et sed.</p>
+</div>
+
+<div class="container-fluid py-5" id="emf-about-authors">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+              <h1 class="display-6 text-center emf-blue fw-bold ls-10">WHO ARE WE?</h1>
+            </div>  
+        </div>
+        <div class="row mb-3 px-5">
+        {{ range .Site.Data.authors }}
+        {{ if .core }}
+            {{ partial "author_info.html" (dict "author" . "type" "about") }}
+        {{ end }}
+        {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

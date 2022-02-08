@@ -1,0 +1,26 @@
+
+<div class="container-fluid py-5" id="emf-home-featurettes">
+    <div class='container'>
+        <div class="row mb-3">
+            <div class="col">
+              <h1 class="display-6 text-center emf-blue fw-bold ls-10">WHAT WE DO?</h1>
+            </div>  
+        </div>
+        <div class="row text-center px-5">
+            {{range sort .Site.Data.resources_icons "weight"}}
+            {{ if eq .featurette true }}
+            <div class="col-12 col-md mx-auto">
+                <a href="{{ .url | relURL }}">
+                    {{ partial "svgs/icons_defs.svg" (dict "color" .color "type" .type "x" .x "y" .y "margin_class" "m-4" "icon_class" "featurette_icon")}}
+                </a>
+                <h5 class="header-resource emf-blue fw-bold ls-10">{{ .name }}</h5>
+                <p><small>{{ .text }}</small></p>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+
+
