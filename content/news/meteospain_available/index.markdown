@@ -1,7 +1,8 @@
 ---
 title: "meteospain available!"
 authors: ["emf"]
-date: 2022-02-08
+date: 2021-06-08
+lastmod: 2022-02-08
 
 
 categories: ["news"]
@@ -11,16 +12,15 @@ url_source: "https://www.github.com/emf-creaf/meteospain"
 url_code: "https://emf-creaf.github.io/meteospain/"
   
 image:
-  caption: 'Temperature in Spain, April 10, 2020'
+  caption: '2020 monthly average temperature in Catalunya stations'
 summary: "`meteospain`, the R package to access the data of spanish meteorology stations is now available *via* [github](https://github.com/emf-creaf/meteospain)."  
 ---
 
 
 
-`meteospain`, the R package to access the data of spanish meteorology stations is now available
-*via* [github](https://github.com/emf-creaf/meteospain).
-
-Want to access meteorology stations data quickly? Just install the package and **get the meteo**:
+`meteospain`, the R package to access the data of Spanish meteorology stations is now available at
+[CRAN](https://cran.r-project.org/package=meteospain). Want to access meteorology stations data easily? Just
+install the `meteospain` package and **get the meteo!**
 
 
 ```r
@@ -43,6 +43,21 @@ get_meteo_from(
 ## https://www.meteogalicia.gal/web/informacion/notaIndex.action
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/galicia_april_tenth-1.png" width="672" />
+<figure class="single-image">
+  <figcaption>
+    <small class="text-muted">Galician meteo stations average temperature for 2020-04-10:</small>
+  </figcaption>
+  <img src="{{< blogdown/postref >}}index_files/figure-html/galicia_april_tenth-1.png" alt="Galician meteo stations average temperature for 2020-04-10:"/>
+</figure>
 
-Don't forget to check the docs [here](https://emf-creaf.github.io/meteospain/)
+
+`meteospain` provides access to data from stations of several networks:
+
+  - **AEMET**, the Spanish State Meteorological Agency.
+  - **MeteoCat**, the Catalan Meteorology Service.
+  - **MeteoGalicia**, the Galician Meteorological Service.
+  - **RIA**, the Andalucian Agroclimatic Information Network.
+  - **Meteoclimatic**, the Spanish non-professional meteorological stations network.
+
+Don't forget to check the [docs](https://emf-creaf.github.io/meteospain/) for a full guide into using
+`meteospain`.
