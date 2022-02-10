@@ -1,6 +1,7 @@
 ---
 title: sapfluxnetr
-authors: vgranda
+authors:
+- vgranda
 categories: softworks
 tags:
 - R

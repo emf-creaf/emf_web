@@ -89,6 +89,13 @@ $emf-blue: #13ABCD;
     #emf-home-short-description {min-width: 75%;}
 }
 
+@media (max-width: 768px) {
+    .short_description_list {
+        min-width: 75%;
+    }
+}
+
+
 /* emf home featurettes */
 #emf-home-featurettes, #emf-about-authors {
     background: rgba(255, 255, 255, 0.8);
