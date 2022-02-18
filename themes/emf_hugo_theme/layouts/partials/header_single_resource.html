@@ -7,7 +7,7 @@
 
 <div class="container-fluid px-5">
     <h3>{{ .Title }}</h3>
-    <p><small>{{ .Date | time.Format ":date_short" }}</small></p>
+    <p><small>{{ .Lastmod | time.Format ":date_short" }}</small></p>
     <div class="d-flex flex-wrap pb-3">
         {{ partial "buttons_tags.html" . }}
     </div>

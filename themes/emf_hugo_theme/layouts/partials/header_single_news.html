@@ -9,7 +9,7 @@
 
 <div class="container-fluid px-5">
     <h3>{{ .Title }}</h3>
-    <p><small>{{ .Date | time.Format ":date_short" }}</small></p>
+    <p><small>{{ .Lastmod | time.Format ":date_short" }}</small></p>
     {{ with .Resources.GetMatch $featured_file }}
         <img class="news-image mb-3" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $featured_caption }}" alt="{{ $featured_caption }}">
     {{ end }}
