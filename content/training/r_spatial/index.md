@@ -16,9 +16,11 @@ tags:
 - dummy
 training_info:
     start_date: "2022-03-14"
-    end_date: "2002-03-18"
-    hours: 4
+    end_date: "2022-03-18"
+    hours: 16
 summary: Introduction to spatial data and statial analysis with R
+draft: true
+lastmod: 2022-03-01
 ---
 
 # What you will learn?
@@ -29,9 +31,5 @@ your R session. This also includes basic vector operations, like e.g. spatial jo
 raster algebra (merge, extract…) as well as some basic visualization techniques. In the
 second half of the course, we will illustrate the use of spatial data in statistical analysis like
 e.g. raster interpolation, point pattern analysis and krigging.
-
-# Course contents
-
-Blablabla
 
 

@@ -7,8 +7,8 @@ tags:
 - Global
 draft: false
 featured: false
-date: '2022-02-08'
-lastmod: '2022-02-08'
+date: '2022-03-21'
+lastmod: '2022-03-21'
 summary: The Community Land Model is a collaborative project between scientists. The
   model simulates the physical, chemical and biological processes by which terrestrial
   ecosystems affect and are affected by climate across a variety of spatial and temporal
