@@ -1,15 +1,29 @@
 <div class="container-fluid px-5 mb-4">
     <div class="row">
-        <div class="col col-md-9">
-            {{ .Content }}
-        </div>
+        {{ if eq .Type "training" }}
+            <div class="col col-md-9">
+                <h4>Course description</h4>
+                <p>{{ .Params.summary }}</p>
+                <h4>Last course event</h4>
+                <p>Last course event was hold at {{ .Params.training_info.place }} between {{ .Params.training_info.start_date }} and {{ .Params.training_info.end_date }}</p>
+                <h4>Materials:</h4>
+                {{ range .Resources.ByType "application" }}
+                    <p><a href="{{ .Permalink }}" target="_blank", type="{{ .MediaType }}">{{ .Name }}</a></p>
+                {{ end }}
 
-        {{ if and (gt .WordCount 100 ) }}
-        {{ partial "toc_single.html" . }} 
+            </div>
+        {{ else }}
+            <div class="col col-md-9">
+                {{ .Content }}
+            </div>
+
+            {{ if and (gt .WordCount 100 ) }}
+            {{ partial "toc_single.html" . }} 
+            {{ end }}
+
+            {{ $active_toc := resources.Get "js/active_toc.js" | js.Build  }}
+            <script src="{{ $active_toc.RelPermalink }}"></script>
         {{ end }}
-
-        {{ $active_toc := resources.Get "js/active_toc.js" | js.Build  }}
-        <script src="{{ $active_toc.RelPermalink }}"></script>
 
     </div>
 </div>
