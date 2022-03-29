@@ -2,6 +2,8 @@
 title: sapfluxnetr
 authors:
 - vgranda
+- rpoyatos
+- vflo
 categories: softworks
 tags:
 - R
