@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2022-02-08'
-lastmod: '2022-02-08'
+date: '2022-03-29'
+lastmod: '2022-03-29'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -23,16 +23,9 @@ links:
   url_source: https://github.com/emf-creaf/meteospain
   url_docs: https://emf-creaf.github.io/meteospain/
 ---
-```{=html}
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-```
 # meteospain
 
-```{=html}
-<!-- badges: start -->
-```
 [![R-CMD-check](https://github.com/emf-creaf/meteospain/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/meteospain/actions)
-`<!-- badges: end -->`{=html}
 
 `meteospain` aims to offer access to different Spanish meteorological
 stations data in an uniform way.
@@ -84,25 +77,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3694 features and 14 fields
+#> Simple feature collection with 3696 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,694 × 15
+#> # A tibble: 3,696 × 15
 #>    timestamp           service      station_id station_name     station_province altitude temperature min_temperature
 #>    <dttm>              <chr>        <chr>      <chr>            <chr>                 [m]        [°C]            [°C]
-#>  1 2022-02-07 13:00:00 meteogalicia 10045      Mabegondo        A Coruña               94       13.9            13.4 
-#>  2 2022-02-07 13:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651       11.0            10.4 
-#>  3 2022-02-07 13:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51       13.6            12.9 
-#>  4 2022-02-07 13:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026       14.4            13.8 
-#>  5 2022-02-07 13:00:00 meteogalicia 10049      Corrubedo        A Coruña               30       16.8            16.4 
-#>  6 2022-02-07 13:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37       13.6            13.2 
-#>  7 2022-02-07 13:00:00 meteogalicia 10052      Muralla          A Coruña              661        9.52            8.82
-#>  8 2022-02-07 13:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400       11.1             9.17
-#>  9 2022-02-07 13:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684       10.6             9.91
-#> 10 2022-02-07 13:00:00 meteogalicia 10056      Marroxo          Lugo                  645        7.1             6.46
-#> # … with 3,684 more rows, and 7 more variables: max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
+#>  1 2022-03-28 12:00:00 meteogalicia 10045      Mabegondo        A Coruña               94        21.1            20.8
+#>  2 2022-03-28 12:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651        15.7            15.4
+#>  3 2022-03-28 12:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51        17.7            17.1
+#>  4 2022-03-28 12:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026        12.3            12.2
+#>  5 2022-03-28 12:00:00 meteogalicia 10049      Corrubedo        A Coruña               30        17              16.8
+#>  6 2022-03-28 12:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37        20.1            19.9
+#>  7 2022-03-28 12:00:00 meteogalicia 10052      Muralla          A Coruña              661        16.1            15.6
+#>  8 2022-03-28 12:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400        18.2            17.7
+#>  9 2022-03-28 12:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684        16.6            16.0
+#> 10 2022-03-28 12:00:00 meteogalicia 10056      Marroxo          Lugo                  645        15.6            15.1
+#> # … with 3,686 more rows, and 7 more variables: max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
 #> #   wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
 
@@ -110,12 +103,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` r
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 155 features and 5 fields
+#> Simple feature collection with 154 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 155 × 6
+#> # A tibble: 154 × 6
 #>    service      station_id station_name             station_province altitude             geometry
 #>  * <chr>        <chr>      <chr>                    <chr>                 [m]          <POINT [°]>
 #>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21 (-8.409202 43.38276)
@@ -128,7 +121,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10095      Sergude                  A Coruña              231 (-8.461246 42.82283)
 #>  9 meteogalicia 10800      Camariñas                A Coruña                5 (-9.178318 43.12445)
 #> 10 meteogalicia 19001      Rus                      A Coruña              134 (-8.685357 43.15616)
-#> # … with 145 more rows
+#> # … with 144 more rows
 ```
 
 Returned objects are spatial objects (thanks to the

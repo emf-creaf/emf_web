@@ -14,8 +14,8 @@ draft: false
 featured: false
 date: '2022-02-10'
 lastmod: '2022-02-10'
-summary: Access, modify, aggregate and plot data from the 'Sapfluxnet' project (http://sapfluxnet.creaf.cat),
-  the first global database of sap flow measurements.
+summary: Access, modify, aggregate and plot data from the 'Sapfluxnet' project, the
+  first global database of sap flow measurements.
 model_repository: ''
 data_repository: ''
 links:
@@ -24,21 +24,14 @@ links:
   url_source: https://github.com/sapfluxnet/sapfluxnetr
   url_docs: http://sapfluxnet.creaf.cat/sapfluxnetr/
 ---
-```{=html}
-<!-- README.md is generated from README.Rmd. Please edit thet file -->
-```
 # sapfluxnetr
 
-```{=html}
-<!-- badges: start -->
-```
 [![CRAN
 status](https://www.r-pkg.org/badges/version/sapfluxnetr)](https://CRAN.R-project.org/package=sapfluxnetr)
 [![CRAN RStudio mirror
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/sapfluxnetr?color=blue)](https://r-pkg.org/pkg/sapfluxnetr)
 [![R build
 status](https://github.com/sapfluxnet/sapfluxnetr/workflows/R-CMD-check/badge.svg)](https://github.com/sapfluxnet/sapfluxnetr/actions)
-`<!-- badges: end -->`{=html}
 
 `sapfluxnetr` provides tools for a tidy data analysis for the first
 global database of sap flow measurements ([Sapfluxnet
