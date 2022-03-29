@@ -44,3 +44,63 @@
     core = true
     position = "Modeller"
 
+[acabon]
+    id = "acabon"
+    name = "Antoine"
+    surname = "Cabon"
+    affiliation = "University of Utah"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+
+[naquilue]
+    id = "naquilue"
+    name = "Núria"
+    surname = "Aquilué"
+    affiliation = "CTFC"
+    aff_link = ""
+    core = false
+    position = "Collaborator"
+    image = "img/authors/default.png"
+
+[lbrotons]
+    id = "lbrotons"
+    name = "Lluis"
+    surname = "Brotons"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+
+[aameztegui]
+    id = "aameztegui"
+    name = "Aitor"
+    surname = "Ameztegui"
+    affiliation = "University of Lleida"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+
+[rpoyatos]
+    id = "rpoyatos"
+    name = "Rafael"
+    surname = "Poyatos"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+
+[vflo]
+    id = "vflo"
+    name = "Víctor"
+    surname = "Flo"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+
