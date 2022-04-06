@@ -8,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2022-03-21'
-lastmod: '2022-03-21'
+date: '2022-04-06'
+lastmod: '2022-04-06'
 summary: UVAFME is an individual-based gap model that simulates the annual establishment,
   growth, and mortality of individual trees on independent patches (i.e. plots) of
   a forested landscape. The model is only spatially distributed in the vertical dimension,
