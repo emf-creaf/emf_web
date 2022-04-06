@@ -207,12 +207,20 @@ stars::read_stars(nc_file)
 
     ## stars object with 3 dimensions and 3 attributes
     ## attribute(s):
-    ##                Min.     1st Qu.      Median        Mean     3rd Qu.       Max.   NA's
-    ## u10 [m/s]  -5.40471  -0.0442164   0.3580333   0.3568009   0.8111953   4.046933 120000
-    ## d2m [K]   261.03271 276.3091077 279.6762259 279.7562080 282.9740717 294.229248 120000
-    ## t2m [K]   266.89014 280.9194435 285.2894811 286.2570392 291.5648850 303.090576 120000
+    ##                Min.     1st Qu.      Median        Mean     3rd Qu.
+    ## u10 [m/s]  -5.40471  -0.0442164   0.3580333   0.3568009   0.8111953
+    ## d2m [K]   261.03271 276.3091077 279.6762259 279.7562080 282.9740717
+    ## t2m [K]   266.89014 280.9194435 285.2894811 286.2570392 291.5648850
+    ##                 Max.   NA's
+    ## u10 [m/s]   4.046933 120000
+    ## d2m [K]   294.229248 120000
+    ## t2m [K]   303.090576 120000
     ## dimension(s):
-    ##      from  to offset delta  refsys point                    values x/y
-    ## x       1 141 -10.05   0.1      NA    NA                      NULL [x]
-    ## y       1  91  44.05  -0.1      NA    NA                      NULL [y]
+    ##      from  to offset delta  refsys point                    values
+    ## x       1 141 -10.05   0.1      NA    NA                      NULL
+    ## y       1  91  44.05  -0.1      NA    NA                      NULL
     ## time    1  24     NA    NA POSIXct    NA 1991-01-01,...,1992-12-01
+    ##      x/y
+    ## x    [x]
+    ## y    [y]
+    ## time
