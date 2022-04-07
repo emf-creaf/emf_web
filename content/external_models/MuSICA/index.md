@@ -8,8 +8,8 @@ tags:
 - FORTRAN/Python
 draft: false
 featured: false
-date: '2022-04-06'
-lastmod: '2022-04-06'
+date: '2022-04-07'
+lastmod: '2022-04-07'
 summary: MuSICA is a model primarily developed to simulate the exchanges of mass (water,
   CO2) and energy in the soil-vegetation-atmosphere continuum. Stand structure is
   explicitly accounted for and competition for light and water between species can

@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2022-04-06'
-lastmod: '2022-04-06'
+date: '2022-04-07'
+lastmod: '2022-04-07'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -77,27 +77,27 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3713 features and 14 fields
+#> Simple feature collection with 3697 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,713 × 15
-#>    timestamp           service      station_id station_name    station_province altitude temperature
-#>    <dttm>              <chr>        <chr>      <chr>           <chr>                 [m]        [°C]
-#>  1 2022-04-05 16:00:00 meteogalicia 10045      Mabegondo       A Coruña               94        17.4
-#>  2 2022-04-05 16:00:00 meteogalicia 10046      Marco da Curra  A Coruña              651        11.2
-#>  3 2022-04-05 16:00:00 meteogalicia 10047      Pedro Murias    Lugo                   51        11.5
-#>  4 2022-04-05 16:00:00 meteogalicia 10048      O Invernadeiro  Ourense              1026        12.6
-#>  5 2022-04-05 16:00:00 meteogalicia 10049      Corrubedo       A Coruña               30        20.6
-#>  6 2022-04-05 16:00:00 meteogalicia 10050      CIS Ferrol      A Coruña               37        14.5
-#>  7 2022-04-05 16:00:00 meteogalicia 10052      Muralla         A Coruña              661        12.6
-#>  8 2022-04-05 16:00:00 meteogalicia 10053      Campus Lugo     Lugo                  400        14.5
-#>  9 2022-04-05 16:00:00 meteogalicia 10055      Guitiriz-Mirad… Lugo                  684        11.0
-#> 10 2022-04-05 16:00:00 meteogalicia 10056      Marroxo         Lugo                  645        15.3
-#> # … with 3,703 more rows, and 8 more variables: min_temperature [°C], max_temperature [°C],
-#> #   relative_humidity [%], precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
-#> #   insolation [h], geometry <POINT [°]>
+#> # A tibble: 3,697 × 15
+#>    timestamp           service      station_id station_name    station_province altitude
+#>    <dttm>              <chr>        <chr>      <chr>           <chr>                 [m]
+#>  1 2022-04-06 11:00:00 meteogalicia 10045      Mabegondo       A Coruña               94
+#>  2 2022-04-06 11:00:00 meteogalicia 10046      Marco da Curra  A Coruña              651
+#>  3 2022-04-06 11:00:00 meteogalicia 10047      Pedro Murias    Lugo                   51
+#>  4 2022-04-06 11:00:00 meteogalicia 10048      O Invernadeiro  Ourense              1026
+#>  5 2022-04-06 11:00:00 meteogalicia 10049      Corrubedo       A Coruña               30
+#>  6 2022-04-06 11:00:00 meteogalicia 10050      CIS Ferrol      A Coruña               37
+#>  7 2022-04-06 11:00:00 meteogalicia 10052      Muralla         A Coruña              661
+#>  8 2022-04-06 11:00:00 meteogalicia 10053      Campus Lugo     Lugo                  400
+#>  9 2022-04-06 11:00:00 meteogalicia 10055      Guitiriz-Mirad… Lugo                  684
+#> 10 2022-04-06 11:00:00 meteogalicia 10056      Marroxo         Lugo                  645
+#> # … with 3,687 more rows, and 9 more variables: temperature [°C], min_temperature [°C],
+#> #   max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
+#> #   wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
 
 Stations info can be accessed with `get_stations_info_from` function:
@@ -110,18 +110,18 @@ get_stations_info_from('meteogalicia', mg_options)
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
 #> # A tibble: 155 × 6
-#>    service      station_id station_name          station_province altitude             geometry
-#>  * <chr>        <chr>      <chr>                 <chr>                 [m]          <POINT [°]>
-#>  1 meteogalicia 10157      Coruña-Torre de Hérc… A Coruña               21 (-8.409202 43.38276)
-#>  2 meteogalicia 14000      Coruña-Dique          A Coruña                5 (-8.374706 43.36506)
-#>  3 meteogalicia 10045      Mabegondo             A Coruña               94 (-8.262225 43.24137)
-#>  4 meteogalicia 14003      Punta Langosteira     A Coruña                5 (-8.531179 43.34723)
-#>  5 meteogalicia 10144      Arzúa                 A Coruña              362  (-8.17469 42.93196)
-#>  6 meteogalicia 19005      Guísamo               A Coruña              175 (-8.276487 43.30799)
-#>  7 meteogalicia 19012      Cespón                A Coruña               59 (-8.854571 42.67466)
-#>  8 meteogalicia 10095      Sergude               A Coruña              231 (-8.461246 42.82283)
-#>  9 meteogalicia 10800      Camariñas             A Coruña                5 (-9.178318 43.12445)
-#> 10 meteogalicia 19001      Rus                   A Coruña              134 (-8.685357 43.15616)
+#>    service   station_id station_name station_province altitude             geometry
+#>  * <chr>     <chr>      <chr>        <chr>                 [m]          <POINT [°]>
+#>  1 meteogal… 10157      Coruña-Torr… A Coruña               21 (-8.409202 43.38276)
+#>  2 meteogal… 14000      Coruña-Dique A Coruña                5 (-8.374706 43.36506)
+#>  3 meteogal… 10045      Mabegondo    A Coruña               94 (-8.262225 43.24137)
+#>  4 meteogal… 14003      Punta Lango… A Coruña                5 (-8.531179 43.34723)
+#>  5 meteogal… 10144      Arzúa        A Coruña              362  (-8.17469 42.93196)
+#>  6 meteogal… 19005      Guísamo      A Coruña              175 (-8.276487 43.30799)
+#>  7 meteogal… 19012      Cespón       A Coruña               59 (-8.854571 42.67466)
+#>  8 meteogal… 10095      Sergude      A Coruña              231 (-8.461246 42.82283)
+#>  9 meteogal… 10800      Camariñas    A Coruña                5 (-9.178318 43.12445)
+#> 10 meteogal… 19001      Rus          A Coruña              134 (-8.685357 43.15616)
 #> # … with 145 more rows
 ```
 
@@ -131,6 +131,7 @@ results directly.
 
 ``` r
 library(sf)
+#> Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.2.0; sf_use_s2() is TRUE
 mg_options <- meteogalicia_options(resolution = 'daily', start_date = as.Date('2021-04-25'))
 plot(get_meteo_from('meteogalicia', mg_options))
 #> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 

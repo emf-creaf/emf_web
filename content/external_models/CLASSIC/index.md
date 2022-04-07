@@ -8,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2022-04-06'
-lastmod: '2022-04-06'
+date: '2022-04-07'
+lastmod: '2022-04-07'
 summary: CLASSIC is a land surface model that simulates the exchanges of energy, water,
   carbon, and momentum at the earth's surface. CLASSIC is formed by the coupling of
   the Canadian Land Surface Scheme (CLASS) and the Canadian Terrestrial Ecosystem

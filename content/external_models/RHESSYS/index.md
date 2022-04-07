@@ -8,8 +8,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2022-04-06'
-lastmod: '2022-04-06'
+date: '2022-04-07'
+lastmod: '2022-04-07'
 summary: RHESSYS is a GIS-based hydro-ecological modelling framework designed to simulate
   carbon, water and nutrient fluxes. By combining a set of physically-based process
   models and a methodology for partitioning and parameterizing the landscape, RHESSYS
