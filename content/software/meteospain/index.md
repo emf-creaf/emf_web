@@ -77,26 +77,26 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3688 features and 14 fields
+#> Simple feature collection with 3684 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,688 × 15
-#>    timestamp           service      station_id station_name  station_province altitude temperature min_temperature
-#>    <dttm>              <chr>        <chr>      <chr>         <chr>                 [m]        [°C]            [°C]
-#>  1 2022-04-06 13:00:00 meteogalicia 10045      Mabegondo     A Coruña               94       14.7            13.9 
-#>  2 2022-04-06 13:00:00 meteogalicia 10046      Marco da Cur… A Coruña              651        9.35            8.15
-#>  3 2022-04-06 13:00:00 meteogalicia 10047      Pedro Murias  Lugo                   51       14.2            13.5 
-#>  4 2022-04-06 13:00:00 meteogalicia 10048      O Invernadei… Ourense              1026       14.8            14.4 
-#>  5 2022-04-06 13:00:00 meteogalicia 10049      Corrubedo     A Coruña               30       15.3            14.3 
-#>  6 2022-04-06 13:00:00 meteogalicia 10050      CIS Ferrol    A Coruña               37       14.3            14.1 
-#>  7 2022-04-06 13:00:00 meteogalicia 10052      Muralla       A Coruña              661        8.27            8.1 
-#>  8 2022-04-06 13:00:00 meteogalicia 10053      Campus Lugo   Lugo                  400       13.9            13.7 
-#>  9 2022-04-06 13:00:00 meteogalicia 10055      Guitiriz-Mir… Lugo                  684        9.88            9.54
-#> 10 2022-04-06 13:00:00 meteogalicia 10056      Marroxo       Lugo                  645       12.2            11.0 
-#> # … with 3,678 more rows, and 7 more variables: max_temperature [°C], relative_humidity [%],
-#> #   precipitation [L/m^2], wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
+#> # A tibble: 3,684 × 15
+#>    timestamp           service      station_id station_name     station_province altitude temperature min_temperature
+#>    <dttm>              <chr>        <chr>      <chr>            <chr>                 [m]        [°C]            [°C]
+#>  1 2022-04-06 14:00:00 meteogalicia 10045      Mabegondo        A Coruña               94       15.2             14.7
+#>  2 2022-04-06 14:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651       10.4             10.2
+#>  3 2022-04-06 14:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51       14.8             14.6
+#>  4 2022-04-06 14:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026       14.8             14.3
+#>  5 2022-04-06 14:00:00 meteogalicia 10049      Corrubedo        A Coruña               30       16.0             15.4
+#>  6 2022-04-06 14:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37       14.5             14.2
+#>  7 2022-04-06 14:00:00 meteogalicia 10052      Muralla          A Coruña              661        9.81             9.3
+#>  8 2022-04-06 14:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400       14.6             14.0
+#>  9 2022-04-06 14:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684       11.5             11.1
+#> 10 2022-04-06 14:00:00 meteogalicia 10056      Marroxo          Lugo                  645       14.2             13.6
+#> # … with 3,674 more rows, and 7 more variables: max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
+#> #   wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
 
 Stations info can be accessed with `get_stations_info_from` function:
@@ -130,6 +130,7 @@ results directly.
 
 ``` r
 library(sf)
+#> Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.2.0; sf_use_s2() is TRUE
 mg_options <- meteogalicia_options(resolution = 'daily', start_date = as.Date('2021-04-25'))
 plot(get_meteo_from('meteogalicia', mg_options))
 #> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 
