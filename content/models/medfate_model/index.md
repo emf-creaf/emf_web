@@ -19,7 +19,7 @@ summary: Simulation of water balance of soils and plants within forest stands. M
   of cohorts competing for light and water within a forest stand. Finally, it also
   allows relating the amount of plant biomass and the water status of plant tissues
   to fuel characteristics and, hence, fire hazard.
-model_repository: https://github.com/emf-creaf/medfate
+model_repository: https://emf-creaf.github.io/medfate
 data_repository: ''
 links:
   url_doi: https://doi.org/10.1016/j.agrformet.2020.108233
