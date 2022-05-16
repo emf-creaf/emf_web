@@ -7,8 +7,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2022-04-21'
-lastmod: '2022-04-21'
+date: '2022-05-16'
+lastmod: '2022-05-16'
 summary: FORSPACE is a spatially explicit forest gap model that aims to give a realistic
   description of the processes that determine forest dynamics at the scale of a landscape
   (up to thousands of hectares). Gap dynamics in relation to herbivores are an important

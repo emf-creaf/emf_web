@@ -8,8 +8,8 @@ tags:
 - RAMSES
 draft: false
 featured: false
-date: '2022-04-21'
-lastmod: '2022-04-21'
+date: '2022-05-16'
+lastmod: '2022-05-16'
 summary: |-
   FORCLIM is a climate-sensitive forest succession (“gap”) model, developed to simulate forest stand dynamics over a wide range of environmental conditions. The PLANT submodel simulates establishment, growth and mortality of tree individuals that, for technical reasons, are grouped in size cohorts. The WEATHER and WATER submodels provide the input data for the PLANT submodel. The submodel MANAGEMENT allows simulations forest management strategies that are commonly used in Central Europe, such as clearcutting,
   shelterwood, thinning, planting, among others.

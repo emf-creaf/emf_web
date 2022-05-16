@@ -7,8 +7,8 @@ tags:
 - HydroGeologyDatabase
 draft: false
 featured: false
-date: '2022-05-11'
-lastmod: '2022-05-11'
+date: '2022-05-16'
+lastmod: '2022-05-16'
 summary: Global permeability of the unconsolidated and consolidated Earth dataset
 model_repository: ''
 data_repository: https://dataverse.scholarsportal.info/dataset.xhtml
