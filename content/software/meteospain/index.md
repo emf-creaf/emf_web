@@ -130,7 +130,6 @@ results directly.
 
 ``` r
 library(sf)
-#> Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.2.0; sf_use_s2() is TRUE
 mg_options <- meteogalicia_options(resolution = 'daily', start_date = as.Date('2021-04-25'))
 plot(get_meteo_from('meteogalicia', mg_options))
 #> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 
