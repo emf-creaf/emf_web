@@ -1,6 +1,7 @@
 ---
 title: TRY
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

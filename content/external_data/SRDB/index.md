@@ -1,6 +1,7 @@
 ---
 title: Soil Respiration Database (SRDB)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

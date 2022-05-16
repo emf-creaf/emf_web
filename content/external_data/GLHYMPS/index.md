@@ -1,6 +1,7 @@
 ---
 title: GLobal HYdrogeology MaPS (GLHYMPS) of permeability and porosity
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Geosphere

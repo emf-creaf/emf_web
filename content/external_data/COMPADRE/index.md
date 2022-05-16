@@ -1,6 +1,7 @@
 ---
 title: COMPADRE/COMADRE
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Biosphere

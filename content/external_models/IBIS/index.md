@@ -1,6 +1,7 @@
 ---
 title: Integrated BIosphere Simulator (IBIS)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

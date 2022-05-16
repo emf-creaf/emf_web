@@ -1,6 +1,7 @@
 ---
 title: PREPRINT
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

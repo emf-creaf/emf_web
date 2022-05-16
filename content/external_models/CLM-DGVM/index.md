@@ -1,6 +1,7 @@
 ---
 title: Community Land Model (CLM-DGVM)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

@@ -1,6 +1,7 @@
 ---
 title: Global nitrogen deposition
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

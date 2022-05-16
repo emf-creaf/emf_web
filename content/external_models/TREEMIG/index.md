@@ -1,6 +1,7 @@
 ---
 title: TREEMIG
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Landscape Model

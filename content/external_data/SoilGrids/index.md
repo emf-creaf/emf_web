@@ -1,6 +1,7 @@
 ---
 title: SoilGrids
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

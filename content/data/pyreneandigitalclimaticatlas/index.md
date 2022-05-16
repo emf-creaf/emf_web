@@ -1,6 +1,7 @@
 ---
 title: Pyrenean Digital Climatic Atlas
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - data

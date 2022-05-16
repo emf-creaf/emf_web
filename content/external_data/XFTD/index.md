@@ -1,6 +1,7 @@
 ---
 title: Xylem Functional Trait Database
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

@@ -1,6 +1,7 @@
 ---
 title: sPlot
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

@@ -1,6 +1,7 @@
 ---
 title: Joint UK Land Environment Simulator (JULES)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

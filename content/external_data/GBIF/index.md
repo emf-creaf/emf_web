@@ -1,6 +1,7 @@
 ---
 title: GBIF
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Biosphere

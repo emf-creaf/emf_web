@@ -1,6 +1,7 @@
 ---
 title: Global Runoff Data Center (GRDC)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Hydrosphere

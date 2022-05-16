@@ -1,6 +1,7 @@
 ---
 title: The Canadian Land Surface Scheme Including Biogeochemical Cycles (CLASSIC)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

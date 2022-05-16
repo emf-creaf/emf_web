@@ -1,6 +1,7 @@
 ---
 title: FLUXNET
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

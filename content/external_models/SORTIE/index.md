@@ -1,6 +1,7 @@
 ---
 title: SORTIE
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model

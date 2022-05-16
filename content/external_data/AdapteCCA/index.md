@@ -1,6 +1,7 @@
 ---
 title: AdapteCCA climate change scenario visualisation tool
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

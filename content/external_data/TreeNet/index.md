@@ -1,6 +1,7 @@
 ---
 title: TreeNet
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

@@ -1,6 +1,7 @@
 ---
 title: Global Soil Dataset for Earth System Model
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

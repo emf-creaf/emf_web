@@ -1,6 +1,7 @@
 ---
 title: FORMIND
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model

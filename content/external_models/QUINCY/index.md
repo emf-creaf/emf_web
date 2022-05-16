@@ -1,7 +1,8 @@
 ---
 title: Quantifying Interactions between terrestrial Nutrient CYcles and the climate
   system (QUINCY)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

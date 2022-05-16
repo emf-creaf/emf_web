@@ -1,6 +1,7 @@
 ---
 title: Global Forest Biodiversity Initiative
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

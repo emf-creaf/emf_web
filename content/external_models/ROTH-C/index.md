@@ -1,6 +1,7 @@
 ---
 title: Rothamsted carbon model (ROTH-C)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Soil Biogeochemistry Model

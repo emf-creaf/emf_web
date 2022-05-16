@@ -1,6 +1,7 @@
 ---
 title: BIOME-BioGeoChemistry (BIOME-BGC)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Terrestrial Biogeochemistry Model

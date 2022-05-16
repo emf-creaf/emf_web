@@ -1,6 +1,7 @@
 ---
 title: sPlotOpen
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

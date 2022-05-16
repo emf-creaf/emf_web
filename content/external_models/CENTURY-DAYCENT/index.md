@@ -1,6 +1,7 @@
 ---
 title: CENTURY-DAYCENT
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Soil Biogeochemistry Model

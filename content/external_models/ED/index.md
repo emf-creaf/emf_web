@@ -1,6 +1,7 @@
 ---
 title: Ecosystem Demography model (ED)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

@@ -1,6 +1,7 @@
 ---
 title: WISE30sec
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

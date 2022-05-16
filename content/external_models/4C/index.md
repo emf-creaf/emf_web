@@ -1,6 +1,7 @@
 ---
 title: FORESEE–FORESt Ecosystems in a Changing Environment (4C)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model

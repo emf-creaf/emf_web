@@ -1,6 +1,7 @@
 ---
 title: MuSICA
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Soil-Vegetation-Atmosphere Transfer Model

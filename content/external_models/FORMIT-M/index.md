@@ -1,7 +1,8 @@
 ---
 title: FORest management strategies to enhance the MITigation potential of European
   forests (FORMIT-M)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Biogeochemistry Model

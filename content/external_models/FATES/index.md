@@ -1,6 +1,7 @@
 ---
 title: Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

@@ -1,6 +1,7 @@
 ---
 title: International Soil Moisture Network (ISMN)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

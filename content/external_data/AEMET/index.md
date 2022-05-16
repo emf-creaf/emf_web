@@ -1,6 +1,7 @@
 ---
 title: AEMET network
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

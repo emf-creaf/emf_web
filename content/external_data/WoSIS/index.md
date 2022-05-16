@@ -1,6 +1,7 @@
 ---
 title: World Soil Information Service (WoSIS)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

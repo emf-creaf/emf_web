@@ -1,6 +1,7 @@
 ---
 title: LOng Term Vegetation Sampling (LOTVS)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation
