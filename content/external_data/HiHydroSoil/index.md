@@ -8,8 +8,8 @@ tags:
 - SoilDatabase
 draft: false
 featured: false
-date: '2022-05-16'
-lastmod: '2022-05-16'
+date: '2022-05-23'
+lastmod: '2022-05-23'
 summary: Global Maps of Soil Hydraulic Properties at 250m Resolution
 model_repository: ''
 data_repository: https://www.futurewater.eu/projects/hihydrosoil/

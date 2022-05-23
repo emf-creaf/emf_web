@@ -8,8 +8,8 @@ tags:
 - SoilMap
 draft: false
 featured: false
-date: '2022-05-16'
-lastmod: '2022-05-16'
+date: '2022-05-23'
+lastmod: '2022-05-23'
 summary: The Harmonized World Soil Database is a 30 arc-second raster database with
   over 15 000 different soil mapping units that combines existing regional and national
   updates of soil information worldwide (SOTER, ESD, Soil Map of China, WISE) with
