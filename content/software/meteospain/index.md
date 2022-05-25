@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2022-05-24'
-lastmod: '2022-05-24'
+date: '2022-05-25'
+lastmod: '2022-05-25'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -81,25 +81,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3690 features and 14 fields
+#> Simple feature collection with 3681 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,690 × 15
+#> # A tibble: 3,681 × 15
 #>    timestamp           service station_id station_name station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
-#>  1 2022-05-23 03:00:00 meteog… 10045      Mabegondo    A Coruña               94
-#>  2 2022-05-23 03:00:00 meteog… 10046      Marco da Cu… A Coruña              651
-#>  3 2022-05-23 03:00:00 meteog… 10047      Pedro Murias Lugo                   51
-#>  4 2022-05-23 03:00:00 meteog… 10048      O Invernade… Ourense              1026
-#>  5 2022-05-23 03:00:00 meteog… 10049      Corrubedo    A Coruña               30
-#>  6 2022-05-23 03:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
-#>  7 2022-05-23 03:00:00 meteog… 10052      Muralla      A Coruña              661
-#>  8 2022-05-23 03:00:00 meteog… 10053      Campus Lugo  Lugo                  400
-#>  9 2022-05-23 03:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
-#> 10 2022-05-23 03:00:00 meteog… 10056      Marroxo      Lugo                  645
-#> # … with 3,680 more rows, and 9 more variables: temperature [°C],
+#>  1 2022-05-24 03:00:00 meteog… 10045      Mabegondo    A Coruña               94
+#>  2 2022-05-24 03:00:00 meteog… 10046      Marco da Cu… A Coruña              651
+#>  3 2022-05-24 03:00:00 meteog… 10047      Pedro Murias Lugo                   51
+#>  4 2022-05-24 03:00:00 meteog… 10048      O Invernade… Ourense              1026
+#>  5 2022-05-24 03:00:00 meteog… 10049      Corrubedo    A Coruña               30
+#>  6 2022-05-24 03:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
+#>  7 2022-05-24 03:00:00 meteog… 10052      Muralla      A Coruña              661
+#>  8 2022-05-24 03:00:00 meteog… 10053      Campus Lugo  Lugo                  400
+#>  9 2022-05-24 03:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
+#> 10 2022-05-24 03:00:00 meteog… 10056      Marroxo      Lugo                  645
+#> # … with 3,671 more rows, and 9 more variables: temperature [°C],
 #> #   min_temperature [°C], max_temperature [°C], relative_humidity [%],
 #> #   precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
 #> #   insolation [h], geometry <POINT [°]>
