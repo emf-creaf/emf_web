@@ -8,8 +8,8 @@ tags:
 - SurfaceStations
 draft: false
 featured: false
-date: '2022-05-23'
-lastmod: '2022-05-23'
+date: '2022-06-09'
+lastmod: '2022-06-09'
 summary: Automatic meteorological station network from the Pais Valencia meteorology
   association
 model_repository: ''

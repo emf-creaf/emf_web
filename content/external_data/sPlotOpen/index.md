@@ -8,8 +8,8 @@ tags:
 - VegetationPlotDatabase
 draft: false
 featured: false
-date: '2022-05-23'
-lastmod: '2022-05-23'
+date: '2022-06-09'
+lastmod: '2022-06-09'
 summary: Vegetation plot database with abundance of naturally co-occurring vascular
   plant species within delimited areas
 model_repository: ''
