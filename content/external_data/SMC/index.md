@@ -8,8 +8,8 @@ tags:
 - SurfaceStations
 draft: false
 featured: false
-date: '2022-06-09'
-lastmod: '2022-06-09'
+date: '2022-06-24'
+lastmod: '2022-06-24'
 summary: Catalonian automatic meteorological stations network
 model_repository: ''
 data_repository: https://www.meteo.cat/
