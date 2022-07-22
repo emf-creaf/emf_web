@@ -8,8 +8,8 @@ tags:
 - Reanalysis
 draft: false
 featured: false
-date: '2022-06-24'
-lastmod: '2022-06-24'
+date: '2022-07-22'
+lastmod: '2022-07-22'
 summary: Downscaled model output temperature and precipitation estimates
 model_repository: ''
 data_repository: https://chelsa-climate.org/downloads/

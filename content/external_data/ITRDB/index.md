@@ -8,8 +8,8 @@ tags:
 - Dendrometry
 draft: false
 featured: false
-date: '2022-06-24'
-lastmod: '2022-06-24'
+date: '2022-07-22'
+lastmod: '2022-07-22'
 summary: The World Data Service for Paleoclimatology manages the International Tree-Ring
   Data Bank (ITRDB), the world's largest public archive of tree ring data.
 model_repository: ''

@@ -8,8 +8,8 @@ tags:
 - HydrographicData
 draft: false
 featured: false
-date: '2022-06-24'
-lastmod: '2022-06-24'
+date: '2022-07-22'
+lastmod: '2022-07-22'
 summary: HydroLAKES is a database aiming to provide the shoreline polygons of all
   global lakes with a surface area of at least 10 ha.
 model_repository: ''
