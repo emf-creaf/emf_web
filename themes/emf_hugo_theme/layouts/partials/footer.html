@@ -1,6 +1,7 @@
 {{/* images resources */}}
 {{ $emf_white_logo := resources.Get "img/emf_white_logo.svg" }}
 {{ $creaf_white_logo := resources.Get "img/creaf_white_logo.svg" }}
+{{ $severo_excelence := resources.Get "img/severo_excelence.svg" }}
 {{ $envelope := resources.Get "img/envelope.svg" }}
 <div class="site-footer d-flex align-items-end mt-5 g-0 p-0 bottom text-light">
     <div class="container">
@@ -37,6 +38,18 @@
                 <p class="mb-0">Campus de Bellaterra (UAB) Edifici C</p>
                 <p>08193 Cerdanyola del Vallès</p>
                 <img src="{{ $envelope.RelPermalink }}" width="15px" height="15px" class="d-inline-block" alt="" loading="lazy"><span class="ms-2"><a class="text-decoration-none text-light" href="mailto:EcosystemModellingFacility@creaf.uab.cat" target="_blank">EcosystemModellingFacility@creaf.uab.cat</a></span>
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-lg-2 g-3 p-5 m-0">
+            {{/* severo ochoa text col */}}
+            <div class="col pt-4 pb-5 pb-lg-0">
+                <p>
+                    This action is part of the <strong>Severo Ochoa "ULandscape"</strong> funded in 2019 by the Agencia Estatal de Investigación of the Spanish Ministry of Science and Innovation to support Research Centres of Excellence.
+                </p>
+            </div>
+            {{/* severo ochoa text col */}}
+            <div class="col pb-5 pb-lg-0">
+                <img src="{{ $severo_excelence.RelPermalink }}" width="150px" class="d-inline-block" alt="" loading="lazy">
             </div>
         </div>
     </div>
