@@ -8,8 +8,8 @@ tags:
 - Projections
 draft: false
 featured: false
-date: '2022-07-22'
-lastmod: '2022-07-22'
+date: '2022-07-27'
+lastmod: '2022-07-27'
 summary: Tool to visualize and download climate change projections for Spain
 model_repository: ''
 data_repository: https://escenarios.adaptecca.es

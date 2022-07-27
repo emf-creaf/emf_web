@@ -8,8 +8,8 @@ tags:
 - RootMap
 draft: false
 featured: false
-date: '2022-07-22'
-lastmod: '2022-07-22'
+date: '2022-07-27'
+lastmod: '2022-07-27'
 summary: A global map of root biomass across the world’s forests
 model_repository: ''
 data_repository: https://doi.org/10.5194/essd-2021-25
