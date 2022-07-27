@@ -130,10 +130,6 @@ plotted directly:
 
 ``` r
 library(sf)
-#> Linking to GEOS 3.11.0, GDAL 3.4.3, PROJ 8.2.0; sf_use_s2() is TRUE
-#> WARNING: different compile-time and runtime versions for GEOS found:
-#> Linked against: 3.11.0-CAPI-1.17.0 compiled against: 3.9.1-CAPI-1.14.2
-#> It is probably a good idea to reinstall sf, and maybe rgeos and rgdal too
 mg_options <- meteogalicia_options(resolution = 'daily', start_date = as.Date('2021-04-25'))
 plot(get_meteo_from('meteogalicia', mg_options))
 #> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 
