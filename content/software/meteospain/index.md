@@ -136,7 +136,6 @@ plotted directly:
 
 ``` {.r}
 library(sf)
-#> Linking to GEOS 3.9.0, GDAL 3.2.1, PROJ 7.2.1
 mg_options <- meteogalicia_options(resolution = 'daily', start_date = as.Date('2021-04-25'))
 plot(get_meteo_from('meteogalicia', mg_options))
 #> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 
