@@ -8,8 +8,8 @@ tags:
 - Landscape
 draft: false
 featured: false
-date: '2022-05-16'
-lastmod: '2022-05-16'
+date: '2022-07-27'
+lastmod: '2022-07-27'
 summary: LandClim is a stochastic process-based model designed to study spatially
   explicit forest dynamics at the landscape scale over long time periods with a fine
   spatial resolution. The tree growth processes are based on a simplified version

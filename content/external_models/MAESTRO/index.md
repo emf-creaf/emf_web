@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2022-05-16'
-lastmod: '2022-05-16'
+date: '2022-07-27'
+lastmod: '2022-07-27'
 summary: MAESTRO/MAESTRA is a 3D model of forest canopy radiation absorption and photosynthesis.
   The forest canopy is represented in the model as an array of tree crowns, whose
   positions and dimensions are specified, but calculations are done for a target crown.

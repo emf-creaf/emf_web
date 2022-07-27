@@ -57,6 +57,7 @@ sfn_plot(ARG_MAZ, formula_env = ~ vpd)
 {{< figure src="README-example_single-1.png" class="single-image" >}}
 
 ``` r
+
 # daily sapflow and environmental metrics
 arg_maz_metrics <- daily_metrics(
   ARG_MAZ, tidy = TRUE, metadata = sfn_metadata_ex
@@ -88,6 +89,7 @@ plots_list[['AUS_CAN_ST2_MIX']]
 {{< figure src="README-example_multi-1.png" class="single-image" >}}
 
 ``` r
+
 # daily sapflow standard metrics
 multi_metrics <- daily_metrics(
   multi_sfn, tidy = TRUE, metadata = sfn_metadata_ex
