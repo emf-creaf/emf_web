@@ -81,7 +81,7 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3694 features and 14 fields
+#> Simple feature collection with 3694 features and 14 fields (with 528 geometries empty)
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
@@ -109,12 +109,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` {.r}
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 154 features and 5 fields
+#> Simple feature collection with 136 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 154 × 6
+#> # A tibble: 136 × 6
 #>    service      station_id station_name             station_province altitude
 #>  * <chr>        <chr>      <chr>                    <chr>                 [m]
 #>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21
@@ -127,7 +127,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10095      Sergude                  A Coruña              231
 #>  9 meteogalicia 10800      Camariñas                A Coruña                5
 #> 10 meteogalicia 19001      Rus                      A Coruña              134
-#> # … with 144 more rows, and 1 more variable: geometry <POINT [°]>
+#> # … with 126 more rows, and 1 more variable: geometry <POINT [°]>
 ```
 
 Returned objects are spatial objects (using the
