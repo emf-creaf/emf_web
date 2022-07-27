@@ -81,10 +81,10 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3692 features and 14 fields
+#> Simple feature collection with 3692 features and 14 fields (with 3310 geometries empty)
 #> Geometry type: POINT
 #> Dimension:     XY
-#> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
+#> Bounding box:  xmin: -9.028601 ymin: 41.97433 xmax: -6.922902 ymax: 43.54071
 #> Geodetic CRS:  WGS 84
 #> # A tibble: 3,692 × 15
 #>    timestamp           service station_id station_name station_province altitude
@@ -109,25 +109,25 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` {.r}
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 154 features and 5 fields
+#> Simple feature collection with 22 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
-#> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
+#> Bounding box:  xmin: -9.028601 ymin: 41.97433 xmax: -6.922902 ymax: 43.54071
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 154 × 6
-#>    service      station_id station_name             station_province altitude
-#>  * <chr>        <chr>      <chr>                    <chr>                 [m]
-#>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21
-#>  2 meteogalicia 14000      Coruña-Dique             A Coruña                5
-#>  3 meteogalicia 10045      Mabegondo                A Coruña               94
-#>  4 meteogalicia 14003      Punta Langosteira        A Coruña                5
-#>  5 meteogalicia 10144      Arzúa                    A Coruña              362
-#>  6 meteogalicia 19005      Guísamo                  A Coruña              175
-#>  7 meteogalicia 19012      Cespón                   A Coruña               59
-#>  8 meteogalicia 10095      Sergude                  A Coruña              231
-#>  9 meteogalicia 10800      Camariñas                A Coruña                5
-#> 10 meteogalicia 19001      Rus                      A Coruña              134
-#> # … with 144 more rows, and 1 more variable: geometry <POINT [°]>
+#> # A tibble: 22 × 6
+#>    service      station_id station_name   station_province altitude
+#>  * <chr>        <chr>      <chr>          <chr>                 [m]
+#>  1 meteogalicia 10045      Mabegondo      A Coruña               94
+#>  2 meteogalicia 10050      CIS Ferrol     A Coruña               37
+#>  3 meteogalicia 10052      Muralla        A Coruña              661
+#>  4 meteogalicia 10089      Melide         A Coruña              477
+#>  5 meteogalicia 10046      Marco da Curra A Coruña              651
+#>  6 meteogalicia 10049      Corrubedo      A Coruña               30
+#>  7 meteogalicia 10087      Fontecada      A Coruña              369
+#>  8 meteogalicia 10088      Fragavella     Lugo                  595
+#>  9 meteogalicia 10062      Ancares        Lugo                 1364
+#> 10 meteogalicia 10053      Campus Lugo    Lugo                  400
+#> # … with 12 more rows, and 1 more variable: geometry <POINT [°]>
 ```
 
 Returned objects are spatial objects (using the
