@@ -8,8 +8,8 @@ tags:
 - Landscape
 draft: false
 featured: false
-date: '2022-07-27'
-lastmod: '2022-07-27'
+date: '2022-08-23'
+lastmod: '2022-08-23'
 summary: The LANDIS-II forest landscape model simulates forests (both trees and shrubs)
   at decadal to multi-century time scales and spatial scales spanning hundreds to
   millions of hectares. The model simulates change as a function of growth and succession
