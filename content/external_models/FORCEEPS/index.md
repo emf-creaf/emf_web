@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2022-08-23'
-lastmod: '2022-08-23'
+date: '2022-09-09'
+lastmod: '2022-09-09'
 summary: ''
 model_repository: http://capsis.cirad.fr/capsis/help_en/forceeps
 data_repository: ''
