@@ -8,8 +8,8 @@ tags:
 - SurfaceStations
 draft: false
 featured: false
-date: '2022-07-27'
-lastmod: '2022-07-27'
+date: '2022-09-15'
+lastmod: '2022-09-15'
 summary: Spanish automatic meteorological stations network
 model_repository: ''
 data_repository: http://www.aemet.es/en/portada
