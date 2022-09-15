@@ -45,4 +45,19 @@
         </div>
     </div>
 </div>
+
+<div class="container-fluid p-5 my-5">
+    <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF SPHERE</h2>
+
+    <h3 class="mx-auto w-50 text-center">Developers</h3>
+    <div class="row mb-3 px-5">
+        {{ range .Site.Data.authors }}
+        {{ if not .core }}
+        {{ if .sphere }}
+            {{ partial "author_info.html" (dict "author" . "type" "about") }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
 {{ end }}

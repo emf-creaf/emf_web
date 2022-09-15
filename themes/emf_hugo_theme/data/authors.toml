@@ -7,6 +7,7 @@
     summary = "Feugiat sed volutpat sollicitudin sed amet, orci orci. Enim massa gravida integer in et. Sit viverra vel feugiat ultrices tincidunt sed lectus non. Lectus hendrerit gravida blandit et. Nisl etiam ac eget lectus pellentesque integer quis egestas."
     image = "img/authors/default.png"
     core = false
+    sphere = false
 
 [vgranda]
     id = "vgranda"
@@ -19,6 +20,7 @@
     image = "img/authors/vgranda.png"
     core = true
     position = "Data Scientist"
+    sphere = false
 
 [mcaceres]
     id = "mcaceres"
@@ -31,6 +33,7 @@
     image = "img/authors/mcaceres.png"
     core = true
     position = "EMF Coordinator"
+    sphere = false
 
 [rmolowny]
     id = "rmolowny"
@@ -43,6 +46,7 @@
     image = "img/authors/rmolowny.png"
     core = true
     position = "Modeller"
+    sphere = false
 
 [acabon]
     id = "acabon"
@@ -53,6 +57,7 @@
     core = false
     position = "Guest"
     image = "img/authors/default.png"
+    sphere = false
 
 [naquilue]
     id = "naquilue"
@@ -61,8 +66,9 @@
     affiliation = "CTFC"
     aff_link = ""
     core = false
-    position = "Collaborator"
+    position = "Developer"
     image = "img/authors/default.png"
+    sphere = false
 
 [lbrotons]
     id = "lbrotons"
@@ -73,6 +79,7 @@
     core = false
     position = "Guest"
     image = "img/authors/default.png"
+    sphere = false
 
 [aameztegui]
     id = "aameztegui"
@@ -81,8 +88,9 @@
     affiliation = "University of Lleida"
     aff_link = ""
     core = false
-    position = "Guest"
-    image = "img/authors/default.png"
+    position = "Developer"
+    image = "img/authors/aameztegui.png"
+    sphere = true
 
 [rpoyatos]
     id = "rpoyatos"
@@ -93,6 +101,7 @@
     core = false
     position = "Guest"
     image = "img/authors/default.png"
+    sphere = false
 
 [vflo]
     id = "vflo"
@@ -103,4 +112,5 @@
     core = false
     position = "Guest"
     image = "img/authors/default.png"
+    sphere = false
 
