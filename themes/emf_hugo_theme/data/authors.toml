@@ -65,6 +65,7 @@
     surname = "Aquilué"
     affiliation = "CTFC"
     aff_link = ""
+    summary = ""
     core = false
     position = "Developer"
     image = "img/authors/default.png"
