@@ -4,7 +4,7 @@
     surname = ""
     affiliation = "Ecosystem Modelling Facility - CREAF"
     aff_link = ""
-    summary = "Feugiat sed volutpat sollicitudin sed amet, orci orci. Enim massa gravida integer in et. Sit viverra vel feugiat ultrices tincidunt sed lectus non. Lectus hendrerit gravida blandit et. Nisl etiam ac eget lectus pellentesque integer quis egestas."
+    summary = ""
     image = "img/authors/default.png"
     core = false
     sphere = false
@@ -87,6 +87,7 @@
     surname = "Ameztegui"
     affiliation = "University of Lleida"
     aff_link = ""
+    summary = "Professor Serra-Húnter at the University of Lleida and Coordinator of the Forest Modelling Group of the Spanish Society of Forest Sciences. My research focuses on understanding how the interactions between human activity and environmental changes determine forest functioning and dynamics."
     core = false
     position = "Developer"
     image = "img/authors/aameztegui.png"
