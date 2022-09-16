@@ -8,8 +8,8 @@ tags:
 - SoilMap
 draft: false
 featured: false
-date: '2022-09-15'
-lastmod: '2022-09-15'
+date: '2022-09-16'
+lastmod: '2022-09-16'
 summary: ''
 model_repository: ''
 data_repository: http://globalchange.bnu.edu.cn/research/data

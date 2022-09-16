@@ -8,8 +8,8 @@ tags:
 - LandEvaporationProduct
 draft: false
 featured: false
-date: '2022-09-15'
-lastmod: '2022-09-15'
+date: '2022-09-16'
+lastmod: '2022-09-16'
 summary: The Global Land Evaporation Amsterdam Model (GLEAM) is a set of algorithms
   that separately estimate the different components of land evaporation
 model_repository: ''
