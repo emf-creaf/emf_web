@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2022-09-14'
-lastmod: '2022-09-14'
+date: '2022-09-15'
+lastmod: '2022-09-15'
 summary: ROTH-C is amodel for the turnover of organic carbon in non-waterlogged topsoils
   that allows for the effects of soil type, temperature, moisture and plant cover
   on the turnover precesses. It uses a monthly time step to calculate total organic
