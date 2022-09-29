@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2022-08-26'
-lastmod: '2022-08-26'
+date: '2022-09-29'
+lastmod: '2022-09-29'
 summary: A set of functions to perform fuzzy clustering of vegetation data and to
   assess ecological community similarity on the basis of structure and composition.
 model_repository: ''
@@ -21,14 +21,13 @@ links:
   url_source: https://github.com/emf-creaf/vegclust
   url_docs: https://emf-creaf.github.io/vegclust/
 ---
-<!-- badges: start -->
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/vegclust)](https://cran.r-project.org/package=vegclust)
+`<!-- badges: start -->`{=html}
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/vegclust)](https://cran.r-project.org/package=vegclust)
 [![](https://cranlogs.r-pkg.org/badges/vegclust)](https://cran.rstudio.com/web/packages/vegclust/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/vegclust/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/vegclust/actions)
-<!-- badges: end -->
+`<!-- badges: end -->`{=html}
 
-Introduction
-------------
+## Introduction
 
 Package `vegclust` is a package designed to assist analyses of
 vegetation structure and composition. It is intended to be useful for
@@ -41,8 +40,7 @@ can be used in other fields. The package provides functions to:
     and composition: De Cáceres et al. (2013)
     (<https://doi.org/10.1111/2041-210X.12116>).
 
-Package installation
---------------------
+## Package installation
 
 Package vegclust can be found at
 [CRAN](https://cran.r-project.org/package=vegclust) package repository.
@@ -62,8 +60,7 @@ devtools::install_github("emf-creaf/vegclust",
                          build_vignettes = TRUE)
 ```
 
-Note about Community Trajectory Analysis
-----------------------------------------
+## Note about Community Trajectory Analysis
 
 Until ver. 2.0, package `vegclust` included functions to conduct
 Community Trajectory Analysis (CTA). Since ver. 2.0 these functions have
@@ -71,8 +68,7 @@ been moved to an independent package `ecotraj` available at
 <https://github.com/emf-creaf/ecotraj/> and also in
 [CRAN](https://cran.r-project.org/package=ecotraj).
 
-References
-----------
+## References
 
 -   De Cáceres, M., Font, X., & Oliva, F. 2010. The management of
     vegetation classifications with fuzzy clustering. Journal of

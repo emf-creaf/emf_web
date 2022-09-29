@@ -24,8 +24,7 @@ links:
   url_source: https://github.com/sapfluxnet/sapfluxnetr
   url_docs: http://sapfluxnet.creaf.cat/sapfluxnetr/
 ---
-sapfluxnetr
-===========
+# sapfluxnetr
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/sapfluxnetr)](https://CRAN.R-project.org/package=sapfluxnetr)
@@ -38,8 +37,7 @@ status](https://github.com/sapfluxnet/sapfluxnetr/workflows/R-CMD-check/badge.sv
 global database of sap flow measurements ([Sapfluxnet
 Project](http://sapfluxnet.creaf.cat))
 
-Examples
---------
+## Examples
 
 You can work with individual sites:
 
@@ -59,7 +57,6 @@ sfn_plot(ARG_MAZ, formula_env = ~ vpd)
 {{< figure src="README-example_single-1.png" class="single-image" >}}
 
 ``` {.r}
-
 # daily sapflow and environmental metrics
 arg_maz_metrics <- daily_metrics(
   ARG_MAZ, tidy = TRUE, metadata = sfn_metadata_ex
@@ -91,7 +88,6 @@ plots_list[['AUS_CAN_ST2_MIX']]
 {{< figure src="README-example_multi-1.png" class="single-image" >}}
 
 ``` {.r}
-
 # daily sapflow standard metrics
 multi_metrics <- daily_metrics(
   multi_sfn, tidy = TRUE, metadata = sfn_metadata_ex
@@ -111,8 +107,7 @@ ggplot(multi_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = si_code)) +
 
 {{< figure src="README-example_multi-2.png" class="single-image" >}}
 
-Installation
-------------
+## Installation
 
 You can install sapfluxnetr from CRAN:
 
@@ -124,8 +119,7 @@ Be advised, `sapfluxnetr` is in active development and can contain
 undiscovered bugs. If you find something not working as expected fill a
 bug at <https://github.com/sapfluxnet/sapfluxnetr/issues>
 
-Overview
---------
+## Overview
 
 Please see
 `vignette('sapfluxnetr-quick-guide', package = 'sapfluxnetr')` for a

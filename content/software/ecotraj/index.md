@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2022-07-27'
-lastmod: '2022-07-27'
+date: '2022-09-29'
+lastmod: '2022-09-29'
 summary: Assists ecologists in the analysis of temporal changes of ecosystems, defined
   as trajectories on a chosen multivariate space, by providing a set of trajectory
   metrics and visual representations.
@@ -22,12 +22,11 @@ links:
   url_source: https://github.com/emf-creaf/ecotraj
   url_docs: https://emf-creaf.github.io/ecotraj/
 ---
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ecotraj)](https://cran.r-project.org/package=ecotraj)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ecotraj)](https://cran.r-project.org/package=ecotraj)
 [![](https://cranlogs.r-pkg.org/badges/ecotraj)](https://cran.rstudio.com/web/packages/ecotraj/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/ecotraj/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/ecotraj/actions)
 
-Introduction
-------------
+## Introduction
 
 Package `ecotraj` is a package providing a framework to assist
 ecologists in the analysis of temporal changes in ecosystems defined on
@@ -40,8 +39,7 @@ publications:
 -   Extension of community trajectory analysis: Sturbois et al. (2021)
     (<https://doi.org/10.1016/j.ecolmodel.2020.109400>).
 
-Package installation
---------------------
+## Package installation
 
 Package `ecotraj` can be found at
 [CRAN](https://cran.r-project.org/package=ecotraj). In addition, the
@@ -61,8 +59,7 @@ devtools::install_github("emf-creaf/ecotraj",
                          build_vignettes = TRUE)
 ```
 
-References
-----------
+## References
 
 -   De Cáceres, M., Coll, L., Legendre, P., Allen, R.B., Wiser, S.K.,
     Fortin, M.J., Condit, R. & Hubbell, S.. (2019). Trajectory analysis

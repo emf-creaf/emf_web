@@ -8,8 +8,8 @@ tags:
 - Global
 draft: false
 featured: false
-date: '2022-09-15'
-lastmod: '2022-09-15'
+date: '2022-09-29'
+lastmod: '2022-09-29'
 summary: Biome-BGC is an ecosystem model that estimates fluxes and storage of energy,
   water, carbon, and nitrogen for the vegetation and soil components of terrestrial
   ecosystems. Processes accounted for are leaf growth, litterfall, sunlight interception,
