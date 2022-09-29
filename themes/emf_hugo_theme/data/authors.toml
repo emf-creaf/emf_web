@@ -69,7 +69,7 @@
     core = false
     position = "Developer"
     image = "img/authors/naquilue.png"
-    sphere = true
+    sphere = false
 
 [lbrotons]
     id = "lbrotons"
@@ -92,7 +92,7 @@
     core = false
     position = "Developer"
     image = "img/authors/aameztegui.png"
-    sphere = true
+    sphere = false
 
 [rpoyatos]
     id = "rpoyatos"
