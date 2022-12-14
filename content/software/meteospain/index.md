@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2022-12-13'
-lastmod: '2022-12-13'
+date: '2022-12-14'
+lastmod: '2022-12-14'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -81,25 +81,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3654 features and 14 fields
+#> Simple feature collection with 3679 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,654 × 15
+#> # A tibble: 3,679 × 15
 #>    timestamp           service station_id station_name station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
-#>  1 2022-12-12 04:00:00 meteog… 10045      Mabegondo    A Coruña               94
-#>  2 2022-12-12 04:00:00 meteog… 10046      Marco da Cu… A Coruña              651
-#>  3 2022-12-12 04:00:00 meteog… 10047      Pedro Murias Lugo                   51
-#>  4 2022-12-12 04:00:00 meteog… 10048      O Invernade… Ourense              1026
-#>  5 2022-12-12 04:00:00 meteog… 10049      Corrubedo    A Coruña               30
-#>  6 2022-12-12 04:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
-#>  7 2022-12-12 04:00:00 meteog… 10052      Muralla      A Coruña              661
-#>  8 2022-12-12 04:00:00 meteog… 10053      Campus Lugo  Lugo                  400
-#>  9 2022-12-12 04:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
-#> 10 2022-12-12 04:00:00 meteog… 10056      Marroxo      Lugo                  645
-#> # … with 3,644 more rows, and 9 more variables: temperature [°C],
+#>  1 2022-12-13 04:00:00 meteog… 10045      Mabegondo    A Coruña               94
+#>  2 2022-12-13 04:00:00 meteog… 10046      Marco da Cu… A Coruña              651
+#>  3 2022-12-13 04:00:00 meteog… 10047      Pedro Murias Lugo                   51
+#>  4 2022-12-13 04:00:00 meteog… 10048      O Invernade… Ourense              1026
+#>  5 2022-12-13 04:00:00 meteog… 10049      Corrubedo    A Coruña               30
+#>  6 2022-12-13 04:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
+#>  7 2022-12-13 04:00:00 meteog… 10052      Muralla      A Coruña              661
+#>  8 2022-12-13 04:00:00 meteog… 10053      Campus Lugo  Lugo                  400
+#>  9 2022-12-13 04:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
+#> 10 2022-12-13 04:00:00 meteog… 10056      Marroxo      Lugo                  645
+#> # … with 3,669 more rows, and 9 more variables: temperature [°C],
 #> #   min_temperature [°C], max_temperature [°C], relative_humidity [%],
 #> #   precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
 #> #   insolation [h], geometry <POINT [°]>
@@ -109,12 +109,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` {.r}
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 154 features and 5 fields
+#> Simple feature collection with 155 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 154 × 6
+#> # A tibble: 155 × 6
 #>    service      station_id station_name             station_province altitude
 #>  * <chr>        <chr>      <chr>                    <chr>                 [m]
 #>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21
@@ -127,7 +127,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10095      Sergude                  A Coruña              231
 #>  9 meteogalicia 10800      Camariñas                A Coruña                5
 #> 10 meteogalicia 19001      Rus                      A Coruña              134
-#> # … with 144 more rows, and 1 more variable: geometry <POINT [°]>
+#> # … with 145 more rows, and 1 more variable: geometry <POINT [°]>
 ```
 
 Returned objects are spatial objects (using the
