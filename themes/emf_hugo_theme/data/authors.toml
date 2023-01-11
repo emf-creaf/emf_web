@@ -48,6 +48,19 @@
     position = "Modeller"
     sphere = false
 
+[atovar]
+    id = "atovar"
+    weight = 4
+    name = "Adriana"
+    surname = "Tovar-Rodríguez"
+    affiliation = "Ecosystem Modelling Facility - CREAF"
+    aff_link = ""
+    summary = "Natural environment engineer with a master in terrestrial ecology. Passionate about forests ecosystems and  concerned about global change. My  goal is to contribute to the understanding of climate change effects on forest functioning to enhance the development of better management practices."
+    image = "img/authors/atovar.png"
+    core = true
+    position = "Technician"
+    sphere = false
+
 [acabon]
     id = "acabon"
     name = "Antoine"
