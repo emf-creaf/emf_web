@@ -1,7 +1,6 @@
 ---
 title: Joint UK Land Environment Simulator (JULES)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -9,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: JULES is a community land surface model that is used both as a standalone
   model and as the land surface component in UK's Met Office Unified Model. JULES
   has a tiled model of sub-grid heterogeneity with separate surface temperatures,

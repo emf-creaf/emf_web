@@ -1,15 +1,14 @@
 ---
 title: DeNitrification-DeComposition (DNDC)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Soil Biogeochemistry Model
 - Local
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: DNDC is a computer simulation model of carbon and nitrogen biogeochemistry
   in agro-ecosystems. The model can be used for predicting crop growth, soil temperature
   and moisture regimes, soil carbon dynamics, nitrogen leaching, and emissions of

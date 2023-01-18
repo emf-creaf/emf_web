@@ -1,15 +1,14 @@
 ---
 title: Organising Carbon and Hydrology In Dynamic Ecosystems (ORCHIDEE)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
 - Global
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: ORCHIDEE is the land surface model of the Institut Pierre Simon Laplace,
   and can be run as a stand alone terrestrial biosphere model in a coupled set-up.
   The model includes processes to quantify terrestrial water, carbon and energy balances.

@@ -1,15 +1,14 @@
 ---
 title: Global Ecosystem Dynamics Investigation
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - ForestMonitoring
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: High resolution laser ranging of Earth’s forests and topography from the
   International Space Station (ISS)
 model_repository: ''

@@ -1,8 +1,7 @@
 ---
 title: FORest management strategies to enhance the MITigation potential of European
   forests (FORMIT-M)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Forest Biogeochemistry Model
@@ -10,8 +9,8 @@ tags:
 - R
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: FORMIT-M is a widely applicable, open-access, simple and flexible, climate-sensitive
   forest management simulator requiring only standard forest inventory data as input.
   It combines a process-based carbon balance approach with a strong inventory-based

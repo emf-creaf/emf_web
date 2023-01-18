@@ -1,15 +1,14 @@
 ---
 title: Xylem Functional Trait Database
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - TraitDatabase
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Observations of xylem functional traits.
 model_repository: ''
 data_repository: https://xylemfunctionaltraits.org/

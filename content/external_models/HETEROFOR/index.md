@@ -1,7 +1,6 @@
 ---
 title: HETEROgeneous FORest (HETEROFOR)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model
@@ -9,8 +8,8 @@ tags:
 - s
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: HETEROFOR is a spatially-explicit and process-based model describing individual
   tree growth based on resource sharing (light, water and nutrients) in uneven-aged
   and mixed stands. HETEROFOR was progressively elaborated through the integration

@@ -1,15 +1,14 @@
 ---
 title: Easyclimate
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Reanalysis
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: High-resolution (1 km) daily climate data (precipitation, minimum and maximum
   temperatures) for Europe from the European climatic database
 model_repository: ''

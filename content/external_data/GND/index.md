@@ -1,15 +1,14 @@
 ---
 title: Global nitrogen deposition
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Deposition
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Global nitrogen deposition (2°×2.5° grid resolution) simulated with GEOS-Chem
   for 1984-1986, 1994-1996, 2004-2006, and 2014-2016
 model_repository: ''

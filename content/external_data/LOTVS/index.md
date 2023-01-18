@@ -1,15 +1,14 @@
 ---
 title: LOng Term Vegetation Sampling (LOTVS)
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - VegetationPlotDatabase
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: The LOTVS (LOng-Term Vegetation Sampling) database is a collection of vegetation
   data using permanent plots worldwide. At present the database includes vegetation
   data from 80 study areas covering grasslands, shrublands and forest understory around

@@ -1,15 +1,14 @@
 ---
 title: HiHydroSoil
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Soil
 - SoilDatabase
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Global Maps of Soil Hydraulic Properties at 250m Resolution
 model_repository: ''
 data_repository: https://www.futurewater.eu/projects/hihydrosoil/

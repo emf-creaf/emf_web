@@ -1,15 +1,14 @@
 ---
 title: North American Breeding Bird Survey
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Biosphere
 - BirdCensus
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: The BBS is a cooperative effort between the U.S. Geological Survey's Patuxent
   Wildlife Research Center and Environment Canada's Canadian Wildlife Service to monitor
   the status and trends of North American bird populations. Following a rigorous protocol,

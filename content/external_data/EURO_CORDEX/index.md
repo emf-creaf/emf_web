@@ -1,15 +1,14 @@
 ---
 title: EURO-CORDEX
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Projections
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: The CORDEX regional climate model (RCM) simulations for the European domain
   (EURO-CORDEX)
 model_repository: ''

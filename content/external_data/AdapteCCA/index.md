@@ -1,15 +1,14 @@
 ---
 title: AdapteCCA climate change scenario visualisation tool
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Projections
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Tool to visualize and download climate change projections for Spain
 model_repository: ''
 data_repository: https://escenarios.adaptecca.es

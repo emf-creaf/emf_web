@@ -1,15 +1,14 @@
 ---
 title: Global Runoff Data Center (GRDC)
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Hydrosphere
 - SurfaceRunoff
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: The GRDC is an international archive of data up to 200 years old, and fosters
   multinational and global long-term hydrological studies. Originally established
   three decades ago, the aim of the GRDC is to help earth scientists analyse global

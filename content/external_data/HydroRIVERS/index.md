@@ -1,15 +1,14 @@
 ---
 title: HydroRIVERS
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Hydrosphere
 - HydrographicData
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: HydroRIVERS is a database aiming to provide the vectorized line network of
   all global rivers that have a catchment area of at least 10 km2 or an average river
   flow of 0.1 cubic meters per second, or both.

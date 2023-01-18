@@ -1,15 +1,14 @@
 ---
 title: Climatologies at high resolution for the earth’s land surface areas (CHELSA)
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Reanalysis
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Downscaled model output temperature and precipitation estimates
 model_repository: ''
 data_repository: https://chelsa-climate.org/downloads/

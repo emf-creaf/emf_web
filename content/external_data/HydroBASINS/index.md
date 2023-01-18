@@ -1,15 +1,14 @@
 ---
 title: HydroBASINS
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Hydrosphere
 - HydrographicData
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: HydroBASINS is a series of polygon layers that depict watershed boundaries
   and sub-basin delineations at a global scale.
 model_repository: ''

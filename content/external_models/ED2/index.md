@@ -1,7 +1,6 @@
 ---
 title: Ecosystem Demography model (ED2)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -9,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: ED2 is an integrated terrestrial biosphere model incorporating hydrology,
   land-surface biophysics, vegetation dynamics, and soil carbon and nitrogen biogeochemistry.
   Like ED, ED2 uses a set of size- and age-structured partial differential equations

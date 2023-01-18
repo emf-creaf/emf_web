@@ -1,15 +1,14 @@
 ---
 title: Community Land Model (CLM-DGVM)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
 - Global
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: The Community Land Model is a collaborative project between scientists. The
   model simulates the physical, chemical and biological processes by which terrestrial
   ecosystems affect and are affected by climate across a variety of spatial and temporal

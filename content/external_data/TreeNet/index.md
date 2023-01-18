@@ -1,15 +1,14 @@
 ---
 title: TreeNet
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - Dendrometry
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Point dendrometers and air and soil microclimate using an automated system
 model_repository: ''
 data_repository: https://treenet.info/

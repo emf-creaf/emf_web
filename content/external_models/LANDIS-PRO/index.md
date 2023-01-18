@@ -1,7 +1,6 @@
 ---
 title: LANDIS-PRO
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Forest Landscape Model
@@ -9,8 +8,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: LANDIS PRO is a raster-based forest landscape model (FLM) that evolved over
   15 years of development and applications of the LANDIS model. Within each raster
   cell, the model records number of trees by species age cohort, and size (e.g., DBH)

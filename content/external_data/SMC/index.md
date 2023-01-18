@@ -1,15 +1,14 @@
 ---
 title: SMC network
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - SurfaceStations
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: Catalonian automatic meteorological stations network
 model_repository: ''
 data_repository: https://www.meteo.cat/

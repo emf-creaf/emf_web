@@ -1,7 +1,6 @@
 ---
 title: Ecosystem Demography model (ED)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -9,8 +8,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-01-18'
+lastmod: '2023-01-18'
 summary: ED is an individual-based model of vegetation dynamics with integrated submodels
   of plant growth, mortality, phenology, disturbance, hydrology and soil biogeochemistry.
   individual plants of different functional types compete mechanistically in ED under
