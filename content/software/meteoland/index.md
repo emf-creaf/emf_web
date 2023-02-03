@@ -11,8 +11,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Functions to estimate weather variables at any position of a landscape
 model_repository: ''
 data_repository: ''
@@ -48,14 +48,14 @@ but the version in this repository may not be the most recent one.
 Latest stable versions can be downloaded and installed from GitHub as
 follows (package `remotes` should be installed first):
 
-``` {.r}
+``` r
 remotes::install_github("emf-creaf/meteoland")
 ```
 
 Alternatively, users can have help to run package functions directly as
 package vignettes, by forcing their inclusion in installation:
 
-``` {.r}
+``` r
 remotes::install_github("emf-creaf/meteoland", 
                         build_opts = c("--no-resave-data", "--no-manual"),
                         build_vignettes = TRUE)

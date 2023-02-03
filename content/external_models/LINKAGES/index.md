@@ -1,6 +1,7 @@
 ---
 title: LINKAGES
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model
@@ -8,8 +9,8 @@ tags:
 - FORTRAN
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: LINKAGES is a forest ecosystem biogeochemistry model that predicts long-term
   structure and dynamics of forest ecosystems as constrained by nitrogen availability,
   climate, and soil moisture. LINKAGES simulates ecosystem carbon and nitrogen storage

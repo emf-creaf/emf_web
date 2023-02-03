@@ -1,14 +1,15 @@
 ---
 title: Community Atmosphere Biosphere Land Exchange (CABLE)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Terrestrial Biogeochemistry Model
 - Global
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: CABLE is a land surface model used to calculate fluxes of momentum, energy,
   water and carbon between the land surface and the atmosphere and to model the major
   biochemical cycles of the land ecosystem. CABLE can be run as a standalone model

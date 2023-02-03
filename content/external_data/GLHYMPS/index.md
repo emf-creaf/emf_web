@@ -1,14 +1,15 @@
 ---
 title: GLobal HYdrogeology MaPS (GLHYMPS) of permeability and porosity
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Geosphere
 - HydroGeologyDatabase
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Global permeability of the unconsolidated and consolidated Earth dataset
 model_repository: ''
 data_repository: https://dataverse.scholarsportal.info/dataset.xhtml

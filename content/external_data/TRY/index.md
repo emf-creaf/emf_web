@@ -1,14 +1,15 @@
 ---
 title: TRY
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation
 - TraitDatabase
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Global database initiative, which has united a wide range of the plant trait
   research community worldwide
 model_repository: ''

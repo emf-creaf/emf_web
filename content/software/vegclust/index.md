@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: A set of functions to perform fuzzy clustering of vegetation data and to
   assess ecological community similarity on the basis of structure and composition.
 model_repository: ''
@@ -47,14 +47,14 @@ Package vegclust can be found at
 In addition, the latest stable `vegclust` R package can be installed
 from GitHub as follows:
 
-``` {.r}
+``` r
 devtools::install_github("emf-creaf/vegclust")
 ```
 
 Additionally, users can have help to run package functions directly as
 package vignettes, by forcing their inclusion in installation:
 
-``` {.r}
+``` r
 devtools::install_github("emf-creaf/vegclust", 
                          build_opts = c("--no-resave-data", "--no-manual"),
                          build_vignettes = TRUE)

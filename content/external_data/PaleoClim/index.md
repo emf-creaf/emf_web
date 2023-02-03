@@ -1,14 +1,15 @@
 ---
 title: PaleoClim
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere
 - HistoricSimulation
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: High-resolution paleoclimate data for use in biological modeling and GIS
 model_repository: ''
 data_repository: http://www.paleoclim.org/

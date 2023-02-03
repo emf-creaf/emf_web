@@ -79,13 +79,13 @@ manual download.
 For accessing CDS we will need the `ecmwfr` and the `keyring` packages.
 If they are not installed, we can install them as usual:
 
-``` {.r}
+``` r
 remotes::install_cran(c('ecmwfr', 'keyring'))
 ```
 
 Now we can load them:
 
-``` {.r}
+``` r
 library(ecmwfr)
 library(keyring)
 ```
@@ -100,7 +100,7 @@ library(keyring)
 To set our UID and API KEy to be able to use CDS Services, we need to
 use the `ecmwfr::wf_set_key()` function:
 
-``` {.r}
+``` r
 wf_set_key(
   user   = "0001",
   key   = "AbCdEfG-0001-HiJkL",
@@ -123,7 +123,7 @@ packages we need, we can start downloading CDS datasets with the
 list, a list of parameters that describe the data and its
 characteristics:
 
-``` {.r}
+``` r
 request <- list(
   format = "netcdf",
   product_type = "monthly_averaged_reanalysis",
@@ -173,7 +173,7 @@ Addin help us to convert between MARS/Python formats to R request list.
 In the case of the CDS, we need to convert from Python.\
 After using the addin, the resulting request is as follows:
 
-``` {.r}
+``` r
 request <- list(
   format = "netcdf",
   product_type = "monthly_averaged_reanalysis",
@@ -191,7 +191,7 @@ request <- list(
 
 Finally, we are ready to download the data:
 
-``` {.r}
+``` r
 nc_file <- wf_request(
   user = "0001",
   request = request,   
@@ -212,7 +212,7 @@ stars::read_stars(nc_file)
     ## d2m [K]   261.03271 276.3091077 279.6762259 279.7562080 282.9740717 294.229248 120000
     ## t2m [K]   266.89014 280.9194435 285.2894811 286.2570392 291.5648850 303.090576 120000
     ## dimension(s):
-    ##      from  to offset delta  refsys point                    values x/y
-    ## x       1 141 -10.05   0.1      NA    NA                      NULL [x]
-    ## y       1  91  44.05  -0.1      NA    NA                      NULL [y]
-    ## time    1  24     NA    NA POSIXct    NA 1991-01-01,...,1992-12-01
+    ##      from  to offset delta  refsys                    values x/y
+    ## x       1 141 -10.05   0.1      NA                      NULL [x]
+    ## y       1  91  44.05  -0.1      NA                      NULL [y]
+    ## time    1  24     NA    NA POSIXct 1991-01-01,...,1992-12-01

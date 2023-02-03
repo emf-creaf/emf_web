@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Functions to assess the strength and statistical significance of the relationship
   between species occurrence/abundance and groups of sites. Also includes functions
   to measure species niche breadth using resource categories.
@@ -47,14 +47,14 @@ Package`indicspecies` can be found at
 latest stable `indicspecies` R package can be installed from GitHub as
 follows:
 
-``` {.r}
+``` r
 remotes::install_github("emf-creaf/indicspecies")
 ```
 
 Additionally, users can have help to run package functions directly as
 package vignettes, by forcing their inclusion in installation:
 
-``` {.r}
+``` r
 remotes::install_github("emf-creaf/indicspecies", 
                         build_opts = c("--no-resave-data", "--no-manual"),
                         build_vignettes = TRUE)

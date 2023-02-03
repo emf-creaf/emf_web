@@ -1,14 +1,15 @@
 ---
 title: Forest Community Ecology and Ecosystem ProcesseS (FORCEEPS)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model
 - Local
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: A forest community model for woody species (Angiosperms and Gymnosperms).
   Inspired by the gap model ForClim, deals with environmental and biotic filtering
   of forest communities and ecosystem processes such as biomass production

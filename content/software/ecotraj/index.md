@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2022-09-29'
-lastmod: '2022-09-29'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Assists ecologists in the analysis of temporal changes of ecosystems, defined
   as trajectories on a chosen multivariate space, by providing a set of trajectory
   metrics and visual representations.
@@ -46,14 +46,14 @@ Package `ecotraj` can be found at
 latest stable `ecotraj` R package can also be installed from GitHub as
 follows:
 
-``` {.r}
+``` r
 devtools::install_github("emf-creaf/ecotraj")
 ```
 
 Additionally, users can have help to run package functions directly as
 package vignettes, by forcing their inclusion in installation:
 
-``` {.r}
+``` r
 devtools::install_github("emf-creaf/ecotraj", 
                          build_opts = c("--no-resave-data", "--no-manual"),
                          build_vignettes = TRUE)

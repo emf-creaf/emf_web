@@ -1,6 +1,7 @@
 ---
 title: Lund–Potsdam–Jena General Ecosystem Simulator (LPJ-GUESS)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -8,8 +9,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: LPJ-GUESS is a process-based dynamic vegetation-terrestrial ecosystem model
   designed for regional or global studies. It can predict structural, compositional
   and functional properties of the native ecosystems of major climate zones of the

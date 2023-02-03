@@ -1,6 +1,7 @@
 ---
 title: '"Inventario Forestal Nacional" (IFN) for Catalonia'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - data

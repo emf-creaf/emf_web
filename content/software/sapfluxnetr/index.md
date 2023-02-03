@@ -41,7 +41,7 @@ Project](http://sapfluxnet.creaf.cat))
 
 You can work with individual sites:
 
-``` {.r}
+``` r
 # load packages
 library(sapfluxnetr)
 library(ggplot2)
@@ -56,7 +56,8 @@ sfn_plot(ARG_MAZ, formula_env = ~ vpd)
 
 {{< figure src="README-example_single-1.png" class="single-image" >}}
 
-``` {.r}
+``` r
+
 # daily sapflow and environmental metrics
 arg_maz_metrics <- daily_metrics(
   ARG_MAZ, tidy = TRUE, metadata = sfn_metadata_ex
@@ -73,7 +74,7 @@ ggplot(arg_maz_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = pl_code)) +
 
 You can work with multiple sites also:
 
-``` {.r}
+``` r
 # ARG_TRE and AUS_CAN_ST2_MIX example sites
 data('ARG_TRE', package = 'sapfluxnetr')
 data('AUS_CAN_ST2_MIX', package = 'sapfluxnetr')
@@ -82,12 +83,13 @@ multi_sfn <- sfn_data_multi(ARG_TRE, ARG_MAZ, AUS_CAN_ST2_MIX)
 # plotting the individual sites. It creates a list of plots
 plots_list <- sfn_plot(multi_sfn, formula_env = ~ vpd)
 plots_list[['AUS_CAN_ST2_MIX']]
-#> Warning: Removed 526066 rows containing missing values (geom_point).
+#> Warning: Removed 526066 rows containing missing values (`geom_point()`).
 ```
 
 {{< figure src="README-example_multi-1.png" class="single-image" >}}
 
-``` {.r}
+``` r
+
 # daily sapflow standard metrics
 multi_metrics <- daily_metrics(
   multi_sfn, tidy = TRUE, metadata = sfn_metadata_ex
@@ -102,7 +104,7 @@ multi_metrics <- daily_metrics(
 # plot daily aggregations
 ggplot(multi_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = si_code)) +
   geom_point(alpha = 0.2)
-#> Warning: Removed 10966 rows containing missing values (geom_point).
+#> Warning: Removed 10966 rows containing missing values (`geom_point()`).
 ```
 
 {{< figure src="README-example_multi-2.png" class="single-image" >}}
@@ -111,7 +113,7 @@ ggplot(multi_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = si_code)) +
 
 You can install sapfluxnetr from CRAN:
 
-``` {.r}
+``` r
 install.packages('sapfluxnetr')
 ```
 

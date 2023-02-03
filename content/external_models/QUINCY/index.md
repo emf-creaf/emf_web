@@ -1,15 +1,16 @@
 ---
 title: Quantifying Interactions between terrestrial Nutrient CYcles and the climate
   system (QUINCY)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
 - Global
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: The QUINCY model is a terrestrial biosphere model tracking the flows of carbon,
   nitrogen and phosphorus, as well as a number of isotopes for a number of pre-defined
   terrestrial ecosystem types at a half-hourly time-step. The objective of QUINCY

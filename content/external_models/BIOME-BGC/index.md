@@ -1,14 +1,15 @@
 ---
 title: BIOME-BioGeoChemistry (BIOME-BGC)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Terrestrial Biogeochemistry Model
 - Global
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Biome-BGC is an ecosystem model that estimates fluxes and storage of energy,
   water, carbon, and nitrogen for the vegetation and soil components of terrestrial
   ecosystems. Processes accounted for are leaf growth, litterfall, sunlight interception,

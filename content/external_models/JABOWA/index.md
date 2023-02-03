@@ -1,14 +1,15 @@
 ---
 title: JAnak-BOtkin-WAllis (JABOWA)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model
 - Local
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: JABOWA is a forest model developed in 1970 by Daniel B. Botkin, and James
   F. Janak and James R. Wallis. Since this, this kind of model is known among ecologists
   as "gap model" . The model simulates the growth of individual trees on small plots,

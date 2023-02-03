@@ -1,14 +1,15 @@
 ---
 title: Fine Root Ecology Database
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation
 - TraitDatabase
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: Observations of belowground plant traits, with a specific focus on fine roots
 model_repository: ''
 data_repository: https://roots.ornl.gov/

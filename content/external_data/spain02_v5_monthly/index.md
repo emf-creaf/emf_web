@@ -1,14 +1,15 @@
 ---
 title: Santander Spain02_v5
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere
 - InterpolatedWeather
 draft: false
 featured: false
-date: '2023-01-18'
-lastmod: '2023-01-18'
+date: '2023-02-03'
+lastmod: '2023-02-03'
 summary: A series of high-resolution monthly precipitation and (maximum and minimum)
   temperature gridded datasets developed for peninsular Spain and the Balearic islands.
 model_repository: ''
