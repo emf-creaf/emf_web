@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2023-02-14'
-lastmod: '2023-02-14'
+date: '2023-02-15'
+lastmod: '2023-02-15'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -81,25 +81,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3702 features and 14 fields
+#> Simple feature collection with 3731 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,702 × 15
+#> # A tibble: 3,731 × 15
 #>    timestamp           service   stati…¹ stati…² stati…³ altit…⁴ tempe…⁵ min_t…⁶
 #>    <dttm>              <chr>     <chr>   <chr>   <chr>       [m]    [°C]    [°C]
-#>  1 2023-02-13 04:00:00 meteogal… 10045   Mabego… A Coru…      94   10.2     9.63
-#>  2 2023-02-13 04:00:00 meteogal… 10047   Pedro … Lugo         51    8.99    8.42
-#>  3 2023-02-13 04:00:00 meteogal… 10048   O Inve… Ourense    1026    3.08    2.85
-#>  4 2023-02-13 04:00:00 meteogal… 10049   Corrub… A Coru…      30   12.2    12.0 
-#>  5 2023-02-13 04:00:00 meteogal… 10050   CIS Fe… A Coru…      37    9.43    9.17
-#>  6 2023-02-13 04:00:00 meteogal… 10052   Muralla A Coru…     661    8.41    8.29
-#>  7 2023-02-13 04:00:00 meteogal… 10053   Campus… Lugo        400    2.14    1.99
-#>  8 2023-02-13 04:00:00 meteogal… 10055   Guitir… Lugo        684    7.39    7.23
-#>  9 2023-02-13 04:00:00 meteogal… 10056   Marroxo Lugo        645    7.32    7.01
-#> 10 2023-02-13 04:00:00 meteogal… 10057   Alto d… Ourense     981    6.7     6.44
-#> # … with 3,692 more rows, 7 more variables: max_temperature [°C],
+#>  1 2023-02-14 04:00:00 meteogal… 10045   Mabego… A Coru…      94    9.49    8.67
+#>  2 2023-02-14 04:00:00 meteogal… 10046   Marco … A Coru…     651    8.06    7.6 
+#>  3 2023-02-14 04:00:00 meteogal… 10047   Pedro … Lugo         51   12.6    11.6 
+#>  4 2023-02-14 04:00:00 meteogal… 10048   O Inve… Ourense    1026    0.59    0.49
+#>  5 2023-02-14 04:00:00 meteogal… 10049   Corrub… A Coru…      30   12.3    12.2 
+#>  6 2023-02-14 04:00:00 meteogal… 10050   CIS Fe… A Coru…      37    8.62    8.2 
+#>  7 2023-02-14 04:00:00 meteogal… 10052   Muralla A Coru…     661    8.98    8.75
+#>  8 2023-02-14 04:00:00 meteogal… 10053   Campus… Lugo        400    2.91    2.48
+#>  9 2023-02-14 04:00:00 meteogal… 10055   Guitir… Lugo        684    8.93    8.69
+#> 10 2023-02-14 04:00:00 meteogal… 10056   Marroxo Lugo        645    8.98    8.75
+#> # … with 3,721 more rows, 7 more variables: max_temperature [°C],
 #> #   relative_humidity [%], precipitation [L/m^2], wind_direction [°],
 #> #   wind_speed [m/s], insolation [h], geometry <POINT [°]>, and abbreviated
 #> #   variable names ¹​station_id, ²​station_name, ³​station_province, ⁴​altitude,
@@ -110,12 +110,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` {.r}
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 156 features and 5 fields
+#> Simple feature collection with 157 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.7383
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 156 × 6
+#> # A tibble: 157 × 6
 #>    service      station_id station_n…¹ stati…² altit…³             geometry
 #>  * <chr>        <chr>      <chr>       <chr>       [m]          <POINT [°]>
 #>  1 meteogalicia 10157      Coruña-Tor… A Coru…      21 (-8.409202 43.38276)
@@ -128,7 +128,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10095      Sergude     A Coru…     231 (-8.461246 42.82283)
 #>  9 meteogalicia 10800      Camariñas   A Coru…       5 (-9.178318 43.12445)
 #> 10 meteogalicia 19001      Rus         A Coru…     134 (-8.685357 43.15616)
-#> # … with 146 more rows, and abbreviated variable names ¹​station_name,
+#> # … with 147 more rows, and abbreviated variable names ¹​station_name,
 #> #   ²​station_province, ³​altitude
 ```
 
