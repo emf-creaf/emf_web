@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2023-02-03'
-lastmod: '2023-02-03'
+date: '2023-02-27'
+lastmod: '2023-02-27'
 summary: A forest community model for woody species (Angiosperms and Gymnosperms).
   Inspired by the gap model ForClim, deals with environmental and biotic filtering
   of forest communities and ecosystem processes such as biomass production

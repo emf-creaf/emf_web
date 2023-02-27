@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2023-02-03'
-lastmod: '2023-02-03'
+date: '2023-02-27'
+lastmod: '2023-02-27'
 summary: FORMIND is an individual-based vegetation model that simulates the growth
   of forests on the hectare scale. It allows to explore forest dynamics and forest
   structure including also processes like gap building. The main processes included

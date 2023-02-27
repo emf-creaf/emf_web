@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2023-02-03'
-lastmod: '2023-02-03'
+date: '2023-02-27'
+lastmod: '2023-02-27'
 summary: CenW is a generic growth and carbon cycling model that  simulates photosynthetic
   carbon gain, water use and the nitrogen cycle through soil organic matter. The photosynthetic
   modelling uses a simple, yet physiologically based, description of photosynthesis
