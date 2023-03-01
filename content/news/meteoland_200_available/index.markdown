@@ -3,7 +3,7 @@ title: "meteoland 2.0.0 is available!"
 authors: ["emf"]
 date: 2023-03-01
 lastmod: 2023-03-01
-draft: true
+draft: false
 
 
 categories: ["news"]
