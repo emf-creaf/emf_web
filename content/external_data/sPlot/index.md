@@ -8,8 +8,8 @@ tags:
 - VegetationPlotDatabase
 draft: false
 featured: false
-date: '2023-02-27'
-lastmod: '2023-02-27'
+date: '2023-03-01'
+lastmod: '2023-03-01'
 summary: sPlot is the largest repository for plant community data in the world, containing
   more than 1 million records with full lists of plant species co-occurring in small
   areas (plots)
