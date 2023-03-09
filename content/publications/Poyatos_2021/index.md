@@ -1,6 +1,6 @@
 ---
 title: "Global transpiration data from sap flow measurements: the SAPFLUXNET database"
-authors: "Poyatos R., Granda V. et al."
+authors: "Poyatos R. et al."
 journal: "Earth System Science Data"
 year: "2021"
 section: "publications"
