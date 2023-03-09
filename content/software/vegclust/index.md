@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2023-03-01'
-lastmod: '2023-03-01'
+date: '2023-03-09'
+lastmod: '2023-03-09'
 summary: A set of functions to perform fuzzy clustering of vegetation data and to
   assess ecological community similarity on the basis of structure and composition.
 model_repository: ''

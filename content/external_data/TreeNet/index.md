@@ -8,8 +8,8 @@ tags:
 - Dendrometry
 draft: false
 featured: false
-date: '2023-03-01'
-lastmod: '2023-03-01'
+date: '2023-03-09'
+lastmod: '2023-03-09'
 summary: Point dendrometers and air and soil microclimate using an automated system
 model_repository: ''
 data_repository: https://treenet.info/
