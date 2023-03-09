@@ -12,7 +12,7 @@
             </div>
         {{ else if eq .Type "publications" }}
             <div class="row row-cols-1 g-3">
-                {{ range (.Paginate .RegularPagesRecursive 30).Pages }}
+                {{ range ((.Paginate .RegularPagesRecursive 30).Pages.ByParam "year").Reverse }}
                 {{ partial "card_publication.html" . }}
                 {{ end }}
             </div>
