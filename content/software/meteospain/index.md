@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2023-03-09'
-lastmod: '2023-03-09'
+date: '2023-03-10'
+lastmod: '2023-03-10'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -77,25 +77,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3756 features and 14 fields
+#> Simple feature collection with 3730 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,756 × 15
-#>    timestamp           service      station_id station_name   stati…¹ altit…² tempe…³ min_t…⁴ max_t…⁵ relat…⁶ preci…⁷ wind_…⁸ wind_…⁹ insol…˟
-#>    <dttm>              <chr>        <chr>      <chr>          <chr>       [m]    [°C]    [°C]    [°C]     [%] [L/m^2]     [°]   [m/s]     [h]
-#>  1 2023-03-08 16:00:00 meteogalicia 10045      Mabegondo      A Coru…      94    16.3    15.8    17.1      88     0.1      NA      NA  0.367 
-#>  2 2023-03-08 16:00:00 meteogalicia 10046      Marco da Curra A Coru…     651    11.7    10.8    12.3      88     0.2      NA      NA  0     
-#>  3 2023-03-08 16:00:00 meteogalicia 10047      Pedro Murias   Lugo         51    19.4    19.3    19.5      62     0        NA      NA  0.850 
-#>  4 2023-03-08 16:00:00 meteogalicia 10048      O Invernadeiro Ourense    1026    10.8    10.8    10.9      91     0        NA      NA  0     
-#>  5 2023-03-08 16:00:00 meteogalicia 10049      Corrubedo      A Coru…      30    14.7    14.6    14.8      89     0        NA      NA  0     
-#>  6 2023-03-08 16:00:00 meteogalicia 10050      CIS Ferrol     A Coru…      37    16.8    16.7    17.0      70     0        NA      NA  0.467 
-#>  7 2023-03-08 16:00:00 meteogalicia 10052      Muralla        A Coru…     661    11.2    11.1    11.2     100     0.3      NA      NA  0     
-#>  8 2023-03-08 16:00:00 meteogalicia 10053      Campus Lugo    Lugo        400    15.5    15.3    15.8      68     0        NA      NA  0.867 
-#>  9 2023-03-08 16:00:00 meteogalicia 10055      Guitiriz-Mira… Lugo        684    12.1    11.8    12.3      86     0        NA      NA  0.15  
-#> 10 2023-03-08 16:00:00 meteogalicia 10056      Marroxo        Lugo        645    13.2    12.9    13.9      90     0        NA      NA  0.0333
-#> # … with 3,746 more rows, 1 more variable: geometry <POINT [°]>, and abbreviated variable names ¹​station_province, ²​altitude, ³​temperature,
+#> # A tibble: 3,730 × 15
+#>    timestamp           service      station_id station_name     station_…¹ altit…² tempe…³ min_t…⁴ max_t…⁵ relat…⁶ preci…⁷ wind_…⁸ wind_…⁹ insol…˟
+#>    <dttm>              <chr>        <chr>      <chr>            <chr>          [m]    [°C]    [°C]    [°C]     [%] [L/m^2]     [°]   [m/s]     [h]
+#>  1 2023-03-09 08:00:00 meteogalicia 10045      Mabegondo        A Coruña        94   14      13.8    14.1       91     0        NA      NA  0.0167
+#>  2 2023-03-09 08:00:00 meteogalicia 10046      Marco da Curra   A Coruña       651    9.55    9.45    9.66      94     0.2      NA      NA  0.0667
+#>  3 2023-03-09 08:00:00 meteogalicia 10047      Pedro Murias     Lugo            51   15.8    15.7    15.9       67     0        NA      NA  0     
+#>  4 2023-03-09 08:00:00 meteogalicia 10048      O Invernadeiro   Ourense       1026    7.48    7.41    7.54      88     0        NA      NA  0.0334
+#>  5 2023-03-09 08:00:00 meteogalicia 10049      Corrubedo        A Coruña        30   13.5    12.3    13.9       88     3.5      NA      NA  0     
+#>  6 2023-03-09 08:00:00 meteogalicia 10050      CIS Ferrol       A Coruña        37   15.4    15.0    15.6       69     0        NA      NA  0     
+#>  7 2023-03-09 08:00:00 meteogalicia 10052      Muralla          A Coruña       661   10.3    10.3    10.3      100     6.6      NA      NA NA     
+#>  8 2023-03-09 08:00:00 meteogalicia 10053      Campus Lugo      Lugo           400   11.2    10.9    11.6       87     0.9      NA      NA  0.0167
+#>  9 2023-03-09 08:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo           684    9.23    8.99    9.58      95     0.6      NA      NA  0.2   
+#> 10 2023-03-09 08:00:00 meteogalicia 10056      Marroxo          Lugo           645   10.2     9.99   10.4       82     0        NA      NA  0.367 
+#> # … with 3,720 more rows, 1 more variable: geometry <POINT [°]>, and abbreviated variable names ¹​station_province, ²​altitude, ³​temperature,
 #> #   ⁴​min_temperature, ⁵​max_temperature, ⁶​relative_humidity, ⁷​precipitation, ⁸​wind_direction, ⁹​wind_speed, ˟​insolation
 ```
 
