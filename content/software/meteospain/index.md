@@ -77,25 +77,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3730 features and 14 fields
+#> Simple feature collection with 3720 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,730 × 15
+#> # A tibble: 3,720 × 15
 #>    timestamp           service      station_id station_name     station_…¹ altit…² tempe…³ min_t…⁴ max_t…⁵ relat…⁶ preci…⁷ wind_…⁸ wind_…⁹ insol…˟
 #>    <dttm>              <chr>        <chr>      <chr>            <chr>          [m]    [°C]    [°C]    [°C]     [%] [L/m^2]     [°]   [m/s]     [h]
-#>  1 2023-03-09 08:00:00 meteogalicia 10045      Mabegondo        A Coruña        94   14      13.8    14.1       91     0        NA      NA  0.0167
-#>  2 2023-03-09 08:00:00 meteogalicia 10046      Marco da Curra   A Coruña       651    9.55    9.45    9.66      94     0.2      NA      NA  0.0667
-#>  3 2023-03-09 08:00:00 meteogalicia 10047      Pedro Murias     Lugo            51   15.8    15.7    15.9       67     0        NA      NA  0     
-#>  4 2023-03-09 08:00:00 meteogalicia 10048      O Invernadeiro   Ourense       1026    7.48    7.41    7.54      88     0        NA      NA  0.0334
-#>  5 2023-03-09 08:00:00 meteogalicia 10049      Corrubedo        A Coruña        30   13.5    12.3    13.9       88     3.5      NA      NA  0     
-#>  6 2023-03-09 08:00:00 meteogalicia 10050      CIS Ferrol       A Coruña        37   15.4    15.0    15.6       69     0        NA      NA  0     
-#>  7 2023-03-09 08:00:00 meteogalicia 10052      Muralla          A Coruña       661   10.3    10.3    10.3      100     6.6      NA      NA NA     
-#>  8 2023-03-09 08:00:00 meteogalicia 10053      Campus Lugo      Lugo           400   11.2    10.9    11.6       87     0.9      NA      NA  0.0167
-#>  9 2023-03-09 08:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo           684    9.23    8.99    9.58      95     0.6      NA      NA  0.2   
-#> 10 2023-03-09 08:00:00 meteogalicia 10056      Marroxo          Lugo           645   10.2     9.99   10.4       82     0        NA      NA  0.367 
-#> # … with 3,720 more rows, 1 more variable: geometry <POINT [°]>, and abbreviated variable names ¹​station_province, ²​altitude, ³​temperature,
+#>  1 2023-03-09 13:00:00 meteogalicia 10045      Mabegondo        A Coruña        94   17.3    16.2    18.0       72       0      NA      NA   0.867
+#>  2 2023-03-09 13:00:00 meteogalicia 10046      Marco da Curra   A Coruña       651   11.1    10.5    12.3       84       0      NA      NA   0.5  
+#>  3 2023-03-09 13:00:00 meteogalicia 10047      Pedro Murias     Lugo            51   16.8    16.2    17.5       69       0      NA      NA   0.7  
+#>  4 2023-03-09 13:00:00 meteogalicia 10048      O Invernadeiro   Ourense       1026    7.88    7.07    8.48      95       0      NA      NA   0.1  
+#>  5 2023-03-09 13:00:00 meteogalicia 10049      Corrubedo        A Coruña        30   15.5    14.4    16.7       84       0      NA      NA   0.700
+#>  6 2023-03-09 13:00:00 meteogalicia 10050      CIS Ferrol       A Coruña        37   16      15.6    16.2       69       0      NA      NA   0.533
+#>  7 2023-03-09 13:00:00 meteogalicia 10052      Muralla          A Coruña       661   10.0     9.76   10.2      100       0      NA      NA   0    
+#>  8 2023-03-09 13:00:00 meteogalicia 10053      Campus Lugo      Lugo           400   14.0    12.5    15.4       70       0      NA      NA   0.617
+#>  9 2023-03-09 13:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo           684   10.5     9.37   11.3       93       0      NA      NA   0.534
+#> 10 2023-03-09 13:00:00 meteogalicia 10056      Marroxo          Lugo           645   10.7    10.1    11.5       97       0      NA      NA   0.35 
+#> # … with 3,710 more rows, 1 more variable: geometry <POINT [°]>, and abbreviated variable names ¹​station_province, ²​altitude, ³​temperature,
 #> #   ⁴​min_temperature, ⁵​max_temperature, ⁶​relative_humidity, ⁷​precipitation, ⁸​wind_direction, ⁹​wind_speed, ˟​insolation
 ```
 
@@ -103,12 +103,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` r
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 158 features and 5 fields
+#> Simple feature collection with 157 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.178318 ymin: 41.8982 xmax: -6.765224 ymax: 43.7383
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 158 × 6
+#> # A tibble: 157 × 6
 #>    service      station_id station_name             station_province altitude             geometry
 #>  * <chr>        <chr>      <chr>                    <chr>                 [m]          <POINT [°]>
 #>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21 (-8.409202 43.38276)
@@ -121,7 +121,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10095      Sergude                  A Coruña              231 (-8.461246 42.82283)
 #>  9 meteogalicia 10800      Camariñas                A Coruña                5 (-9.178318 43.12445)
 #> 10 meteogalicia 19001      Rus                      A Coruña              134 (-8.685357 43.15616)
-#> # … with 148 more rows
+#> # … with 147 more rows
 ```
 
 Returned objects are spatial objects (using the
