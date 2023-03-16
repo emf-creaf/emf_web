@@ -8,8 +8,8 @@ tags:
 - SoilRespirationDatabase
 draft: false
 featured: false
-date: '2023-03-10'
-lastmod: '2023-03-10'
+date: '2023-03-16'
+lastmod: '2023-03-16'
 summary: The Soil Respiration Database (SRDB) is a near-universal compendium of published
   soil respiration (Rs) data.
 model_repository: ''

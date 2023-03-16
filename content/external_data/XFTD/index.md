@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2023-03-10'
-lastmod: '2023-03-10'
+date: '2023-03-16'
+lastmod: '2023-03-16'
 summary: Observations of xylem functional traits.
 model_repository: ''
 data_repository: https://xylemfunctionaltraits.org/
