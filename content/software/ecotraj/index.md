@@ -22,12 +22,11 @@ links:
   url_source: https://github.com/emf-creaf/ecotraj
   url_docs: https://emf-creaf.github.io/ecotraj/
 ---
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ecotraj)](https://cran.r-project.org/package=ecotraj)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ecotraj)](https://cran.r-project.org/package=ecotraj)
 [![](https://cranlogs.r-pkg.org/badges/ecotraj)](https://cran.rstudio.com/web/packages/ecotraj/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/ecotraj/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/ecotraj/actions)
 
-Introduction
-------------
+## Introduction
 
 Package `ecotraj` is a package providing Ecological Trajectory Analysis
 (ETA), a framework to assist ecologists in the analysis of temporal
@@ -47,29 +46,27 @@ ETA is related to the following publications:
 -   Application of ETA for the assessement of ecological status:
     Sturbois et al. (under review).
 
-Package installation
---------------------
+## Package installation
 
 Package `ecotraj` can be found at
 [CRAN](https://cran.r-project.org/package=ecotraj). In addition, the
 latest stable `ecotraj` R package can also be installed from GitHub as
 follows:
 
-``` {.r}
+``` r
 remotes::install_github("emf-creaf/ecotraj")
 ```
 
 Additionally, users can have help to run package functions directly as
 package vignettes, by forcing their inclusion in installation:
 
-``` {.r}
+``` r
 remotes::install_github("emf-creaf/ecotraj", 
                          build_opts = c("--no-resave-data", "--no-manual"),
                          build_vignettes = TRUE)
 ```
 
-References
-----------
+## References
 
 -   De Cáceres, M., Coll, L., Legendre, P., Allen, R.B., Wiser, S.K.,
     Fortin, M.J., Condit, R. & Hubbell, S. (2019). Trajectory analysis
