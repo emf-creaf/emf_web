@@ -9,8 +9,9 @@ draft: false
 categories: ["news"]
 tags: ["news", "software", "r"]
 
-url_source: "https://www.github.com/emf-creaf/meteoland"
-url_code: "https://emf-creaf.github.io/meteoland/"
+links:
+  url_source: "https://www.github.com/emf-creaf/meteoland"
+  url_code: "https://emf-creaf.github.io/meteoland/"
 
 image:
   caption: 'meteoland R package bumped to 2.0.0'

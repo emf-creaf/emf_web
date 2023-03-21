@@ -8,8 +8,9 @@ lastmod: 2022-02-08
 categories: ["news"]
 tags: ["news", "software", "r", "data"]
 
-url_source: "https://www.github.com/emf-creaf/meteospain"
-url_code: "https://emf-creaf.github.io/meteospain/"
+links:
+  url_source: "https://www.github.com/emf-creaf/meteospain"
+  url_docs: "https://emf-creaf.github.io/meteospain/"
   
 image:
   caption: '2020 monthly average temperature in Catalunya stations'
