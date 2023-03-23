@@ -9,8 +9,9 @@ draft: false
 categories: ["news"]
 tags: ["news", "software", "r"]
 
-url_source: "https://www.github.com/emf-creaf/meteospain"
-url_docs: "https://emf-creaf.github.io/meteospain/"
+links:
+  url_source: "https://www.github.com/emf-creaf/meteospain"
+  url_docs: "https://emf-creaf.github.io/meteospain/"
 
 image:
   caption: 'meteospain R package bumped to 0.1.2'
