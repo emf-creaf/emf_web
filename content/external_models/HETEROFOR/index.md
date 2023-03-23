@@ -9,8 +9,8 @@ tags:
 - s
 draft: false
 featured: false
-date: '2023-03-21'
-lastmod: '2023-03-21'
+date: '2023-03-23'
+lastmod: '2023-03-23'
 summary: HETEROFOR is a spatially-explicit and process-based model describing individual
   tree growth based on resource sharing (light, water and nutrients) in uneven-aged
   and mixed stands. HETEROFOR was progressively elaborated through the integration

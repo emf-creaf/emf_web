@@ -8,8 +8,8 @@ tags:
 - BiodiversityDatabase
 draft: false
 featured: false
-date: '2023-03-21'
-lastmod: '2023-03-21'
+date: '2023-03-23'
+lastmod: '2023-03-23'
 summary: Free and open access to biodiversity data
 model_repository: ''
 data_repository: https://www.gbif.org/

@@ -9,8 +9,8 @@ tags:
 - FORTRAN
 draft: false
 featured: false
-date: '2023-03-21'
-lastmod: '2023-03-21'
+date: '2023-03-23'
+lastmod: '2023-03-23'
 summary: 'DAYCENT is a biogeochemical model that simulates fluxes of C and N among
   the atmosphere, vegetation, and soil operating at daily time-steps. Key submodels
   include soil water content and temperature by layer, plant production and allocation

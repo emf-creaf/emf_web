@@ -8,8 +8,8 @@ tags:
 - Phenology
 draft: false
 featured: false
-date: '2023-03-21'
-lastmod: '2023-03-21'
+date: '2023-03-23'
+lastmod: '2023-03-23'
 summary: The PhenoCam Network is a cooperative continental-scale phenological observatory
   that uses imagery from networked digital cameras to track vegetation phenology in
   a diverse range of ecosystems across North America and around the World.

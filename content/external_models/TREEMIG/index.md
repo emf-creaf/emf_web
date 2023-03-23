@@ -8,8 +8,8 @@ tags:
 - Landscape
 draft: false
 featured: false
-date: '2023-03-21'
-lastmod: '2023-03-21'
+date: '2023-03-23'
+lastmod: '2023-03-23'
 summary: TreeMig model, a spatially explicit and linked forest landscape model originally
   based on a forest gap model, which takes additionally into account tree species
   migration. In each cell (sidelength from 25m to 1km) of a rectangular grid, forest
