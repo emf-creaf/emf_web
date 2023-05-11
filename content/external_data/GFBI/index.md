@@ -8,8 +8,8 @@ tags:
 - ForestPlotDatabase
 draft: false
 featured: false
-date: '2023-05-02'
-lastmod: '2023-05-02'
+date: '2023-05-11'
+lastmod: '2023-05-11'
 summary: Global forest inventory data and services
 model_repository: ''
 data_repository: https://gfbinitiative.net/
