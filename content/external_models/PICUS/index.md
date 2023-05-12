@@ -9,8 +9,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2023-03-23'
-lastmod: '2023-03-23'
+date: '2023-05-12'
+lastmod: '2023-05-12'
 summary: The PICUS model family is based on the patch model approach and comprises
   the three model variants,each operating on a different level of physiological detail
 model_repository: https://boku.ac.at/en/wabo/waldbau/research/working-areas/waldoekosystemmodellierung/dynamische-oekosystemmodelle/picus
