@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2023-05-30'
-lastmod: '2023-05-30'
+date: '2023-06-20'
+lastmod: '2023-06-20'
 summary: Functions to assess the strength and statistical significance of the relationship
   between species occurrence/abundance and groups of sites. Also includes functions
   to measure species niche breadth using resource categories.
