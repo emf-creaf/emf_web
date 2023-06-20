@@ -10,6 +10,9 @@
                 {{ range .Resources.ByType "application" }}
                     <p><a href="{{ .Permalink }}" target="_blank", type="{{ .MediaType }}">{{ .Name }}</a></p>
                 {{ end }}
+                {{ range .Resources.Match "*.html" }}
+                    <p><a href="{{ .Permalink }}" target="_blank", type="{{ .MediaType }}">{{ .Name }}</a></p>
+                {{ end }}
 
             </div>
         {{ else }}

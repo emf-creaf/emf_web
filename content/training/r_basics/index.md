@@ -9,7 +9,7 @@ tags:
 - introduction
 - watering talents
 training_info:
-    start_date: "2023-04-2414"
+    start_date: "2023-04-24"
     end_date: "2023-04-27"
     hours: 16
     place: CREAF
