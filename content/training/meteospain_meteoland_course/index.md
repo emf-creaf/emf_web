@@ -3,7 +3,7 @@ type: training
 authors:
 - mcaceres
 - vgranda
-title: Accessing and processing climate data with meteospain and meteoland R pacakges
+title: Accessing and processing climate data with meteospain and meteoland R packages
 tags:
 - R
 - climate data
