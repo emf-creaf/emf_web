@@ -9,8 +9,8 @@ tags:
 - R/C++
 draft: false
 featured: false
-date: '2023-06-20'
-lastmod: '2023-06-20'
+date: '2023-06-21'
+lastmod: '2023-06-21'
 summary: FATE is a spatially and temporally explicit vegetation model. It uses plant
   functional groups (PFG) and integrates important mechanisms driving vegetation dynamics,
   structure and diversity, such as demographic cycle, obviously, but also seeds dispersal,
