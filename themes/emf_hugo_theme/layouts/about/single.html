@@ -46,6 +46,25 @@
     </div>
 </div>
 
+<div class="container-fluid p-5 my-5" id="emf-committee">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF STEERING COMMITTEE</h2>
+            </div>  
+        </div>
+        <div class="row row-cols-md-3 mb-3 px-5">
+        {{ range sort .Site.Data.authors "weight" }}
+        {{ if not .core }}
+        {{ if .committee }}
+            {{ partial "author_info.html" (dict "author" . "type" "about") }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        </div>
+    </div>    
+</div>
+
 {{/* <div class="container-fluid p-5 my-5" id="emf-spheres">
     <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF SPHERE</h2>
     <h3 class="mx-auto w-50 text-center emf-blue fw-bold ls-10">Developers</h3>

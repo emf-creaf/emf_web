@@ -8,6 +8,7 @@
     image = "img/authors/default.png"
     core = false
     sphere = false
+    committee = false
 
 [vgranda]
     id = "vgranda"
@@ -21,6 +22,7 @@
     core = true
     position = "Data Scientist"
     sphere = false
+    committee = false
 
 [mcaceres]
     id = "mcaceres"
@@ -34,6 +36,7 @@
     core = true
     position = "EMF Coordinator"
     sphere = false
+    committee = true
 
 [rmolowny]
     id = "rmolowny"
@@ -47,6 +50,7 @@
     core = true
     position = "Modeller"
     sphere = false
+    committee = false
 
 [atovar]
     id = "atovar"
@@ -60,6 +64,7 @@
     core = true
     position = "Technician"
     sphere = false
+    committee = false
 
 [acabon]
     id = "acabon"
@@ -71,6 +76,7 @@
     position = "Guest"
     image = "img/authors/default.png"
     sphere = false
+    committee = false
 
 [naquilue]
     id = "naquilue"
@@ -83,6 +89,7 @@
     position = "Developer"
     image = "img/authors/naquilue.png"
     sphere = false
+    committee = false
 
 [lbrotons]
     id = "lbrotons"
@@ -91,9 +98,11 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "Guest"
-    image = "img/authors/default.png"
+    position = "CREAF Researcher"
+    image = "img/authors/lbrotons.png"
     sphere = false
+    committee = true
+    weight = 2
 
 [aameztegui]
     id = "aameztegui"
@@ -106,6 +115,7 @@
     position = "Developer"
     image = "img/authors/aameztegui.png"
     sphere = false
+    committee = false
 
 [rpoyatos]
     id = "rpoyatos"
@@ -117,6 +127,7 @@
     position = "Guest"
     image = "img/authors/default.png"
     sphere = false
+    committee = false
 
 [vflo]
     id = "vflo"
@@ -128,4 +139,70 @@
     position = "Guest"
     image = "img/authors/default.png"
     sphere = false
+    committee = false
+
+[landreuhayles]
+    id = "landreuhayles"
+    name = "Laia"
+    surname = "Andreu-Hayles"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "CREAF Researcher"
+    image = "img/authors/landreuhayles.png"
+    sphere = false
+    committee = true
+    weight = 1
+
+[lpesquer]
+    id = "lpesquer"
+    name = "Lluís"
+    surname = "Pesquer"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "CREAF Researcher"
+    image = "img/authors/lpesquer.png"
+    sphere = false
+    committee = true
+    weight = 6
+
+[amarcer]
+    id = "amarcer"
+    name = "Arnald"
+    surname = "Marcer"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "CREAF Researcher"
+    image = "img/authors/amarcer.png"
+    sphere = false
+    committee = true
+    weight = 4
+
+[jmartinezvilalta]
+    id = "jmartinezvilalta"
+    name = "Jordi"
+    surname = "Martínez-Vilalta"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "CREAF Researcher"
+    image = "img/authors/jmartinezvilalta.png"
+    sphere = false
+    committee = true
+    weight = 5
+
+[edoblas]
+    id = "edoblas"
+    name = "Enrique"
+    surname = "Doblas"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "CREAF Chief Transfer Officer"
+    image = "img/authors/edoblas.png"
+    sphere = false
+    committee = true
+    weight = 3
 
