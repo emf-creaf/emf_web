@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2023-07-07'
-lastmod: '2023-07-07'
+date: '2023-08-22'
+lastmod: '2023-08-22'
 summary: Functions to assess the strength and statistical significance of the relationship
   between species occurrence/abundance and groups of sites. Also includes functions
   to measure species niche breadth using resource categories.
@@ -22,11 +22,16 @@ links:
   url_source: https://github.com/emf-creaf/indicspecies
   url_docs: https://emf-creaf.github.io/indicspecies/
 ---
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/indicspecies)](https://cran.r-project.org/package=indicspecies)
+```{=html}
+<!-- badges: start -->
+```
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/indicspecies)](https://cran.r-project.org/package=indicspecies)
 [![](https://cranlogs.r-pkg.org/badges/indicspecies)](https://cran.rstudio.com/web/packages/indicspecies/index.html)
-[![R-CMD-check](https://github.com/emf-creaf/indicspecies/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/indicspecies/actions)
+[![R-CMD-check](https://github.com/emf-creaf/indicspecies/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emf-creaf/indicspecies/actions/workflows/R-CMD-check.yaml)
+`<!-- badges: end -->`{=html}
 
-## Introduction
+Introduction
+------------
 
 Package `indicspecies` provides functions to:
 
@@ -40,27 +45,29 @@ Package `indicspecies` provides functions to:
 -   Measure species niche breadth using resource categories: De Cáceres
     et al. (2011) (<https://doi.org/10.1111/J.1600-0706.2011.19679.x>).
 
-## Package installation
+Package installation
+--------------------
 
 Package`indicspecies` can be found at
 [CRAN](https://cran.r-project.org/) package repository. In addition, the
 latest stable `indicspecies` R package can be installed from GitHub as
 follows:
 
-``` r
+``` {.r}
 remotes::install_github("emf-creaf/indicspecies")
 ```
 
 Additionally, users can have help to run package functions directly as
 package vignettes, by forcing their inclusion in installation:
 
-``` r
+``` {.r}
 remotes::install_github("emf-creaf/indicspecies", 
                         build_opts = c("--no-resave-data", "--no-manual"),
                         build_vignettes = TRUE)
 ```
 
-## Usage
+Usage
+-----
 
 Use `strassoc()` for assessing strength of associations and
 `signassoc()` to assess the statistical significance of the associations
@@ -68,7 +75,15 @@ Use `strassoc()` for assessing strength of associations and
 `multipatt()` (De Cáceres et al. 2010) and `indicators()` (De Cáceres et
 al. 2012).
 
-## References
+Maintenance
+-----------
+
+Although not in active development, this R package is maintained by the
+[*Ecosystem Modelling Facility*](https://emf.creaf.cat) unit at CREAF
+(in Spain)
+
+References
+----------
 
 -   De Cáceres, M., & Legendre, P. (2009). Associations between species
     and groups of sites: indices and statistical inference. Ecology,
