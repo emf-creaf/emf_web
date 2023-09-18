@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2023-07-07'
-lastmod: '2023-07-07'
+date: '2023-09-18'
+lastmod: '2023-09-18'
 summary: BILJOU is a forest water balance model that simulates water flows (transpiration,
   interception, soil evaporation and drainage) in a forest ecosystem at daily time
   steps.

@@ -10,8 +10,8 @@ tags:
 - R
 draft: false
 featured: false
-date: '2023-07-07'
-lastmod: '2023-07-07'
+date: '2023-09-18'
+lastmod: '2023-09-18'
 summary: FORMIT-M is a widely applicable, open-access, simple and flexible, climate-sensitive
   forest management simulator requiring only standard forest inventory data as input.
   It combines a process-based carbon balance approach with a strong inventory-based

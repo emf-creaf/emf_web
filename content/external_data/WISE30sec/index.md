@@ -8,8 +8,8 @@ tags:
 - SoilMap
 draft: false
 featured: false
-date: '2023-07-07'
-lastmod: '2023-07-07'
+date: '2023-09-18'
+lastmod: '2023-09-18'
 summary: This harmonized dataset of derived soil properties for the world (WISE30sec)
   is comprised of a soil-geographical and a soil attribute component.
 model_repository: ''
