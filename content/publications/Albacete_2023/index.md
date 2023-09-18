@@ -1,6 +1,6 @@
 ---
 title: "Bees exposed to climate change are more sensitive to pesticides"
-authors: "ALbacete S. et al."
+authors: "Albacete S. et al."
 journal: "Global Change Biology"
 year: "2023"
 section: "publications"
