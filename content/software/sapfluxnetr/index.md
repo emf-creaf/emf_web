@@ -45,6 +45,7 @@ You can work with individual sites:
 # load packages
 library(sapfluxnetr)
 library(ggplot2)
+#> Need help? Try Stackoverflow: https://stackoverflow.com/tags/ggplot2
 
 # ARG_MAZ example site data
 data('ARG_MAZ', package = 'sapfluxnetr')
