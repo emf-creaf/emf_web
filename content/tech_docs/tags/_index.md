@@ -1,4 +1,4 @@
 ---
 type: resource_tags
-title: Workflows tags
+title: Tech Docs tags
 ---
