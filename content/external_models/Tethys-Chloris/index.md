@@ -8,8 +8,8 @@ tags:
 - Landscape
 draft: false
 featured: false
-date: '2023-09-18'
-lastmod: '2023-09-18'
+date: '2023-10-10'
+lastmod: '2023-10-10'
 summary: Tethys-Chloris is a physical-based mechanistic tool developed to account
   for the coupled interactions of energy-water-vegetation in a variety of environments
   and climates where water is the key component. Energy and mass exchanges in the

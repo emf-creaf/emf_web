@@ -9,8 +9,8 @@ tags:
 - Global
 draft: false
 featured: false
-date: '2023-09-18'
-lastmod: '2023-09-18'
+date: '2023-10-10'
+lastmod: '2023-10-10'
 summary: The QUINCY model is a terrestrial biosphere model tracking the flows of carbon,
   nitrogen and phosphorus, as well as a number of isotopes for a number of pre-defined
   terrestrial ecosystem types at a half-hourly time-step. The objective of QUINCY
