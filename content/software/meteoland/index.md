@@ -11,8 +11,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2023-10-10'
-lastmod: '2023-10-10'
+date: '2023-10-11'
+lastmod: '2023-10-11'
 summary: Functions to estimate weather variables at any position of a landscape
 model_repository: ''
 data_repository: ''
@@ -57,13 +57,13 @@ With the aim to assist research of climatic impacts on forests, the R
 package `meteoland` provides utilities to estimate daily weather
 variables at any position over complex terrains:
 
--   Spatial interpolation of daily weather records from meteorological
-    stations.
--   Statistical correction of meteorological data series (e.g. from
-    climate models). Note that this functionality is deprecated starting
-    in version 2.0.0.
--   Multisite and multivariate stochastic weather generation. Note that
-    this functionality is deprecated starting in version 2.0.0.
+- Spatial interpolation of daily weather records from meteorological
+  stations.
+- Statistical correction of meteorological data series (e.g. from
+  climate models). Note that this functionality is deprecated starting
+  in version 2.0.0.
+- Multisite and multivariate stochastic weather generation. Note that
+  this functionality is deprecated starting in version 2.0.0.
 
 A more detailed introduction to the package functionality can be found
 in De Cáceres et al. (2018).
@@ -109,7 +109,7 @@ Modelling Facility*](https://emf.creaf.cat) at CREAF (Catalonia, Spain).
 
 ## References
 
--   De Caceres M, Martin-StPaul N, Turco M, Cabon A, Granda V (2018)
-    Estimating daily meteorological data and downscaling climate models
-    over landscapes. Environmental Modelling and Software 108: 186-196.
-    (<doi:10.1016/j.envsoft.2018.08.003>).
+- De Caceres M, Martin-StPaul N, Turco M, Cabon A, Granda V (2018)
+  Estimating daily meteorological data and downscaling climate models
+  over landscapes. Environmental Modelling and Software 108: 186-196.
+  (<doi:10.1016/j.envsoft.2018.08.003>).

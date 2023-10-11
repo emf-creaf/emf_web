@@ -54,7 +54,7 @@ data('sfn_metadata_ex', package = 'sapfluxnetr')
 sfn_plot(ARG_MAZ, formula_env = ~ vpd)
 ```
 
-{{< figure src="README-example_single-1.png" class="single-image" >}}
+{{< figure src="man" class="single-image" >}}
 
 ``` r
 
@@ -70,7 +70,7 @@ ggplot(arg_maz_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = pl_code)) +
   geom_point()
 ```
 
-{{< figure src="README-example_single-2.png" class="single-image" >}}
+{{< figure src="man" class="single-image" >}}
 
 You can work with multiple sites also:
 
@@ -86,7 +86,7 @@ plots_list[['AUS_CAN_ST2_MIX']]
 #> Warning: Removed 526066 rows containing missing values (`geom_point()`).
 ```
 
-{{< figure src="README-example_multi-1.png" class="single-image" >}}
+{{< figure src="man" class="single-image" >}}
 
 ``` r
 
@@ -107,7 +107,7 @@ ggplot(multi_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = si_code)) +
 #> Warning: Removed 10966 rows containing missing values (`geom_point()`).
 ```
 
-{{< figure src="README-example_multi-2.png" class="single-image" >}}
+{{< figure src="man" class="single-image" >}}
 
 ## Installation
 

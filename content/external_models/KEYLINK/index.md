@@ -9,8 +9,8 @@ tags:
 - PYTHON
 draft: false
 featured: false
-date: '2023-10-10'
-lastmod: '2023-10-10'
+date: '2023-10-11'
+lastmod: '2023-10-11'
 summary: KEYLINK is a soil model integrating new knowledge on soil structure and its
   importance for soil organic matter (SOM) stabilization and hydrology, with the existing
   concepts on SOM pools, and elements from food web models, i.e. those from direct

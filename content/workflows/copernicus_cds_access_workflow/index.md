@@ -46,7 +46,7 @@ later.
 
 For this tutorial, our credentials will be:
 
-`UID: 0001`\
+`UID: 0001`  
 `API Key: AbCdEfG-0001-HiJkL`
 
 Make sure you change the UID and API Key values to the ones linked to
@@ -57,11 +57,11 @@ your account.
 To see the available CDS datasets, we can navigate to the Datasets
 section
 (<https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset>). Here
-we can filter by type, name... which makes easy to find the desired
+we can filter by type, name… which makes easy to find the desired
 dataset.
 
-For this tutorial we are going to use the "ERA5-Land monthly averaged
-data from 1981 to present" dataset, to obtain the climatic variables for
+For this tutorial we are going to use the “ERA5-Land monthly averaged
+data from 1981 to present” dataset, to obtain the climatic variables for
 the Iberian peninsula.
 
 ### Licenses agreement
@@ -69,7 +69,7 @@ the Iberian peninsula.
 Each dataset present in the Copernicus CDS has a license we need to
 agree with in order to be able to download the data. This has to be done
 **once** in the CDS web after triggering a manual download. Once we have
-done this, we don't need to repeat this step for datasets with the same
+done this, we don’t need to repeat this step for datasets with the same
 kind of license, but if we want to download another dataset with a
 different license we will have to accept that license as weel in a
 manual download.
@@ -93,8 +93,8 @@ library(keyring)
 ## Setting UID and API Key
 
 > Both, UID and API Key, are very sensible and personal information, and
-> shouldn't be included in any script we share with others or make
-> public in git repositories or similar. The same way, they shouldn't be
+> shouldn’t be included in any script we share with others or make
+> public in git repositories or similar. The same way, they shouldn’t be
 > stored as plain text files for security reasons.
 
 To set our UID and API KEy to be able to use CDS Services, we need to
@@ -137,21 +137,21 @@ request <- list(
 )
 ```
 
--   `format`: The desired output format, it depends on the formats
-    available in the datasets, some only offer GRIB (zip files), whereas
-    others offer also NetCDF files. Choose accordingly to the available
-    formats.
--   `variable`: Character vector with the desired variable names or
-    `all` for accesing all variables.
--   `month`, `year` and `time`: Character vectors with the desired
-    months, year and times (hours) to download.
--   `area`: Numeric vector with the bbox of the desired area, in the
-    form of `c(max_lat, min_long, min_lat, max_lat)`.
--   `target`: Output file name
--   `dataset_short_name`: Dataset short name as stated in the CDS
-    product web page.
--   `product_type`: Some datasets have more than one product type,
-    choose the one desired.
+- `format`: The desired output format, it depends on the formats
+  available in the datasets, some only offer GRIB (zip files), whereas
+  others offer also NetCDF files. Choose accordingly to the available
+  formats.
+- `variable`: Character vector with the desired variable names or `all`
+  for accesing all variables.
+- `month`, `year` and `time`: Character vectors with the desired months,
+  year and times (hours) to download.
+- `area`: Numeric vector with the bbox of the desired area, in the form
+  of `c(max_lat, min_long, min_lat, max_lat)`.
+- `target`: Output file name
+- `dataset_short_name`: Dataset short name as stated in the CDS product
+  web page.
+- `product_type`: Some datasets have more than one product type, choose
+  the one desired.
 
 > Take into account that parameters of the request can change depending
 > on the dataset. It is always advisable to explore the data download
@@ -160,7 +160,7 @@ request <- list(
 
 ### Getting help with the request
 
-Sometimes, especially the first times we are using the CDS API, we don't
+Sometimes, especially the first times we are using the CDS API, we don’t
 know exactly how to write the request options. `ecmwfr` package offers
 an *addin* in RStudio that converts the API request in the CDS product
 webpage to the correct format:
@@ -170,7 +170,7 @@ webpage to the correct format:
 {{< figure src="ecmwfr_addin.png" class="single-image" >}}
 
 Addin help us to convert between MARS/Python formats to R request list.
-In the case of the CDS, we need to convert from Python.\
+In the case of the CDS, we need to convert from Python.  
 After using the addin, the resulting request is as follows:
 
 ``` r
