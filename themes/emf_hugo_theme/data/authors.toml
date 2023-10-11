@@ -206,3 +206,62 @@
     committee = true
     weight = 3
 
+[jvroces]
+    id = "jvroces"
+    name = "José Valentín"
+    surname = "Roces"
+    affiliation = "Universidad de Oviedo"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
+[jvayreda]
+    id = "jvayreda"
+    name = "Jordi"
+    surname = "Vayreda"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
+[mbanque]
+    id = "mbanque"
+    name = "Mireia"
+    surname = "Banqué"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
+[fdadamo]
+    id = "fdadamo"
+    name = "Francesco"
+    surname = "D'Adamo"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
+[jmespelta]
+    id = "jmespelta"
+    name = "Josep Maria"
+    surname = "Espelta"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
