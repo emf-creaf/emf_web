@@ -22,12 +22,10 @@ links:
   url_source: https://github.com/emf-creaf/indicspecies
   url_docs: https://emf-creaf.github.io/indicspecies/
 ---
-<!-- badges: start -->
 
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/indicspecies)](https://cran.r-project.org/package=indicspecies)
 [![](https://cranlogs.r-pkg.org/badges/indicspecies)](https://cran.rstudio.com/web/packages/indicspecies/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/indicspecies/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emf-creaf/indicspecies/actions/workflows/R-CMD-check.yaml)
-<!-- badges: end -->
 
 ## Introduction
 

@@ -81,6 +81,13 @@
     header_partial = "header_single_news.html"
     content_partial = "content_single_resource.html"
 
+[projects]
+    id = 'projects'
+    navbar_style = "background-image: linear-gradient(to right, #EDF4F5 , #F2F5F3 , #F6F6F1);"
+    header_id = "news_header"
+    header_partial = "header_single_news.html"
+    content_partial = "content_single_resource.html"
+
 [about]
     id = 'about'
     navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"

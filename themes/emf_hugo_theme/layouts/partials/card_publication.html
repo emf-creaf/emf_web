@@ -2,18 +2,36 @@
 {{ $authors := .Params.authors }}
 {{ $journal := .Params.journal }}
 {{ $year := .Params.year }}
+{{ $year_end := .Params.year_end }}
+{{ $description := .Params.description}}
+{{ $ips := .Params.ips }}
 {{ $url := .RelPermalink}}
 {{ $section := .Section}}
 {{ $links := .Params.links }}
 
 <div class="row pb-5">
-    <div class="emf-card-vertical color-{{ $section }} w-75 mx-auto">
+    <div class="emf-card-vertical color-{{ $section }} w-75 mx-auto">        
+        {{ if eq $section "publications"}}
         <p>
             <span class='atc fs-5 text-uppercase fw-light'>{{ $title }}.</span>
             <span class='atc fs-6 fw-bold'>{{ $authors }} </span>
             <span class='atc fs-6 fw-bold'>({{ $year }})</span>
             <span class='atc fs-6 text-capitalize fst-italic'>{{ $journal }}</span>
         </p>
+        {{ else if eq $section "projects" }}
+        <p>
+            <span class='atc fs-4 text-uppercase fw-light'>{{ $title }}</span>
+        </p>
+        <p>
+            <span class='atc fs-5 fw-bold'>{{ $ips }} (PI)</span>
+        </p>
+        <p>
+            <span class='atc fs-6 fw-bold'>({{ $year }}-{{ $year_end }})</span>
+        </p>
+        <p>
+            <span class='atc fs-5'>{{ $description }}</span>
+        </p>
+        {{ end }}
 
         {{ partial "buttons_links.html" . }}
 

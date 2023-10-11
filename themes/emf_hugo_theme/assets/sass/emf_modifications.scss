@@ -8,6 +8,7 @@ $tech_docs: #5AE2DA;
 $software: #ED51C1;
 $training: #99D392;
 $publications: #E9E165;
+$projects: #E9E165;
 $term: #13ABCD;
 $emf-blue: #13ABCD;
 
@@ -197,6 +198,10 @@ a > .news-image {
     background-color: $publications;
 }
 
+.color-projects {
+    background-color: $publications;
+}
+
 .color-tag {
     background-color: $term;
 }
@@ -306,6 +311,10 @@ a > .news-image {
 
 .emf-card-vertical.color-publications {
     border-left: 15px solid $publications;
+}
+
+.emf-card-vertical.color-projects {
+    border-left: 15px solid $projects;
 }
 
 .card-term {

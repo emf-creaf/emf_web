@@ -1,0 +1,20 @@
+{{ $type := .Type }}
+{{ $section := .Section}}
+{{ $creaf_name := $type }}
+{{ $creaf_url := (.GetPage $creaf_name).RelPermalink }}
+{{ $external_name := printf "projects" }}
+{{ $external_url := (.GetPage $external_name).RelPermalink }}
+
+<div class="d-md-flex pb-4 flex-wrap">
+    <a class="btn btn-biblio btn-external px-4 me-1 mb-1 fw-bold" href="{{ $creaf_url }}" role="button">Publications</a>
+    <a class="btn btn-biblio btn-external px-4 me-1 mb-1 fw-bold" href="{{ $external_url }}" role="button">Projects</a>
+</div>
+{{ if eq $section $external_name }}
+<p class="text-muted text-center mb-4 pb-4">
+    A list of research and transfer projects the EMF is or has been involved on:
+</p>
+{{ else }}
+<p class="text-muted text-center mb-4 pb-4">
+    A list of publications members of the EMF authored or collaborated on:
+</p>
+{{ end }}

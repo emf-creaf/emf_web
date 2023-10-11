@@ -2,6 +2,8 @@
 {{ $button_biblio := 0 }}
 {{ if eq .Section "publications" }}
     {{ $button_biblio = 1 }}
+{{ else if eq .Section "projects" }}
+    {{ $button_biblio = 1 }}
 {{ end }}
 
 {{ if $links }}

@@ -30,7 +30,7 @@ theme = "emf_hugo_theme"
         url = "/tech_docs/"
         weight = 6
     [[menu.main]]
-        name = "Publications"
+        name = "Publications & Projects"
         url = "/publications/"
         weight = 7
     [[menu.main]]

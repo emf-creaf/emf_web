@@ -11,6 +11,7 @@
                 {{ end }}
             </div>
         {{ else if eq .Type "publications" }}
+            {{ partial "buttons_pubs.html" . }}
             <div class="row row-cols-1 g-3">
                 {{ range ((.Paginate .RegularPagesRecursive 30).Pages.ByParam "year").Reverse }}
                 {{ partial "card_publication.html" . }}
