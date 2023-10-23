@@ -9,8 +9,8 @@ tags:
 - FORTRAN/JAVA
 draft: false
 featured: false
-date: '2023-10-11'
-lastmod: '2023-10-11'
+date: '2023-10-23'
+lastmod: '2023-10-23'
 summary: 'CASTANEA is a physiological multilayer process-based model designed to predict
   the carbon balance of an even-aged, monospecific deciduous forest stand. The main
   output variables are: (1) leaf area index (LAI), standing biomass, soil carbon content

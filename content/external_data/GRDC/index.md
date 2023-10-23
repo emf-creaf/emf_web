@@ -8,8 +8,8 @@ tags:
 - SurfaceRunoff
 draft: false
 featured: false
-date: '2023-10-11'
-lastmod: '2023-10-11'
+date: '2023-10-23'
+lastmod: '2023-10-23'
 summary: The GRDC is an international archive of data up to 200 years old, and fosters
   multinational and global long-term hydrological studies. Originally established
   three decades ago, the aim of the GRDC is to help earth scientists analyse global
