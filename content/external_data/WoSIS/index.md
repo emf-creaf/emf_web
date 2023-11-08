@@ -8,8 +8,8 @@ tags:
 - SoilProfileDatabase
 draft: false
 featured: false
-date: '2023-10-23'
-lastmod: '2023-10-23'
+date: '2023-11-08'
+lastmod: '2023-11-08'
 summary: The World Soil Information Service (WoSIS) aims to serve the user with a
   selection of standardised/ harmonised soil profile data.  
 model_repository: ''
