@@ -99,3 +99,10 @@
     id = "not_found"
     navbar_style = "background-image: linear-gradient(to right, #414F4F , #4C524B , #555544);"
     header_id = "tags_header"
+
+[test]
+    id = "tech_docs"
+    navbar_style = "background-image: linear-gradient(to right, #ECF4F4 , #F2F5F4 , #F3F6F5);"
+    header_id = "tech_docs_header"
+    header_partial = "header_single_resource.html"
+    content_partial = "content_single_resource.html"
