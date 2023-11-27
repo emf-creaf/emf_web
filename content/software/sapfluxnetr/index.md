@@ -45,7 +45,6 @@ You can work with individual sites:
 # load packages
 library(sapfluxnetr)
 library(ggplot2)
-#> Use suppressPackageStartupMessages() to eliminate package startup messages
 
 # ARG_MAZ example site data
 data('ARG_MAZ', package = 'sapfluxnetr')

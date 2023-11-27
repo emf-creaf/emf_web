@@ -77,12 +77,12 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3762 features and 14 fields
+#> Simple feature collection with 3764 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,762 × 15
+#> # A tibble: 3,764 × 15
 #>    timestamp           service      station_id station_name   station_province altitude temperature min_temperature max_temperature relative_humidity precipitation
 #>    <dttm>              <chr>        <chr>      <chr>          <chr>                 [m]        [°C]            [°C]            [°C]               [%]       [L/m^2]
 #>  1 2023-11-26 18:00:00 meteogalicia 10045      Mabegondo      A Coruña               94       11.3            11              11.7                 97             0
@@ -95,7 +95,7 @@ get_meteo_from('meteogalicia', mg_options)
 #>  8 2023-11-26 18:00:00 meteogalicia 10053      Campus Lugo    Lugo                  400        8.81            8.66            8.93               100             0
 #>  9 2023-11-26 18:00:00 meteogalicia 10055      Guitiriz-Mira… Lugo                  684        7.99            7.93            8.09               100             0
 #> 10 2023-11-26 18:00:00 meteogalicia 10056      Marroxo        Lugo                  645        7.32            7.24            7.36                96             0
-#> # ℹ 3,752 more rows
+#> # ℹ 3,754 more rows
 #> # ℹ 4 more variables: wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
 
@@ -162,12 +162,12 @@ Once a key has been obtained, we can get the meteo:
 get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> ℹ © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 18418 features and 14 fields
+#> Simple feature collection with 19258 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 18,418 × 15
+#> # A tibble: 19,258 × 15
 #>    timestamp           service station_id station_name        station_province altitude temperature min_temperature max_temperature relative_humidity precipitation
 #>    <dttm>              <chr>   <chr>      <chr>               <chr>                 [m]        [°C]            [°C]            [°C]               [%]       [L/m^2]
 #>  1 2023-11-26 18:00:00 aemet   0009X      ALFORJA             <NA>                  406         8.9             8.2             8.9                64             0
@@ -180,6 +180,6 @@ get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #>  8 2023-11-26 18:00:00 aemet   0076       BARCELONA/AEROPUER… <NA>                    4        11.6            11.5            13.1                81             0
 #>  9 2023-11-26 18:00:00 aemet   0092X      BERGA  INSTITUTO    <NA>                  682         7.4             7.4             8.6                74             0
 #> 10 2023-11-26 18:00:00 aemet   0106X      BALSARENY           <NA>                  361        10.5            10.5            11.5                62             0
-#> # ℹ 18,408 more rows
+#> # ℹ 19,248 more rows
 #> # ℹ 4 more variables: wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
