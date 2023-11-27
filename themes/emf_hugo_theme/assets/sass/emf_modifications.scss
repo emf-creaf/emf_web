@@ -502,6 +502,18 @@ figure.single-image {
     width: 100%;
 }
 
+/* 404 page image */
+figure.notfound-image {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.notfound-image img {
+    object-fit: scale-down;
+    width: 100%;
+}
+
 /*
 Pagination
 */
