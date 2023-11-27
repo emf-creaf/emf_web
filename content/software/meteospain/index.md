@@ -77,25 +77,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3768 features and 14 fields
+#> Simple feature collection with 3767 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,768 × 15
+#> # A tibble: 3,767 × 15
 #>    timestamp           service      station_id station_name   station_province altitude temperature min_temperature max_temperature relative_humidity precipitation
 #>    <dttm>              <chr>        <chr>      <chr>          <chr>                 [m]        [°C]            [°C]            [°C]               [%]       [L/m^2]
-#>  1 2023-11-26 16:00:00 meteogalicia 10045      Mabegondo      A Coruña               94       14.0            13.8            14.2                 84             0
-#>  2 2023-11-26 16:00:00 meteogalicia 10046      Marco da Curra A Coruña              651        8.49            8.43            8.53                99             0
-#>  3 2023-11-26 16:00:00 meteogalicia 10047      Pedro Murias   Lugo                   51       13.9            13.8            14.1                 85             0
-#>  4 2023-11-26 16:00:00 meteogalicia 10048      O Invernadeiro Ourense              1026       12.2            11.7            12.6                 58             0
-#>  5 2023-11-26 16:00:00 meteogalicia 10049      Corrubedo      A Coruña               30       14.0            13.6            14.3                 78             0
-#>  6 2023-11-26 16:00:00 meteogalicia 10050      CIS Ferrol     A Coruña               37       14.3            14.1            14.7                 76             0
-#>  7 2023-11-26 16:00:00 meteogalicia 10052      Muralla        A Coruña              661        9.38            9.29            9.45                96             0
-#>  8 2023-11-26 16:00:00 meteogalicia 10053      Campus Lugo    Lugo                  400        8.87            8.62            8.93                90             0
-#>  9 2023-11-26 16:00:00 meteogalicia 10055      Guitiriz-Mira… Lugo                  684        8.28            8.22            8.34               100             0
-#> 10 2023-11-26 16:00:00 meteogalicia 10056      Marroxo        Lugo                  645        9.6             8.8            10.5                 74             0
-#> # ℹ 3,758 more rows
+#>  1 2023-11-26 17:00:00 meteogalicia 10045      Mabegondo      A Coruña               94       13.4            12.3            14.4                 88             0
+#>  2 2023-11-26 17:00:00 meteogalicia 10046      Marco da Curra A Coruña              651        8.44            8.41            8.49                97             0
+#>  3 2023-11-26 17:00:00 meteogalicia 10047      Pedro Murias   Lugo                   51       13.3            12.3            13.7                 89             0
+#>  4 2023-11-26 17:00:00 meteogalicia 10048      O Invernadeiro Ourense              1026       10.9            10.2            11.4                 60             0
+#>  5 2023-11-26 17:00:00 meteogalicia 10049      Corrubedo      A Coruña               30       13.2            13.0            13.5                 84             0
+#>  6 2023-11-26 17:00:00 meteogalicia 10050      CIS Ferrol     A Coruña               37       14.2            13.2            15.0                 76             0
+#>  7 2023-11-26 17:00:00 meteogalicia 10052      Muralla        A Coruña              661        9.39            9.37            9.41                95             0
+#>  8 2023-11-26 17:00:00 meteogalicia 10053      Campus Lugo    Lugo                  400        8.98            8.92            9.03                94             0
+#>  9 2023-11-26 17:00:00 meteogalicia 10055      Guitiriz-Mira… Lugo                  684        8.1             8.02            8.17               100             0
+#> 10 2023-11-26 17:00:00 meteogalicia 10056      Marroxo        Lugo                  645        8.17            7.64            8.51                84             0
+#> # ℹ 3,757 more rows
 #> # ℹ 4 more variables: wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
 
@@ -162,24 +162,24 @@ Once a key has been obtained, we can get the meteo:
 get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> ℹ © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 19246 features and 14 fields
+#> Simple feature collection with 19248 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 19,246 × 15
+#> # A tibble: 19,248 × 15
 #>    timestamp           service station_id station_name        station_province altitude temperature min_temperature max_temperature relative_humidity precipitation
 #>    <dttm>              <chr>   <chr>      <chr>               <chr>                 [m]        [°C]            [°C]            [°C]               [%]       [L/m^2]
-#>  1 2023-11-26 16:00:00 aemet   0009X      ALFORJA             <NA>                  406        11              11              14.2                52             0
-#>  2 2023-11-26 16:00:00 aemet   0016A      REUS/AEROPUERTO     <NA>                   71        13.7            13.5            15.6                54             0
-#>  3 2023-11-26 16:00:00 aemet   0034X      VALLS               <NA>                  233        13.7            13.7            15                  54             0
-#>  4 2023-11-26 16:00:00 aemet   0042Y      TARRAGONA  FAC. GE… <NA>                   55        15.2            15.2            17                  54             0
-#>  5 2023-11-26 16:00:00 aemet   0061X      PONTONS             <NA>                  632        10              10              12.3                77             0
-#>  6 2023-11-26 16:00:00 aemet   0066X      VILAFRANCA DEL PEN… <NA>                  177        14.1            14.1            14.5                78             0
-#>  7 2023-11-26 16:00:00 aemet   0073X      SITGES-VALLCARCA    <NA>                   58        13              13              14.2                83             0
-#>  8 2023-11-26 16:00:00 aemet   0076       BARCELONA/AEROPUER… <NA>                    4        14.1            14.1            14.4                73             0
-#>  9 2023-11-26 16:00:00 aemet   0092X      BERGA  INSTITUTO    <NA>                  682        11.6            11.6            12.3                57             0
-#> 10 2023-11-26 16:00:00 aemet   0106X      BALSARENY           <NA>                  361        13.2            13.2            14.4                62             0
-#> # ℹ 19,236 more rows
+#>  1 2023-11-26 17:00:00 aemet   0009X      ALFORJA             <NA>                  406         8.6             8.6            10.5                62             0
+#>  2 2023-11-26 17:00:00 aemet   0016A      REUS/AEROPUERTO     <NA>                   71        11.3            11.3            13.4                51             0
+#>  3 2023-11-26 17:00:00 aemet   0034X      VALLS               <NA>                  233        11.6            11.6            13.5                62             0
+#>  4 2023-11-26 17:00:00 aemet   0042Y      TARRAGONA  FAC. GE… <NA>                   55        14.2            14.2            14.9                60             0
+#>  5 2023-11-26 17:00:00 aemet   0061X      PONTONS             <NA>                  632         7.5             7.5             9.5                83             0
+#>  6 2023-11-26 17:00:00 aemet   0066X      VILAFRANCA DEL PEN… <NA>                  177        11.8            11.8            13.9                86             0
+#>  7 2023-11-26 17:00:00 aemet   0073X      SITGES-VALLCARCA    <NA>                   58        11              11              12.5                90             0
+#>  8 2023-11-26 17:00:00 aemet   0076       BARCELONA/AEROPUER… <NA>                    4        13.2            13.1            14.1                76             0
+#>  9 2023-11-26 17:00:00 aemet   0092X      BERGA  INSTITUTO    <NA>                  682         9               9              11.2                66             0
+#> 10 2023-11-26 17:00:00 aemet   0106X      BALSARENY           <NA>                  361        11.6            11.6            13                  61             0
+#> # ℹ 19,238 more rows
 #> # ℹ 4 more variables: wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
 ```
