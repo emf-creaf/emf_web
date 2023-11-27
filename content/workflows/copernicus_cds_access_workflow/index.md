@@ -96,6 +96,7 @@ library(keyring)
 > shouldn’t be included in any script we share with others or make
 > public in git repositories or similar. The same way, they shouldn’t be
 > stored as plain text files for security reasons.
+{.alert .alert-info}
 
 To set our UID and API KEy to be able to use CDS Services, we need to
 use the `ecmwfr::wf_set_key()` function:
@@ -157,6 +158,7 @@ request <- list(
 > on the dataset. It is always advisable to explore the data download
 > webpage at CDS when first downloading a new dataset, to get the grasp
 > of it before trying the API, see next section.
+{.alert .alert-info}
 
 ### Getting help with the request
 

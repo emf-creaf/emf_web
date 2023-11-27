@@ -11,8 +11,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2023-10-23'
-lastmod: '2023-10-23'
+date: '2023-11-27'
+lastmod: '2023-11-27'
 summary: Functions to estimate weather variables at any position of a landscape
 model_repository: ''
 data_repository: ''
@@ -42,9 +42,11 @@ functions, methods and classes based on or using the `sp`, `raster` and
 
 > **Since ver. 2.0.1, these functions, methods and classes were
 > hard-deprecated, meaning they stopped working.**
+{.alert .alert-info}
 
 > **Since ver. 2.1.0, these functions, methods and classes have been
 > removed from the package**
+{.alert .alert-info}
 
 See the [*Tidy
 meteoland*](https://emf-creaf.github.io/meteoland/articles/tidy-meteoland.html)
