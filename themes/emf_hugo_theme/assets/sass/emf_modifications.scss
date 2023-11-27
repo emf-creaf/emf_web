@@ -504,13 +504,12 @@ figure.single-image {
 
 /* 404 page image */
 figure.notfound-image {
-    width: 50%;
+    width: 35%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .notfound-image img {
-    object-fit: scale-down;
     width: 100%;
 }
 
