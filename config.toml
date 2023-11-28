@@ -1,4 +1,4 @@
-baseURL = 'http://emf.creaf.cat/'
+baseURL = 'https://emf.creaf.cat/'
 languageCode = 'en-us'
 title = 'EMF Web'
 
