@@ -8,8 +8,8 @@ tags:
 - Projections
 draft: false
 featured: false
-date: '2023-11-28'
-lastmod: '2023-11-28'
+date: '2023-12-05'
+lastmod: '2023-12-05'
 summary: The CORDEX regional climate model (RCM) simulations for the European domain
   (EURO-CORDEX)
 model_repository: ''
