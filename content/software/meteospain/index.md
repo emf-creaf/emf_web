@@ -171,12 +171,12 @@ get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> ℹ © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como
 #>   autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 18289 features and 14 fields
+#> Simple feature collection with 18742 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 18,289 × 15
+#> # A tibble: 18,742 × 15
 #>    timestamp           service station_id station_name          station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>                 <chr>                 [m]
 #>  1 2023-12-17 10:00:00 aemet   0009X      ALFORJA               <NA>                  406
@@ -189,7 +189,7 @@ get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #>  8 2023-12-17 10:00:00 aemet   0076       BARCELONA/AEROPUERTO  <NA>                    4
 #>  9 2023-12-17 10:00:00 aemet   0092X      BERGA  INSTITUTO      <NA>                  682
 #> 10 2023-12-17 10:00:00 aemet   0106X      BALSARENY             <NA>                  361
-#> # ℹ 18,279 more rows
+#> # ℹ 18,732 more rows
 #> # ℹ 9 more variables: temperature [°C], min_temperature [°C], max_temperature [°C],
 #> #   relative_humidity [%], precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
 #> #   insolation [h], geometry <POINT [°]>
