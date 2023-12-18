@@ -1,13 +1,13 @@
 ---
-title: "Ecological quality assessment: A framework to report ecosystems quality and their dynamics from reference conditions"
-authors: "Sturbois A. et al."
-journal: "Ecosphere"
+title: "Probing the interplay of biophysical constraints and photosynthesis to model tree growth"
+authors: "Cabon A. et al."
+journal: "Agricultural and Forest Meteorology"
 year: "2023"
 section: "publications"
 links:
-    url_bib: "Sturbois_2023.bib"
-    url_pdf: "Sturbois_2023.pdf"
-    url_doi: "https://doi.org/10.1002/ecs2.4726"
+    url_bib: "Cabon_2023.bib"
+    url_pdf: "Cabon_2023.pdf"
+    url_doi: "https://doi.org/10.1016/j.agrformet.2023.109852"
     url_source: ""
     url_docs: ""
 ---
