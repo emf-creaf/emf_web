@@ -8,8 +8,8 @@ tags:
 - BiodiversityDatabase
 draft: false
 featured: false
-date: '2023-12-05'
-lastmod: '2023-12-05'
+date: '2023-12-18'
+lastmod: '2023-12-18'
 summary: GloNAF (Global Naturalized Alien Flora) is a living database project about
   naturalized alien plant species and became a synonym for many related projects dealing
   with all kinds of scientific and policy relevant questions and studies about alien

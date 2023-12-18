@@ -11,8 +11,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2023-11-30'
-lastmod: '2023-11-30'
+date: '2023-12-18'
+lastmod: '2023-12-18'
 summary: Functions to estimate weather variables at any position of a landscape
 model_repository: ''
 data_repository: ''
@@ -22,7 +22,7 @@ links:
   url_source: https://github.com/emf-creaf/meteoland
   url_docs: https://emf-creaf.github.io/meteoland/
 ---
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/meteoland)](https://cran.r-project.org/package=meteoland)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/meteoland)](https://cran.r-project.org/package=meteoland)
 [![](https://cranlogs.r-pkg.org/badges/meteoland)](https://cran.rstudio.com/web/packages/meteoland/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/meteoland/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/meteoland/actions)
 
@@ -59,13 +59,13 @@ With the aim to assist research of climatic impacts on forests, the R
 package `meteoland` provides utilities to estimate daily weather
 variables at any position over complex terrains:
 
-  - Spatial interpolation of daily weather records from meteorological
-    stations.
-  - Statistical correction of meteorological data series (e.g. from
-    climate models). Note that this functionality is deprecated starting
-    in version 2.0.0.
-  - Multisite and multivariate stochastic weather generation. Note that
-    this functionality is deprecated starting in version 2.0.0.
+- Spatial interpolation of daily weather records from meteorological
+  stations.
+- Statistical correction of meteorological data series (e.g. from
+  climate models). Note that this functionality is deprecated starting
+  in version 2.0.0.
+- Multisite and multivariate stochastic weather generation. Note that
+  this functionality is deprecated starting in version 2.0.0.
 
 A more detailed introduction to the package functionality can be found
 in De Cáceres et al. (2018).
@@ -111,7 +111,7 @@ Modelling Facility*](https://emf.creaf.cat) at CREAF (Catalonia, Spain).
 
 ## References
 
-  - De Caceres M, Martin-StPaul N, Turco M, Cabon A, Granda V (2018)
-    Estimating daily meteorological data and downscaling climate models
-    over landscapes. Environmental Modelling and Software 108: 186-196.
-    (<doi:10.1016/j.envsoft.2018.08.003>).
+- De Caceres M, Martin-StPaul N, Turco M, Cabon A, Granda V (2018)
+  Estimating daily meteorological data and downscaling climate models
+  over landscapes. Environmental Modelling and Software 108: 186-196.
+  (<doi:10.1016/j.envsoft.2018.08.003>).

@@ -9,8 +9,8 @@ tags:
 - Visual Basic
 draft: false
 featured: false
-date: '2023-11-28'
-lastmod: '2023-11-28'
+date: '2023-12-18'
+lastmod: '2023-12-18'
 summary: The 3-PG model was developed to bridge the gap between conventional, mensuration-based
   growth and yield, and process-based carbon balance models. 3-PG calculates the radiant
   energy absorbed by forest canopies and converts it into biomass production. The
