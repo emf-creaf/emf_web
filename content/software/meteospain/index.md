@@ -80,25 +80,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> como fonte da mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3709 features and 14 fields
+#> Simple feature collection with 3682 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,709 × 15
+#> # A tibble: 3,682 × 15
 #>    timestamp           service  station_id station_name station_province
 #>    <dttm>              <chr>    <chr>      <chr>        <chr>           
-#>  1 2023-12-18 10:00:00 meteoga… 10045      Mabegondo    A Coruña        
-#>  2 2023-12-18 10:00:00 meteoga… 10046      Marco da Cu… A Coruña        
-#>  3 2023-12-18 10:00:00 meteoga… 10047      Pedro Murias Lugo            
-#>  4 2023-12-18 10:00:00 meteoga… 10048      O Invernade… Ourense         
-#>  5 2023-12-18 10:00:00 meteoga… 10049      Corrubedo    A Coruña        
-#>  6 2023-12-18 10:00:00 meteoga… 10050      CIS Ferrol   A Coruña        
-#>  7 2023-12-18 10:00:00 meteoga… 10052      Muralla      A Coruña        
-#>  8 2023-12-18 10:00:00 meteoga… 10053      Campus Lugo  Lugo            
-#>  9 2023-12-18 10:00:00 meteoga… 10055      Guitiriz-Mi… Lugo            
-#> 10 2023-12-18 10:00:00 meteoga… 10056      Marroxo      Lugo            
-#> # ℹ 3,699 more rows
+#>  1 2023-12-18 12:00:00 meteoga… 10045      Mabegondo    A Coruña        
+#>  2 2023-12-18 12:00:00 meteoga… 10046      Marco da Cu… A Coruña        
+#>  3 2023-12-18 12:00:00 meteoga… 10047      Pedro Murias Lugo            
+#>  4 2023-12-18 12:00:00 meteoga… 10048      O Invernade… Ourense         
+#>  5 2023-12-18 12:00:00 meteoga… 10049      Corrubedo    A Coruña        
+#>  6 2023-12-18 12:00:00 meteoga… 10050      CIS Ferrol   A Coruña        
+#>  7 2023-12-18 12:00:00 meteoga… 10052      Muralla      A Coruña        
+#>  8 2023-12-18 12:00:00 meteoga… 10053      Campus Lugo  Lugo            
+#>  9 2023-12-18 12:00:00 meteoga… 10055      Guitiriz-Mi… Lugo            
+#> 10 2023-12-18 12:00:00 meteoga… 10056      Marroxo      Lugo            
+#> # ℹ 3,672 more rows
 #> # ℹ 10 more variables: altitude [m], temperature [°C],
 #> #   min_temperature [°C], max_temperature [°C], relative_humidity [%],
 #> #   precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
@@ -109,12 +109,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` r
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 157 features and 5 fields
+#> Simple feature collection with 156 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.7383
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 157 × 6
+#> # A tibble: 156 × 6
 #>    service      station_id station_name        station_province altitude
 #>  * <chr>        <chr>      <chr>               <chr>                 [m]
 #>  1 meteogalicia 10157      Coruña-Torre de Hé… A Coruña               21
@@ -127,7 +127,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10095      Sergude             A Coruña              231
 #>  9 meteogalicia 10800      Camariñas           A Coruña                5
 #> 10 meteogalicia 19001      Rus                 A Coruña              134
-#> # ℹ 147 more rows
+#> # ℹ 146 more rows
 #> # ℹ 1 more variable: geometry <POINT [°]>
 ```
 
@@ -174,25 +174,25 @@ get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> ℹ © AEMET. Autorizado el uso de la información y su reproducción
 #>   citando a AEMET como autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 19156 features and 14 fields
+#> Simple feature collection with 18334 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 19,156 × 15
+#> # A tibble: 18,334 × 15
 #>    timestamp           service station_id station_name  station_province
 #>    <dttm>              <chr>   <chr>      <chr>         <chr>           
-#>  1 2023-12-18 10:00:00 aemet   0009X      ALFORJA       <NA>            
-#>  2 2023-12-18 10:00:00 aemet   0016A      REUS/AEROPUE… <NA>            
-#>  3 2023-12-18 10:00:00 aemet   0034X      VALLS         <NA>            
-#>  4 2023-12-18 10:00:00 aemet   0042Y      TARRAGONA  F… <NA>            
-#>  5 2023-12-18 10:00:00 aemet   0061X      PONTONS       <NA>            
-#>  6 2023-12-18 10:00:00 aemet   0066X      VILAFRANCA D… <NA>            
-#>  7 2023-12-18 10:00:00 aemet   0073X      SITGES-VALLC… <NA>            
-#>  8 2023-12-18 10:00:00 aemet   0076       BARCELONA/AE… <NA>            
-#>  9 2023-12-18 10:00:00 aemet   0092X      BERGA  INSTI… <NA>            
-#> 10 2023-12-18 10:00:00 aemet   0106X      BALSARENY     <NA>            
-#> # ℹ 19,146 more rows
+#>  1 2023-12-18 12:00:00 aemet   0009X      ALFORJA       <NA>            
+#>  2 2023-12-18 12:00:00 aemet   0016A      REUS/AEROPUE… <NA>            
+#>  3 2023-12-18 12:00:00 aemet   0034X      VALLS         <NA>            
+#>  4 2023-12-18 12:00:00 aemet   0042Y      TARRAGONA  F… <NA>            
+#>  5 2023-12-18 12:00:00 aemet   0061X      PONTONS       <NA>            
+#>  6 2023-12-18 12:00:00 aemet   0066X      VILAFRANCA D… <NA>            
+#>  7 2023-12-18 12:00:00 aemet   0073X      SITGES-VALLC… <NA>            
+#>  8 2023-12-18 12:00:00 aemet   0092X      BERGA  INSTI… <NA>            
+#>  9 2023-12-18 12:00:00 aemet   0106X      BALSARENY     <NA>            
+#> 10 2023-12-18 12:00:00 aemet   0114X      PRATS DE LLU… <NA>            
+#> # ℹ 18,324 more rows
 #> # ℹ 10 more variables: altitude [m], temperature [°C],
 #> #   min_temperature [°C], max_temperature [°C], relative_humidity [%],
 #> #   precipitation [L/m^2], wind_direction [°], wind_speed [m/s],

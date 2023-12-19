@@ -308,7 +308,7 @@ Listing 1: Time consumed by matrix operations. We can see that the user time is
 </div>
 
        user  system elapsed 
-      0.132   0.008   0.141 
+      0.136   0.004   0.140 
 
 > **Note**
 >
@@ -394,7 +394,7 @@ Listing 2: Boostrapping model coefficients in iris dataset with a for loop
 </div>
 
        user  system elapsed 
-     11.385   0.000  11.391 
+     11.515   0.004  11.526 
 
 We can see the user time (CPU time) is roughly the same as the elapsed time (real time), as we
 should expect from a sequential `for` loop.
@@ -432,7 +432,7 @@ Listing 3: Boostrapping model coefficients in iris dataset with lapply
 </div>
 
        user  system elapsed 
-     11.404   0.000  11.409 
+     11.484   0.000  11.490 
 
 As we see, the time is the same as with the `for` loop, something we would expect.
 
@@ -471,7 +471,7 @@ Listing 4: Boostrapping model coefficients in iris dataset with map
 </div>
 
        user  system elapsed 
-     11.421   0.000  11.427 
+     11.509   0.000  11.516 
 
 Again times are similar to the other workflows.
 
@@ -543,7 +543,7 @@ Listing 6: Boostrapping model coefficients in iris dataset in parallel with a f
 </div>
 
        user  system elapsed 
-     12.596   0.218   3.823 
+     12.599   0.200   3.786 
 
 As we can see, time has reduced almost four times when compared with processing the files
 sequentially. We are really close to the ideal $1/4$ reduction in time we should expect from using
@@ -583,7 +583,7 @@ Listing 7: Boostrapping model coefficients in iris dataset in parallel with a m
 </div>
 
        user  system elapsed 
-      8.765   0.200   3.023 
+      2.975   0.084   3.039 
 
 We see again the time reduction in time with `mclapply`.
 
@@ -626,7 +626,7 @@ Listing 8: Boostrapping model coefficients in iris dataset in parallel with a f
 </div>
 
        user  system elapsed 
-     13.770   0.340   3.638 
+     13.772   0.293   3.622 
 
 This is the method that returns the worst time running in parallel (but better than sequential).
 This is because `future_map` works setting a more complete environment in the parallelized
