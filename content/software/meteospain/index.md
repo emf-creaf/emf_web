@@ -80,25 +80,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3669 features and 14 fields
+#> Simple feature collection with 3690 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.734
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,669 × 15
+#> # A tibble: 3,690 × 15
 #>    timestamp           service      station_id station_name     station_province altitude
 #>    <dttm>              <chr>        <chr>      <chr>            <chr>                 [m]
-#>  1 2023-12-18 09:00:00 meteogalicia 10045      Mabegondo        A Coruña               94
-#>  2 2023-12-18 09:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651
-#>  3 2023-12-18 09:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51
-#>  4 2023-12-18 09:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026
-#>  5 2023-12-18 09:00:00 meteogalicia 10049      Corrubedo        A Coruña               30
-#>  6 2023-12-18 09:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37
-#>  7 2023-12-18 09:00:00 meteogalicia 10052      Muralla          A Coruña              661
-#>  8 2023-12-18 09:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400
-#>  9 2023-12-18 09:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684
-#> 10 2023-12-18 09:00:00 meteogalicia 10056      Marroxo          Lugo                  645
-#> # ℹ 3,659 more rows
+#>  1 2023-12-18 10:00:00 meteogalicia 10045      Mabegondo        A Coruña               94
+#>  2 2023-12-18 10:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651
+#>  3 2023-12-18 10:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51
+#>  4 2023-12-18 10:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026
+#>  5 2023-12-18 10:00:00 meteogalicia 10049      Corrubedo        A Coruña               30
+#>  6 2023-12-18 10:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37
+#>  7 2023-12-18 10:00:00 meteogalicia 10052      Muralla          A Coruña              661
+#>  8 2023-12-18 10:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400
+#>  9 2023-12-18 10:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684
+#> 10 2023-12-18 10:00:00 meteogalicia 10056      Marroxo          Lugo                  645
+#> # ℹ 3,680 more rows
 #> # ℹ 9 more variables: temperature [°C], min_temperature [°C], max_temperature [°C],
 #> #   relative_humidity [%], precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
 #> #   insolation [h], geometry <POINT [°]>
@@ -108,12 +108,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` r
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 156 features and 5 fields
+#> Simple feature collection with 157 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.7383
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 156 × 6
+#> # A tibble: 157 × 6
 #>    service    station_id station_name station_province altitude             geometry
 #>  * <chr>      <chr>      <chr>        <chr>                 [m]          <POINT [°]>
 #>  1 meteogali… 10157      Coruña-Torr… A Coruña               21 (-8.409202 43.38276)
@@ -126,7 +126,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogali… 10095      Sergude      A Coruña              231 (-8.461246 42.82283)
 #>  9 meteogali… 10800      Camariñas    A Coruña                5 (-9.178318 43.12445)
 #> 10 meteogali… 19001      Rus          A Coruña              134 (-8.685357 43.15616)
-#> # ℹ 146 more rows
+#> # ℹ 147 more rows
 ```
 
 Returned objects are spatial objects (using the
@@ -171,25 +171,25 @@ get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> ℹ © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como
 #>   autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 18540 features and 14 fields
+#> Simple feature collection with 18318 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 18,540 × 15
+#> # A tibble: 18,318 × 15
 #>    timestamp           service station_id station_name          station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>                 <chr>                 [m]
-#>  1 2023-12-18 09:00:00 aemet   0009X      ALFORJA               <NA>                  406
-#>  2 2023-12-18 09:00:00 aemet   0016A      REUS/AEROPUERTO       <NA>                   71
-#>  3 2023-12-18 09:00:00 aemet   0034X      VALLS                 <NA>                  233
-#>  4 2023-12-18 09:00:00 aemet   0042Y      TARRAGONA  FAC. GEOG… <NA>                   55
-#>  5 2023-12-18 09:00:00 aemet   0061X      PONTONS               <NA>                  632
-#>  6 2023-12-18 09:00:00 aemet   0066X      VILAFRANCA DEL PENED… <NA>                  177
-#>  7 2023-12-18 09:00:00 aemet   0073X      SITGES-VALLCARCA      <NA>                   58
-#>  8 2023-12-18 09:00:00 aemet   0076       BARCELONA/AEROPUERTO  <NA>                    4
-#>  9 2023-12-18 09:00:00 aemet   0092X      BERGA  INSTITUTO      <NA>                  682
-#> 10 2023-12-18 09:00:00 aemet   0106X      BALSARENY             <NA>                  361
-#> # ℹ 18,530 more rows
+#>  1 2023-12-18 10:00:00 aemet   0009X      ALFORJA               <NA>                  406
+#>  2 2023-12-18 10:00:00 aemet   0016A      REUS/AEROPUERTO       <NA>                   71
+#>  3 2023-12-18 10:00:00 aemet   0034X      VALLS                 <NA>                  233
+#>  4 2023-12-18 10:00:00 aemet   0042Y      TARRAGONA  FAC. GEOG… <NA>                   55
+#>  5 2023-12-18 10:00:00 aemet   0061X      PONTONS               <NA>                  632
+#>  6 2023-12-18 10:00:00 aemet   0066X      VILAFRANCA DEL PENED… <NA>                  177
+#>  7 2023-12-18 10:00:00 aemet   0073X      SITGES-VALLCARCA      <NA>                   58
+#>  8 2023-12-18 10:00:00 aemet   0076       BARCELONA/AEROPUERTO  <NA>                    4
+#>  9 2023-12-18 10:00:00 aemet   0092X      BERGA  INSTITUTO      <NA>                  682
+#> 10 2023-12-18 10:00:00 aemet   0106X      BALSARENY             <NA>                  361
+#> # ℹ 18,308 more rows
 #> # ℹ 9 more variables: temperature [°C], min_temperature [°C], max_temperature [°C],
 #> #   relative_humidity [%], precipitation [L/m^2], wind_direction [°], wind_speed [m/s],
 #> #   insolation [h], geometry <POINT [°]>
