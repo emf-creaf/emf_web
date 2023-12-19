@@ -8,8 +8,8 @@ tags:
 - Reanalysis
 draft: false
 featured: false
-date: '2023-12-18'
-lastmod: '2023-12-18'
+date: '2023-12-19'
+lastmod: '2023-12-19'
 summary: Downscaled model output temperature and precipitation estimates
 model_repository: ''
 data_repository: https://chelsa-climate.org/downloads/
