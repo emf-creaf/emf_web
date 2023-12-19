@@ -23,7 +23,7 @@
                     {{ partial "author_news.html" (dict "author" $author) }}
                     {{ end }}
                     {{ end }}
-                    <span>{{ $date | time.Format ":date_short" }}</span>
+                    <span>{{ $date | time.Format "2006-01-02" }}</span>
                 </small>
             </p>
             <h5 class="card-title fw-light ls-5">{{ $title }}</h5>

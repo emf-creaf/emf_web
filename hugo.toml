@@ -1,5 +1,5 @@
 baseURL = 'https://emf.creaf.cat/'
-languageCode = 'en-us'
+languageCode = 'en-gb'
 title = 'EMF Web'
 
 theme = "emf_hugo_theme"
