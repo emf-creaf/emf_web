@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2023-12-18'
-lastmod: '2023-12-18'
+date: '2023-12-19'
+lastmod: '2023-12-19'
 summary: Assists ecologists in the analysis of temporal changes of ecosystems, defined
   as trajectories on a chosen multivariate space, by providing a set of trajectory
   metrics and visual representations.
