@@ -8,8 +8,8 @@ tags:
 - ForestMonitoring
 draft: false
 featured: false
-date: '2023-12-19'
-lastmod: '2023-12-19'
+date: '2023-12-20'
+lastmod: '2023-12-20'
 summary: The FIA program delivers current, consistent, and credible information about
   the status of the United States’ forests.
 model_repository: ''

@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2023-12-19'
-lastmod: '2023-12-19'
+date: '2023-12-20'
+lastmod: '2023-12-20'
 summary: Observations of belowground plant traits, with a specific focus on fine roots
 model_repository: ''
 data_repository: https://roots.ornl.gov/

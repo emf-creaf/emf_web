@@ -8,8 +8,8 @@ tags:
 - HydrographicData
 draft: false
 featured: false
-date: '2023-12-19'
-lastmod: '2023-12-19'
+date: '2023-12-20'
+lastmod: '2023-12-20'
 summary: HydroBASINS is a series of polygon layers that depict watershed boundaries
   and sub-basin delineations at a global scale.
 model_repository: ''

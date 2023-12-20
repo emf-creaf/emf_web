@@ -9,8 +9,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2023-12-19'
-lastmod: '2023-12-19'
+date: '2023-12-20'
+lastmod: '2023-12-20'
 summary: ED is an individual-based model of vegetation dynamics with integrated submodels
   of plant growth, mortality, phenology, disturbance, hydrology and soil biogeochemistry.
   individual plants of different functional types compete mechanistically in ED under
