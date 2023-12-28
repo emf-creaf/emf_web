@@ -8,8 +8,8 @@ tags:
 - EddyCovarianceDatabase
 draft: false
 featured: false
-date: '2023-12-20'
-lastmod: '2023-12-20'
+date: '2023-12-28'
+lastmod: '2023-12-28'
 summary: The flux measurement sites are linked across a confederation of regional
   networks in North, Central and South America, Europe, Asia, Africa, and Australia,
   in a global network, called FLUXNET.
