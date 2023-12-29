@@ -9,8 +9,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2023-12-20'
-lastmod: '2023-12-20'
+date: '2023-12-29'
+lastmod: '2023-12-29'
 summary: MAIDEN is an ecophysiological model that was created to explore the relationships
   between climate variability and forest growth-productivity. The simulations can
   be verified using different data to validate the different processes in the model,

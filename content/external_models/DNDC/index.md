@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2023-12-20'
-lastmod: '2023-12-20'
+date: '2023-12-29'
+lastmod: '2023-12-29'
 summary: DNDC is a computer simulation model of carbon and nitrogen biogeochemistry
   in agro-ecosystems. The model can be used for predicting crop growth, soil temperature
   and moisture regimes, soil carbon dynamics, nitrogen leaching, and emissions of
