@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2023-12-29'
-lastmod: '2023-12-29'
+date: '2024-01-04'
+lastmod: '2024-01-04'
 summary: Global database initiative, which has united a wide range of the plant trait
   research community worldwide
 model_repository: ''

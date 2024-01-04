@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2023-12-29'
-lastmod: '2023-12-29'
+date: '2024-01-04'
+lastmod: '2024-01-04'
 summary: FunAndes contains data on 24 traits across 2,694 taxa, for a total of 105,466
   entries. The database features plant-morphological attributes including growth form,
   and leaf, stem, and wood traits measured at the species or individual level, together

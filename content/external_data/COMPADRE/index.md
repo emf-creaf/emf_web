@@ -8,8 +8,8 @@ tags:
 - PopulationModelParameters
 draft: false
 featured: false
-date: '2023-12-29'
-lastmod: '2023-12-29'
+date: '2024-01-04'
+lastmod: '2024-01-04'
 summary: COMPADRE and COMADRE contain matrix population models of hundreds of plant
   and animal species, as well as algae, fungi, bacteria, and viruses
 model_repository: ''

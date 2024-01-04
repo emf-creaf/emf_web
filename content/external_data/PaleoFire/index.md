@@ -8,8 +8,8 @@ tags:
 - SedimentaryDatabase
 draft: false
 featured: false
-date: '2023-12-29'
-lastmod: '2023-12-29'
+date: '2024-01-04'
+lastmod: '2024-01-04'
 summary: The aim of the Global Paleofire Database (GPD) is to provide the scientific
   community with a global paleofire dataset for research and archiving sedimentary
   records of fire.
