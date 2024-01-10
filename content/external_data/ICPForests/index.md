@@ -9,8 +9,8 @@ tags:
 - ForestMonitoring
 draft: false
 featured: false
-date: '2024-01-04'
-lastmod: '2024-01-04'
+date: '2024-01-10'
+lastmod: '2024-01-10'
 summary: ICP Forests monitors forest condition at two monitoring intensity levels
 model_repository: ''
 data_repository: http://icp-forests.net/

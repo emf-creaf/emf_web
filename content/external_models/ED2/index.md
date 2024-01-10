@@ -9,8 +9,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2023-12-29'
-lastmod: '2023-12-29'
+date: '2024-01-10'
+lastmod: '2024-01-10'
 summary: ED2 is an integrated terrestrial biosphere model incorporating hydrology,
   land-surface biophysics, vegetation dynamics, and soil carbon and nitrogen biogeochemistry.
   Like ED, ED2 uses a set of size- and age-structured partial differential equations

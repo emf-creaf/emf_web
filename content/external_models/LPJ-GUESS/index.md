@@ -9,8 +9,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2023-12-29'
-lastmod: '2023-12-29'
+date: '2024-01-10'
+lastmod: '2024-01-10'
 summary: LPJ-GUESS is a process-based dynamic vegetation-terrestrial ecosystem model
   designed for regional or global studies. It can predict structural, compositional
   and functional properties of the native ecosystems of major climate zones of the
