@@ -8,8 +8,8 @@ tags:
 - InterpolatedWeather
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: A series of high-resolution monthly precipitation and (maximum and minimum)
   temperature gridded datasets developed for peninsular Spain and the Balearic islands.
 model_repository: ''

@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: The Tundra Trait Team (TTT) database includes field-based measurements of
   key traits related to plant form and function at multiple sites across the tundra
   biome. The database contains 91,970 measurements of 18 plant traits.

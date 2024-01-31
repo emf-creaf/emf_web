@@ -8,8 +8,8 @@ tags:
 - Reanalysis
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: Monthly-averaged reanalysis data
 model_repository: ''
 data_repository: https://cds.climate.copernicus.eu

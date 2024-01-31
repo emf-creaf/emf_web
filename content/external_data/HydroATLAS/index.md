@@ -8,8 +8,8 @@ tags:
 - HydrographicData
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: HydroATLAS offers a global compendium of hydro-environmental sub-basin and
   river reach characteristics at 15 arc-second resolution.
 model_repository: ''
