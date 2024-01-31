@@ -11,8 +11,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: Functions to estimate weather variables at any position of a landscape
 model_repository: ''
 data_repository: ''

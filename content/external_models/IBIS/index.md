@@ -8,8 +8,8 @@ tags:
 - Global
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: IBIS is a comprehensive computer model of the Earth's terrestrial ecosystems
   that simulates a wide variety of ecosystem processes, including energy, water, and
   CO2 exchange between vegetation and the atmosphere, physiological processes of plants

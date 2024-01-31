@@ -9,8 +9,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2024-01-10'
-lastmod: '2024-01-10'
+date: '2024-01-31'
+lastmod: '2024-01-31'
 summary: FORest Canopy Atmosphere Transfer model is a canopy model capable of simulating
   the formation of secondary organic aerosol (SOA) from biogenic VOC oxidation.
 model_repository: https://doi.org/10.5281/zenodo.4776662

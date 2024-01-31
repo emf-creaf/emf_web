@@ -45,7 +45,6 @@ You can work with individual sites:
 # load packages
 library(sapfluxnetr)
 library(ggplot2)
-#> Use suppressPackageStartupMessages() to eliminate package startup messages
 
 # ARG_MAZ example site data
 data('ARG_MAZ', package = 'sapfluxnetr')
@@ -84,7 +83,8 @@ multi_sfn <- sfn_data_multi(ARG_TRE, ARG_MAZ, AUS_CAN_ST2_MIX)
 # plotting the individual sites. It creates a list of plots
 plots_list <- sfn_plot(multi_sfn, formula_env = ~ vpd)
 plots_list[['AUS_CAN_ST2_MIX']]
-#> Warning: Removed 526066 rows containing missing values (`geom_point()`).
+#> Warning: Removed 526066 rows containing missing values
+#> (`geom_point()`).
 ```
 
 {{< figure src="README-example_multi-1.png" class="single-image" >}}
