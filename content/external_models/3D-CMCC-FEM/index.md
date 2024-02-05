@@ -10,8 +10,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2024-01-31'
-lastmod: '2024-01-31'
+date: '2024-02-05'
+lastmod: '2024-02-05'
 summary: 3D-CMCC-FEM is a hybrid or fully bio-geochemical forest model that simulates
   storage and fluxes of carbon, water, and nitrogen including the dynamics occurring
   in forest ecosystems. The model is able to reproduce dynamics occurring in homogeneous

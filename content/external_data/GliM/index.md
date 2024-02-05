@@ -8,8 +8,8 @@ tags:
 - LithologicalMap
 draft: false
 featured: false
-date: '2024-01-31'
-lastmod: '2024-01-31'
+date: '2024-02-05'
+lastmod: '2024-02-05'
 summary: High resolution global lithological map (GliM), assembled from existing regional
   geological maps translated into lithological information with the help of regional
   literature. The GLiM represents the rock types of the Earth surface using 1,235,400

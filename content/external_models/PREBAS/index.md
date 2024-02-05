@@ -9,8 +9,8 @@ tags:
 - R
 draft: false
 featured: false
-date: '2024-01-31'
-lastmod: '2024-01-31'
+date: '2024-02-05'
+lastmod: '2024-02-05'
 summary: PREBAS is a forest growth and ecosystem carbon balance model. In PREBAS three
   different models PRELES (PREdict Light-use efficiency, Evapotranspiration and Soil
   water), CROBAS (Tree growth and CROwn BASe from carbon balance), and YASSO (Yet
