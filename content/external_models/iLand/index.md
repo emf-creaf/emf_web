@@ -9,8 +9,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2024-02-05'
-lastmod: '2024-02-05'
+date: '2024-02-07'
+lastmod: '2024-02-07'
 summary: iLand is a model of forest landscape dynamics, simulating individual tree
   competition, growth, mortality, and regeneration. It addresses interactions between
   climate (change), disturbance regimes, vegetation dynamics, and forest management.  In

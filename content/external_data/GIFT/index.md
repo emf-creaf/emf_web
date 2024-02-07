@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2024-02-05'
-lastmod: '2024-02-05'
+date: '2024-02-07'
+lastmod: '2024-02-07'
 summary: The Global Inventory of Floras and Traits - GIFT database is a global archive
   of regional plant checklists and floras and plant functional traits. It contains
   information about the floristic status of 368,580 species across 3,627 geographic

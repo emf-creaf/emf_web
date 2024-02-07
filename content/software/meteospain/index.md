@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2024-02-05'
-lastmod: '2024-02-05'
+date: '2024-02-07'
+lastmod: '2024-02-07'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -79,25 +79,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3658 features and 14 fields
+#> Simple feature collection with 3663 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.70426
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,658 × 15
+#> # A tibble: 3,663 × 15
 #>    timestamp           service      station_id station_name     station_province altitude temperature min_temperature max_temperature
 #>    <dttm>              <chr>        <chr>      <chr>            <chr>                 [m]        [°C]            [°C]            [°C]
-#>  1 2024-02-04 09:00:00 meteogalicia 10045      Mabegondo        A Coruña               94        4.94            3.57            6.4 
-#>  2 2024-02-04 09:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651        9.95            8.94           10.6 
-#>  3 2024-02-04 09:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51        7.32            6.48            8.64
-#>  4 2024-02-04 09:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026        3.67            2.6             4.98
-#>  5 2024-02-04 09:00:00 meteogalicia 10049      Corrubedo        A Coruña               30        9.84            9.49           10.4 
-#>  6 2024-02-04 09:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37        6.84            6.55            7.4 
-#>  7 2024-02-04 09:00:00 meteogalicia 10052      Muralla          A Coruña              661       12.9            12.8            13.1 
-#>  8 2024-02-04 09:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400        1.34            1.18            1.58
-#>  9 2024-02-04 09:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684       10.4             9.94           10.7 
-#> 10 2024-02-04 09:00:00 meteogalicia 10056      Marroxo          Lugo                  645        6.65            6.09            7.32
-#> # ℹ 3,648 more rows
+#>  1 2024-02-06 09:00:00 meteogalicia 10045      Mabegondo        A Coruña               94        4.44            3.84            5.9 
+#>  2 2024-02-06 09:00:00 meteogalicia 10046      Marco da Curra   A Coruña              651        7.12            6.8             7.67
+#>  3 2024-02-06 09:00:00 meteogalicia 10047      Pedro Murias     Lugo                   51       10.0             9.62           10.5 
+#>  4 2024-02-06 09:00:00 meteogalicia 10048      O Invernadeiro   Ourense              1026        3.28            2.41            5.1 
+#>  5 2024-02-06 09:00:00 meteogalicia 10049      Corrubedo        A Coruña               30        9.01            8.8             9.17
+#>  6 2024-02-06 09:00:00 meteogalicia 10050      CIS Ferrol       A Coruña               37        7.58            7.52            7.66
+#>  7 2024-02-06 09:00:00 meteogalicia 10052      Muralla          A Coruña              661        7.56            7.34            7.95
+#>  8 2024-02-06 09:00:00 meteogalicia 10053      Campus Lugo      Lugo                  400        6.18            6.12            6.24
+#>  9 2024-02-06 09:00:00 meteogalicia 10055      Guitiriz-Mirador Lugo                  684        7.02            6.18            7.61
+#> 10 2024-02-06 09:00:00 meteogalicia 10056      Marroxo          Lugo                  645        7.67            6.95            8.79
+#> # ℹ 3,653 more rows
 #> # ℹ 6 more variables: relative_humidity [%], precipitation [L/m^2], wind_direction [°], wind_speed [m/s], insolation [h],
 #> #   geometry <POINT [°]>
 ```
@@ -106,25 +106,25 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` r
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 154 features and 5 fields
+#> Simple feature collection with 155 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.7383
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 154 × 6
+#> # A tibble: 155 × 6
 #>    service      station_id station_name             station_province altitude             geometry
 #>  * <chr>        <chr>      <chr>                    <chr>                 [m]          <POINT [°]>
 #>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21 (-8.409202 43.38276)
 #>  2 meteogalicia 14000      Coruña-Dique             A Coruña                5 (-8.374706 43.36506)
 #>  3 meteogalicia 10045      Mabegondo                A Coruña               94 (-8.262225 43.24137)
 #>  4 meteogalicia 10144      Arzúa                    A Coruña              362  (-8.17469 42.93196)
-#>  5 meteogalicia 19012      Cespón                   A Coruña               59 (-8.854571 42.67466)
-#>  6 meteogalicia 10095      Sergude                  A Coruña              231 (-8.461246 42.82283)
-#>  7 meteogalicia 10800      Camariñas                A Coruña                5 (-9.178318 43.12445)
-#>  8 meteogalicia 19001      Rus                      A Coruña              134 (-8.685357 43.15616)
-#>  9 meteogalicia 10147      Cariño                   A Coruña               20   (-7.88011 43.7383)
-#> 10 meteogalicia 10135      Lira                     A Coruña              170 (-9.126011 42.79504)
-#> # ℹ 144 more rows
+#>  5 meteogalicia 19005      Guísamo                  A Coruña              175 (-8.276487 43.30799)
+#>  6 meteogalicia 19012      Cespón                   A Coruña               59 (-8.854571 42.67466)
+#>  7 meteogalicia 10095      Sergude                  A Coruña              231 (-8.461246 42.82283)
+#>  8 meteogalicia 10800      Camariñas                A Coruña                5 (-9.178318 43.12445)
+#>  9 meteogalicia 19001      Rus                      A Coruña              134 (-8.685357 43.15616)
+#> 10 meteogalicia 10147      Cariño                   A Coruña               20   (-7.88011 43.7383)
+#> # ℹ 145 more rows
 ```
 
 Returned objects are spatial objects (using the
@@ -165,25 +165,25 @@ Once a key has been obtained, we can get the meteo:
 get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> ℹ © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 18555 features and 14 fields
+#> Simple feature collection with 18471 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 18,555 × 15
+#> # A tibble: 18,471 × 15
 #>    timestamp           service station_id station_name          station_province altitude temperature min_temperature max_temperature
 #>    <dttm>              <chr>   <chr>      <chr>                 <chr>                 [m]        [°C]            [°C]            [°C]
-#>  1 2024-02-04 09:00:00 aemet   0009X      ALFORJA               <NA>                  406        15.3            12.8            15.3
-#>  2 2024-02-04 09:00:00 aemet   0016A      REUS/AEROPUERTO       <NA>                   71        12.2             7.2            12.6
-#>  3 2024-02-04 09:00:00 aemet   0034X      VALLS                 <NA>                  233        12.3             8.9            12.3
-#>  4 2024-02-04 09:00:00 aemet   0042Y      TARRAGONA  FAC. GEOG… <NA>                   55        13.7            12              13.7
-#>  5 2024-02-04 09:00:00 aemet   0061X      PONTONS               <NA>                  632        13.4             9.7            13.4
-#>  6 2024-02-04 09:00:00 aemet   0066X      VILAFRANCA DEL PENED… <NA>                  177         9               3.9             9  
-#>  7 2024-02-04 09:00:00 aemet   0073X      SITGES-VALLCARCA      <NA>                   58        14.2            10.5            14.2
-#>  8 2024-02-04 09:00:00 aemet   0076       BARCELONA/AEROPUERTO  <NA>                    4        11.2             9.2            11.5
-#>  9 2024-02-04 09:00:00 aemet   0092X      BERGA  INSTITUTO      <NA>                  682         9.2             7.2             9.2
-#> 10 2024-02-04 09:00:00 aemet   0106X      BALSARENY             <NA>                  361         3.8             0.7             3.8
-#> # ℹ 18,545 more rows
+#>  1 2024-02-06 09:00:00 aemet   0009X      ALFORJA               <NA>                  406        11              10.3            11  
+#>  2 2024-02-06 09:00:00 aemet   0016A      REUS/AEROPUERTO       <NA>                   71         9.3             7.2             9.5
+#>  3 2024-02-06 09:00:00 aemet   0034X      VALLS                 <NA>                  233         9.9             8.3             9.9
+#>  4 2024-02-06 09:00:00 aemet   0042Y      TARRAGONA  FAC. GEOG… <NA>                   55        12.4            10.4            12.4
+#>  5 2024-02-06 09:00:00 aemet   0061X      PONTONS               <NA>                  632         9.9             8.6             9.9
+#>  6 2024-02-06 09:00:00 aemet   0066X      VILAFRANCA DEL PENED… <NA>                  177         9.8             7.6             9.8
+#>  7 2024-02-06 09:00:00 aemet   0073X      SITGES-VALLCARCA      <NA>                   58        10.8             9.1            10.8
+#>  8 2024-02-06 09:00:00 aemet   0076       BARCELONA/AEROPUERTO  <NA>                    4         9.8             8.8             9.9
+#>  9 2024-02-06 09:00:00 aemet   0092X      BERGA  INSTITUTO      <NA>                  682         6.6             5.6             6.6
+#> 10 2024-02-06 09:00:00 aemet   0106X      BALSARENY             <NA>                  361         3.4             2               3.4
+#> # ℹ 18,461 more rows
 #> # ℹ 6 more variables: relative_humidity [%], precipitation [L/m^2], wind_direction [°], wind_speed [m/s], insolation [h],
 #> #   geometry <POINT [°]>
 ```
