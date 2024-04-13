@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-04-13'
+lastmod: '2024-04-13'
 summary: Contains 5,647 observations, to our knowledge the largest database describing
   the maximum rooting depth, lateral spread, and shoot size of terrestrial plants
   in the world
