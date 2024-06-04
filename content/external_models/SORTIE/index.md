@@ -1,15 +1,14 @@
 ---
 title: SORTIE
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Forest Gap Model
 - Local
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: SORTIE-ND (or just SORTIE) is an individual-based forest simulator designed
   to study neighborhood processes. This means that the trees in the forest are modeled
   individually, not as averages or spatial aggregates. Each individual has a location

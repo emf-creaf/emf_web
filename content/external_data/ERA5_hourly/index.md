@@ -1,15 +1,14 @@
 ---
 title: ERA-5 hourly
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Reanalysis
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Monthly-averaged reanalysis data
 model_repository: ''
 data_repository: https://cds.climate.copernicus.eu

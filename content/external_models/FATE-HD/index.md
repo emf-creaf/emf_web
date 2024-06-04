@@ -1,7 +1,6 @@
 ---
 title: FATE-HD
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Forest Landscape Model
@@ -9,8 +8,8 @@ tags:
 - R/C++
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: FATE is a spatially and temporally explicit vegetation model. It uses plant
   functional groups (PFG) and integrates important mechanisms driving vegetation dynamics,
   structure and diversity, such as demographic cycle, obviously, but also seeds dispersal,

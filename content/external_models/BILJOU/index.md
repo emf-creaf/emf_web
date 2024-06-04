@@ -1,15 +1,14 @@
 ---
 title: BILJOU
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Soil-Vegetation-Atmosphere Transfer Model
 - Local
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: BILJOU is a forest water balance model that simulates water flows (transpiration,
   interception, soil evaporation and drainage) in a forest ecosystem at daily time
   steps.

@@ -1,15 +1,14 @@
 ---
 title: COMPADRE/COMADRE
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Biosphere
 - PopulationModelParameters
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: COMPADRE and COMADRE contain matrix population models of hundreds of plant
   and animal species, as well as algae, fungi, bacteria, and viruses
 model_repository: ''

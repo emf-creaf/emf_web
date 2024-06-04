@@ -1,15 +1,14 @@
 ---
 title: FORESEE–FORESt Ecosystems in a Changing Environment (4C)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model
 - Local
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: 4C is a model developed to describe long-term forest behaviour under changing
   environmental conditions. The model includes descriptions of tree species composition,
   forest structure, total ecosystem carbon content as well as leaf area index. The

@@ -1,15 +1,14 @@
 ---
 title: Global Soil Dataset for Earth System Model
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Soil
 - SoilMap
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: ''
 model_repository: ''
 data_repository: http://globalchange.bnu.edu.cn/research/data

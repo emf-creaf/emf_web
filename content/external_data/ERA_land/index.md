@@ -1,15 +1,14 @@
 ---
 title: ERA-Land
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - Reanalysis - LandSurfaceModel
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Land-surface model forced by ERA5 with lapse-rate correction
 model_repository: ''
 data_repository: https://cds.climate.copernicus.eu

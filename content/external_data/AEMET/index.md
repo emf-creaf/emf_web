@@ -1,15 +1,14 @@
 ---
 title: AEMET network
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - SurfaceStations
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Spanish automatic meteorological stations network
 model_repository: ''
 data_repository: http://www.aemet.es/en/portada

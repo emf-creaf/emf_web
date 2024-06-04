@@ -1,15 +1,14 @@
 ---
 title: 'FLAMITS: A global database of plant flammability traits'
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - TraitDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: 'Open access global database on plant flammability traits measured under
   laboratory conditions aiming to: (a) identify the diversity of methodologies to
   measure plant flammability under laboratory conditions; (b) standardize the associated

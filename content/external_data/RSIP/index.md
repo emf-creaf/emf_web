@@ -1,15 +1,14 @@
 ---
 title: Root systems of individual plants
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - TraitDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Contains 5,647 observations, to our knowledge the largest database describing
   the maximum rooting depth, lateral spread, and shoot size of terrestrial plants
   in the world

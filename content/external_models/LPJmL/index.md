@@ -1,7 +1,6 @@
 ---
 title: Lund–Potsdam–Jena managed land (LPJmL)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -9,8 +8,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: The LPJmL model is a dynamic gloval vegetation model designed to simulate
   the global terrestrial water and carbon cycles and the response of carbon and vegetation
   patterns under climate change. LPJmL simulate vegetation composition and distribution

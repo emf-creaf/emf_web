@@ -1,15 +1,14 @@
 ---
 title: 'RecruitNet: A global database of plant recruitmentnetworks'
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - VegetationPlotDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: A data set containing 143 plant recruitment networks in 23 countries across
   five conti-nents, including temperate and tropical ecosystems. The data set includes
   >850,000recruiting individuals involved in 118,411 paired interactions among 3318

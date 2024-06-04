@@ -1,15 +1,14 @@
 ---
 title: Soil map 1:25000 for Catalonia
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Soil
 - SoilMap
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Distribution of soils in the Catalan territory according to morphology, physical
   charactersitics, chemical characteristics and biological characteristics
 model_repository: ''

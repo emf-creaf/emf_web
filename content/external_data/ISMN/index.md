@@ -1,15 +1,14 @@
 ---
 title: International Soil Moisture Network (ISMN)
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Soil
 - SoilMoistureDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: The International Soil Moisture Network is an international cooperation to
   establish and maintain a global in-situ soil moisture database. This database is
   an essential means for validating and improving global satellite products, and land

@@ -1,15 +1,14 @@
 ---
 title: FORMIND
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model
 - Local
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: FORMIND is an individual-based vegetation model that simulates the growth
   of forests on the hectare scale. It allows to explore forest dynamics and forest
   structure including also processes like gap building. The main processes included

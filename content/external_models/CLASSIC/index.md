@@ -1,7 +1,6 @@
 ---
 title: The Canadian Land Surface Scheme Including Biogeochemical Cycles (CLASSIC)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -9,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: CLASSIC is a land surface model that simulates the exchanges of energy, water,
   carbon, and momentum at the earth's surface. CLASSIC is formed by the coupling of
   the Canadian Land Surface Scheme (CLASS) and the Canadian Terrestrial Ecosystem

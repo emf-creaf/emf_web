@@ -1,15 +1,14 @@
 ---
 title: LSTRAD
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - InterpolatedWeather
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: High-resolution (1 km) all-sky net radiation over Europe enabled by the merging
   of land surface temperature retrievals from geostationary and polar-orbiting satellites
 model_repository: ''

@@ -1,7 +1,6 @@
 ---
 title: BROOK90
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Soil-Vegetation-Atmosphere Transfer Model
@@ -9,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: BROOK90 is a hydrological model that simulates vertical soil water movement
   and daily evapotranspiration for all land surfaces at all times of year using a
   process-oriented approach with physically-meaningful parameters. The complexities

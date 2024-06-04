@@ -1,15 +1,14 @@
 ---
 title: FLUXNET
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Atmosphere
 - EddyCovarianceDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: The flux measurement sites are linked across a confederation of regional
   networks in North, Central and South America, Europe, Asia, Africa, and Australia,
   in a global network, called FLUXNET.

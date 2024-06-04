@@ -1,15 +1,14 @@
 ---
 title: GBIF
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Biosphere
 - BiodiversityDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Free and open access to biodiversity data
 model_repository: ''
 data_repository: https://www.gbif.org/

@@ -1,15 +1,14 @@
 ---
 title: Carbon Energy Nutrients Water (CENW)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Forest Biogeochemistry Model
 - Local
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: CenW is a generic growth and carbon cycling model that  simulates photosynthetic
   carbon gain, water use and the nitrogen cycle through soil organic matter. The photosynthetic
   modelling uses a simple, yet physiologically based, description of photosynthesis

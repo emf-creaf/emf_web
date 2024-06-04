@@ -1,16 +1,15 @@
 ---
 title: International Co-operative Programme on Assessment and Monitoring of Air Pollution
   Effects on Forests (ICP Forests)
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - ForestMonitoring
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: ICP Forests monitors forest condition at two monitoring intensity levels
 model_repository: ''
 data_repository: http://icp-forests.net/

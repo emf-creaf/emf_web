@@ -1,15 +1,14 @@
 ---
 title: World Soil Information Service (WoSIS)
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Soil
 - SoilProfileDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: The World Soil Information Service (WoSIS) aims to serve the user with a
   selection of standardised/ harmonised soil profile data.  
 model_repository: ''

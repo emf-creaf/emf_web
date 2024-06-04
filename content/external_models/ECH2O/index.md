@@ -1,7 +1,6 @@
 ---
 title: ECH2O
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Watershed Ecohydrological Model
@@ -9,8 +8,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: ECH2O is a spatially-distributed, physically-based model for ecohydrologic
   studies. It couples together a description of the energy balance with a hydrologic
   model and a forest growth components.

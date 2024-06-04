@@ -1,15 +1,14 @@
 ---
 title: Rothamsted carbon model (ROTH-C)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Soil Biogeochemistry Model
 - Local
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: ROTH-C is amodel for the turnover of organic carbon in non-waterlogged topsoils
   that allows for the effects of soil type, temperature, moisture and plant cover
   on the turnover precesses. It uses a monthly time step to calculate total organic

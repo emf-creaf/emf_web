@@ -1,7 +1,6 @@
 ---
 title: Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
-authors:
-- ''
+authors: ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model
@@ -9,8 +8,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2024-02-07'
-lastmod: '2024-02-07'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: FATES is a terrestrial ecosystem model that simulates and predicts growth,
   death and regeneration of plants and subsequent tree size distributions. When coupled
   into an earth system model, FATES allows representing potential ecosystem responses

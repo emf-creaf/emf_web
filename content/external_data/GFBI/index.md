@@ -1,15 +1,14 @@
 ---
 title: Global Forest Biodiversity Initiative
-authors:
-- ''
+authors: ''
 categories: data
 tags:
 - Vegetation
 - ForestPlotDatabase
 draft: false
 featured: false
-date: '2024-04-13'
-lastmod: '2024-04-13'
+date: '2024-06-04'
+lastmod: '2024-06-04'
 summary: Global forest inventory data and services
 model_repository: ''
 data_repository: https://gfbinitiative.net/
