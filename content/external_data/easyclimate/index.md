@@ -1,6 +1,7 @@
 ---
 title: Easyclimate
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

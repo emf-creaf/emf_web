@@ -1,6 +1,7 @@
 ---
 title: FATE-HD
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Landscape Model

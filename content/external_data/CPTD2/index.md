@@ -1,6 +1,7 @@
 ---
 title: The China plant trait database version 2
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

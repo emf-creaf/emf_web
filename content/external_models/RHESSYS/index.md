@@ -1,6 +1,7 @@
 ---
 title: Regional Hydro-Ecological Simulation System (RHESSYS)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Watershed Ecohydrological Model

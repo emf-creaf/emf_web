@@ -1,7 +1,8 @@
 ---
 title: Three Dimensional Forest Ecosystem Model of the euro-Mediterranean Centre for
   Climate Change (3D-CMCC-FEM)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model

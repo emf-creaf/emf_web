@@ -1,6 +1,7 @@
 ---
 title: North American Breeding Bird Survey
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Biosphere

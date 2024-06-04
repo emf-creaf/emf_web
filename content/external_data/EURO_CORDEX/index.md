@@ -1,6 +1,7 @@
 ---
 title: EURO-CORDEX
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

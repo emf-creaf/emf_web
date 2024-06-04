@@ -1,6 +1,7 @@
 ---
 title: HETEROgeneous FORest (HETEROFOR)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model

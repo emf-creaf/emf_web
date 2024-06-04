@@ -1,6 +1,7 @@
 ---
 title: Lund–Potsdam–Jena managed land (LPJmL)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

@@ -1,6 +1,7 @@
 ---
 title: SMC network
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

@@ -1,6 +1,7 @@
 ---
 title: Global Ecosystem Dynamics Investigation
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

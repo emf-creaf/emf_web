@@ -1,6 +1,7 @@
 ---
 title: Global Lithological Map (GLiM)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Geosphere

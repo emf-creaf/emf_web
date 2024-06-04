@@ -1,6 +1,7 @@
 ---
 title: 'RecruitNet: A global database of plant recruitmentnetworks'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

@@ -1,6 +1,7 @@
 ---
 title: forest dynamics in spatially changing environments (FORSPACE)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model

@@ -1,6 +1,7 @@
 ---
 title: CASTANEA
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Biogeochemistry Model

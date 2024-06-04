@@ -1,6 +1,7 @@
 ---
 title: Forest Community Ecology and Ecosystem ProcesseS (FORCEEPS)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model

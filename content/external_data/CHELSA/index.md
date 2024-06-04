@@ -1,6 +1,7 @@
 ---
 title: Climatologies at high resolution for the earth’s land surface areas (CHELSA)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

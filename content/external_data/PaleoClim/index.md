@@ -1,6 +1,7 @@
 ---
 title: PaleoClim
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

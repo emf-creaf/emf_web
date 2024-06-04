@@ -1,6 +1,7 @@
 ---
 title: ClimPlant
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

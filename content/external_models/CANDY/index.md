@@ -1,6 +1,7 @@
 ---
 title: CArbon-Nitrogen Dynamics (CANDY)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Soil Biogeochemistry Model

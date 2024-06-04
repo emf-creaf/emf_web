@@ -1,6 +1,7 @@
 ---
 title: Inventari Forestal Nacional d’Andorra
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

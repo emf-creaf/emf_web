@@ -1,6 +1,7 @@
 ---
 title: 'FunAndes: A functional trait database of Andean plants'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

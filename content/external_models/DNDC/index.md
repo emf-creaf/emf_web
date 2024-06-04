@@ -1,6 +1,7 @@
 ---
 title: DeNitrification-DeComposition (DNDC)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Soil Biogeochemistry Model

@@ -1,6 +1,7 @@
 ---
 title: Forest Inventory and Analysis (FIA)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

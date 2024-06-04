@@ -1,6 +1,7 @@
 ---
 title: Community Atmosphere Biosphere Land Exchange (CABLE)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Terrestrial Biogeochemistry Model

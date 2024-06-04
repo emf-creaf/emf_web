@@ -1,6 +1,7 @@
 ---
 title: Harmonized World Soil Database
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil

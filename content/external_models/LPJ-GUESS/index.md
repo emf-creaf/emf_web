@@ -1,6 +1,7 @@
 ---
 title: Lund–Potsdam–Jena General Ecosystem Simulator (LPJ-GUESS)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Global Vegetation Model

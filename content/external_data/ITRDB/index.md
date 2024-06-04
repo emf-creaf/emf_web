@@ -1,6 +1,7 @@
 ---
 title: International Tree Ring Databank
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

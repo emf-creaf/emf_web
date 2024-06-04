@@ -1,6 +1,7 @@
 ---
 title: HydroLAKES
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Hydrosphere

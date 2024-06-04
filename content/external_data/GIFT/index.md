@@ -1,6 +1,7 @@
 ---
 title: Global Inventory of Floras and Traits (GIFT)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

@@ -1,6 +1,7 @@
 ---
 title: LSTRAD
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

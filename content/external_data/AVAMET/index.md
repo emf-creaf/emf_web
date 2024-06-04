@@ -1,6 +1,7 @@
 ---
 title: AVAMET network
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Atmosphere

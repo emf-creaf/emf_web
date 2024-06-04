@@ -1,6 +1,7 @@
 ---
 title: 'FLAMITS: A global database of plant flammability traits'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

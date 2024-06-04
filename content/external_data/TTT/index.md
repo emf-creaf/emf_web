@@ -1,6 +1,7 @@
 ---
 title: 'Tundra Trait Team: a database of plant traits spanning the tundra biome'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

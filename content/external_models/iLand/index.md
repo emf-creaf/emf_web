@@ -1,6 +1,7 @@
 ---
 title: the individual-based forest landscape and disturbance model (iLand)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Landscape Model

@@ -1,6 +1,7 @@
 ---
 title: Physiological Principles in Predicting Growth (3-PG)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Biogeochemistry Model

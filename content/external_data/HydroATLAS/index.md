@@ -1,6 +1,7 @@
 ---
 title: HydroATLAS
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Hydrosphere

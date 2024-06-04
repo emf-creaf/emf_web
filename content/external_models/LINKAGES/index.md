@@ -1,6 +1,7 @@
 ---
 title: LINKAGES
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model

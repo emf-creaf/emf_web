@@ -1,6 +1,7 @@
 ---
 title: 'PhenoCam: An ecosystem phenology camera network'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

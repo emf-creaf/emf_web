@@ -1,6 +1,7 @@
 ---
 title: Carbon Energy Nutrients Water (CENW)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Biogeochemistry Model

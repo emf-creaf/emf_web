@@ -1,6 +1,7 @@
 ---
 title: FIREBGCv2
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Landscape Model

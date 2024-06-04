@@ -1,6 +1,7 @@
 ---
 title: JAnak-BOtkin-WAllis (JABOWA)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model

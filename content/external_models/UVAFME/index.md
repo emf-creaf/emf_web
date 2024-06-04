@@ -1,6 +1,7 @@
 ---
 title: University of Virginia Forest Model Enhanced (UVAFME)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Gap Model

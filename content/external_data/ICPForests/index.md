@@ -1,7 +1,8 @@
 ---
 title: International Co-operative Programme on Assessment and Monitoring of Air Pollution
   Effects on Forests (ICP Forests)
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

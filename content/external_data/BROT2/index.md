@@ -1,6 +1,7 @@
 ---
 title: 'BROT 2.0: A functional trait database for Mediterranean Basin plants'
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

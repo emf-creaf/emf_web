@@ -1,6 +1,7 @@
 ---
 title: LANDIS-PRO
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Landscape Model

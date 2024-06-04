@@ -1,6 +1,7 @@
 ---
 title: PICUS
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Dynamic Forest Ecosystem Model

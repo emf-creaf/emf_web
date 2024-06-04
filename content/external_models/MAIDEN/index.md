@@ -1,6 +1,7 @@
 ---
 title: Modeling and Analysis in Dendroecology (MAIDEN)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Biogeochemistry Model

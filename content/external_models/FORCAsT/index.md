@@ -1,6 +1,7 @@
 ---
 title: FORest Canopy Atmosphere Transfer (FORCAsT)
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Soil-Vegetation-Atmosphere Transfer Model

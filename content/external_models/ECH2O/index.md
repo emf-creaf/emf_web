@@ -1,6 +1,7 @@
 ---
 title: ECH2O
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Watershed Ecohydrological Model

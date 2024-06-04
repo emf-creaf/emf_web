@@ -1,6 +1,7 @@
 ---
 title: AusTraits, a curated plant trait database for the Australian flora
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Vegetation

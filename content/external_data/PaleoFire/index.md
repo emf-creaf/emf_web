@@ -1,6 +1,7 @@
 ---
 title: Global Paleofire Database
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Geosphere

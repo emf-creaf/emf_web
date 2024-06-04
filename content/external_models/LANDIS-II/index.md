@@ -1,6 +1,7 @@
 ---
 title: LANDIS-II
-authors: ''
+authors:
+- ''
 categories: models
 tags:
 - Forest Landscape Model

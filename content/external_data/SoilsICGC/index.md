@@ -1,6 +1,7 @@
 ---
 title: Soil map 1:25000 for Catalonia
-authors: ''
+authors:
+- ''
 categories: data
 tags:
 - Soil
