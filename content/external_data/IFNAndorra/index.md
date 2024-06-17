@@ -8,8 +8,8 @@ tags:
 - ForestMonitoring
 draft: false
 featured: false
-date: '2024-06-04'
-lastmod: '2024-06-04'
+date: '2024-06-17'
+lastmod: '2024-06-17'
 summary: L’estiu del 2022 es va dur a terme el treball de camp per conèixer les principals
   variables silvo-dasomètriques que permeten la caracterització dels diferents tipus
   de boscos del Principat d’Andorra.
