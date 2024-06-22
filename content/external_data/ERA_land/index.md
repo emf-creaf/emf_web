@@ -8,8 +8,8 @@ tags:
 - Reanalysis - LandSurfaceModel
 draft: false
 featured: false
-date: '2024-06-17'
-lastmod: '2024-06-17'
+date: '2024-06-22'
+lastmod: '2024-06-22'
 summary: Land-surface model forced by ERA5 with lapse-rate correction
 model_repository: ''
 data_repository: https://cds.climate.copernicus.eu
