@@ -138,21 +138,21 @@ request <- list(
 )
 ```
 
-- `format`: The desired output format, it depends on the formats
-  available in the datasets, some only offer GRIB (zip files), whereas
-  others offer also NetCDF files. Choose accordingly to the available
-  formats.
-- `variable`: Character vector with the desired variable names or `all`
-  for accesing all variables.
-- `month`, `year` and `time`: Character vectors with the desired months,
-  year and times (hours) to download.
-- `area`: Numeric vector with the bbox of the desired area, in the form
-  of `c(max_lat, min_long, min_lat, max_lat)`.
-- `target`: Output file name
-- `dataset_short_name`: Dataset short name as stated in the CDS product
-  web page.
-- `product_type`: Some datasets have more than one product type, choose
-  the one desired.
+  - `format`: The desired output format, it depends on the formats
+    available in the datasets, some only offer GRIB (zip files), whereas
+    others offer also NetCDF files. Choose accordingly to the available
+    formats.
+  - `variable`: Character vector with the desired variable names or
+    `all` for accesing all variables.
+  - `month`, `year` and `time`: Character vectors with the desired
+    months, year and times (hours) to download.
+  - `area`: Numeric vector with the bbox of the desired area, in the
+    form of `c(max_lat, min_long, min_lat, max_lat)`.
+  - `target`: Output file name
+  - `dataset_short_name`: Dataset short name as stated in the CDS
+    product web page.
+  - `product_type`: Some datasets have more than one product type,
+    choose the one desired.
 
 > Take into account that parameters of the request can change depending
 > on the dataset. It is always advisable to explore the data download

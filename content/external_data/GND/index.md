@@ -8,8 +8,8 @@ tags:
 - Deposition
 draft: false
 featured: false
-date: '2024-06-22'
-lastmod: '2024-06-22'
+date: '2024-07-04'
+lastmod: '2024-07-04'
 summary: Global nitrogen deposition (2°×2.5° grid resolution) simulated with GEOS-Chem
   for 1984-1986, 1994-1996, 2004-2006, and 2014-2016
 model_repository: ''

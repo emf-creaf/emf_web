@@ -8,8 +8,8 @@ tags:
 - BirdCensus
 draft: false
 featured: false
-date: '2024-06-22'
-lastmod: '2024-06-22'
+date: '2024-07-04'
+lastmod: '2024-07-04'
 summary: The BBS is a cooperative effort between the U.S. Geological Survey's Patuxent
   Wildlife Research Center and Environment Canada's Canadian Wildlife Service to monitor
   the status and trends of North American bird populations. Following a rigorous protocol,

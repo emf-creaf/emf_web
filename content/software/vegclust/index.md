@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2024-06-22'
-lastmod: '2024-06-22'
+date: '2024-07-04'
+lastmod: '2024-07-04'
 summary: A set of functions to perform fuzzy clustering of vegetation data and to
   assess ecological community similarity on the basis of structure and composition.
 model_repository: ''
@@ -22,7 +22,7 @@ links:
   url_docs: https://emf-creaf.github.io/vegclust/
 ---
 <!-- badges: start -->
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/vegclust)](https://cran.r-project.org/package=vegclust)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/vegclust)](https://cran.r-project.org/package=vegclust)
 [![](https://cranlogs.r-pkg.org/badges/vegclust)](https://cran.rstudio.com/web/packages/vegclust/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/vegclust/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/vegclust/actions)
 <!-- badges: end -->
@@ -34,11 +34,11 @@ vegetation structure and composition. It is intended to be useful for
 community ecologists and forest engineers, but the clustering functions
 can be used in other fields. The package provides functions to:
 
-- Perform fuzzy clustering of vegetation data: De Cáceres et al. (2010)
-  (<https://doi.org/10.1111/j.1654-1103.2010.01211.x>).
-- Assess ecological community ressemblance on the basis of structure and
-  composition: De Cáceres et al. (2013)
-  (<https://doi.org/10.1111/2041-210X.12116>).
+  - Perform fuzzy clustering of vegetation data: De Cáceres et
+    al. (2010) (<https://doi.org/10.1111/j.1654-1103.2010.01211.x>).
+  - Assess ecological community ressemblance on the basis of structure
+    and composition: De Cáceres et al. (2013)
+    (<https://doi.org/10.1111/2041-210X.12116>).
 
 ## Package installation
 
@@ -70,10 +70,10 @@ been moved to an independent package `ecotraj` available at
 
 ## References
 
-- De Cáceres, M., Font, X., & Oliva, F. 2010. The management of
-  vegetation classifications with fuzzy clustering. Journal of
-  Vegetation Science 21: 1138–1151.
+  - De Cáceres, M., Font, X., & Oliva, F. 2010. The management of
+    vegetation classifications with fuzzy clustering. Journal of
+    Vegetation Science 21: 1138–1151.
 
-- De Cáceres, M., Legendre, P., & He, F. 2013. Dissimilarity
-  measurements and the size structure of ecological communities (D.
-  Faith, Ed.). Methods in Ecology and Evolution 4: 1167–1177.
+  - De Cáceres, M., Legendre, P., & He, F. 2013. Dissimilarity
+    measurements and the size structure of ecological communities (D.
+    Faith, Ed.). Methods in Ecology and Evolution 4: 1167–1177.
