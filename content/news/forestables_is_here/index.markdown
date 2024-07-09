@@ -16,7 +16,7 @@ links:
 image:
   caption: 'forestables is here!'
   
-summary: "`forestables` R package provides tools to download and extract tidy data from the US, France and Sapin forest inventories"  
+summary: "`forestables` R package provides tools to download and extract tidy data from the US, France and Spain forest inventories"  
 ---
 
 We are proud of announcing the `forestables` R package.  
