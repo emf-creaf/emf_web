@@ -22,9 +22,9 @@ links:
   url_source: https://github.com/emf-creaf/forestables
   url_docs: https://emf-creaf.github.io/forestables
 ---
-# forestables
+{{< figure src="logo.png" class="single-image" >}}
 
-[![R-CMD-check](https://github.com/emf-creaf/forestables/actions/workflows/R-CMD-check-main.yaml/badge.svg)](https://github.com/emf-creaf/forestables/actions/workflows/R-CMD-check-main.yaml)
+[![R-CMD-check](https://github.com/emf-creaf/forestables/actions/workflows/R-CMD-check_main.yaml/badge.svg)](https://github.com/emf-creaf/forestables/actions/workflows/R-CMD-check_main.yaml)
 
 Read and uniformize forest inventories data from the FIA (USA forest
 inventory), FFI (France forest inventory) and IFN (Spain forest
@@ -70,10 +70,6 @@ library(forestables)
 #> Loading required package: data.table
 #> data.table 1.15.4 using 12 threads (see ?getDTthreads).  Latest news: r-datatable.com
 #> Loading required package: dtplyr
-#> Warning: ✖ mdbtools system utility not found.
-#> ℹ mdbtools is needed to read Spanish inventory (IFN) data.
-#> ℹ Please check your package manager (apt, brew, port...) to install it.
-#> ℹ More info at https://github.com/mdbtools/mdbtools
 ```
 
 ``` r
@@ -100,7 +96,7 @@ library(dplyr)
 ffi_path <- tempdir()
 download_inventory("FFI", destination = ffi_path)
 #> ℹ Downloading FFI available data
-#> ℹ Unzipping downloaded data in '/tmp/Rtmp9GjHvi'
+#> ℹ Unzipping downloaded data in '/tmp/RtmpN90QNZ'
 #> ✔ Done!
 ```
 
