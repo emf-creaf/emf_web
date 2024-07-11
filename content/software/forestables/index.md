@@ -69,13 +69,6 @@ Loire department from 2015:
 library(forestables)
 #> Loading required package: data.table
 #> data.table 1.15.4 using 12 threads (see ?getDTthreads).  Latest news: r-datatable.com
-#> 
-#> Attaching package: 'data.table'
-#> 
-#> The following object is masked from 'package:purrr':
-#> 
-#>     transpose
-#> 
 #> Loading required package: dtplyr
 ```
 
@@ -103,7 +96,7 @@ library(dplyr)
 ffi_path <- tempdir()
 download_inventory("FFI", destination = ffi_path)
 #> ℹ Downloading FFI available data
-#> ℹ Unzipping downloaded data in '/tmp/RtmpTbtNZn'
+#> ℹ Unzipping downloaded data in '/tmp/RtmpsCDg5Y'
 #> ✔ Done!
 ```
 
@@ -126,6 +119,13 @@ loire_plots_2015 <- ffi_to_tibble(
 #> Start
 #> ℹ Processing 1 year
 #> Getting ready to retrieve 113 plots for 2015
+#> 
+#> Attaching package: 'purrr'
+#> 
+#> 
+#> The following object is masked from 'package:data.table':
+#> 
+#>     transpose
 ```
 
 ``` r
