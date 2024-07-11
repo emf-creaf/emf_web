@@ -8,8 +8,8 @@ tags:
 - SoilMap
 draft: false
 featured: false
-date: '2024-07-04'
-lastmod: '2024-07-04'
+date: '2024-07-11'
+lastmod: '2024-07-11'
 summary: Distribution of soils in the Catalan territory according to morphology, physical
   charactersitics, chemical characteristics and biological characteristics
 model_repository: ''

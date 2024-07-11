@@ -20,7 +20,7 @@ links:
   url_source: https://github.com/emf-creaf/medfateland/
   url_docs: https://emf-creaf.github.io/medfateland/
 ---
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/medfateland)](https://cran.r-project.org/package=medfateland)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/medfateland)](https://cran.r-project.org/package=medfateland)
 [![](https://cranlogs.r-pkg.org/badges/medfateland)](https://cran.rstudio.com/web/packages/medfateland/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/medfateland/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emf-creaf/medfateland/actions)
 
@@ -65,14 +65,13 @@ can be found at <https://emf-creaf.github.io/medfatebook/index.html>.
 The modelling tools included in **medfate** and **medfateland** are
 complemented with two companion packages:
 
-  - Package [**meteoland**](https://emf-creaf.github.io/meteoland)
-    allows generating daily weather input for simulation models in
-    **medfate** and **medfateland**.
-  - Package
-    [**traits4models**](https://emf-creaf.github.io/traits4models)
-    provides functions to help creating species parameter inputs for
-    process-based models such as those in for **medfate** and
-    **medfateland** functions \[*under development*\].
+- Package [**meteoland**](https://emf-creaf.github.io/meteoland) allows
+  generating daily weather input for simulation models in **medfate**
+  and **medfateland**.
+- Package [**traits4models**](https://emf-creaf.github.io/traits4models)
+  provides functions to help creating species parameter inputs for
+  process-based models such as those in for **medfate** and
+  **medfateland** functions \[*under development*\].
 
 The relationships between the four packages are illustrated in the
 figure below, where black arrows indicate package dependencies and gray
@@ -89,4 +88,4 @@ with researchers from
 [*URFM-INRAE*](https://www6.paca.inrae.fr/ecologie_des_forets_mediterraneennes/)
 (in France) and [*CTFC*](https://www.ctfc.cat/) (in Spain).
 
-{{< figure src="logos.png" class="single-image" >}}
+<img src="logos.png" width="60%" style="display: block; margin: auto;" />

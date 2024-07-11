@@ -45,11 +45,6 @@ You can work with individual sites:
 # load packages
 library(sapfluxnetr)
 library(ggplot2)
-#> Need help getting started? Try the R Graphics Cookbook:
-#> https://r-graphics.org
-```
-
-``` r
 
 # ARG_MAZ example site data
 data('ARG_MAZ', package = 'sapfluxnetr')
@@ -91,8 +86,7 @@ multi_sfn <- sfn_data_multi(ARG_TRE, ARG_MAZ, AUS_CAN_ST2_MIX)
 # plotting the individual sites. It creates a list of plots
 plots_list <- sfn_plot(multi_sfn, formula_env = ~ vpd)
 plots_list[['AUS_CAN_ST2_MIX']]
-#> Warning: Removed 526066 rows containing missing values or values outside the scale range
-#> (`geom_point()`).
+#> Warning: Removed 526066 rows containing missing values or values outside the scale range (`geom_point()`).
 ```
 
 {{< figure src="README-example_multi-1.png" class="single-image" >}}
@@ -116,8 +110,7 @@ multi_metrics <- daily_metrics(
 # plot daily aggregations
 ggplot(multi_metrics, aes(x = vpd_q_95, y = sapflow_q_95, colour = si_code)) +
   geom_point(alpha = 0.2)
-#> Warning: Removed 10966 rows containing missing values or values outside the scale range
-#> (`geom_point()`).
+#> Warning: Removed 10966 rows containing missing values or values outside the scale range (`geom_point()`).
 ```
 
 {{< figure src="README-example_multi-2.png" class="single-image" >}}
@@ -136,5 +129,6 @@ bug at <https://github.com/sapfluxnet/sapfluxnetr/issues>
 
 ## Overview
 
-Please see `vignette('sapfluxnetr-quick-guide', package =
-'sapfluxnetr')` for a detailed overview of the package capabilities.
+Please see
+`vignette('sapfluxnetr-quick-guide', package = 'sapfluxnetr')` for a
+detailed overview of the package capabilities.
