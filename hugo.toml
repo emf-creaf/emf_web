@@ -62,6 +62,6 @@ theme = "emf_hugo_theme"
         style = 'solarized-light'
         tabWidth = 2
     [markup.tableOfContents]
-        endLevel = 2
+        endLevel = 3
         ordered = false
-        startLevel = 1
+        startLevel = 2
