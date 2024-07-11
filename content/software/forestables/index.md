@@ -103,7 +103,7 @@ library(dplyr)
 ffi_path <- tempdir()
 download_inventory("FFI", destination = ffi_path)
 #> ℹ Downloading FFI available data
-#> ℹ Unzipping downloaded data in '/tmp/RtmpKDH9zk'
+#> ℹ Unzipping downloaded data in '/tmp/RtmpTbtNZn'
 #> ✔ Done!
 ```
 
