@@ -25,13 +25,13 @@ links:
   url_source: https://github.com/emf-creaf/medfate/
   url_docs: https://emf-creaf.github.io/medfate/
 ---
-# medfate <a href="https://emf-creaf.github.io/medfate/"><img src="logo.png" align="right" height="139" alt="medfate website" /></a>
+# Mediterranean forest simulation <a href="https://emf-creaf.github.io/medfate/"><img src="logo.png" align="right" height="139" alt="medfate website" /></a>
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/medfate)](https://cran.r-project.org/package=medfate)
 [![](https://cranlogs.r-pkg.org/badges/medfate)](https://cran.rstudio.com/web/packages/medfate/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/medfate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emf-creaf/medfate/actions)
 
-### Introduction
+## Introduction
 
 Package **medfate** is designed to assist forest scientists to simulate
 forest functioning and dynamics, using cohort-based description of
@@ -46,11 +46,11 @@ processes:
   - Forest dynamics, including recruitment and management (De Cáceres et
     al. 2023)
 
-The models are parameterized for species of the Mediterranean region
-(particularly for Catalonia, NE Spain), but forests with different
-composition could be modelled with different parameter sets.
+The models are parameterized for species of the **Mediterranean region**
+(particularly for Spain), but forests with different composition could
+be modelled with different parameter sets.
 
-### Package installation & documentation
+## Package installation & documentation
 
 Package **medfate** can be found at
 [CRAN](https://CRAN.R-project.org/package=medfate), where it is updated
@@ -76,7 +76,7 @@ A complete documentation of the models included in the package can be
 found in [medfate’s reference
 book](https://emf-creaf.github.io/medfatebook/index.html).
 
-### Companion R packages
+## Companion R packages
 
 During the development of **medfate** some functions have been
 originally placed there and then moved to more specialized packages
@@ -100,7 +100,7 @@ arrows indicate model parameter provision.
 
 {{< figure src="packages.png" class="single-image" >}}
 
-### Authorship
+## Authorship
 
 The set of R packages are developed and maintained by the [*Ecosystem
 Modelling Facility*](https://emf.creaf.cat) unit at
@@ -111,7 +111,7 @@ with researchers from
 
 <img src="institution_logos.png" width="60%" style="display: block; margin: auto;" />
 
-### References
+## References
 
   - De Cáceres M, Martínez-Vilalta J, Coll L, Llorens P, Casals P,
     Poyatos R, Pausas JG, Brotons L. (2015) Coupling a water balance
