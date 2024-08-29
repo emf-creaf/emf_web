@@ -7,40 +7,40 @@ theme = "emf_hugo_theme"
 [menu]
     [[menu.main]]
         name = "News"
-        url = "/news/"
+        pageRef = "/news/"
         weight = 1
     [[menu.main]]
         name = "Models"
-        url = "/models/"
+        pageRef = "/models/"
         weight = 2
     [[menu.main]]
         name = "Workflows"
-        url = "/workflows/"
+        pageRef = "/workflows/"
         weight = 3
     [[menu.main]]
         name = "Data"
-        url = "/data/"
+        pageRef = "/data/"
         weight = 4
     [[menu.main]]
         name = "Software"
-        url = "/software/"
+        pageRef = "/software/"
         weight = 5
     [[menu.main]]
         name = "Tech Docs"
-        url = "/tech_docs/"
+        pageRef = "/tech_docs/"
         weight = 6
     [[menu.main]]
         name = "Publications & Projects"
-        url = "/publications/"
+        pageRef = "/publications/"
         weight = 7
     [[menu.main]]
         name = "Training"
-        url = "/training/"
+        pageRef = "/training/"
         weight = 8
     [[menu.main]]
         name = "About EMF"
-        url = "/about/"
-        weight = 9
+        pageRef = "/about/"
+        weight = 99
 
 [markup]
     [markup.goldmark]

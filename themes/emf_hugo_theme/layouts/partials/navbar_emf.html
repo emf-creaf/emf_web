@@ -30,7 +30,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ms-3" id="emf_nav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav w-100">
           {{ range .Site.Menus.main }}
           <li class="nav-item">
               <a class="nav-link" href="{{ .URL }}" title="{{ .Name }}">
@@ -38,6 +38,12 @@
               </a>
           </li>
           {{ end }}
+          <li class="nav-item ms-auto me-4">
+            <a class="nav-link" href="https://laboratoriforestal.creaf.cat" title="Catalonian Forestry Lab" target="_blank">
+                Catalonian Forestry Lab
+                {{ partial "svgs/external_link_logo.svg" }}
+            </a>
+        </li>
       </ul>
     </div>
 </nav>
