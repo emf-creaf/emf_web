@@ -14,7 +14,7 @@ links:
 image:
   caption: "LFC's new web"
   
-summary: "We celebrate the 5 years aniversary of the Catalan Forestry Lab web with a brand new design."  
+summary: "We celebrate the 5 years aniversary of the Catalonian Forestry Lab web with a brand new design."  
 ---
 
 Five years ago the *Laboratori Forestal Català* (LFC) web was launched. At the
