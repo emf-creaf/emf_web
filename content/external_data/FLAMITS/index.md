@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2024-07-11'
-lastmod: '2024-07-11'
+date: '2024-09-10'
+lastmod: '2024-09-10'
 summary: 'Open access global database on plant flammability traits measured under
   laboratory conditions aiming to: (a) identify the diversity of methodologies to
   measure plant flammability under laboratory conditions; (b) standardize the associated
