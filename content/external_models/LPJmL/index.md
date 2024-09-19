@@ -9,8 +9,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2024-07-11'
-lastmod: '2024-07-11'
+date: '2024-09-19'
+lastmod: '2024-09-19'
 summary: The LPJmL model is a dynamic gloval vegetation model designed to simulate
   the global terrestrial water and carbon cycles and the response of carbon and vegetation
   patterns under climate change. LPJmL simulate vegetation composition and distribution
