@@ -13,6 +13,7 @@
                 {{ end }}
 
                 {{ range .Resources.Match "*.html" }}
+                    <p>{{ .RelPermalink }}</p>
                     <p><a href="{{ $root_training }}{{ .Name }}" target="_blank", type="{{ .MediaType }}">{{ .Name }}</a></p>
                 {{ end }}
 

@@ -78,6 +78,18 @@
     sphere = false
     committee = false
 
+[rbalaguer]
+    id = "rbalaguer"
+    name = "Rodrigo"
+    surname = "Balaguer"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "CREAF Researcher"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
 [naquilue]
     id = "naquilue"
     name = "Núria"
