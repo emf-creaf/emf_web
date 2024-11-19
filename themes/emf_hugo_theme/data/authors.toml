@@ -80,6 +80,7 @@
 
 [rbalaguer]
     id = "rbalaguer"
+    weight = 99
     name = "Rodrigo"
     surname = "Balaguer"
     affiliation = "CREAF"
@@ -87,11 +88,12 @@
     core = false
     position = "CREAF Researcher"
     image = "img/authors/default.png"
-    sphere = false
+    sphere = true
     committee = false
 
 [naquilue]
     id = "naquilue"
+    weight = 1
     name = "Núria"
     surname = "Aquilué"
     affiliation = "CTFC"
@@ -100,7 +102,7 @@
     core = false
     position = "Developer"
     image = "img/authors/naquilue.png"
-    sphere = false
+    sphere = true
     committee = false
 
 [lbrotons]
@@ -118,6 +120,7 @@
 
 [aameztegui]
     id = "aameztegui"
+    weight = 2
     name = "Aitor"
     surname = "Ameztegui"
     affiliation = "University of Lleida"
@@ -126,7 +129,7 @@
     core = false
     position = "Developer"
     image = "img/authors/aameztegui.png"
-    sphere = false
+    sphere = true
     committee = false
 
 [rpoyatos]
@@ -256,6 +259,7 @@
 
 [fdadamo]
     id = "fdadamo"
+    weight = 99
     name = "Francesco"
     surname = "D'Adamo"
     affiliation = "CREAF"
@@ -263,11 +267,12 @@
     core = false
     position = "Guest"
     image = "img/authors/default.png"
-    sphere = false
+    sphere = true
     committee = false
 
 [jmespelta]
     id = "jmespelta"
+    weight = 99
     name = "Josep Maria"
     surname = "Espelta"
     affiliation = "CREAF"
@@ -275,5 +280,18 @@
     core = false
     position = "Guest"
     image = "img/authors/default.png"
-    sphere = false
+    sphere = true
+    committee = false
+
+[nmartin]
+    id = "nmartin"
+    weight = 3
+    name = "Nicolas"
+    surname = "Martin"
+    affiliation = "INRA"
+    aff_link = ""
+    core = false
+    position = "Researcher"
+    image = "img/authors/default.png"
+    sphere = true
     committee = false
