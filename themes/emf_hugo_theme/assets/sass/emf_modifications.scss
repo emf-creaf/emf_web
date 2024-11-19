@@ -98,7 +98,7 @@ $emf-blue: #13ABCD;
 
 
 /* emf home featurettes */
-#emf-home-featurettes, #emf-about-authors {
+#emf-home-featurettes, #emf-about-authors, #emf-spheres {
     background: rgba(255, 255, 255, 0.8);
     background-image: url($abstract_background_lighter_overlay), linear-gradient(90deg, $emf-blue -0.4%, $publications 100.4%);
     background-blend-mode: normal, overlay;

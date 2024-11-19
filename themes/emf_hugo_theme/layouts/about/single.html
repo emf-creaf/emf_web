@@ -65,17 +65,25 @@
     </div>    
 </div>
 
-{{/* <div class="container-fluid p-5 my-5" id="emf-spheres">
-    <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF SPHERE</h2>
-    <h3 class="mx-auto w-50 text-center emf-blue fw-bold ls-10">Developers</h3>
-    <div class="row mb-3 px-5">
+<div class="container-fluid p-5 my-5" id="emf-spheres">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF SPHERES</h2>
+                <h3 class="mx-auto w-50 text-center emf-blue fw-bold ls-10">In active collaboration</h3>
+            </div>  
+        </div>
+        <div class="row row-cols-md-3 mb-3 px-5">
         {{ range sort .Site.Data.authors "weight" }}
         {{ if not .core }}
+        {{ if not .commitee }}
         {{ if .sphere }}
             {{ partial "author_info.html" (dict "author" . "type" "about") }}
         {{ end }}
         {{ end }}
         {{ end }}
-    </div>
-</div> */}}
+        {{ end }}
+        </div>
+    </div>    
+</div>
 {{ end }}
