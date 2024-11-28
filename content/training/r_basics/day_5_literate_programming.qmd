@@ -1,0 +1,164 @@
+---
+title: Literate programming with the tidyverse
+---
+
+## The tidyverse
+
+The **tidyverse** is a collection of R packages designed for data science, as a
+suite aimed at easening the data analysis in all its steps.
+
+All packages share an underlying design philosophy, grammar, and data structures. 
+
+![](resources/img/tidyverse_schema_2.png){.nostretch width="700px" fig-align="center"}
+
+## {.center}
+
+### Quarto
+
+<https://quarto.org/>
+
+![](resources/img/quarto.png){.nostretch width="250px" fig-align="right"}
+
+## Quarto
+
+Allows to create
+
+::: {.incremental}
+  - dynamic documents
+  - presentations
+  - web pages
+  - books
+  - scientific manuscripts
+:::
+
+## Quarto
+
+Allows to mix prose with code
+
+::: {.fragment}
+  - R
+:::
+
+::: {.fragment .fade-up}
+  - Python
+  - Julia
+  - Observable JS
+:::
+
+## {.center}
+
+### markdown
+
+*markdown* is a plain text format designed to be human readable but also
+easily machine formatted.  
+
+Any document in markdown can be read as a text file, but it can be also
+**rendered** to any rich document format (html, pdf-latex, docx...)
+
+## markdown basics
+
+We are gonna follow the official guide:
+
+<https://quarto.org/docs/authoring/markdown-basics.html>
+
+## {.center}
+
+### Creating a quarto document (.qmd)
+
+## Creating a quarto document (.qmd)
+
+### frontmatter
+
+Always at the beggining of the document. It allows to configure how is gonna
+be rendered.
+
+```{.yaml}
+---
+title: "Untitled"
+format: html
+---
+```
+
+## Creating a quarto document (.qmd)
+
+### HTML frontmatter options
+
+```{.yaml}
+---
+title: "Olympic Games Analysis"
+format:
+  html:
+    toc: true
+    toc-title: "Contents"
+    number-sections: true
+    embed-resources: true
+---
+```
+
+## Creating a quarto document (.qmd)
+
+### PDF frontmatter options
+
+```{.yaml}
+---
+title: "Olympic Games Analysis"
+format:
+  pdf:
+    toc: true
+    toc-title: "Contents"
+    number-sections: true
+---
+```
+
+## Creating a quarto document (.qmd)
+
+### R code blocks
+
+```{r}
+#| echo: fenced
+
+library(dplyr)
+library(ggplot2)
+```
+
+## Creating a quarto document (.qmd)
+
+### R code blocks
+
+```{{r}}
+#| echo: false
+
+1 + 1
+```
+
+Will render as:
+
+```{r}
+#| echo: false
+
+1 + 1
+```
+
+## Creating a quarto document (.qmd)
+
+### R code blocks
+
+```{{r}}
+#| echo: true
+
+1 + 1
+```
+
+Will render as:
+
+```{r}
+#| echo: true
+
+1 + 1
+```
+
+
+## Creating a quarto document (.qmd) {.center}
+
+### Let's start
+
