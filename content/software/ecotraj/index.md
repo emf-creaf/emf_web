@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2024-08-27'
-lastmod: '2024-08-27'
+date: '2025-01-11'
+lastmod: '2025-01-11'
 summary: Assists ecologists in the analysis of temporal changes of ecosystems, defined
   as trajectories on a chosen multivariate space, by providing a set of trajectory
   metrics and visual representations.
@@ -36,15 +36,20 @@ changes in ecosystems defined on a chosen multivariate space.
 
 ETA is related to the following publications:
 
-  - First presentation of the community trajectory analysis framework
-    (De Cáceres et al. 2019).
+  - Initial presentation of the **Ecological Trajectory Analysis (ETA)**
+    framework (De Cáceres et al. 2019).
 
-  - Extension of community trajectory analysis (Sturbois et al. 2021a).
+  - ETA extension of **metrics** and **visualisation modes** (Sturbois
+    et al. 2021a).
 
-  - Generalization to stable isotope data (Sturbois et al. 2021b).
+  - ETA extension to **cyclical** trajectory data (Djeghri et al. in
+    prep.).
 
-  - Application of ETA framework for the assessment of ecological
-    quality (Sturbois et al. 2023).
+  - Application to a multivariate space defined by **stable isotope**
+    data (Sturbois et al. 2021b).
+
+  - Application of ETA framework for the **assessment of ecological
+    quality** (Sturbois et al. 2023).
 
 ## Package installation and documentation
 
@@ -61,6 +66,56 @@ Although the package comes with function documentation, articles
 explaining how to use the package can be found at
 <https://emf-creaf.github.io/ecotraj/>.
 
+## Package functions
+
+The following lists the main package functions, grouped by analysis
+framework:
+
+**Functions for Ecological Trajectory Analysis (ETA)**
+
+| Name                         | Short description                                                                                                                          |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `defineTrajectories()`       | Defines trajectory objects to be analyzed.                                                                                                 |
+| `subsetTrajectories()`       | Subsets trajectories corresponding to selected set of sites or surveys from a dataset containing multiple trajectories.                    |
+| `smoothTrajectories()`       | Performs multivariate smoothing on trajectory data using a Gaussian kernel.                                                                |
+| `centerTrajectories()`       | Shifts all trajectories to the center of the multivariate space and returns a modified distance matrix.                                    |
+| `trajectoryLengths()`        | Calculates lengths of directed segments and total path length of trajectories.                                                             |
+| `trajectoryLengths2D()`      | Calculates lengths of directed segments and total path lengths of trajectories from 2D coordinates given as input.                         |
+| `trajectorySpeeds()`         | Calculates speeds of directed segments and total path speed of trajectories.                                                               |
+| `trajectorySpeeds2D()`       | Calculates speeds of directed segments and total path speed of trajectories from 2D coordinates given as input.                            |
+| `trajectoryAngles()`         | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points.                     |
+| `trajectoryAngles2D()`       | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points from 2D coordinates. |
+| `trajectoryConvergence()`    | Performs the Mann-Kendall trend test on the distances between trajectories or the distance between points of one trajectory to the other.  |
+| `trajectoryDirectionality()` | Assesses the level directionality of each trajectory.                                                                                      |
+| `trajectoryVariability()`    | Assesses the internal variability within each trajectory.                                                                                  |
+| `trajectoryDistances()`      | Estimates distances between pairs of ecosystem trajectories.                                                                               |
+| `trajectoryPlot()`           | Draws trajectories in a 2D-plot corresponding to the input coordinates.                                                                    |
+| `trajectoryPCoA()`           | Performs principal coordinates analysis and draws trajectories in the ordination scatterplot.                                              |
+| `trajectoryMetrics()`        | Calculates several (whole path) metrics on trajectories.                                                                                   |
+| `trajectoryWindowMetrics()`  | Calculates several metrics on subtrajectories defined using moving windows.                                                                |
+
+**Functions specific for Cyclical Ecological Trajectory Analysis
+(CETA)**
+
+| Name                             | Short description                                                                                         |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `extractCycles()`                | Extracts (i.e. subsets) cycles from cyclical trajectories.                                                |
+| `extractFixedDateTrajectories()` | Extracts fixed-date trajectories from cyclical trajectories.                                              |
+| `cycleShifts()`                  | Estimates cyclical shifts (i.e. advances or delays).                                                      |
+| `cycleConvexity()`               | Estimates the degree of convexity of cycles.                                                              |
+| `cycleMetrics()`                 | Calculates several (whole path) metrics on cycles.                                                        |
+| `cyclePCoA()`                    | Performs Principal Coordinates Analysis and draws cycles in the ordination scatter plot.                  |
+| `fixedDateTrajectoryPCoA()`      | Performs Principal Coordinates Analysis and draws fixed date trajectories in the ordination scatter plot. |
+
+**Functions for Ecological Quality Assessment (EQA)**
+
+| Name                              | Short description                                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `stateEnvelopeVariability()`      | Assess the variability of a set of *states* taken as reference envelope.                                                      |
+| `trajectoryEnvelopeVariability()` | Assess the variability of a set of *trajectories* taken as reference envelope.                                                |
+| `compareToStateEnvelope()`        | Evaluate the ecological quality of stations/observations with respect to a set of *states* taken as reference envelope.       |
+| `compareToTrajectoryEnvelope()`   | Evaluate the ecological quality of stations/observations with respect to a set of *trajectories* taken as reference envelope. |
+
 ## Related package
 
 The R package [**ecoregime**](https://mspinillos.github.io/ecoregime/),
@@ -75,6 +130,10 @@ variables.
     Fortin, M.J., Condit, R. & Hubbell, S. (2019). Trajectory analysis
     in community ecology. Ecological Monographs 89, e01350
     (<https://doi.org/10.1002/ecm.1350>).
+
+  - Djeghri et al (in preparation) Going round in cycles, but going
+    somewhere: Ecological Trajectory Analysis as a tool to decipher
+    seasonality and other cyclical dynamics.
 
   - Sturbois, A., De Cáceres, M., Sánchez-Pinillos, M., Schaal, G.,
     Gauthier, O., Le Mao, P., Ponsero, A., & Desroy, N. (2021a).
