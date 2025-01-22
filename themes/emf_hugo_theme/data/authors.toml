@@ -82,12 +82,12 @@
     id = "rbalaguer"
     weight = 99
     name = "Rodrigo"
-    surname = "Balaguer"
+    surname = "Balaguer Romano"
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Researcher"
-    image = "img/authors/default.png"
+    position = "Researcher"
+    image = "img/authors/rbalaguer.png"
     sphere = true
     committee = false
 
@@ -95,13 +95,13 @@
     id = "naquilue"
     weight = 1
     name = "Núria"
-    surname = "Aquilué"
-    affiliation = "CTFC"
+    surname = "Aquilué Junyent"
+    affiliation = "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)"
     aff_link = ""
     summary = "Núria Aquilué is a post-doctoral research fellow at the Forest Sciences Centre of Catalonia (Spain) and associated with the Centre for Forest Research (Canada). Dra. Aquilué received her Ph.D. in Environmental Sciences at Université du Québec à Montréal in 2018. She has a long, demonstrated experience in designing, developing, implementing, and using forest landscape dynamics models integrating multiple drivers of global change. Her research focuses on exploring landscape-scale management strategies to improve forest ecosystems' resistance and resilience to global threats. Moreover, she has been conceptually developing and implementing the functional network approach in different Canadian forest landscapes, leading tree functional traits gathering, tree clustering on functional groups, and functional network building."
     core = false
     position = "Developer"
-    image = "img/authors/naquilue.png"
+    image = "img/authors/naquilue.jpg"
     sphere = true
     committee = false
 
@@ -112,7 +112,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Researcher"
+    position = "Researcher"
     image = "img/authors/lbrotons.png"
     sphere = false
     committee = true
@@ -123,12 +123,12 @@
     weight = 2
     name = "Aitor"
     surname = "Ameztegui"
-    affiliation = "University of Lleida"
+    affiliation = "Adaptive Management and Forest Dynamics Research Group (ADAPTAFOR). Universitat de Lleida"
     aff_link = ""
     summary = "Professor Serra-Húnter at the University of Lleida and Coordinator of the Forest Modelling Group of the Spanish Society of Forest Sciences. My research focuses on understanding how the interactions between human activity and environmental changes determine forest functioning and dynamics."
     core = false
     position = "Developer"
-    image = "img/authors/aameztegui.png"
+    image = "img/authors/aameztegui.jpg"
     sphere = true
     committee = false
 
@@ -163,7 +163,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Researcher"
+    position = "Researcher"
     image = "img/authors/landreuhayles.png"
     sphere = false
     committee = true
@@ -176,7 +176,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Researcher"
+    position = "Researcher"
     image = "img/authors/lpesquer.png"
     sphere = false
     committee = true
@@ -189,7 +189,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Researcher"
+    position = "Researcher"
     image = "img/authors/amarcer.png"
     sphere = false
     committee = true
@@ -202,7 +202,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Researcher"
+    position = "Researcher"
     image = "img/authors/jmartinezvilalta.png"
     sphere = false
     committee = true
@@ -215,7 +215,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "CREAF Chief Transfer Officer"
+    position = "Chief Transfer Officer"
     image = "img/authors/edoblas.png"
     sphere = false
     committee = true
