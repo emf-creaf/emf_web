@@ -7,7 +7,11 @@
     {{ end }}
     <h5> {{ .author.name }} {{ .author.surname }}</h5>
     <h6> {{ .author.position }}</h6>
+    {{ if .author.core }}
     <p class="mb-0"><small>{{ .author.summary }}</small></p>
+    {{ else }}
+    <h6> {{ .author.affiliation }}</h6>
+    {{ end }}
 </div>
 
 {{ else }}
