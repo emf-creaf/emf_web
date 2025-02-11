@@ -86,7 +86,7 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "Researcher"
+    position = "Postdoc researcher"
     image = "img/authors/rbalaguer.png"
     sphere = true
     committee = false
@@ -96,11 +96,11 @@
     weight = 1
     name = "Núria"
     surname = "Aquilué Junyent"
-    affiliation = "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)"
+    affiliation = "CTFC"
     aff_link = ""
     summary = "Núria Aquilué is a post-doctoral research fellow at the Forest Sciences Centre of Catalonia (Spain) and associated with the Centre for Forest Research (Canada). Dra. Aquilué received her Ph.D. in Environmental Sciences at Université du Québec à Montréal in 2018. She has a long, demonstrated experience in designing, developing, implementing, and using forest landscape dynamics models integrating multiple drivers of global change. Her research focuses on exploring landscape-scale management strategies to improve forest ecosystems' resistance and resilience to global threats. Moreover, she has been conceptually developing and implementing the functional network approach in different Canadian forest landscapes, leading tree functional traits gathering, tree clustering on functional groups, and functional network building."
     core = false
-    position = "Developer"
+    position = "Researcher"
     image = "img/authors/naquilue.png"
     sphere = true
     committee = false
@@ -123,12 +123,12 @@
     weight = 2
     name = "Aitor"
     surname = "Ameztegui"
-    affiliation = "Adaptive Management and Forest Dynamics Research Group (ADAPTAFOR). Universitat de Lleida"
+    affiliation = "ADAPTAFOR, Universitat de Lleida"
     aff_link = ""
     summary = "Professor Serra-Húnter at the University of Lleida and Coordinator of the Forest Modelling Group of the Spanish Society of Forest Sciences. My research focuses on understanding how the interactions between human activity and environmental changes determine forest functioning and dynamics."
     core = false
-    position = "Developer"
-    image = "img/authors/aameztegui.png"
+    position = "Researcher"
+    image = "img/authors/aameztegui.jpg"
     sphere = true
     committee = false
 
@@ -266,8 +266,8 @@
     aff_link = ""
     core = false
     position = "Guest"
-    image = "img/authors/default.png"
-    sphere = true
+    image = "img/authors/jmespelta.jpg"
+    sphere = false
     committee = false
 
 [jmespelta]
@@ -278,8 +278,8 @@
     affiliation = "CREAF"
     aff_link = ""
     core = false
-    position = "Guest"
-    image = "img/authors/default.png"
+    position = "Researcher"
+    image = "img/authors/jmespelta.jpg"
     sphere = true
     committee = false
 
@@ -287,11 +287,24 @@
     id = "nmartin"
     weight = 3
     name = "Nicolas"
-    surname = "Martin"
-    affiliation = "INRA"
+    surname = "Martin-StPaul"
+    affiliation = "URFM, INRAE"
     aff_link = ""
     core = false
     position = "Researcher"
-    image = "img/authors/default.png"
+    image = "img/authors/nmartin.jpg"
+    sphere = true
+    committee = false
+
+[mgonzalez]
+    id = "mgonzalez"
+    weight = 1
+    name = "María"
+    surname = "González-Sanchís"
+    affiliation = "Forest and Water Research Group - CTFC"
+    aff_link = ""
+    core = false
+    position = "Researcher"
+    image = "img/authors/mgonzalez.jpg"
     sphere = true
     committee = false
