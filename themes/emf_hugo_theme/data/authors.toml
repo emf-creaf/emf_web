@@ -128,7 +128,7 @@
     summary = "Professor Serra-Húnter at the University of Lleida and Coordinator of the Forest Modelling Group of the Spanish Society of Forest Sciences. My research focuses on understanding how the interactions between human activity and environmental changes determine forest functioning and dynamics."
     core = false
     position = "Researcher"
-    image = "img/authors/aameztegui.jpg"
+    image = "img/authors/aameztegui.png"
     sphere = true
     committee = false
 
@@ -266,7 +266,7 @@
     aff_link = ""
     core = false
     position = "Guest"
-    image = "img/authors/jmespelta.jpg"
+    image = "img/authors/fdadamo.png"
     sphere = false
     committee = false
 
@@ -279,7 +279,7 @@
     aff_link = ""
     core = false
     position = "Researcher"
-    image = "img/authors/jmespelta.jpg"
+    image = "img/authors/jmespelta.png"
     sphere = true
     committee = false
 
@@ -292,7 +292,7 @@
     aff_link = ""
     core = false
     position = "Researcher"
-    image = "img/authors/nmartin.jpg"
+    image = "img/authors/nmartin.png"
     sphere = true
     committee = false
 
@@ -305,6 +305,6 @@
     aff_link = ""
     core = false
     position = "Researcher"
-    image = "img/authors/mgonzalez.jpg"
+    image = "img/authors/mgonzalez.png"
     sphere = true
     committee = false
