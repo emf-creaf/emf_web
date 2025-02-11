@@ -101,7 +101,7 @@
     summary = "Núria Aquilué is a post-doctoral research fellow at the Forest Sciences Centre of Catalonia (Spain) and associated with the Centre for Forest Research (Canada). Dra. Aquilué received her Ph.D. in Environmental Sciences at Université du Québec à Montréal in 2018. She has a long, demonstrated experience in designing, developing, implementing, and using forest landscape dynamics models integrating multiple drivers of global change. Her research focuses on exploring landscape-scale management strategies to improve forest ecosystems' resistance and resilience to global threats. Moreover, she has been conceptually developing and implementing the functional network approach in different Canadian forest landscapes, leading tree functional traits gathering, tree clustering on functional groups, and functional network building."
     core = false
     position = "Developer"
-    image = "img/authors/naquilue.jpg"
+    image = "img/authors/naquilue.png"
     sphere = true
     committee = false
 
@@ -128,7 +128,7 @@
     summary = "Professor Serra-Húnter at the University of Lleida and Coordinator of the Forest Modelling Group of the Spanish Society of Forest Sciences. My research focuses on understanding how the interactions between human activity and environmental changes determine forest functioning and dynamics."
     core = false
     position = "Developer"
-    image = "img/authors/aameztegui.jpg"
+    image = "img/authors/aameztegui.png"
     sphere = true
     committee = false
 
