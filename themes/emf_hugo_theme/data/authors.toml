@@ -12,7 +12,7 @@
 
 [vgranda]
     id = "vgranda"
-    weight = 3
+    weight = 9999
     name = "Víctor"
     surname = "Granda-García"
     affiliation = "Ecosystem Modelling Facility - CREAF"
@@ -61,6 +61,20 @@
     aff_link = ""
     summary = "Natural environment engineer with a master in terrestrial ecology. Passionate about forests ecosystems and  concerned about global change. My  goal is to contribute to the understanding of climate change effects on forest functioning to enhance the development of better management practices."
     image = "img/authors/atovar.png"
+    core = true
+    position = "Technician"
+    sphere = false
+    committee = false
+
+[idelsman]
+    id = "idelsman"
+    weight = 5
+    name = "Inés"
+    surname = "Delsman"
+    affiliation = "Ecosystem Modelling Facility - CREAF"
+    aff_link = ""
+    summary = "With a Master's in International Land and Water Management, focusing on sustainable soil management,  I am interested in the functioning and design of our environment and want to work towards more climate-resilient landscapes."
+    image = "img/authors/idelsman.png"
     core = true
     position = "Technician"
     sphere = false

@@ -36,7 +36,7 @@
               <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF STAFF</h2>
             </div>  
         </div>
-        <div class="row mb-3 px-5">
+        <div class="row row-cols-md-2 row-cols-xl-4 mb-3 px-5">
         {{ range sort .Site.Data.authors "weight" }}
         {{ if .core }}
             {{ partial "author_info.html" (dict "author" . "type" "about") }}
@@ -53,7 +53,7 @@
                 <h2 class="display-6 text-center emf-blue fw-bold ls-10">EMF STEERING COMMITTEE</h2>
             </div>  
         </div>
-        <div class="row row-cols-md-3 mb-3 px-5">
+        <div class="row row-cols-md-3 row-cols-xl-6 mb-3 px-5">
         {{ range sort .Site.Data.authors "weight" }}
         {{ if not .core }}
         {{ if .committee }}
@@ -73,7 +73,7 @@
                 <h3 class="mx-auto w-50 text-center emf-blue fw-bold ls-10">In active collaboration</h3>
             </div>  
         </div>
-        <div class="row row-cols-md-3 mb-3 px-5">
+        <div class="row row-cols-md-3 row-cols-xl-6 mb-3 px-5">
         {{ range sort .Site.Data.authors "weight" }}
         {{ if not .core }}
         {{ if not .commitee }}

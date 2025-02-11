@@ -1,7 +1,11 @@
 {{ $author_name := .author.name}}
 
 {{ if eq .type "about" }}
+{{ if eq .author.id "mcaceres"}}
+<div class="col col-md-12 col-xl-12 px-5 mb-5 text-center">
+{{ else }}
 <div class="col px-5 mb-5">
+{{ end }}
     {{ with resources.Get .author.image }}
     <img class="author-image-xl mb-3" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $author_name }}" alt="{{ $author_name }}">
     {{ end }}
