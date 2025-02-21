@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2024-08-22'
-lastmod: '2024-08-22'
+date: '2025-02-21'
+lastmod: '2025-02-21'
 summary: Functions to assess the strength and statistical significance of the relationship
   between species occurrence/abundance and groups of sites. Also includes functions
   to measure species niche breadth using resource categories.
@@ -24,12 +24,9 @@ links:
 ---
 # Relationship between species and groups of sites <a href="https://emf-creaf.github.io/indicspecies/"><img src="logo.png" align="right" height="139" alt="indicspecies website" /></a>
 
-<!-- badges: start -->
-
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/indicspecies)](https://cran.r-project.org/package=indicspecies)
 [![](https://cranlogs.r-pkg.org/badges/indicspecies)](https://cran.rstudio.com/web/packages/indicspecies/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/indicspecies/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emf-creaf/indicspecies/actions/workflows/R-CMD-check.yaml)
-<!-- badges: end -->
 
 ## Introduction
 
