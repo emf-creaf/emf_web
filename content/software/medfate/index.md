@@ -27,7 +27,7 @@ links:
 ---
 # Mediterranean forest simulation <a href="https://emf-creaf.github.io/medfate/"><img src="logo.png" align="right" height="139" alt="medfate website" /></a>
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/medfate)](https://cran.r-project.org/package=medfate)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/medfate)](https://cran.r-project.org/package=medfate)
 [![](https://cranlogs.r-pkg.org/badges/medfate)](https://cran.rstudio.com/web/packages/medfate/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/medfate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emf-creaf/medfate/actions)
 
