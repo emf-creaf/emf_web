@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2025-04-17'
-lastmod: '2025-04-17'
+date: '2025-05-01'
+lastmod: '2025-05-01'
 summary: Assists ecologists in the analysis of temporal changes of ecosystems, defined
   as trajectories on a chosen multivariate space, by providing a set of trajectory
   metrics and visual representations.
@@ -73,27 +73,27 @@ framework:
 
 **Functions for Ecological Trajectory Analysis (ETA)**
 
-| Name                         | Short description                                                                                                                                     |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `defineTrajectories()`       | Defines trajectory objects to be analyzed.                                                                                                            |
-| `subsetTrajectories()`       | Subsets trajectories corresponding to selected set of sites or surveys from a dataset containing multiple trajectories.                               |
-| `smoothTrajectories()`       | Performs multivariate smoothing on trajectory data using a Gaussian kernel.                                                                           |
-| `centerTrajectories()`       | Shifts all trajectories to the center of the multivariate space and returns a modified distance matrix.                                               |
-| `trajectoryLengths()`        | Calculates lengths of directed segments and total path length of trajectories.                                                                        |
-| `trajectoryLengths2D()`      | Calculates lengths of directed segments and total path lengths of trajectories from 2D coordinates given as input.                                    |
-| `trajectorySpeeds()`         | Calculates speeds of directed segments and total path speed of trajectories.                                                                          |
-| `trajectorySpeeds2D()`       | Calculates speeds of directed segments and total path speed of trajectories from 2D coordinates given as input.                                       |
-| `trajectoryAngles()`         | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points.                                |
-| `trajectoryAngles2D()`       | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points from 2D coordinates.            |
-| `trajectoryConvergence()`    | Performs the Mann-Kendall trend test on the distances between trajectories or the distance between points of one trajectory to the other.             |
-| `trajectoryDirectionality()` | Assesses the level directionality of each trajectory.                                                                                                 |
-| `trajectoryVariability()`    | Assesses the internal variability within each trajectory.                                                                                             |
-| `trajectoryDistances()`      | Estimates distances between pairs of ecosystem trajectories.                                                                                          |
-| `trajectoryShifts()`         | Calculates trajectory shifts (i.e. advances and delays) between trajectories assumed to follow a similar path but with different speeds or time lags. |
-| `trajectoryPlot()`           | Draws trajectories in a 2D-plot corresponding to the input coordinates.                                                                               |
-| `trajectoryPCoA()`           | Performs principal coordinates analysis and draws trajectories in the ordination scatterplot.                                                         |
-| `trajectoryMetrics()`        | Calculates several (whole path) metrics on trajectories.                                                                                              |
-| `trajectoryWindowMetrics()`  | Calculates several metrics on subtrajectories defined using moving windows.                                                                           |
+| Name                            | Short description                                                                                                                                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `defineTrajectories()`          | Defines trajectory objects to be analyzed.                                                                                                                                                        |
+| `subsetTrajectories()`          | Subsets trajectories corresponding to selected set of sites or surveys from a dataset containing multiple trajectories.                                                                           |
+| `smoothTrajectories()`          | Performs multivariate smoothing on trajectory data using a Gaussian kernel.                                                                                                                       |
+| `centerTrajectories()`          | Shifts all trajectories to the center of the multivariate space and returns a modified distance matrix.                                                                                           |
+| `trajectoryLengths()`           | Calculates lengths of directed segments and total path length of trajectories.                                                                                                                    |
+| `trajectoryLengths2D()`         | Calculates lengths of directed segments and total path lengths of trajectories from 2D coordinates given as input.                                                                                |
+| `trajectorySpeeds()`            | Calculates speeds of directed segments and total path speed of trajectories.                                                                                                                      |
+| `trajectorySpeeds2D()`          | Calculates speeds of directed segments and total path speed of trajectories from 2D coordinates given as input.                                                                                   |
+| `trajectoryAngles()`            | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points.                                                                            |
+| `trajectoryAngles2D()`          | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points from 2D coordinates.                                                        |
+| `trajectoryConvergence()`       | Performs the Mann-Kendall trend test on (1) the distances between trajectories; (2) the distance between points of one trajectory to the other; or (3) the variance of states among trajectories. |
+| `trajectoryDirectionality()`    | Assesses the level directionality of each trajectory.                                                                                                                                             |
+| `trajectoryInternalVariation()` | Assesses the internal variability within each trajectory.                                                                                                                                         |
+| `trajectoryDistances()`         | Estimates distances between pairs of ecosystem trajectories.                                                                                                                                      |
+| `trajectoryShifts()`            | Calculates trajectory shifts (i.e. advances and delays) between trajectories assumed to follow a similar path but with different speeds or time lags.                                             |
+| `trajectoryPlot()`              | Draws trajectories in a 2D-plot corresponding to the input coordinates.                                                                                                                           |
+| `trajectoryPCoA()`              | Performs principal coordinates analysis and draws trajectories in the ordination scatterplot.                                                                                                     |
+| `trajectoryMetrics()`           | Calculates several (whole path) metrics on trajectories.                                                                                                                                          |
+| `trajectoryWindowMetrics()`     | Calculates several metrics on subtrajectories defined using moving windows.                                                                                                                       |
 
 **Functions specific for Cyclical Ecological Trajectory Analysis
 (CETA)**
