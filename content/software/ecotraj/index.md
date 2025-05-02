@@ -9,8 +9,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2025-05-01'
-lastmod: '2025-05-01'
+date: '2025-05-02'
+lastmod: '2025-05-02'
 summary: Assists ecologists in the analysis of temporal changes of ecosystems, defined
   as trajectories on a chosen multivariate space, by providing a set of trajectory
   metrics and visual representations.
@@ -77,8 +77,6 @@ framework:
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `defineTrajectories()`          | Defines trajectory objects to be analyzed.                                                                                                                                                        |
 | `subsetTrajectories()`          | Subsets trajectories corresponding to selected set of sites or surveys from a dataset containing multiple trajectories.                                                                           |
-| `smoothTrajectories()`          | Performs multivariate smoothing on trajectory data using a Gaussian kernel.                                                                                                                       |
-| `centerTrajectories()`          | Shifts all trajectories to the center of the multivariate space and returns a modified distance matrix.                                                                                           |
 | `trajectoryLengths()`           | Calculates lengths of directed segments and total path length of trajectories.                                                                                                                    |
 | `trajectoryLengths2D()`         | Calculates lengths of directed segments and total path lengths of trajectories from 2D coordinates given as input.                                                                                |
 | `trajectorySpeeds()`            | Calculates speeds of directed segments and total path speed of trajectories.                                                                                                                      |
@@ -94,6 +92,10 @@ framework:
 | `trajectoryPCoA()`              | Performs principal coordinates analysis and draws trajectories in the ordination scatterplot.                                                                                                     |
 | `trajectoryMetrics()`           | Calculates several (whole path) metrics on trajectories.                                                                                                                                          |
 | `trajectoryWindowMetrics()`     | Calculates several metrics on subtrajectories defined using moving windows.                                                                                                                       |
+| `dynamicVariation()`            | Assesses the amount of dynamic variation observed across trajectories and the relative contribution of each of them.                                                                              |
+| `interpolateTrajectories()`     | Relocates trajectory ecological states to those corresponding to input times, via linear interpolation.                                                                                           |
+| `smoothTrajectories()`          | Performs multivariate smoothing on trajectory data using a Gaussian kernel.                                                                                                                       |
+| `centerTrajectories()`          | Shifts all trajectories to the center of the multivariate space and returns a modified distance matrix.                                                                                           |
 
 **Functions specific for Cyclical Ecological Trajectory Analysis
 (CETA)**
