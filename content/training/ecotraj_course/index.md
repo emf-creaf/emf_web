@@ -15,6 +15,6 @@ training_info:
     hours: 4
     place: Technopole Brest-Iroise (Plouzané, France)
 summary: The main aim of the course is to provide an introduction to the concepts, geometric elements and statistics of the Ecological Trajectory Analysis (ETA) framework, including its extension to cyclical dynamics (CETA).
-draft: true
+draft: false
 lastmod: 2025-05-20
 ---
