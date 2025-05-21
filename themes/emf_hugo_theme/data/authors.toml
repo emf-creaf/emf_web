@@ -322,3 +322,27 @@
     image = "img/authors/mgonzalez.png"
     sphere = true
     committee = false
+
+[asturbois]
+    id = "asturbois"
+    name = "Anthony"
+    surname = "Sturbois"
+    affiliation = ""
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
+[ndjeghri]
+    id = "ndjeghri"
+    name = "Nicolas"
+    surname = "Djeghri"
+    affiliation = "LEMAR, Univ Brest"
+    aff_link = "https://www-iuem.univ-brest.fr/lemar/?lang=en"
+    core = false
+    position = "Guest"
+    image = "img/authors/ndjeghri.png"
+    sphere = false
+    committee = false
