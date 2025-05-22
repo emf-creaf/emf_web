@@ -15,7 +15,7 @@ geometric elements and statistics of the Ecological Trajectory Analysis (ETA)
 framework, including its extension to cyclical dynamics (CETA) was held in
 Brest-Iroise (Plouzané, France, 15 May 2025).  
 This course was conducted by Miquel de Cáceres from the EMF and Anthony Sturbois
-and Nicolas Djeghri from VivArmor Nature and LEMAR.
+and Nicolas Djeghri from LEMAR.
 
 Materials of the course can be found
 [here](https://emf.creaf.cat/training/ecotraj_course/).
