@@ -331,7 +331,7 @@
     aff_link = ""
     core = false
     position = "Guest"
-    image = "img/authors/default.png"
+    image = "img/authors/asturbois.png"
     sphere = false
     committee = false
 

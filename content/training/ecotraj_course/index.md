@@ -18,3 +18,5 @@ summary: The main aim of the course is to provide an introduction to the concept
 draft: false
 lastmod: 2025-05-20
 ---
+
+*Featured image has been created with the amazing [aRtsy R package](https://koenderks.github.io/aRtsy/)*
