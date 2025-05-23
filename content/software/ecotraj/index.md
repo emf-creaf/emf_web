@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2025-05-22'
-lastmod: '2025-05-22'
+date: '2025-05-23'
+lastmod: '2025-05-23'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -50,6 +50,9 @@ ETA is related to the following publications:
 
   - Application to a multivariate space defined by **stable isotope**
     data (Sturbois et al. 2021b).
+
+  - Application to a multivariate space defined by **elemental
+    composition** data (de la Casa et al. 2025).
 
   - Application of ETA framework for the **assessment of ecological
     quality** (Sturbois et al. 2023).
@@ -139,31 +142,37 @@ variables.
 
 ## References
 
-  - De Cáceres, M., Coll, L., Legendre, P., Allen, R.B., Wiser, S.K.,
-    Fortin, M.J., Condit, R. & Hubbell, S. (2019). Trajectory analysis
-    in community ecology. Ecological Monographs 89, e01350
+  - De Cáceres M, Coll L, Legendre P, Allen RB, Wiser SK, Fortin MJ,
+    Condit R & Hubbell S (2019). Trajectory analysis in community
+    ecology. Ecological Monographs 89, e01350
     (<https://doi.org/10.1002/ecm.1350>).
+
+  - de la Casa J, Nogué S, De Cáceres M, Pla-Rabés S, Sardans J,
+    Benavente M, Giralt S, Hernandez A, Raposeiro PM & Peñuelas J (2025)
+    Understanding two millenia ecosystem perturbations on the Azores
+    archipelago through elementome trajectories. Ecological Indicators,
+    176, 113630 (<https://doi.org/10.1016/j.ecolind.2025.113630>).
 
   - Djeghri et al (in preparation) Going round in cycles, but going
     somewhere: Ecological Trajectory Analysis as a tool to decipher
     seasonality and other cyclical dynamics.
 
-  - Sturbois, A., De Cáceres, M., Sánchez-Pinillos, M., Schaal, G.,
-    Gauthier, O., Le Mao, P., Ponsero, A., & Desroy, N. (2021a).
-    Extending community trajectory analysis : New metrics and
-    representation. Ecological Modelling, 440, 109400
+  - Sturbois A, De Cáceres M, Sánchez-Pinillos M, Schaal G, Gauthier O,
+    Le Mao P, Ponsero A, & Desroy N (2021a). Extending community
+    trajectory analysis : New metrics and representation. Ecological
+    Modelling, 440, 109400
     (<https://doi.org/10.1016/j.ecolmodel.2020.109400>).
 
-  - Sturbois, A., Cucherousset, J., De Cáceres, M., Desroy, N., Riera,
-    P., Carpentier, A., Quillien, N., Grall, J., Espinasse, B., Cherel,
-    Y., Schaal, G. (2021). Stable Isotope Trajectory Analysis (SITA) : A
-    new approach to quantify and visualize dynamics in stable isotope
-    studies. Ecological Monographs, 92, e1501
+  - Sturbois A, Cucherousset J, De Cáceres M, Desroy N, Riera P,
+    Carpentier A, Quillien N, Grall J, Espinasse B, Cherel Y & Schaal G
+    (2021). Stable Isotope Trajectory Analysis (SITA) : A new approach
+    to quantify and visualize dynamics in stable isotope studies.
+    Ecological Monographs, 92, e1501
     (<https://doi.org/10.1002/ecm.1501>).
 
-  - Sturbois, A., De Cáceres, M., Bifolchi, A., Bioret, F., Boyé, A.,
-    Gauthier, O., Grall, J., Grémare, A., Labrune, C., Robert, A.,
-    Schaal, G., Desroy, N. (2023). Ecological Quality Assessment: a
-    general multivariate framework to report the quality of ecosystems
-    and their dynamics with respect to reference conditions. Ecosphere
-    14, e4726 (<https://doi.org/10.1002/ecs2.4726>).
+  - Sturbois A, De Cáceres M, Bifolchi A, Bioret F, Boyé A, Gauthier O,
+    Grall J, Grémare A, Labrune C, Robert A, Schaal G & Desroy N (2023).
+    Ecological Quality Assessment: a general multivariate framework to
+    report the quality of ecosystems and their dynamics with respect to
+    reference conditions. Ecosphere 14, e4726
+    (<https://doi.org/10.1002/ecs2.4726>).
