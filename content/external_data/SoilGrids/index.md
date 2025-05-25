@@ -8,8 +8,8 @@ tags:
 - SoilMap
 draft: false
 featured: false
-date: '2024-09-10'
-lastmod: '2024-09-10'
+date: '2025-05-25'
+lastmod: '2025-05-25'
 summary: Soilgrids is a system for digital soil mapping based on a global compilation
   of soil profile data (WoSIS) and environmental layers. Read about the SoilGrids
   and WoSIS projects on isric.org
