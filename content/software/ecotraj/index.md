@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2025-05-23'
-lastmod: '2025-05-23'
+date: '2025-06-19'
+lastmod: '2025-06-19'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
