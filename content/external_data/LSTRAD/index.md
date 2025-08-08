@@ -8,8 +8,8 @@ tags:
 - InterpolatedWeather
 draft: false
 featured: false
-date: '2025-05-25'
-lastmod: '2025-05-25'
+date: '2025-08-08'
+lastmod: '2025-08-08'
 summary: High-resolution (1 km) all-sky net radiation over Europe enabled by the merging
   of land surface temperature retrievals from geostationary and polar-orbiting satellites
 model_repository: ''

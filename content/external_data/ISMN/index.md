@@ -8,8 +8,8 @@ tags:
 - SoilMoistureDatabase
 draft: false
 featured: false
-date: '2025-05-25'
-lastmod: '2025-05-25'
+date: '2025-08-08'
+lastmod: '2025-08-08'
 summary: The International Soil Moisture Network is an international cooperation to
   establish and maintain a global in-situ soil moisture database. This database is
   an essential means for validating and improving global satellite products, and land

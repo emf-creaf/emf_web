@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2025-05-25'
-lastmod: '2025-05-25'
+date: '2025-08-08'
+lastmod: '2025-08-08'
 summary: BROT 2.0 is a database of pant functional traits for the Mediterranean Basin
   flora. It includes 25764 records of 44 traits from 2457 plant taxa distributed in
   119 taxonomic families.

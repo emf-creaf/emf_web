@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2025-05-25'
-lastmod: '2025-05-25'
+date: '2025-08-08'
+lastmod: '2025-08-08'
 summary: China Plant Trait Database contains information on morphometric, physical,
   chemical, photosynthetic and hydraulic traits from 1529 unique species in 140 sites
   spanning a diversity of vegetation types

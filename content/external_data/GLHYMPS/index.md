@@ -8,15 +8,15 @@ tags:
 - HydroGeologyDatabase
 draft: false
 featured: false
-date: '2025-05-25'
-lastmod: '2025-05-25'
+date: '2025-08-08'
+lastmod: '2025-08-08'
 summary: Global permeability of the unconsolidated and consolidated Earth dataset
 model_repository: ''
-data_repository: https://dataverse.scholarsportal.info/dataset.xhtml
+data_repository: https://borealisdata.ca/dataset.xhtml?persistentId=doi%3A10.5683/SP2/TTJNIU
 links:
   url_doi: https://doi.org/10.1002/2017GL075860
   url_pdf: ''
-  url_source: https://dataverse.scholarsportal.info/dataset.xhtml
+  url_source: https://borealisdata.ca/dataset.xhtml?persistentId=doi%3A10.5683/SP2/TTJNIU
   url_docs: ''
 ---
 
