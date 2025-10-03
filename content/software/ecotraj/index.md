@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2025-09-13'
-lastmod: '2025-09-13'
+date: '2025-10-03'
+lastmod: '2025-10-03'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -45,8 +45,11 @@ ETA is related to the following publications:
   - ETA extension of **metrics** and **visualisation modes** (Sturbois
     et al. 2021a).
 
-  - ETA extension to **cyclical** trajectory data (Djeghri et al. in
-    prep.).
+  - ETA extension to **cyclical** trajectory data (Djeghri et al. under
+    review).
+
+  - Interpretation of trajectory **relative movements** (Djeghri et
+    al. in prep.).
 
   - Application to a multivariate space defined by **stable isotope**
     data (Sturbois et al. 2021b).
@@ -95,9 +98,11 @@ framework:
 | `trajectorySpeeds()`            | Calculates speeds of directed segments and total path speed of trajectories.                                                                                                                      |
 | `trajectorySpeeds2D()`          | Calculates speeds of directed segments and total path speed of trajectories from 2D coordinates given as input.                                                                                   |
 | `trajectoryAngles()`            | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points.                                                                            |
+| `trajectoryDirectionality()`    | Assesses the level directionality of each trajectory.                                                                                                                                             |
 | `trajectoryAngles2D()`          | Calculates the angle between consecutive pairs of directed segments or between segments of ordered triplets of points from 2D coordinates.                                                        |
 | `trajectoryConvergence()`       | Performs the Mann-Kendall trend test on (1) the distances between trajectories; (2) the distance between points of one trajectory to the other; or (3) the variance of states among trajectories. |
-| `trajectoryDirectionality()`    | Assesses the level directionality of each trajectory.                                                                                                                                             |
+| `trajectoryCorrespondence()`    | Performs a permutation test of pairwise dynamic correspondence between trajectories sensitive to trajectory shape and movement direction.                                                         |
+| `trajectoryRMA()`               | Tests and qualifies the relative movements of ecological trajectories.                                                                                                                            |
 | `trajectoryInternalVariation()` | Assesses the internal variability within each trajectory.                                                                                                                                         |
 | `trajectoryDistances()`         | Estimates distances between pairs of ecosystem trajectories.                                                                                                                                      |
 | `trajectoryShifts()`            | Calculates trajectory shifts (i.e. advances and delays) between trajectories assumed to follow a similar path but with different speeds or time lags.                                             |
@@ -153,9 +158,12 @@ variables.
     archipelago through elementome trajectories. Ecological Indicators,
     176, 113630 (<https://doi.org/10.1016/j.ecolind.2025.113630>).
 
-  - Djeghri et al (in preparation) Going round in cycles, but going
+  - Djeghri et al (under review) Going round in cycles, but going
     somewhere: Ecological Trajectory Analysis as a tool to decipher
     seasonality and other cyclical dynamics.
+
+  - Djeghri et al. (in preparation) Uncovering the relative movements of
+    ecological trajectories.
 
   - Sturbois A, De Cáceres M, Sánchez-Pinillos M, Schaal G, Gauthier O,
     Le Mao P, Ponsero A, & Desroy N (2021a). Extending community
