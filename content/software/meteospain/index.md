@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2025-10-02'
-lastmod: '2025-10-02'
+date: '2025-11-16'
+lastmod: '2025-11-16'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -79,25 +79,25 @@ get_meteo_from('meteogalicia', mg_options)
 #> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
 #> que as utilice para os usos distintos do particular e privado.
 #> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3672 features and 14 fields
+#> Simple feature collection with 3645 features and 14 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.70426
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,672 × 15
+#> # A tibble: 3,645 × 15
 #>    timestamp           service station_id station_name station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
-#>  1 2025-10-01 03:00:00 meteog… 10045      Mabegondo    A Coruña               94
-#>  2 2025-10-01 03:00:00 meteog… 10046      Marco da Cu… A Coruña              651
-#>  3 2025-10-01 03:00:00 meteog… 10047      Pedro Murias Lugo                   51
-#>  4 2025-10-01 03:00:00 meteog… 10048      O Invernade… Ourense              1026
-#>  5 2025-10-01 03:00:00 meteog… 10049      Corrubedo    A Coruña               30
-#>  6 2025-10-01 03:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
-#>  7 2025-10-01 03:00:00 meteog… 10052      Muralla      A Coruña              661
-#>  8 2025-10-01 03:00:00 meteog… 10053      Campus Lugo  Lugo                  400
-#>  9 2025-10-01 03:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
-#> 10 2025-10-01 03:00:00 meteog… 10056      Marroxo      Lugo                  645
-#> # ℹ 3,662 more rows
+#>  1 2025-11-15 04:00:00 meteog… 10045      Mabegondo    A Coruña               94
+#>  2 2025-11-15 04:00:00 meteog… 10046      Marco da Cu… A Coruña              651
+#>  3 2025-11-15 04:00:00 meteog… 10047      Pedro Murias Lugo                   51
+#>  4 2025-11-15 04:00:00 meteog… 10048      O Invernade… Ourense              1026
+#>  5 2025-11-15 04:00:00 meteog… 10049      Corrubedo    A Coruña               30
+#>  6 2025-11-15 04:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
+#>  7 2025-11-15 04:00:00 meteog… 10052      Muralla      A Coruña              661
+#>  8 2025-11-15 04:00:00 meteog… 10053      Campus Lugo  Lugo                  400
+#>  9 2025-11-15 04:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
+#> 10 2025-11-15 04:00:00 meteog… 10056      Marroxo      Lugo                  645
+#> # ℹ 3,635 more rows
 #> # ℹ 9 more variables: temperature [°C], min_temperature [°C],
 #> #   max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
 #> #   wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
@@ -107,12 +107,12 @@ Stations info can be accessed with `get_stations_info_from` function:
 
 ``` r
 get_stations_info_from('meteogalicia', mg_options)
-#> Simple feature collection with 154 features and 5 fields
+#> Simple feature collection with 155 features and 5 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.7383
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 154 × 6
+#> # A tibble: 155 × 6
 #>    service      station_id station_name             station_province altitude
 #>  * <chr>        <chr>      <chr>                    <chr>                 [m]
 #>  1 meteogalicia 10157      Coruña-Torre de Hércules A Coruña               21
@@ -125,7 +125,7 @@ get_stations_info_from('meteogalicia', mg_options)
 #>  8 meteogalicia 10800      Camariñas                A Coruña                5
 #>  9 meteogalicia 19001      Rus                      A Coruña              134
 #> 10 meteogalicia 10147      Cariño                   A Coruña               20
-#> # ℹ 144 more rows
+#> # ℹ 145 more rows
 #> # ℹ 1 more variable: geometry <POINT [°]>
 ```
 
@@ -168,25 +168,25 @@ Once a key has been obtained, we can get the meteo:
 get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
 #> © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 10419 features and 13 fields
+#> Simple feature collection with 10308 features and 13 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 10,419 × 14
+#> # A tibble: 10,308 × 14
 #>    timestamp           service station_id station_name station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
-#>  1 2025-10-01 14:00:00 aemet   0009X      ALFORJA      TARRAGONA             406
-#>  2 2025-10-01 14:00:00 aemet   0016A      REUS  AEROP… <NA>                   71
-#>  3 2025-10-01 14:00:00 aemet   0034X      VALLS        TARRAGONA             233
-#>  4 2025-10-01 14:00:00 aemet   0042Y      TARRAGONA  … <NA>                   55
-#>  5 2025-10-01 14:00:00 aemet   0061X      PONTONS      BARCELONA             632
-#>  6 2025-10-01 14:00:00 aemet   0066X      VILAFRANCA … BARCELONA             177
-#>  7 2025-10-01 14:00:00 aemet   0073X      SITGES  VAL… <NA>                   58
-#>  8 2025-10-01 14:00:00 aemet   0092X      BERGA  INST… <NA>                  682
-#>  9 2025-10-01 14:00:00 aemet   0106X      BALSARENY    BARCELONA             361
-#> 10 2025-10-01 14:00:00 aemet   0114X      PRATS DE LL… BARCELONA             700
-#> # ℹ 10,409 more rows
+#>  1 2025-11-15 15:00:00 aemet   0009X      ALFORJA      TARRAGONA             406
+#>  2 2025-11-15 15:00:00 aemet   0016A      REUS  AEROP… <NA>                   71
+#>  3 2025-11-15 15:00:00 aemet   0034X      VALLS        TARRAGONA             233
+#>  4 2025-11-15 15:00:00 aemet   0042Y      TARRAGONA  … <NA>                   55
+#>  5 2025-11-15 15:00:00 aemet   0061X      PONTONS      BARCELONA             632
+#>  6 2025-11-15 15:00:00 aemet   0066X      VILAFRANCA … BARCELONA             177
+#>  7 2025-11-15 15:00:00 aemet   0073X      SITGES  VAL… <NA>                   58
+#>  8 2025-11-15 15:00:00 aemet   0076       BARCELONA  … <NA>                    4
+#>  9 2025-11-15 15:00:00 aemet   0092X      BERGA  INST… <NA>                  682
+#> 10 2025-11-15 15:00:00 aemet   0106X      BALSARENY    BARCELONA             361
+#> # ℹ 10,298 more rows
 #> # ℹ 8 more variables: temperature [°C], min_temperature [°C],
 #> #   max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
 #> #   wind_direction [°], wind_speed [m/s], geometry <POINT [°]>
