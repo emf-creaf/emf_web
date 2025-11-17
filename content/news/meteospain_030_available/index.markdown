@@ -2,8 +2,8 @@
 title: "meteospain 0.3.0 is out!"
 authors: ["emf"]
 date: 2025-11-13
-lastmod: 2025-11-13
-draft: true
+lastmod: 2025-11-17
+draft: false
 
 
 categories: ["news"]
