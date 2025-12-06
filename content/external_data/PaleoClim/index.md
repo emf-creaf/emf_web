@@ -8,8 +8,8 @@ tags:
 - HistoricSimulation
 draft: false
 featured: false
-date: '2025-08-08'
-lastmod: '2025-08-08'
+date: '2025-12-06'
+lastmod: '2025-12-06'
 summary: High-resolution paleoclimate data for use in biological modeling and GIS
 model_repository: ''
 data_repository: http://www.paleoclim.org/

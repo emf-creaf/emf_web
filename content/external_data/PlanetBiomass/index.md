@@ -8,8 +8,8 @@ tags:
 - ForestMonitoring
 draft: false
 featured: false
-date: '2025-08-08'
-lastmod: '2025-08-08'
+date: '2025-12-06'
+lastmod: '2025-12-06'
 summary: Datasets generated from the research article "The overlooked contribution
   of trees outside forests to tree cover and woody biomass across Europe". Aggregated
   version of canopy cover and height map, and original biomass map at 30m resolution.

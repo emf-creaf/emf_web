@@ -8,8 +8,8 @@ tags:
 - Projections
 draft: false
 featured: false
-date: '2025-08-08'
-lastmod: '2025-08-08'
+date: '2025-12-06'
+lastmod: '2025-12-06'
 summary: The RCP database aims at documenting the emissions, concentrations, and land-cover
   change projections of the so-called "Representative Concentration Pathways" (RCPs).
 model_repository: ''

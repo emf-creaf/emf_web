@@ -8,8 +8,8 @@ tags:
 - ForestMonitoring
 draft: false
 featured: false
-date: '2025-08-08'
-lastmod: '2025-08-08'
+date: '2025-12-06'
+lastmod: '2025-12-06'
 summary: High resolution laser ranging of Earth’s forests and topography from the
   International Space Station (ISS)
 model_repository: ''
