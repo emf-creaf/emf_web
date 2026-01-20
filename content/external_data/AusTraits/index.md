@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2025-12-06'
-lastmod: '2025-12-06'
+date: '2026-01-20'
+lastmod: '2026-01-20'
 summary: AusTraits synthesises data on 448 traits across 28,640 taxa from field campaigns,
   published literature, taxonomic monographs, and individual taxon descriptions. Traits
   vary in scope from physiological measures of performance (e.g. photosynthetic gas

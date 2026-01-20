@@ -8,8 +8,8 @@ tags:
 - VegetationPlotDatabase
 draft: false
 featured: false
-date: '2025-12-06'
-lastmod: '2025-12-06'
+date: '2026-01-20'
+lastmod: '2026-01-20'
 summary: A data set containing 143 plant recruitment networks in 23 countries across
   five conti-nents, including temperate and tropical ecosystems. The data set includes
   >850,000recruiting individuals involved in 118,411 paired interactions among 3318

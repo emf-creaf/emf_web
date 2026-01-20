@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2025-12-06'
-lastmod: '2025-12-06'
+date: '2026-01-20'
+lastmod: '2026-01-20'
 summary: 'A Global Archive of Primary Seed Geermination data: contains 47,000 germination
   records from 4500 species'
 model_repository: ''
