@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2025-12-17'
-lastmod: '2025-12-17'
+date: '2026-01-27'
+lastmod: '2026-01-27'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -158,9 +158,9 @@ variables.
     archipelago through elementome trajectories. Ecological Indicators,
     176, 113630 (<https://doi.org/10.1016/j.ecolind.2025.113630>).
 
-  - Djeghri et al (under review) Going round in cycles, but going
-    somewhere: Ecological Trajectory Analysis as a tool to decipher
-    seasonality and other cyclical dynamics.
+  - Djeghri et al (under review) Going round in cycles but going
+    somewhere: Deciphering cyclical dynamics using Ecological Trajectory
+    Analysis.
 
   - Djeghri et al. (in preparation) Uncovering the relative movements of
     ecological trajectories.
