@@ -12,8 +12,8 @@ tags:
 - data
 draft: false
 featured: false
-date: '2025-11-16'
-lastmod: '2025-11-16'
+date: '2026-02-04'
+lastmod: '2026-02-04'
 summary: Access to Spanish Meteorological Stations Services
 model_repository: ''
 data_repository: ''
@@ -45,7 +45,7 @@ development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("emf-creaf/meteospain")
+remotes::install_github("emf-creaf/meteospain", ref = "devel")
 ```
 
 ## Services
@@ -74,33 +74,38 @@ library(meteospain)
 
 mg_options <- meteogalicia_options(resolution = 'current_day')
 get_meteo_from('meteogalicia', mg_options)
-#> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 
-#> utilizada libremente por eles, co único compromiso de mencionar expresamente a MeteoGalicia e á 
-#> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
+#> ℹ A información divulgada a través deste servidor ofrécese gratuitamente aos
+#>   cidadáns para que poida ser
+#> utilizada libremente por eles, co único compromiso de mencionar expresamente a
+#> MeteoGalicia e á
+#> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como
+#> fonte da mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
-#> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Simple feature collection with 3645 features and 14 fields
+#> https://www.meteogalicia.gal/aviso-legal
+#> Simple feature collection with 3601 features and 17 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -9.184586 ymin: 41.8982 xmax: -6.765224 ymax: 43.70426
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 3,645 × 15
+#> # A tibble: 3,601 × 18
 #>    timestamp           service station_id station_name station_province altitude
 #>    <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
-#>  1 2025-11-15 04:00:00 meteog… 10045      Mabegondo    A Coruña               94
-#>  2 2025-11-15 04:00:00 meteog… 10046      Marco da Cu… A Coruña              651
-#>  3 2025-11-15 04:00:00 meteog… 10047      Pedro Murias Lugo                   51
-#>  4 2025-11-15 04:00:00 meteog… 10048      O Invernade… Ourense              1026
-#>  5 2025-11-15 04:00:00 meteog… 10049      Corrubedo    A Coruña               30
-#>  6 2025-11-15 04:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
-#>  7 2025-11-15 04:00:00 meteog… 10052      Muralla      A Coruña              661
-#>  8 2025-11-15 04:00:00 meteog… 10053      Campus Lugo  Lugo                  400
-#>  9 2025-11-15 04:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
-#> 10 2025-11-15 04:00:00 meteog… 10056      Marroxo      Lugo                  645
-#> # ℹ 3,635 more rows
-#> # ℹ 9 more variables: temperature [°C], min_temperature [°C],
+#>  1 2026-02-03 04:00:00 meteog… 10045      Mabegondo    A Coruña               94
+#>  2 2026-02-03 04:00:00 meteog… 10046      Marco da Cu… A Coruña              651
+#>  3 2026-02-03 04:00:00 meteog… 10047      Pedro Murias Lugo                   51
+#>  4 2026-02-03 04:00:00 meteog… 10048      O Invernade… Ourense              1026
+#>  5 2026-02-03 04:00:00 meteog… 10049      Corrubedo    A Coruña               30
+#>  6 2026-02-03 04:00:00 meteog… 10050      CIS Ferrol   A Coruña               37
+#>  7 2026-02-03 04:00:00 meteog… 10052      Muralla      A Coruña              661
+#>  8 2026-02-03 04:00:00 meteog… 10053      Campus Lugo  Lugo                  400
+#>  9 2026-02-03 04:00:00 meteog… 10055      Guitiriz-Mi… Lugo                  684
+#> 10 2026-02-03 04:00:00 meteog… 10056      Marroxo      Lugo                  645
+#> # ℹ 3,591 more rows
+#> # ℹ 12 more variables: temperature [°C], min_temperature [°C],
 #> #   max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
-#> #   wind_direction [°], wind_speed [m/s], insolation [h], geometry <POINT [°]>
+#> #   max_precipitation_hour [L/(m^2*h)], wind_direction [°],
+#> #   max_wind_direction [°], wind_speed [m/s], max_wind_speed [m/s],
+#> #   insolation [h], geometry <POINT [°]>
 ```
 
 Stations info can be accessed with `get_stations_info_from` function:
@@ -138,12 +143,15 @@ library(sf)
 #> Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.3.1; sf_use_s2() is TRUE
 mg_options <- meteogalicia_options(resolution = 'daily', start_date = as.Date('2021-04-25'))
 plot(get_meteo_from('meteogalicia', mg_options))
-#> A información divulgada a través deste servidor ofrécese gratuitamente aos cidadáns para que poida ser 
-#> utilizada libremente por eles, co único compromiso de mencionar expresamente a MeteoGalicia e á 
-#> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como fonte da mesma cada vez 
+#> ℹ A información divulgada a través deste servidor ofrécese gratuitamente aos
+#>   cidadáns para que poida ser
+#> utilizada libremente por eles, co único compromiso de mencionar expresamente a
+#> MeteoGalicia e á
+#> Consellería de Medio Ambiente, Territorio e Vivenda da Xunta de Galicia como
+#> fonte da mesma cada vez
 #> que as utilice para os usos distintos do particular e privado.
-#> https://www.meteogalicia.gal/web/informacion/notaIndex.action
-#> Warning: plotting the first 9 out of 16 attributes; use max.plot = 16 to plot
+#> https://www.meteogalicia.gal/aviso-legal
+#> Warning: plotting the first 9 out of 26 attributes; use max.plot = 26 to plot
 #> all
 ```
 
@@ -166,28 +174,32 @@ Once a key has been obtained, we can get the meteo:
 
 ``` r
 get_meteo_from('aemet', aemet_options(api_key = keyring::key_get("aemet")))
-#> © AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como autora de la misma.
+#> ℹ © AEMET. Autorizado el uso de la información y su reproducción citando a
+#>   AEMET como autora de la misma.
 #> https://www.aemet.es/es/nota_legal
-#> Simple feature collection with 10308 features and 13 fields
+#> Simple feature collection with 10192 features and 22 fields
 #> Geometry type: POINT
 #> Dimension:     XY
 #> Bounding box:  xmin: -18.115 ymin: 27.66667 xmax: 4.323889 ymax: 43.78621
 #> Geodetic CRS:  WGS 84
-#> # A tibble: 10,308 × 14
+#> # A tibble: 10,192 × 23
 #>    timestamp           service station_id station_name station_province altitude
-#>    <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
-#>  1 2025-11-15 15:00:00 aemet   0009X      ALFORJA      TARRAGONA             406
-#>  2 2025-11-15 15:00:00 aemet   0016A      REUS  AEROP… <NA>                   71
-#>  3 2025-11-15 15:00:00 aemet   0034X      VALLS        TARRAGONA             233
-#>  4 2025-11-15 15:00:00 aemet   0042Y      TARRAGONA  … <NA>                   55
-#>  5 2025-11-15 15:00:00 aemet   0061X      PONTONS      BARCELONA             632
-#>  6 2025-11-15 15:00:00 aemet   0066X      VILAFRANCA … BARCELONA             177
-#>  7 2025-11-15 15:00:00 aemet   0073X      SITGES  VAL… <NA>                   58
-#>  8 2025-11-15 15:00:00 aemet   0076       BARCELONA  … <NA>                    4
-#>  9 2025-11-15 15:00:00 aemet   0092X      BERGA  INST… <NA>                  682
-#> 10 2025-11-15 15:00:00 aemet   0106X      BALSARENY    BARCELONA             361
-#> # ℹ 10,298 more rows
-#> # ℹ 8 more variables: temperature [°C], min_temperature [°C],
-#> #   max_temperature [°C], relative_humidity [%], precipitation [L/m^2],
-#> #   wind_direction [°], wind_speed [m/s], geometry <POINT [°]>
+#>  * <dttm>              <chr>   <chr>      <chr>        <chr>                 [m]
+#>  1 2026-02-03 15:00:00 aemet   0009X      ALFORJA      TARRAGONA             406
+#>  2 2026-02-03 15:00:00 aemet   0016A      REUS  AEROP… <NA>                   71
+#>  3 2026-02-03 15:00:00 aemet   0034X      VALLS        TARRAGONA             233
+#>  4 2026-02-03 15:00:00 aemet   0042Y      TARRAGONA  … <NA>                   55
+#>  5 2026-02-03 15:00:00 aemet   0061X      PONTONS      BARCELONA             632
+#>  6 2026-02-03 15:00:00 aemet   0066X      VILAFRANCA … BARCELONA             177
+#>  7 2026-02-03 15:00:00 aemet   0073X      SITGES  VAL… <NA>                   58
+#>  8 2026-02-03 15:00:00 aemet   0076       BARCELONA  … <NA>                    4
+#>  9 2026-02-03 15:00:00 aemet   0092X      BERGA  INST… <NA>                  682
+#> 10 2026-02-03 15:00:00 aemet   0106X      BALSARENY    BARCELONA             361
+#> # ℹ 10,182 more rows
+#> # ℹ 17 more variables: temperature_soil [°C], temperature_soil_20 [°C],
+#> #   temperature_soil_5 [°C], temperature [°C], temperature_dew_point [°C],
+#> #   min_temperature [°C], max_temperature [°C], relative_humidity [%],
+#> #   precipitation [L/m^2], wind_direction [°], max_wind_direction [°],
+#> #   max_wind_speed [m/s], wind_speed [m/s], insolation [h],
+#> #   atmospheric_pressure [hPa], snow_cover [cm], geometry <POINT [°]>
 ```

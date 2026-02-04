@@ -138,21 +138,21 @@ request <- list(
 )
 ```
 
-- `format`: The desired output format, it depends on the formats
-  available in the datasets, some only offer GRIB (zip files), whereas
-  others offer also NetCDF files. Choose accordingly to the available
-  formats.
-- `variable`: Character vector with the desired variable names or `all`
-  for accesing all variables.
-- `month`, `year` and `time`: Character vectors with the desired months,
-  year and times (hours) to download.
-- `area`: Numeric vector with the bbox of the desired area, in the form
-  of `c(max_lat, min_long, min_lat, max_lat)`.
-- `target`: Output file name
-- `dataset_short_name`: Dataset short name as stated in the CDS product
-  web page.
-- `product_type`: Some datasets have more than one product type, choose
-  the one desired.
+  - `format`: The desired output format, it depends on the formats
+    available in the datasets, some only offer GRIB (zip files), whereas
+    others offer also NetCDF files. Choose accordingly to the available
+    formats.
+  - `variable`: Character vector with the desired variable names or
+    `all` for accesing all variables.
+  - `month`, `year` and `time`: Character vectors with the desired
+    months, year and times (hours) to download.
+  - `area`: Numeric vector with the bbox of the desired area, in the
+    form of `c(max_lat, min_long, min_lat, max_lat)`.
+  - `target`: Output file name
+  - `dataset_short_name`: Dataset short name as stated in the CDS
+    product web page.
+  - `product_type`: Some datasets have more than one product type,
+    choose the one desired.
 
 > Take into account that parameters of the request can change depending
 > on the dataset. It is always advisable to explore the data download
@@ -209,12 +209,16 @@ stars::read_stars(nc_file)
 
     ## stars object with 3 dimensions and 3 attributes
     ## attribute(s):
-    ##                Min.     1st Qu.      Median        Mean     3rd Qu.       Max.   NA's
-    ## u10 [m/s]  -5.40471  -0.0442164   0.3580333   0.3568009   0.8111953   4.046933 120000
-    ## d2m [K]   261.03271 276.3091077 279.6762259 279.7562080 282.9740717 294.229248 120000
-    ## t2m [K]   266.89014 280.9194435 285.2894811 286.2570392 291.5648850 303.090576 120000
+    ##                Min.     1st Qu.      Median        Mean     3rd Qu.       Max.
+    ## u10 [m/s]  -5.40471  -0.0442164   0.3580333   0.3568009   0.8111953   4.046933
+    ## d2m [K]   261.03271 276.3091077 279.6762259 279.7562080 282.9740717 294.229248
+    ## t2m [K]   266.89014 280.9194435 285.2894811 286.2570392 291.5648850 303.090576
+    ##             NA's
+    ## u10 [m/s] 120000
+    ## d2m [K]   120000
+    ## t2m [K]   120000
     ## dimension(s):
-    ##      from  to offset delta  refsys                    values x/y
-    ## x       1 141 -10.05   0.1      NA                      NULL [x]
-    ## y       1  91  44.05  -0.1      NA                      NULL [y]
-    ## time    1  24     NA    NA POSIXct 1991-01-01,...,1992-12-01
+    ##      from  to offset delta refsys                    values x/y
+    ## x       1 141 -10.05   0.1     NA                      NULL [x]
+    ## y       1  91  44.05  -0.1     NA                      NULL [y]
+    ## time    1  24     NA    NA   Date 1991-01-01,...,1992-12-01
