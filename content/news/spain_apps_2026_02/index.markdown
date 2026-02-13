@@ -3,7 +3,7 @@ title: "Forest water balance and meteorology web apps for peninsular Spain avail
 authors: ["emf"]
 date: 2026-02-13
 lastmod: 2026-02-13
-draft: true
+draft: false
 
 
 categories: ["news"]
