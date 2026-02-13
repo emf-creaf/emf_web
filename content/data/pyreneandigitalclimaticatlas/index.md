@@ -16,10 +16,10 @@ summary: Digital long-term topoclimate maps of the Pyrenees for the period 1950-
 model_repository: ''
 data_repository: https://zenodo.org/record/1186639
 links:
-  url_doi: https://doi.org/10.5281/zenodo.1186639
+  url_doi: ''
   url_pdf: ''
   url_source: ''
-  url_docs: https://doi.org/10.1002/gdj3.52
+  url_docs: ''
 ---
 
 ## Description

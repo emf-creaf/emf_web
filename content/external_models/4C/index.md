@@ -8,8 +8,8 @@ tags:
 - Local
 draft: false
 featured: false
-date: '2024-09-19'
-lastmod: '2024-09-19'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: 4C is a model developed to describe long-term forest behaviour under changing
   environmental conditions. The model includes descriptions of tree species composition,
   forest structure, total ecosystem carbon content as well as leaf area index. The

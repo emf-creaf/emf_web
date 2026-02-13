@@ -9,8 +9,8 @@ tags:
 - FOXPRO
 draft: false
 featured: false
-date: '2024-09-19'
-lastmod: '2024-09-19'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: 'The agro-ecosystem model CANDY (Carbon And Nitrogen DYnamics) has been developed
   to describe carbon and nitrogen dynamics in arable soils in order to provide information
   about carbon stocks in soils, organic matter turnover, nitrogen uptake by crops,

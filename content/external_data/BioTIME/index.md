@@ -8,8 +8,8 @@ tags:
 - BiodiversityTimeSeries
 draft: false
 featured: false
-date: '2026-01-20'
-lastmod: '2026-01-20'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: The BioTIME database contains raw data on species identities and abundances
   in eco- logical assemblages through time
 model_repository: ''

@@ -8,8 +8,8 @@ tags:
 - Global
 draft: false
 featured: false
-date: '2024-09-19'
-lastmod: '2024-09-19'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: CABLE is a land surface model used to calculate fluxes of momentum, energy,
   water and carbon between the land surface and the atmosphere and to model the major
   biochemical cycles of the land ecosystem. CABLE can be run as a standalone model

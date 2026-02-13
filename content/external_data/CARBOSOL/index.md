@@ -8,8 +8,8 @@ tags:
 - SoilDatabase
 draft: false
 featured: false
-date: '2026-01-20'
-lastmod: '2026-01-20'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: Physical and chemical properties of 6,609 soil profiles in Spain
 model_repository: ''
 data_repository: https://doi.pangaea.de/10.1594/PANGAEA.884517

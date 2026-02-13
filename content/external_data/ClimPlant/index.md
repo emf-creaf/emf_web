@@ -8,8 +8,8 @@ tags:
 - BioclimaticDatabase
 draft: false
 featured: false
-date: '2026-01-20'
-lastmod: '2026-01-20'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: Realized climatic niches of vascular plants in European forest understoreys
 model_repository: ''
 data_repository: https://figshare.com/articles/dataset/ClimPlant_realized_climatic_niches_of_vascular_plants_in_European_forest_understoreys/12199628

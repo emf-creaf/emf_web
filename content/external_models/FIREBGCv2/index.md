@@ -9,8 +9,8 @@ tags:
 - C++
 draft: false
 featured: false
-date: '2024-09-19'
-lastmod: '2024-09-19'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: The spatially explicit ecosystem process model FireBGCv2 is a landscape fire
   and vegetation model C++ computer program that incorporates several types of stand
   dynamics models into a spatially explicit landscape simulation platform.

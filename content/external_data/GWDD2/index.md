@@ -8,8 +8,8 @@ tags:
 - TraitDatabase
 draft: false
 featured: false
-date: '2026-01-20'
-lastmod: '2026-01-20'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: The Global Wood Density Database v.2 (GWDD v.2) is a collection of 109,626
   taxonomically standardized wood density records and 15,093 additional bark density
   records.

@@ -9,8 +9,8 @@ tags:
 - C
 draft: false
 featured: false
-date: '2024-09-19'
-lastmod: '2024-09-19'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: CANOAK is a coupled biophysical and ecophysiolgical model that computes fluxes
   of water, heat and CO2 exchange within vegetation canopies and between the canopy
   and the atmosphere. In doing so CANOAK computes the canopy microclimate (light,

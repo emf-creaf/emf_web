@@ -9,8 +9,8 @@ tags:
 - FORTRAN90
 draft: false
 featured: false
-date: '2024-09-19'
-lastmod: '2024-09-19'
+date: '2026-02-13'
+lastmod: '2026-02-13'
 summary: MILLENIAL is a soil model developed to simulate C pools that can be measured
   by extraction or fractionation, including particulate organic C, mineral-associated
   organic C, aggregate C, microbial biomass, and low molecular weight C. Model processes
