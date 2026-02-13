@@ -45,13 +45,13 @@ devtools::install_github("emf-creaf/forestables")
 `forestables` offers download functions to get the inventory files from
 the official websites from each inventory:
 
-  - [FIA](https://www.fs.usda.gov/research/products/dataandtools/tools/fia-datamart)  
-  - [FFI](https://inventaire-forestier.ign.fr/dataifn/?lang=en)  
-  - IFN:
-      - [IFN2](https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn2_descargas.html)
-      - [IFN3](https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn3_bbdd_descargas_htm.html)
-        (*accdb* are be used)
-      - [IFN4](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional/cuarto_inventario.html)
+- [FIA](https://www.fs.usda.gov/research/products/dataandtools/tools/fia-datamart)  
+- [FFI](https://inventaire-forestier.ign.fr/dataifn/?lang=en)  
+- IFN:
+  - [IFN2](https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn2_descargas.html)
+  - [IFN3](https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn3_bbdd_descargas_htm.html)
+    (*accdb* are be used)
+  - [IFN4](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional/cuarto_inventario.html)
 
 We recommend to manually download and unzip the data in the desired
 folder. Download functions are offered as helpers for programmatically
@@ -67,9 +67,6 @@ Loire department for 2015:
 library(forestables)
 #> Loading required package: data.table
 #> Loading required package: dtplyr
-```
-
-``` r
 library(dplyr)
 #> 
 #> Attaching package: 'dplyr'
@@ -82,19 +79,13 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
-```
-
-``` r
 
 ## Downloading all FFI data (if not already)
 ffi_path <- tempdir()
 download_inventory("FFI", destination = ffi_path)
 #> ℹ Downloading FFI available data
-#> ℹ Unzipping downloaded data in '/tmp/RtmpySZ2h0'
+#> ℹ Unzipping downloaded data in '/tmp/RtmpbZ58Su'
 #> ✔ Done!
-```
-
-``` r
 
 ## Get the plots
 loire_plots_2015 <- ffi_to_tibble(
@@ -107,16 +98,6 @@ loire_plots_2015 <- ffi_to_tibble(
 #> Start
 #> ℹ Processing 1 year
 #> Getting ready to retrieve 113 plots for 2015
-#> 
-#> Attaching package: 'purrr'
-#> 
-#> 
-#> The following object is masked from 'package:data.table':
-#> 
-#>     transpose
-```
-
-``` r
 
 ## Explore the plots
 loire_plots_2015
