@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2026-01-27'
-lastmod: '2026-01-27'
+date: '2026-02-17'
+lastmod: '2026-02-17'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -26,7 +26,7 @@ links:
 ---
 # Ecological trajectory analysis <a href="https://emf-creaf.github.io/ecotraj/"><img src="logo.png" align="right" height="139" alt="ecotraj website" /></a>
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ecotraj)](https://cran.r-project.org/package=ecotraj)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ecotraj)](https://cran.r-project.org/package=ecotraj)
 [![](https://cranlogs.r-pkg.org/badges/ecotraj)](https://cran.rstudio.com/web/packages/ecotraj/index.html)
 [![R-CMD-check](https://github.com/emf-creaf/ecotraj/workflows/R-CMD-check/badge.svg)](https://github.com/emf-creaf/ecotraj/actions)
 
@@ -39,26 +39,26 @@ space.
 
 ETA is related to the following publications:
 
-  - Initial presentation of the **Ecological Trajectory Analysis (ETA)**
-    framework (De Cáceres et al. 2019).
+- Initial presentation of the **Ecological Trajectory Analysis (ETA)**
+  framework (De Cáceres et al. 2019).
 
-  - ETA extension of **metrics** and **visualisation modes** (Sturbois
-    et al. 2021a).
+- ETA extension of **metrics** and **visualisation modes** (Sturbois et
+  al. 2021a).
 
-  - ETA extension to **cyclical** trajectory data (Djeghri et al. under
-    review).
+- ETA extension to **cyclical** trajectory data (Djeghri et al. under
+  review).
 
-  - Interpretation of trajectory **relative movements** (Djeghri et
-    al. in prep.).
+- Interpretation of trajectory **relative movements** (Djeghri et al. in
+  prep.).
 
-  - Application to a multivariate space defined by **stable isotope**
-    data (Sturbois et al. 2021b).
+- Application to a multivariate space defined by **stable isotope** data
+  (Sturbois et al. 2021b).
 
-  - Application to a multivariate space defined by **elemental
-    composition** data (de la Casa et al. 2025).
+- Application to a multivariate space defined by **elemental
+  composition** data (de la Casa et al. 2025).
 
-  - Application of ETA framework for the **assessment of ecological
-    quality** (Sturbois et al. 2023).
+- Application of ETA framework for the **assessment of ecological
+  quality** (Sturbois et al. 2023).
 
 ## Package installation
 
@@ -73,14 +73,14 @@ remotes::install_github("emf-creaf/ecotraj")
 
 ## Documentation and training
 
-  - The package comes with function documentation including examples.
+- The package comes with function documentation including examples.
 
-  - Several articles explaining the different metrics of the framework
-    and how to conduct them using package functions can be found
-    [here](https://emf-creaf.github.io/ecotraj/articles/).
+- Several articles explaining the different metrics of the framework and
+  how to conduct them using package functions can be found
+  [here](https://emf-creaf.github.io/ecotraj/articles/).
 
-  - Presentation slides of a course on ecological trajectory analysis
-    can be found [here](https://emf.creaf.cat/training/ecotraj_course/).
+- Presentation slides of a course on ecological trajectory analysis can
+  be found [here](https://emf.creaf.cat/training/ecotraj_course/).
 
 ## Package functions
 
@@ -90,7 +90,7 @@ framework:
 **Functions for Ecological Trajectory Analysis (ETA)**
 
 | Name                            | Short description                                                                                                                                                                                 |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `defineTrajectories()`          | Defines trajectory objects to be analyzed.                                                                                                                                                        |
 | `subsetTrajectories()`          | Subsets trajectories corresponding to selected set of sites or surveys from a dataset containing multiple trajectories.                                                                           |
 | `trajectoryLengths()`           | Calculates lengths of directed segments and total path length of trajectories.                                                                                                                    |
@@ -119,7 +119,7 @@ framework:
 (CETA)**
 
 | Name                             | Short description                                                                                         |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `extractCycles()`                | Extracts (i.e. subsets) cycles from cyclical trajectories.                                                |
 | `extractFixedDateTrajectories()` | Extracts fixed-date trajectories from cyclical trajectories.                                              |
 | `cycleShifts()`                  | Estimates cyclical shifts (i.e. advances or delays).                                                      |
@@ -131,7 +131,7 @@ framework:
 **Functions for Ecological Quality Assessment (EQA)**
 
 | Name                              | Short description                                                                                                             |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | `stateEnvelopeVariability()`      | Assess the variability of a set of *states* taken as reference envelope.                                                      |
 | `trajectoryEnvelopeVariability()` | Assess the variability of a set of *trajectories* taken as reference envelope.                                                |
 | `compareToStateEnvelope()`        | Evaluate the ecological quality of stations/observations with respect to a set of *states* taken as reference envelope.       |
@@ -147,40 +147,37 @@ variables.
 
 ## References
 
-  - De Cáceres M, Coll L, Legendre P, Allen RB, Wiser SK, Fortin MJ,
-    Condit R & Hubbell S (2019). Trajectory analysis in community
-    ecology. Ecological Monographs 89, e01350
-    (<https://doi.org/10.1002/ecm.1350>).
+- De Cáceres M, Coll L, Legendre P, Allen RB, Wiser SK, Fortin MJ,
+  Condit R & Hubbell S (2019). Trajectory analysis in community ecology.
+  Ecological Monographs 89, e01350 (<https://doi.org/10.1002/ecm.1350>).
 
-  - de la Casa J, Nogué S, De Cáceres M, Pla-Rabés S, Sardans J,
-    Benavente M, Giralt S, Hernandez A, Raposeiro PM & Peñuelas J (2025)
-    Understanding two millenia ecosystem perturbations on the Azores
-    archipelago through elementome trajectories. Ecological Indicators,
-    176, 113630 (<https://doi.org/10.1016/j.ecolind.2025.113630>).
+- de la Casa J, Nogué S, De Cáceres M, Pla-Rabés S, Sardans J, Benavente
+  M, Giralt S, Hernandez A, Raposeiro PM & Peñuelas J (2025)
+  Understanding two millenia ecosystem perturbations on the Azores
+  archipelago through elementome trajectories. Ecological Indicators,
+  176, 113630 (<https://doi.org/10.1016/j.ecolind.2025.113630>).
 
-  - Djeghri et al (under review) Going round in cycles but going
-    somewhere: Deciphering cyclical dynamics using Ecological Trajectory
-    Analysis.
+- Djeghri et al (under review) Going round in cycles but going
+  somewhere: Deciphering cyclical dynamics using Ecological Trajectory
+  Analysis.
 
-  - Djeghri et al. (in preparation) Uncovering the relative movements of
-    ecological trajectories.
+- Djeghri et al. (in preparation) Uncovering the relative movements of
+  ecological trajectories.
 
-  - Sturbois A, De Cáceres M, Sánchez-Pinillos M, Schaal G, Gauthier O,
-    Le Mao P, Ponsero A, & Desroy N (2021a). Extending community
-    trajectory analysis : New metrics and representation. Ecological
-    Modelling, 440, 109400
-    (<https://doi.org/10.1016/j.ecolmodel.2020.109400>).
+- Sturbois A, De Cáceres M, Sánchez-Pinillos M, Schaal G, Gauthier O, Le
+  Mao P, Ponsero A, & Desroy N (2021a). Extending community trajectory
+  analysis : New metrics and representation. Ecological Modelling, 440,
+  109400 (<https://doi.org/10.1016/j.ecolmodel.2020.109400>).
 
-  - Sturbois A, Cucherousset J, De Cáceres M, Desroy N, Riera P,
-    Carpentier A, Quillien N, Grall J, Espinasse B, Cherel Y & Schaal G
-    (2021). Stable Isotope Trajectory Analysis (SITA) : A new approach
-    to quantify and visualize dynamics in stable isotope studies.
-    Ecological Monographs, 92, e1501
-    (<https://doi.org/10.1002/ecm.1501>).
+- Sturbois A, Cucherousset J, De Cáceres M, Desroy N, Riera P,
+  Carpentier A, Quillien N, Grall J, Espinasse B, Cherel Y & Schaal G
+  (2021). Stable Isotope Trajectory Analysis (SITA) : A new approach to
+  quantify and visualize dynamics in stable isotope studies. Ecological
+  Monographs, 92, e1501 (<https://doi.org/10.1002/ecm.1501>).
 
-  - Sturbois A, De Cáceres M, Bifolchi A, Bioret F, Boyé A, Gauthier O,
-    Grall J, Grémare A, Labrune C, Robert A, Schaal G & Desroy N (2023).
-    Ecological Quality Assessment: a general multivariate framework to
-    report the quality of ecosystems and their dynamics with respect to
-    reference conditions. Ecosphere 14, e4726
-    (<https://doi.org/10.1002/ecs2.4726>).
+- Sturbois A, De Cáceres M, Bifolchi A, Bioret F, Boyé A, Gauthier O,
+  Grall J, Grémare A, Labrune C, Robert A, Schaal G & Desroy N (2023).
+  Ecological Quality Assessment: a general multivariate framework to
+  report the quality of ecosystems and their dynamics with respect to
+  reference conditions. Ecosphere 14, e4726
+  (<https://doi.org/10.1002/ecs2.4726>).
