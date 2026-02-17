@@ -6,7 +6,7 @@ year: "2023"
 section: "publications"
 links:
     url_bib: "Bookwalter_2023.bib"
-    url_pdf: ""
+    url_pdf: "Bookwalter_2023.pdf"
     url_doi: "https://doi.org/10.1111/afe.12589"
     url_source: ""
     url_docs: ""
