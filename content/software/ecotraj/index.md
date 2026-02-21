@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2026-02-17'
-lastmod: '2026-02-17'
+date: '2026-02-21'
+lastmod: '2026-02-21'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -45,11 +45,10 @@ ETA is related to the following publications:
 - ETA extension of **metrics** and **visualisation modes** (Sturbois et
   al. 2021a).
 
-- ETA extension to **cyclical** trajectory data (Djeghri et al. under
-  review).
+- ETA extension to **cyclical** trajectory data (Djeghri et al. 2026).
 
-- Interpretation of trajectory **relative movements** (Djeghri et al. in
-  prep.).
+- Interpretation of trajectory **relative movements** (Djeghri et
+  al. under review).
 
 - Application to a multivariate space defined by **stable isotope** data
   (Sturbois et al. 2021b).
@@ -157,11 +156,12 @@ variables.
   archipelago through elementome trajectories. Ecological Indicators,
   176, 113630 (<https://doi.org/10.1016/j.ecolind.2025.113630>).
 
-- Djeghri et al (under review) Going round in cycles but going
+- Djeghri N, Sturbois A, Hélaouët P, Geissmann Q, Rimmelin-Maury P, Boyé
+  A, Gauthier O, De Cáceres M (2026). Going round in cycles but going
   somewhere: Deciphering cyclical dynamics using Ecological Trajectory
-  Analysis.
+  Analysis. Ecological Monographs.
 
-- Djeghri et al. (in preparation) Uncovering the relative movements of
+- Djeghri et al. (under review) Uncovering the relative movements of
   ecological trajectories.
 
 - Sturbois A, De Cáceres M, Sánchez-Pinillos M, Schaal G, Gauthier O, Le
