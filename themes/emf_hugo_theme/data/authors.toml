@@ -12,7 +12,7 @@
 
 [vgranda]
     id = "vgranda"
-    weight = 9999
+    weight = 3
     name = "Víctor"
     surname = "Granda-García"
     affiliation = "Ecosystem Modelling Facility - CREAF"
@@ -20,7 +20,7 @@
     summary = "Plant biologist turned into data scientist. Open source and open data enthusiast with a knack for programming in R."
     image = "img/authors/vgranda.png"
     core = true
-    position = "Data Scientist"
+    position = "EMF Data Scientist"
     sphere = false
     committee = false
 
@@ -34,7 +34,7 @@
     summary = "I am mostly interested in the development of statistical and modeling approaches to understand the structure and functioning of terrestrial plant communities at scales ranging from the forest stand to landscapes and regions. My long-term goal in ecological modeling is to develop, promote and apply modeling frameworks to better understand and anticipate the response of forest ecosystems to global change drivers at the local to regional scales, with a strong focus on water-limited areas."
     image = "img/authors/mcaceres.png"
     core = true
-    position = "EMF Coordinator"
+    position = "EMF Research Leader"
     sphere = false
     committee = true
 
@@ -48,7 +48,7 @@
     summary = "I am a research technician at CREAF, located in the UAB campus (Spain). I graduated in Physics at ULL (Spain) in 1988 and received my PhD in Astrophysics in 1994 at ITA (Norway). I also obtained a master diploma in Remote Sensing and GIS from the IEEC (Spain) in 2003. My research areas include environmental sciences, forest ecology, applied statistics and mathematical ecology."
     image = "img/authors/rmolowny.png"
     core = true
-    position = "Modeller"
+    position = "EMF Support Coordinator"
     sphere = false
     committee = false
 
