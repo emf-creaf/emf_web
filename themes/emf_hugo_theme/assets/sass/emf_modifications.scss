@@ -134,6 +134,11 @@ a > .news-image {
     @include header-background;
 }
 
+#research_header {
+    background-image: linear-gradient(90deg, #E9E165 -0.4%, #E2DF9C 100.4%), url($abstract_background_overlay);
+    @include header-background;
+}
+
 #data_header {
     background-image: linear-gradient(90deg, #C1894D -0.4%, #FCDAAE 100.4%), url($abstract_background_overlay);
     @include header-background;
@@ -196,6 +201,9 @@ a > .news-image {
 
 .color-publications {
     background-color: $publications;
+}
+.text-notsodark {
+    color: #444444;
 }
 
 .color-projects {

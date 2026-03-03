@@ -1,9 +1,19 @@
+[research]
+    featurette = true
+    name = "RESEARCH"
+    url = "/research/"
+    text = "Research in process based modelling of terrestrial ecosystems"
+    weight = 1
+    type = "research"
+    color = "#E9E165"
+    x = 6
+    y = 6
 [models]
     featurette = true
     name = "MODELS"
     url = "/models/"
-    text = "Models related to terrestrial ecology processes (soil, hydrology, ecophysiology…)"
-    weight = 1
+    text = "Process based and empirical models development related to terrestrial ecology"
+    weight = 2
     type = "models"
     color = "#5254EF"
     x = 6
@@ -13,7 +23,7 @@
     name = "MODELS"
     url = "/models/"
     text = "Models related to terrestrial ecology processes (soil, hydrology, ecophysiology…)"
-    weight = 1
+    weight = 2
     type = "models"
     color = "#7B9AF7"
     x = 6
@@ -23,7 +33,7 @@
     name = "WORKFLOWS"
     url = "/workflows/"
     text = "Learn to access datasets around the world, use R packages and more…"
-    weight = 2
+    weight = 3
     type = "workflows"
     color = "#52C99E"
     x = 6
@@ -33,7 +43,7 @@
     name = "DATA"
     url = "/data/"
     text = "Interesting datasets within easy reach"
-    weight = 3
+    weight = 4
     type = "data"
     color = "#EB9455"
     x = 16
@@ -43,7 +53,7 @@
     name = "DATA"
     url = "/data/"
     text = "Interesting datasets within easy reach"
-    weight = 3
+    weight = 4
     type = "data"
     color = "#EFAA77"
     x = 16
@@ -53,17 +63,17 @@
     name = "SOFTWARE"
     url = "/software/"
     text = "Software provided by the EMF"
-    weight = 4
+    weight = 5
     type = "software"
     color = "#ED51C1"
     x = 6
     y = 11 
 [tech_docs]
     featurette = true
-    name = "TECHNICAL DOCS"
+    name = "TECH. DOCS"
     url = "/tech_docs/"
     text = "Technical documents provided by the EMF"
-    weight = 5
+    weight = 6
     type = "tech_support"
     color = "#5AE2DA"
     x = 0

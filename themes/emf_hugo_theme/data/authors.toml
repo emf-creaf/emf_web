@@ -99,10 +99,10 @@
     surname = "Balaguer Romano"
     affiliation = "CREAF"
     aff_link = ""
-    core = false
+    core = true
     position = "Postdoctoral researcher"
     image = "img/authors/rbalaguer.png"
-    sphere = true
+    sphere = false
     committee = false
 
 [naquilue]

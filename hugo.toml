@@ -10,28 +10,28 @@ theme = "emf_hugo_theme"
         pageRef = "/news/"
         weight = 1
     [[menu.main]]
+        name = "Research"
+        pageRef = "/research/"
+        weight = 2
+    [[menu.main]]
         name = "Models"
         pageRef = "/models/"
-        weight = 2
+        weight = 3
     [[menu.main]]
         name = "Workflows"
         pageRef = "/workflows/"
-        weight = 3
+        weight = 4
     [[menu.main]]
         name = "Data"
         pageRef = "/data/"
-        weight = 4
+        weight = 5
     [[menu.main]]
         name = "Software"
         pageRef = "/software/"
-        weight = 5
+        weight = 6
     [[menu.main]]
         name = "Tech Docs"
         pageRef = "/tech_docs/"
-        weight = 6
-    [[menu.main]]
-        name = "Publications & Projects"
-        pageRef = "/publications/"
         weight = 7
     [[menu.main]]
         name = "Training"

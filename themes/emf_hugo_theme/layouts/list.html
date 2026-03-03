@@ -10,7 +10,7 @@
                     {{ partial "card_tags.html" . }}
                 {{ end }}
             </div>
-        {{ else if eq .Type "publications" }}
+        {{ else if eq .Type "research" }}
             {{ partial "buttons_pubs.html" . }}
             <div class="row row-cols-1 g-3">
                 {{ range ((.Paginate .RegularPagesRecursive 30).Pages.ByParam "year").Reverse }}

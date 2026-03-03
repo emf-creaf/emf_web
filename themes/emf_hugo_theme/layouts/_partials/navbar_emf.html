@@ -14,7 +14,7 @@
     {{ $navbar_light = "navbar-dark" }}
     {{ $type_data := index .Site.Data.page_types_data "home" }}
     {{ $navbar_style = $type_data.navbar_style | safeCSS }}
-{{ else if in (slice "tags" "categories" "about") $type }}
+{{ else if in (slice "tags" "categories" "about" "research") $type }}
     {{ $navbar_light = "navbar-dark" }}
 {{ else if eq .Title "404 Page not found" }}
     {{ $navbar_light = "navbar-dark" }}
