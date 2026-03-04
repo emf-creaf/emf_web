@@ -7,7 +7,7 @@
     type = "research"
     color = "#E9E165"
     x = 6
-    y = 6
+    y = 0
 [models]
     featurette = true
     name = "MODELS"
