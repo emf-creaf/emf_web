@@ -7,9 +7,9 @@
 
 <div class="container-fluid g-0 vh-25" id="{{ $type_data.header_id }}">
     <div class="d-flex align-items-center justify-content-center text-notsodark" style="height: 200px;">
-        {{ if $icon }}
-            {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "x" $icon.x "y" $icon.y "margin_class" "me-2" "icon_class" "header_icon" "fill" "currentColor" "stroke_width" "1.25") }}
-        {{ end }}
         <span><h1 class="fw-bold ls-10 mb-0">{{ upper .Title }}</h1></span>
+        {{ if $icon }}
+            {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "x" $icon.x "y" $icon.y "margin_class" "me-2 mb-5" "icon_class" "header_icon" "fill" "currentColor" "stroke_width" "1.25") }}
+        {{ end }}
     </div>    
 </div>
