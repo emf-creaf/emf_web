@@ -2,11 +2,11 @@
 
 {{ if eq .type "about" }}
     {{ if eq .author.id "mcaceres"}}
-    <div class="col col-md-7 col-xl-7 px-5 mb-5 text-center">
+    <div class="col col-md-6 col-xl-7 px-5 mb-5 text-center">
     {{ else if eq .author.id "rmolowny"}}
-    <div class="col col-md-5 col-xl-5 px-5 mb-5 text-center">
+    <div class="col col-md-6 col-xl-5 px-5 mb-5 text-center">
     {{ else }}
-    <div class="col col-md-4 col-xl-4 px-5 mb-5 text-center">
+    <div class="col col-md-6 col-xl-3 px-5 mb-5 text-center">
     {{ end }}
     {{ with resources.Get .author.image }}
     <img class="author-image-xl mb-3" src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" caption="{{ $author_name }}" alt="{{ $author_name }}">

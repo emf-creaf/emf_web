@@ -17,7 +17,7 @@
     surname = "Granda-García"
     affiliation = "Ecosystem Modelling Facility - CREAF"
     aff_link = ""
-    summary = "Plant biologist turned into data scientist. Open source and open data enthusiast with a knack for programming in R."
+    summary = "I'm a data scientist with a PhD. in tree ecophysiology. My main focus of interest is how to apply different technologies and computer languages to solve complex biological and ecological problems, including data management, data pipelines, analysis and visualization. Open source and open data enthusiast with a knack for programming in R."
     image = "img/authors/vgranda.png"
     core = true
     position = "EMF Data Scientist"
@@ -29,7 +29,7 @@
     weight = 1
     name = "Miquel"
     surname = "de Cáceres"
-    affiliation = "Ecosystem Modelling Facility - CREAF"
+    affiliation = "Ecosystem Modelling Facility - CREAF - CSIC"
     aff_link = ""
     summary = "I am mostly interested in the development of statistical and modeling approaches to understand the structure and functioning of terrestrial plant communities at scales ranging from the forest stand to landscapes and regions. My long-term goal in ecological modeling is to develop, promote and apply modeling frameworks to better understand and anticipate the response of forest ecosystems to global change drivers at the local to regional scales, with a strong focus on water-limited areas."
     image = "img/authors/mcaceres.png"
@@ -48,7 +48,7 @@
     summary = "I am a research technician at CREAF, located in the UAB campus (Spain). I graduated in Physics at ULL (Spain) in 1988 and received my PhD in Astrophysics in 1994 at ITA (Norway). I also obtained a master diploma in Remote Sensing and GIS from the IEEC (Spain) in 2003. My research areas include environmental sciences, forest ecology, applied statistics and mathematical ecology."
     image = "img/authors/rmolowny.png"
     core = true
-    position = "EMF Support Coordinator"
+    position = "EMF Transfer & Support Coordinator"
     sphere = false
     committee = false
 
@@ -73,7 +73,7 @@
     surname = "Delsman"
     affiliation = "Ecosystem Modelling Facility - CREAF"
     aff_link = ""
-    summary = "With a Master's in International Land and Water Management, focusing on sustainable soil management,  I am interested in the functioning and design of our environment and want to work towards more climate-resilient landscapes."
+    summary = "With a Master's in International Land and Water Management, focusing on sustainable soil management, I'm interested in the functioning and design of our environment and want to work towards more climate-resilient landscapes."
     image = "img/authors/idelsman.png"
     core = true
     position = "Technician"
@@ -99,6 +99,7 @@
     surname = "Balaguer Romano"
     affiliation = "CREAF"
     aff_link = ""
+    summary = "BSc in Biology, MRes in Biodiversity and PhD in Sciences. My research addresses the assessment of global change impacts on forest ecosystems, with the aim of contributing to the development of adaptive strategies. I study forest functioning and dynamics using process-based modeling and remote sensing approaches, focusing on the interactions with drought and wildfire disturbances at landscape scales."
     core = true
     position = "Postdoctoral researcher"
     image = "img/authors/rbalaguer.png"
