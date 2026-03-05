@@ -86,6 +86,28 @@
     type = "tags"
     x = 10
     y = 10
-
-
+[news]
+    featurette = false
+    name = "NEWS"
+    url = "/news/"
+    text = "EMF news"
+    type = "news"
+    x = 10
+    y = 10
+[training]
+    featurette = false
+    name = "TRAINING"
+    url = "/training/"
+    text = "EMF trainings"
+    type = "training"
+    x = 10
+    y = 10
+[about]
+    featurette = false
+    name = "ABOUT"
+    url = "/about/"
+    text = "About the EMF"
+    type = "about"
+    x = 10
+    y = 10
     

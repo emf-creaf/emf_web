@@ -9,7 +9,8 @@
     <div class="d-flex align-items-center justify-content-center text-notsodark" style="height: 200px;">
         <span><h1 class="fw-bold ls-10 mb-0">{{ upper .Title }}</h1></span>
         {{ if $icon }}
-            {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "x" $icon.x "y" $icon.y "margin_class" "me-2 mb-5" "icon_class" "header_icon" "fill" "currentColor" "stroke_width" "1.25") }}
+            {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "margin_class" "me-2 mb-5" "icon_class" "header_icon" "stroke_width" "3") }}
         {{ end }}
     </div>    
 </div>
+

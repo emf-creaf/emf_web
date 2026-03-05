@@ -1,7 +1,15 @@
 {{ define "main" }}
+
+{{ $type := .Type }}
+{{ $type_data := index .Site.Data.page_types_data $type }}
+{{ $icon := index .Site.Data.resources_icons $type }}
+
 <div class="container-fluid g-0" id="about_header">
-    <div class="text-about d-flex align-items-center justify-content-center" style="height: 200px;">
-        <h1 class="fw-bold ls-10 mb-0 text-light">{{upper .Title }}</h1>
+    <div class="text-about d-flex align-items-center justify-content-center text-light" style="height: 200px;">
+        <span><h1 class="fw-bold ls-10 mb-0">{{ upper .Title }}</h1></span>
+        {{ if $icon }}
+            {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "margin_class" "me-2 mb-5" "icon_class" "header_icon" "stroke_width" "3") }}
+        {{ end }}
     </div>
 </div>
 
