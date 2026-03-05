@@ -96,15 +96,50 @@
 }
 
 @font-face {
-    font-family: "RobotoMono";
+    font-family: "Maple Mono";
     font-style: normal;
     font-weight: 400;
-    src: url($roboto_mono_ttf) format("ttf");
+    src: url($maple_mono_regular_woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    font-style: italic;
+    font-weight: 400;
+    src: url($maple_mono_italic_woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: url($maple_mono_bold_woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    font-style: italic;
+    font-weight: 700;
+    src: url($maple_mono_bold_italic_woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    font-style: normal;
+    font-weight: 300;
+    src: url($maple_mono_light_woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Maple Mono";
+    font-style: normal;
+    font-weight: 300;
+    src: url($maple_mono_light_italic_woff2) format("woff2");
 }
 
 $emf-font-family-body: Roboto, sans-serif !default;
 $emf-font-family-heading: ATCOverlook, sans-serif !default;
-$emf-font-family-monospace: RobotoMono, monospace !default;
+$emf-font-family-monospace: Maple Mono, monospace !default;
 
 /* Body */
 body {
