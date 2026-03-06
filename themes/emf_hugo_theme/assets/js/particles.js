@@ -1,9 +1,5 @@
 import * as params from '@params';
 
-const vectors = [params.sigma];
-const random = Math.floor(Math.random() * vectors.length);
-
-
 tsParticles.load("tsparticles", {
     pauseOnBlur: true,
     pauseOnOutsideViewport: true,
@@ -117,7 +113,7 @@ tsParticles.load("tsparticles", {
       inlineArrangement: "equidistant",
       scale: 0.7,
       type: "inline",
-      url: vectors[random]
+      url: params.sigma
     }
   });
   
