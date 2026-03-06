@@ -16,7 +16,7 @@
     {{ end }}
 
     {{ if $links.url_docs }}
-    <a class="btn {{ if $button_biblio }}btn-biblio{{ else }}btn-docs{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $links.url_docs | relURL }}" role="button" target="_blank" rel="noopener">DOCUMENTATION</a>
+    <a class="btn {{ if $button_biblio }}btn-biblio{{ else if eq .Section "transfer" }}btn-transfer{{ else }}btn-docs{{ end }} btn-xs text-nowrap me-2 mb-2" href="{{ $links.url_docs | relURL }}" role="button" target="_blank" rel="noopener">DOCUMENTATION</a>
     {{ end }}
 
     {{ if $links.url_doi }}

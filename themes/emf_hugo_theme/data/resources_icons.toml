@@ -8,6 +8,16 @@
     color = "#E9E165"
     x = 6
     y = 0
+[transfer]
+    featurette = false
+    name = "KNOWLEDGE TRANSFER"
+    url = "/transfer/"
+    text = ""
+    weight = 1
+    type = "transfer"
+    color = "#E9E165"
+    x = 6
+    y = 0
 [models]
     featurette = true
     name = "MODELS"

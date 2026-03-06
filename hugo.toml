@@ -34,9 +34,13 @@ theme = "emf_hugo_theme"
         pageRef = "/tech_docs/"
         weight = 7
     [[menu.main]]
+        name = "Transfer"
+        pageRef = "/transfer/"
+        weight = 8
+    [[menu.main]]
         name = "Training"
         pageRef = "/training/"
-        weight = 8
+        weight = 98
     [[menu.main]]
         name = "About EMF"
         pageRef = "/about/"

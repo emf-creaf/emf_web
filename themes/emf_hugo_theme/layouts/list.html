@@ -17,6 +17,15 @@
                 {{ partial "card_publication.html" . }}
                 {{ end }}
             </div>
+        {{ else if eq .Type "transfer" }}
+            <p class="text-muted text-center mb-4 pb-4">
+            A list of knowledge transfer projects the EMF is or has been involved on:
+            </p>
+            <div class="row row-cols-1 g-3">
+                {{ range ((.Paginate .RegularPagesRecursive 30).Pages.ByParam "year_end").Reverse }}
+                {{ partial "card_publication.html" . }}
+                {{ end }}
+            </div>
         {{ else }}
             {{ partial "buttons_externals.html" . }}
             <div class="row row-cols-1 row-cols-md-3 g-3">

@@ -8,6 +8,8 @@
 {{ $url := .RelPermalink}}
 {{ $section := .Section}}
 {{ $links := .Params.links }}
+{{ $entities := .Params.entities }}
+{{ $scope := .Params.scope }}
 
 <div class="row pb-5">
     <div class="emf-card-vertical color-{{ $section }} w-75 mx-auto">        
@@ -31,6 +33,30 @@
         <p>
             <span class='atc fs-5'>{{ $description }}</span>
         </p>
+        {{ else if eq $section "transfer" }}
+        <p>
+            <span class='atc fs-4 text-uppercase fw-light'>{{ $title }}</span>
+        </p>
+        <p>
+            <span class='atc fs-5 fw-bold'>{{ $ips }} (Leadership)</span>
+        </p>
+        <p>
+            <span class='atc fs-6 fw-bold'>({{ $year }}-{{ $year_end }})</span>
+        </p>
+        <p>
+            <span class='fs-6'>{{ $description }}</span>
+        </p>
+        <p>
+            <span class='fs-6'>Scope: {{ $scope }}</span>
+        </p>
+        <p>
+            <span class='atc fs-5 text-uppercase fw-light'>Entities:</span>
+        </p>
+        <ul>
+            {{ range $entities }}
+                <li>{{ . }}</li>
+            {{ end }}
+        </ul>
         {{ end }}
 
         {{ partial "buttons_links.html" . }}

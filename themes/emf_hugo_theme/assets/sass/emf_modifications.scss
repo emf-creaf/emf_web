@@ -9,6 +9,7 @@ $software: #ED51C1;
 $training: #99D392;
 $publications: #E9E165;
 $projects: #E9E165;
+$transfer: #ab5be1;
 $term: #13ABCD;
 $emf-blue: #13ABCD;
 
@@ -140,7 +141,7 @@ a > .news-image {
 }
 
 #transfer_header {
-    background-image: linear-gradient(90deg, #E9E165 -0.4%, #E2DF9C 100.4%), url($abstract_background_overlay);
+    background-image: linear-gradient(90deg, #9f44db -0.4%, #b87edf 100.4%), url($abstract_background_overlay);
     @include header-background;
 }
 
@@ -207,8 +208,9 @@ a > .news-image {
 .color-publications {
     background-color: $publications;
 }
-.text-notsodark {
-    color: #444444;
+
+.color-transfer {
+    background-color: $transfer;
 }
 
 .color-projects {
@@ -219,6 +221,9 @@ a > .news-image {
     background-color: $term;
 }
 
+.text-notsodark {
+    color: #444444;
+}
 /* letter spacing classes */
 .ls-5 {
     letter-spacing: 0.05em;
@@ -326,6 +331,10 @@ a > .news-image {
     border-left: 15px solid $publications;
 }
 
+.emf-card-vertical.color-transfer {
+    border-left: 15px solid $transfer;
+}
+
 .emf-card-vertical.color-projects {
     border-left: 15px solid $projects;
 }
@@ -414,6 +423,11 @@ a > .news-image {
 
 .btn-training {
     @include button-variant($training, $training);
+    border-radius: 1.2em;
+}
+
+.btn-transfer {
+    @include button-variant($transfer, $transfer);
     border-radius: 1.2em;
 }
 
