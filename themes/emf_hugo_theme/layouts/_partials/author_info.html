@@ -32,7 +32,7 @@
         {{ if eq .type "news" }}
         <p class="mb-0"><small>{{ .author.summary }}</small></p>
         {{ else }}
-        <a href="{{ .author.aff_link }}" class="mb-0"><small>{{ .author.affiliation }}</small></a>
+        <p class="mb-0"><small>{{ .author.affiliation }}</small></p>
         {{ end }}
     </div>
 </div>
