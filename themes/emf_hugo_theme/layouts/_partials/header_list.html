@@ -6,7 +6,7 @@
 {{ $icon := index .Site.Data.resources_icons $type }}
 
 <div class="container-fluid g-0 vh-25" id="{{ $type_data.header_id }}">
-    <div class="d-flex align-items-center justify-content-center text-notsodark" style="height: 200px;">
+    <div class="d-flex align-items-center justify-content-center text-notsodark ms-5 me-5" style="height: 200px;">
         <span><h1 class="fw-bold ls-10 mb-0">{{ upper .Title }}</h1></span>
         {{ if $icon }}
             {{ partial "svgs/icons_defs.svg" (dict "type" $icon.type "margin_class" "me-2 mb-5" "icon_class" "header_icon" "stroke_width" "3") }}
