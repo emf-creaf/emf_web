@@ -53,9 +53,9 @@ anyone to use them.
 ### Accessing the data
 
 The simplest way of using the data is downloading the desired files from the
-public reposiory (https://data-emf.creaf.cat/public/gpkg/). But given the size
+public reposiory (https://data-emf.creaf.cat/public/gpkg/). But because the size
 of the files, this can be time, memory and disk storage consuming.  
-But given the formats offered, in this case we can make use of the capabilities
+Given the formats offered, in this case we can make use of the capabilities
 of the [GDAL system library](https://gdal.org/en/latest/index.html) and its
 implementation in R by the `sf` package to avoid this costs.
 
@@ -183,18 +183,19 @@ data_20250425
     9  POINT (62762.5 4816962)
     10 POINT (58762.5 4816462)
 
-But this is not so different from directly downloading the data and reading it
+But this is not so different from downloading the data and reading it
 locally, as the default behaviour of `st_read` is to download the file to a
-temporal folder and read it from there. It's also not so efficient in terms of
+temporal folder and read it from there.  
+It's also not so efficient in terms of
 time, as we need to wait to download the file and read all the data, which also
-means store all data in memory.
+means storing all data in memory.
 
 ## Filtering by polygon
 
 If we don't need all the data extent (peninsular Spain and Balearic Islands), but
-instead a smaller area, we can take advantage of the `wkt_filter` argument in
+an smaller area instead, we can take advantage of the `wkt_filter` argument in
 `st_read`.  
-Given a Well Known Text with a polygon, `st_read` uses GDAL to
+Given a polygon (in *Well Known Text* format), `st_read` uses GDAL to
 access and retrieve only the part of the files that intersects with that
 polygon. This is useful because reduces transfer size (only a part of the file
 is read and transfered), time and memory used.  
@@ -314,7 +315,7 @@ data_posada_20250425
 > **Important**
 >
 > Be sure that the polygon is in the **same** Coordinate Reference System (CRS)
-> that the data (25380). `wkt_filter` don't check this and assumes the filter
+> as the data (EPSG:25380). `wkt_filter` don't check this and assumes the filter
 > polygon is in the same CRS, so most probably it will return no data when a
 > different CRS is used.
 {.alert .alert-info}
@@ -327,7 +328,7 @@ previous section, GDAL also exposes an SQL dialect that can be
 used to query only the parts of the data we need. This means we can only read
 the columns and rows that comply with the supplied query.  
 We will use the `query` argument in `st_read` to make use of this GDAL feature
-and read only temperatures data in Posada de Valdeón for points higher than
+and read only temperatures data in Posada de Valdeón for points above
 1500m asl:
 
 ``` r
