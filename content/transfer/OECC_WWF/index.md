@@ -11,5 +11,5 @@ entities:
   - EMF
 scope: Spain
 links:
-    url_docs: "https://wwfes.awsassets.panda.org/downloads/a-1-1_-factsheet-informe-sumideros-de-carbono.pdf"
+    url_docs: "https://www.miteco.gob.es/content/dam/miteco/es/cambio-climatico/temas/mitigacion-politicas-y-medidas/Estudio_CREAF_impacto_sumideros.pdf"
 ---
