@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2026-04-02'
-lastmod: '2026-04-02'
+date: '2026-04-28'
+lastmod: '2026-04-28'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -113,6 +113,7 @@ framework:
 | `interpolateTrajectories()`     | Relocates trajectory ecological states to those corresponding to input times, via linear interpolation.                                                                                           |
 | `smoothTrajectories()`          | Performs multivariate smoothing on trajectory data using a Gaussian kernel.                                                                                                                       |
 | `centerTrajectories()`          | Shifts all trajectories to the center of the multivariate space and returns a modified distance matrix.                                                                                           |
+| `averageTrajectories()`         | Creates an “average” trajectory where the position of each observation is the average of the position of the corresponding observations of the input trajectories.                                |
 
 **Functions specific for Cyclical Ecological Trajectory Analysis
 (CETA)**
