@@ -85,16 +85,16 @@ The development of **traits4models** is intended to complement packages
 Two other packages complete the simulation framework, but can be used
 for many other purposes beyond forest modelling:
 
-  - Package [**meteoland**](https://emf-creaf.github.io/meteoland)
-    allows generating daily weather input for simulation models in
-    **medfate** and **medfateland**. Package **meteoland** is a
-    dependency for **medfate** and **medfateland**, but can be used
-    independently to obtain daily weather data.
-  - Package [**forestables**](https://emf-creaf.github.io/forestables)
-    allows reading and harmonizing forest inventory data to a common
-    data structure. Initialization workflows in **medfateland** can use
-    data from **forestables**, but the data structures of the package
-    can be used for many studies beyond modelling.
+- Package [**meteoland**](https://emf-creaf.github.io/meteoland) allows
+  generating daily weather input for simulation models in **medfate**
+  and **medfateland**. Package **meteoland** is a dependency for
+  **medfate** and **medfateland**, but can be used independently to
+  obtain daily weather data.
+- Package [**forestables**](https://emf-creaf.github.io/forestables)
+  allows reading and harmonizing forest inventory data to a common data
+  structure. Initialization workflows in **medfateland** can use data
+  from **forestables**, but the data structures of the package can be
+  used for many studies beyond modelling.
 
 The relationships between the five packages are illustrated in the
 figure below, where black arrows indicate package dependencies and gray
@@ -104,26 +104,25 @@ arrows indicate model parameter or data provision.
 
 ## Authorship
 
-The set of R packages are developed and maintained by the [*Ecosystem
+Package **traits4models** is developed and maintained by the [*Ecosystem
 Modelling Facility*](https://emf.creaf.cat) unit at
-[*CREAF*](https://www.creaf.cat/) (in Spain), in close collaboration
-with researchers from
+[*CREAF*](https://www.creaf.cat/) with funding from
+[*CSIC*](https://www.csic.es/), in close collaboration with researchers
+from other institutions such as
 [*URFM-INRAE*](https://www6.paca.inrae.fr/ecologie_des_forets_mediterraneennes/)
-(in France) and [*CTFC*](https://www.ctfc.cat/) (in Spain).
+and [*CTFC*](https://www.ctfc.cat/).
 
-<img src="institution_logos.png" width="60%" style="display: block; margin: auto;" />
+<img src="institution_logos.png" alt="" width="80%" style="display: block; margin: auto;" />
 
 ## Funding
 
-  - **Research project**: Boosting process-based models to project
-    forest dynamics and associated ecosystem services at
-    stand-to-regional scales (BOMFORES). **Financial Entity**:
-    Ministerio de Ciencia e Innovación (PID2021-126679OB-I00).
-    **Duration from**: 01/09/2022 **to**: 31/08/2024. **PI**: Miquel De
-    Cáceres.
-  - **Research project**: Improving the modelling of key forest dynamic
-    processes to forecast long-term changes in Mediterranean forests
-    under climate change (IMPROMED). **Financial Entity**: Ministerio de
-    Ciencia e Innovación (PID2023-152644NB-I00). **Duration from**:
-    01/09/2024 **to**: 31/08/2025. **PI**: Miquel De Cáceres/Josep Mª
-    Espelta.
+- **Research project**: Boosting process-based models to project forest
+  dynamics and associated ecosystem services at stand-to-regional scales
+  (BOMFORES). **Financial Entity**: Ministerio de Ciencia e Innovación
+  (PID2021-126679OB-I00). **Duration from**: 01/09/2022 **to**:
+  31/08/2024. **PI**: Miquel De Cáceres.
+- **Research project**: Improving the modelling of key forest dynamic
+  processes to forecast long-term changes in Mediterranean forests under
+  climate change (IMPROMED). **Financial Entity**: Ministerio de Ciencia
+  e Innovación (PID2023-152644NB-I00). **Duration from**: 01/09/2024
+  **to**: 31/08/2025. **PI**: Miquel De Cáceres/Josep Mª Espelta.
