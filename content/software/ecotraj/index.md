@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2026-05-07'
-lastmod: '2026-05-07'
+date: '2026-05-25'
+lastmod: '2026-05-25'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -160,7 +160,8 @@ variables.
 - Djeghri N, Sturbois A, Hélaouët P, Geissmann Q, Rimmelin-Maury P, Boyé
   A, Gauthier O, De Cáceres M (2026). Going round in cycles but going
   somewhere: Deciphering cyclical dynamics using Ecological Trajectory
-  Analysis. Ecological Monographs.
+  Analysis. Ecological Monographs, 96(2), e70058
+  (<https://doi.org/10.1002/ecm.70058>).
 
 - Djeghri et al. (under review) Uncovering the relative movements of
   ecological trajectories.
