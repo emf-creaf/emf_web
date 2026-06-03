@@ -75,7 +75,7 @@
     aff_link = ""
     summary = "With a Master's in International Land and Water Management, focusing on sustainable soil management, I'm interested in the functioning and design of our environment and want to work towards more climate-resilient landscapes."
     image = "img/authors/idelsman.png"
-    core = true
+    core = false
     position = "Technician"
     sphere = false
     committee = false
