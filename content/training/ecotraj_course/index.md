@@ -4,6 +4,7 @@ authors:
 - mcaceres
 - asturbois
 - ndjeghri
+- jcasa
 title: Ecological Trajectory Analysis using the ecotraj R package
 tags:
 - R

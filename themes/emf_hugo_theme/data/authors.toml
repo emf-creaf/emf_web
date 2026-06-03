@@ -92,6 +92,18 @@
     sphere = false
     committee = false
 
+[jcasa]
+    id = "jcasa"
+    name = "Javier"
+    surname = "de la Casa"
+    affiliation = "CREAF"
+    aff_link = ""
+    core = false
+    position = "Guest"
+    image = "img/authors/default.png"
+    sphere = false
+    committee = false
+
 [rbalaguer]
     id = "rbalaguer"
     weight = 99
