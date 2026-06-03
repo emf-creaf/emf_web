@@ -10,8 +10,8 @@ tags:
 - programming
 draft: false
 featured: false
-date: '2023-11-20'
-lastmod: '2023-12-04'
+date: '2023-09-04'
+lastmod: '2026-06-02'
 summary: This workflow explains with examples how to parallelize code in R.
 model_repository: ''
 data_repository: ''
@@ -27,13 +27,13 @@ links:
 
 ## Introduction
 
-This document will explain the basic concepts of parallel computing in R, with code examples to
-illustrate the concepts presented here. The topics covered include:
+This document will explain the basic concepts of parallel computing in R, with
+code examples to illustrate them. The topics covered include:
 
 -   What is parallel computing?  
 -   When can we use it?  
 -   A little introduction to loops and maps in R (`for`, `lapply`, `map`...)  
--   Ways to use parallelization in your code (`parallel`, `furrr`...)  
+-   Ways to use parallelization in your code (`parallel`, `furrr`, `mirai`...)  
 -   How to check if is worth the hassle  
 
 ## What is parallel computing?
@@ -144,13 +144,13 @@ illustrate the concepts presented here. The topics covered include:
 Figure 1: Modern CPU and cores
 </div>
 
-First of all we need to understand a little about CPUs (Central Processing Unit) and cores.
-Modern computers (<a href="#fig-cpu" class="quarto-xref">Figure 1</a>) have multiple CPUs, and those can have one or multiple cores. Each core
-is responsible of running individual processes.
+First of all we need to understand a little about CPU (Central Processing Unit)
+and cores. Modern computers (<a href="#fig-cpu" class="quarto-xref">Figure 1</a>) have multiple CPUs, and those can have
+one or multiple cores. Each core is responsible of running individual processes.
 
-Think of a simple algebraic operation, adding two numbers (`1 + 1`). In a nutshell, that operation
-is translated to machine code and a process is started in one core to perform the operation
-(<a href="#fig-sum" class="quarto-xref">Figure 2</a>).
+Think of a simple algebraic operation, adding two numbers (`1 + 1`). In a
+nutshell, that operation is translated to machine code and a process is started
+in one core to perform the operation (<a href="#fig-sum" class="quarto-xref">Figure 2</a>).
 
 <div id="fig-sum">
 
@@ -266,35 +266,39 @@ is translated to machine code and a process is started in one core to perform th
 Figure 2: One core is performing the '1 +1' operation. This leaves the other cores available to concurrently start other procesess
 </div>
 
-So CPU cores can be used to run the the same process with different data in parallel to speed up
-long tasks. **In theory**, this can make things $1/n_{cores}$ faster, but in reality, other factors
-must be added (time consumed transferring data to each process, time consumed gathering results
-from different processes and join them, time consumed spawning new processes...) so the time
-gain highly depends on the type of operations, data types used...
+So CPU cores can be used to run the the same process with different data in
+parallel to speed up long tasks. **In theory**, this can make things
+$1/n_{cores}$ faster, but in reality, other factors must be added (time consumed
+transferring data to each process, time consumed gathering results from
+different processes and join them, time consumed spawning new processes...) so
+the time gain highly depends on the type of operations, data types used...
 
 > **Note**
 >
-> In fact, sometimes workflows are slower when parallelized, so we always need to check if we are really
-> saving time and effort. See [below](#hassle) for more information on this.
+> In fact, sometimes workflows are slower when parallelized, so we always need to
+> check if we are really saving time and effort. See [below](#hassle) for more
+> information on this.
 {.alert .alert-info}
 
 #### R is a single process software
 
-`R` is designed to run in only one CPU process. This is due to the time when `S` (`R` predecessor)
-and `R` were developed, where CPUs had mostly one core and multitasking and parallel computation
-were still not widely available or technologies were still undeveloped.
+`R` is designed to run in only one CPU process. This is due to the time when `S`
+(`R` predecessor) and `R` were developed, where CPUs had mostly one core and
+multitasking and parallel computation were still not widely available or
+technologies were still undeveloped.
 
-Given the `R` limitations explained before, parallel computing in `R` is not available
-*out-of-the-box*. We will need to use extra packages/libraries and we can only use it in
-specific cases and data types.
+Given the `R` limitations explained before, parallel computing in `R` is not
+available *out-of-the-box*. We will need to use extra packages/libraries and we
+can only use it in specific cases and data types.
 
 ## When can we use it?
 
-You have been using parallel computing in `R` without knowing it. A lot of `R` base functions are
-calls to methods written in languages that support multitasking (`C++`, `Rust`...). For example,
-matrix operations and other linear algebra functions (common operations when calculating
-regression coefficients when using `lm` and other model functions) are calls to `C++` methods that
-are parallelized and use the CPU cores available in your system (<a href="#lst-matrix" class="quarto-xref">Listing 1</a>)
+You have been using parallel computing in `R` without knowing it. A lot of `R`
+base functions are calls to methods written in languages that support
+multitasking (`C++`, `Rust`...). For example, matrix operations and other linear
+algebra functions (common operations when calculating regression coefficients
+when using `lm` and other model functions) are calls to `C++` methods that are
+parallelized and use the CPU cores available in your system (<a href="#lst-matrix" class="quarto-xref">Listing 1</a>)
 
 <div id="lst-matrix">
 
@@ -308,22 +312,24 @@ Listing 1: Time consumed by matrix operations. We can see that the user time is
 </div>
 
        user  system elapsed 
-      0.720   0.008   0.732 
+      0.320   0.009   0.332 
 
 > **Note**
 >
-> Some other `R` packages have implemented the methods we'll explain in the following sections and
-> offer arguments to the user to choose if and how parallelization must be done. For example, `boot`
-> package offer parallelization options when bootstrapping model coefficients.
+> Some other `R` packages have implemented the methods we'll explain in the
+> following sections and offer arguments to the user to choose if and how
+> parallelization must be done. For example, `boot` package offer parallelization
+> options when bootstrapping model coefficients.
 {.alert .alert-info}
 
 ### Working with embarrassingly parallel problems
 
 *[Embarrassingly parallel problems](https://en.wikipedia.org/wiki/Embarrassingly_parallel)*
 are those where we can easily separate the problem into several parallel tasks
-[^1]. This kind of problems are very usual
-in scientific and statistics fields. Think of the classic data analysis showed below
-(<a href="#fig-daworkflow" class="quarto-xref">Figure 3</a>).
+[^1].
+This kind of problems are very usual in scientific and statistics fields.
+Think of the example data analysis showed below
+(<a href="#fig-daworkflow" class="quarto-xref">Figure 3</a>):
 
 <div id="fig-daworkflow">
 
@@ -335,12 +341,14 @@ in scientific and statistics fields. Think of the classic data analysis showed b
 Figure 3: Classic data analysis workflow
 </div>
 
-In this process, we need to ingest the data, processing it to clean/transform/... it, modelling
-the data and finally visualize/store the results. Now imagine we have to repeat the same process for
-hundred or thousands of data files (*i.e.*, remote sensing images, genomic analyses, historical and
-projections climatic analyses...). Instead of processing each task one after another (in a
-sequential way) we can divide the input (names of the files to read) in chunks and send each chunk
-to CPU processes that run in parallel, which can save a lot of time and effort (<a href="#fig-daworflowpar" class="quarto-xref">Figure 4</a>).
+In this process, we need to (I) ingest the data, (II) processing it for
+cleaning/transforming/..., (III) modelling the data and (IV) finally
+visualize/store the results. Now imagine we have to repeat the same process for
+hundred or thousands of data files (*i.e.*, remote sensing images, genomic
+analyses, historical and projections climatic analyses...). Instead of
+processing each task one after another (in a sequential way) we can divide the
+input (names of the files to read) in chunks and send each chunk to CPU
+processes that run in parallel, saving time and effort (<a href="#fig-daworflowpar" class="quarto-xref">Figure 4</a>).
 
 <div id="fig-daworflowpar">
 
@@ -352,19 +360,20 @@ to CPU processes that run in parallel, which can save a lot of time and effort (
 Figure 4: Same data analysis workflow as before but running in parallel, each process in a different CPU core
 </div>
 
-This kind of *embarrasingly parallel tasks* are the ones that beneficiate most of parallelization.
+This kind of *embarrasingly parallel tasks* are the ones that beneficiate most
+of parallelization.
 
 ## A little introduction to loops and maps in R (`for`, `lapply`, `map`...)
 
 ### Loops
 
-We talk before about *embarrassingly parallel problems*, repetitive tasks that have little or not
-connection between each other more than the origin of the inputs and can be easily separated into
-parallel tasks.  
-These tasks are usually the ones we think about when we talk about `for` loops. One example can
-be bootstrapping model coefficients (<a href="#lst-loop" class="quarto-xref">Listing 2</a>). For example, we are interested in the relationship
-between sepal length and *Iris* species (example extracted from the `doParallel` package
-vignette):
+We talk before about *embarrassingly parallel problems*, repetitive tasks that
+have little or not connection between each other more than the origin of the
+inputs and can be easily separated into parallel tasks.  
+These tasks are usually the ones we think about when we talk about `for` loops.
+One example can be bootstrapping model coefficients (<a href="#lst-loop" class="quarto-xref">Listing 2</a>). In this
+example, we are interested in the relationship between sepal length and *Iris*
+species (example extracted from the `doParallel` package vignette):
 
 <div id="lst-loop">
 
@@ -394,15 +403,15 @@ Listing 2: Boostrapping model coefficients in iris dataset with a for loop
 </div>
 
        user  system elapsed 
-     35.747   0.037  35.947 
+     25.239   0.022  25.374 
 
-We can see the user time (CPU time) is roughly the same as the elapsed time (real time), as we
-should expect from a sequential `for` loop.
+We can see the user time (CPU time) is roughly the same as the elapsed time
+(real time), as we should expect from a sequential `for` loop.
 
 ### lapply
 
-The same problem can be solved with `lapply`, but we need to encapsulate the logic of the `for`
-loop in a function (<a href="#lst-lapply" class="quarto-xref">Listing 3</a>):
+The same problem can be solved with `lapply`, but we need to encapsulate the
+logic of the `for` loop in a function (<a href="#lst-lapply" class="quarto-xref">Listing 3</a>):
 
 <div id="lst-lapply">
 
@@ -432,14 +441,15 @@ Listing 3: Boostrapping model coefficients in iris dataset with lapply
 </div>
 
        user  system elapsed 
-     40.100   0.021  40.338 
+     18.388   0.005  18.449 
 
-As we see, the time is the same as with the `for` loop, something we would expect.
+As we see, the time is the same as with the `for` loop, something we would
+expect.
 
 ### map
 
-If using [`tidyverse` packages](https://www.tidyverse.org/), instead of `lapply` we will use `map`
-function in the `purrr` package (<a href="#lst-purrr" class="quarto-xref">Listing 4</a>):
+If using [`tidyverse` packages](https://www.tidyverse.org/), instead of `lapply`
+we will use `map` function in the `purrr` package (<a href="#lst-purrr" class="quarto-xref">Listing 4</a>):
 
 <div id="lst-purrr">
 
@@ -471,20 +481,20 @@ Listing 4: Boostrapping model coefficients in iris dataset with map
 </div>
 
        user  system elapsed 
-     35.636   0.015  35.822 
+     13.618   0.006  13.655 
 
 Again times are similar to the other workflows.
 
 ## Ways to use parallelization in your code (`parallel`, `furrr`...)
 
-If we can use loops, `lapply` or `map`, then we can parallelize without any problem. In this
-section we will see the different options we can do it.
+If we can use loops, `lapply` or `map`, then we can parallelize without any
+problem. In this section we will see the different options we can do it.
 
 ### Preparations
 
-Before we start, we need to know how many cores are available in our system. This can be done
-with `parallel::detectCores()`. In the system this document has been created the available cores
-are:
+Before we start, we need to know how many cores are available in our system.
+This can be done with `parallel::detectCores()`. In the system this document
+has been created the available cores are:
 
 <div id="lst-detectCores">
 
@@ -500,14 +510,15 @@ Listing 5: Numer of cores available
 
 > **Tip**
 >
-> In the following examples we will be using 4 cores, but if your system has less than that, please
-> change it to a valid number.
+> In the following examples we will be using 4 cores, but if your system has less
+> than that, please change it to a valid number.
 {.alert .alert-info}
 
 ### `foreach` and `doParallel`
 
-In a very similar way to a `for` loop we can use the `foreach` and `doParallel` packages to build
-a loop that will run the files in paralell (<a href="#lst-foreach" class="quarto-xref">Listing 6</a>):
+In a very similar way to a `for` loop we can use the `foreach` and `doParallel`
+packages to build a loop that will run the bootstrap models in paralell
+(<a href="#lst-foreach" class="quarto-xref">Listing 6</a>):
 
 <div id="lst-foreach">
 
@@ -543,17 +554,20 @@ Listing 6: Boostrapping model coefficients in iris dataset in parallel with a f
 </div>
 
        user  system elapsed 
-     39.991   0.777  13.300 
+     14.823   0.367   4.611 
 
-As we can see, time has reduced almost four times when compared with processing the files
-sequentially. We are really close to the ideal $1/4$ reduction in time we should expect from using
-4 cores, but not quite, as starting the extra R processes, sending the data and retrieving the
-results takes some time. With bigger datasets we can see that elapsed time increases because of this communication overload.
+As we can see, time has reduced almost four times when compared with processing
+the files sequentially. We are really close to the **ideal $1/4$** reduction in
+time we should expect from using 4 cores, but not quite, as starting the extra R
+processes, sending the data and retrieving the results takes some time. With
+bigger datasets we can see the elapsed time increasing because of this
+communication overload.
 
 ### `mclapply`
 
-If we prefer the `lapply` syntax, we can use `mclapply` to run the same expression concurrently.
-`mclapply` belongs to the `parallel` pacakge and works exactly the same as lapply (<a href="#lst-mclapply" class="quarto-xref">Listing 7</a>):
+If we prefer the `lapply` syntax, we can use `mclapply` to run the same
+expression concurrently. `mclapply` belongs to the `parallel` pacakge and works
+exactly the same as lapply (<a href="#lst-mclapply" class="quarto-xref">Listing 7</a>):
 
 <div id="lst-mclapply">
 
@@ -583,14 +597,15 @@ Listing 7: Boostrapping model coefficients in iris dataset in parallel with a m
 </div>
 
        user  system elapsed 
-     28.243   0.522  10.612 
+      6.667   0.179   3.450 
 
 We see again the time reduction in time with `mclapply`.
 
 ### `future_map`
 
-`furrr` package offers parallelized versions of `purrr::map` family of functions. We can use it to
-run the `map` example above in parallel (<a href="#lst-furrr" class="quarto-xref">Listing 8</a>):
+`furrr` package offers parallelized versions of `purrr::map` family of
+functions. We can use it to run the `map` example above in parallel
+(<a href="#lst-furrr" class="quarto-xref">Listing 8</a>):
 
 <div id="lst-furrr">
 
@@ -626,43 +641,94 @@ Listing 8: Boostrapping model coefficients in iris dataset in parallel with a f
 </div>
 
        user  system elapsed 
-     45.946   1.256  12.398 
+     15.239   0.609   4.161 
 
-This is the method that returns the worst time running in parallel (but better than sequential).
-This is because `future_map` works setting a more complete environment in the parallelized
-processes that takes more time. In larger datasets and more complex functions, `future_map` is a
-good option for paralellization.
+### `mirai` and `purrr`
+
+`mirai` R packages offers an asynchronous and parallel framework to execute code
+in different processes. Is already integrated in `purrr` with the `in_parallel`
+[function](https://purrr.tidyverse.org/reference/in_parallel.html). We can just
+reuse the `purrr` example, but using `in_parallel` (<a href="#lst-mirai" class="quarto-xref">Listing 9</a>):
+
+<div id="lst-mirai">
+
+``` r
+# libraries
+library(purrr)
+library(mirai)
+
+# setting the cores (daemons in mirai)
+mirai::daemons(4)
+
+coef_function <- function(repetition) {
+  sample_individuals <- sample(85, 85, replace = TRUE)
+  model_res <- glm(
+    iris_data[sample_individuals, "Species"] ~ iris_data[sample_individuals, "Petal.Length"],
+    family = binomial
+  )
+  return(coefficients(model_res))
+}
+# number of repetitions
+n_repetitions <- 1e4
+# data
+iris_data <- iris |>
+  dplyr::filter(Species != "setosa")
+
+# and now the parallel map
+# (we monitorize the time again for illustration purposes)
+system.time({
+  res_coefs <- purrr::map(
+    1:n_repetitions,
+    .f = in_parallel(
+      \(rep) {coef_function(rep)},
+      coef_function = coef_function,
+      iris_data = iris_data
+    )
+  )
+})
+```
+
+Listing 9: Boostrapping model coefficients in iris dataset with in_parallel
+</div>
+
+       user  system elapsed 
+      0.842   0.523   4.892 
 
 > **Tip**
 >
-> Calculating bootstrapped coefficients is a toy example for illustration purposes. There are R
-> packages that can bootstrap in more efficient ways, including parallelization already included,
-> like the [`boot` package](https://cran.r-project.org/package=boot).
+> Calculating bootstrapped coefficients is a toy example for illustration
+> purposes. There are R packages that can bootstrap in more efficient ways,
+> including parallelization already included, like the
+> [`boot` package](https://cran.r-project.org/package=boot).
 {.alert .alert-info}
 
 ## How to check if parallelization is worthy the hassle
 
-We have been using `system.time` to check the time our code takes to run. This is one way of
-check if the benefit of parallelization outweighs the inconvenience of setting it up. Other ways
-include using other benchmarking libraries, like `bench` or `rbenchmark`. Their documentation
-explain everything you need to know about timing code.
+We have been using `system.time` to check the time our code takes to run. This
+is one way of check if the benefit of parallelization outweighs the
+inconvenience of setting it up. Other ways include using other benchmarking
+libraries, like `bench` or `rbenchmark`. Their documentation explain everything
+you need to know about timing code.
 
-In any case, as a rule of thumb, parallelization is not worthy in the following scenarios:
+In any case, as a rule of thumb, parallelization is not worthy in the following
+scenarios:
 
-1.  We are parallelizing *fast* operations: In this scenario, when the operations we want to
-    paralellize are fast (math operations, indexing or assigning) the overhead of sending data
-    to cores, and retrieving and joining the results usually is greater than the time of performing
-    the operation.
+1.  We are parallelizing *fast* operations: In this scenario, when the
+    operations we want to paralellize are fast (math operations, indexing or
+    assigning) the overhead of sending data to cores, and retrieving and joining
+    the results usually is greater than the time of performing the operation.
 
-2.  We are parallelizing processes that involve sending a lot of data to each spawned parallel
-    process. Think for example in working with a global raster at 5km resolution. If we want to
-    parallelize a process involving calculation with this kind of objects then the overhead of
-    sending the data could be bigger than the process itself.
+2.  We are parallelizing processes that involve sending a lot of data to each
+    spawned parallel process. Think for example in working with a global raster at
+    1km resolution. If we want to parallelize a process involving calculation with
+    this kind of objects then the overhead of sending the data could be bigger
+    than the process itself.
 
-3.  Related to the previous, when performing memory intensive processes. Take into account that
-    each spawned parallel process is going to need to use memory as in the sequential process.
-    Parallelizing in the same computing multiplies the memory needed for almost the number of
-    cores used, so is easy to run out of memory if we are not careful.
+3.  Related to the previous, when performing memory intensive processes. Take
+    into account that each spawned parallel process is going to need to use memory
+    as in the sequential process. Parallelizing in the same computing multiplies
+    the memory needed for almost the number of cores used, so is easy to run out
+    of memory if we are not careful.
 
-[^1]: Also known as *perfectly parallel*, *delightfully parallel* or *pleasingly parallel* problems,
-    but those names don't have that ring on it
+[^1]: Also known as *perfectly parallel*, *delightfully parallel* or
+    *pleasingly parallel* problems, but those names don't have that ring on it
