@@ -69,3 +69,6 @@ theme = "emf_hugo_theme"
         endLevel = 3
         ordered = false
         startLevel = 2
+
+[security]
+    allowContent = ['.*']
