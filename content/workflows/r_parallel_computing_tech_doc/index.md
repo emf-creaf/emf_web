@@ -2,7 +2,7 @@
 title: Parallel computation in R
 authors:
 - vgranda
-- mcaceres
+- emf
 categories: workflows
 tags:
 - R
@@ -11,7 +11,7 @@ tags:
 draft: false
 featured: false
 date: '2023-09-04'
-lastmod: '2026-06-02'
+lastmod: '2026-06-03'
 summary: This workflow explains with examples how to parallelize code in R.
 model_repository: ''
 data_repository: ''
@@ -312,7 +312,7 @@ Listing 1: Time consumed by matrix operations. We can see that the user time is
 </div>
 
        user  system elapsed 
-      0.320   0.009   0.332 
+      0.337   0.009   0.347 
 
 > **Note**
 >
@@ -403,7 +403,7 @@ Listing 2: Boostrapping model coefficients in iris dataset with a for loop
 </div>
 
        user  system elapsed 
-     25.239   0.022  25.374 
+     22.739   0.026  22.854 
 
 We can see the user time (CPU time) is roughly the same as the elapsed time
 (real time), as we should expect from a sequential `for` loop.
@@ -441,7 +441,7 @@ Listing 3: Boostrapping model coefficients in iris dataset with lapply
 </div>
 
        user  system elapsed 
-     18.388   0.005  18.449 
+     13.690   0.007  13.731 
 
 As we see, the time is the same as with the `for` loop, something we would
 expect.
@@ -481,7 +481,7 @@ Listing 4: Boostrapping model coefficients in iris dataset with map
 </div>
 
        user  system elapsed 
-     13.618   0.006  13.655 
+     12.273   0.002  12.301 
 
 Again times are similar to the other workflows.
 
@@ -554,7 +554,7 @@ Listing 6: Boostrapping model coefficients in iris dataset in parallel with a f
 </div>
 
        user  system elapsed 
-     14.823   0.367   4.611 
+     13.369   0.341   4.077 
 
 As we can see, time has reduced almost four times when compared with processing
 the files sequentially. We are really close to the **ideal $1/4$** reduction in
@@ -597,7 +597,7 @@ Listing 7: Boostrapping model coefficients in iris dataset in parallel with a m
 </div>
 
        user  system elapsed 
-      6.667   0.179   3.450 
+      0.006   0.051   3.196 
 
 We see again the time reduction in time with `mclapply`.
 
@@ -641,7 +641,7 @@ Listing 8: Boostrapping model coefficients in iris dataset in parallel with a f
 </div>
 
        user  system elapsed 
-     15.239   0.609   4.161 
+     14.138   0.630   3.843 
 
 ### `mirai` and `purrr`
 
@@ -692,7 +692,7 @@ Listing 9: Boostrapping model coefficients in iris dataset with in_parallel
 </div>
 
        user  system elapsed 
-      0.842   0.523   4.892 
+      0.818   0.581   4.370 
 
 > **Tip**
 >
