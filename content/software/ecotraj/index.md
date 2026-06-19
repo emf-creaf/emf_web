@@ -11,8 +11,8 @@ tags:
 - statistics
 draft: false
 featured: false
-date: '2026-06-18'
-lastmod: '2026-06-18'
+date: '2026-06-19'
+lastmod: '2026-06-19'
 summary: Assists in the analysis of temporal changes (i.e. dynamics) of ecological
   entities, defined as trajectories on a chosen multivariate space, by providing a
   set of trajectory metrics and visual representations.
@@ -163,8 +163,8 @@ variables.
   Analysis. Ecological Monographs, 96(2), e70058
   (<https://doi.org/10.1002/ecm.70058>).
 
-- Djeghri N, Gauthier O, Sturbois A, Meiners SJ, Allen R, De Cáceres
-  M (2026) Uncovering the relative movements of ecological trajectories.
+- Djeghri N, Gauthier O, Sturbois A, Meiners SJ, Allen R, De Cáceres M
+  (2026b) Uncovering the relative movements of ecological trajectories.
   Peer Community Journal 6: e54
   (<https://doi.org/10.24072/pcjournal.736>).
 
