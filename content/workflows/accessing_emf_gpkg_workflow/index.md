@@ -492,6 +492,11 @@ data_posada_days <- purrr::map(
 head(data_posada_days)
 ```
 
+    Simple feature collection with 6 features and 5 fields
+    Geometry type: POINT
+    Dimension:     XY
+    Bounding box:  xmin: 342262.5 ymin: 4787462 xmax: 348262.5 ymax: 4787962
+    Projected CRS: ETRS89 / UTM zone 30N
            dates elevation MeanTemperature MinTemperature MaxTemperature
     1 2025-04-25  1714.730        12.25840       3.757355       17.78548
     2 2025-04-25  1994.477        11.24679       2.686823       16.81218
