@@ -13,7 +13,7 @@ training_info:
     hours: 8
     place: La Branca - CREAF
 links:
-  url_docs: training/linux_server_adm/_book/intro.html
+  url_docs: training/linux_server_adm/_book/
 summary: "In this introductory course we will explore the basics about accesing, using and maintaining a Linux server."
 draft: false
 lastmod: 2026-06-30
