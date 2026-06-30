@@ -1,0 +1,292 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Linux Server Administration: Introductory Course",
+    "section": "",
+    "text": "Preface\nIn this introductory course we will explore the basics about accesing, using and maintaining a Linux server. Among other things, we will cover:\n\nAccessing remote servers with SSH\n\nMost common system commands and terminal use\n\nUsers administration and permissions\n\nTransfering data between remote servers and local machines",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "One or more remote servers can quickly become an useful resource to any research team. Depending on the server, they offer computational resources bigger than those available in our local computers. They come in handy to host tools and applications, reachable for the whole team, and they can also host documentation, databases, web pages for projects or groups…\n\n\n\n\n\n\nNote\n\n\n\nFor example, at the EMF we have several servers, hosting the EMF web, the Forestry Lab, a notification server for automatized alerts, a documentation web, a file server, an internal resources database…\n\n\nBut, with great power comes great responsability. Remote servers must be maintained, users must be added and removed, applications must be installed, updated or removed and web servers must be served…\nThe next chapters will guide you step by step to use and maintain you remote linux server.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "access.html",
+    "href": "access.html",
+    "title": "2  Accessing the server",
+    "section": "",
+    "text": "2.1 Connecting to the server\nThe first thing we need to work with a remote server is to access to it. We are going to use the Secure SHell (SSH) protocol for this. SSH is a protocol to connect two computers over a network. The secure part means that contents will be encrypted on transport, so no plain text information will be send (important to avoid password and keys leaking). Basically this means that we will be using a terminal as if we were sitting in front of the server.\nWe also need two other things, an address and a port.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Accessing the server</span>"
+    ]
+  },
+  {
+    "objectID": "access.html#connecting-to-the-server",
+    "href": "access.html#connecting-to-the-server",
+    "title": "2  Accessing the server",
+    "section": "",
+    "text": "2.1.1 Opening a terminal in our computer\nTo connect to the server with SSH we need a terminal. In Windows (10 and 11) we can use the Windows Terminal or PowerShell (Figure 2.1, Figure 2.2). Mac users can use the Terminal or the iTerm2 apps. Linux users can use their preferred terminal and shell (Figure 2.3).\n\n\n\n\n\n\n\n\n\nFigure 2.1: Launching terminal on Win11\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.2: Terminal on Win11\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.3: Linux terminal (ghostty)\n\n\n\n\n\n\n\n\n2.1.2 ssh command\nOnce we have the terminal open, we just need to execute the ssh command, indicating the user and the address (also the port if is not the standard 22)\nssh -p 2222 victor@144.76.203.10\nLet’s dissect the command:\n\nssh: SSH command\n-p 2222: the port we need to connect to is specified with the -p flag\nvictor@144.76.203.10 user and address, separated by an @, you should change this with your username\n\nIf we execute (press Enter) this command, we will be prompted for the user’s password.\n\n\n\n\n\n\nCaution\n\n\n\nAs you enter the password, you will notice no characters appears in the screen. This is normal. Just type your password and press Enter.\n\n\n\n\n2.1.3 First connection\nThe first time we connect to a server, a warning will appear after entering the password:\nThe authenticity of host '[144.76.203.10]:2222 ([144.76.203.10]:2222)' can't be established.\nED25519 key fingerprint is: SHA256:*******************************************\nThis key is not known by any other names.\nAre you sure you want to continue connecting (yes/no/[fingerprint])? \nThis is to ensure we are connecting to the correct server. Type yes and press Enter to add the server to the list of known hosts.\n\n\n2.1.4 Using the server\nNow we are in the remote server. We have several welcome messages:\nWelcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-124-generic x86_64)\n\n * Documentation:  https://help.ubuntu.com\n * Management:     https://landscape.canonical.com\n * Support:        https://ubuntu.com/pro\n\n System information as of Wed Jun 10 12:27:01 PM CEST 2026\n\n  System load:  0.0              Processes:               170\n  Usage of /:   0.2% of 1.77TB   Users logged in:         0\n  Memory usage: 1%               IPv4 address for enp2s0: 144.76.203.10\n  Swap usage:   0%               IPv6 address for enp2s0: 2a01:4f8:200:8409::2\n  Temperature:  44.0 C\n\n * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s\n   just raised the bar for easy, resilient and secure K8s cluster deployment.\n\n   https://ubuntu.com/engage/secure-kubernetes-at-the-edge\n\nExpanded Security Maintenance for Applications is not enabled.\n\n10 updates can be applied immediately.\n7 of these updates are standard security updates.\nTo see these additional updates run: apt list --upgradable\n\nEnable ESM Apps to receive additional future security updates.\nSee https://ubuntu.com/esm or run: sudo pro status\n\n\nLast login: Wed Jun 10 10:59:19 2026 from 83.48.65.148\nAlso, the prompt has changed\nvictor@aula:~$ \n\nvictor indicates the user connected\n\naula is the server name\n\n~ is the folder we are. ~ is a shorthand for the user personal folder\n\n$ indicates that we are a regular user\n\n\nIn the following chapters we will explore the commands and tools needed to interact with the server.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Accessing the server</span>"
+    ]
+  },
+  {
+    "objectID": "users.html",
+    "href": "users.html",
+    "title": "3  Managing users and permissions",
+    "section": "",
+    "text": "3.1 root user\nAs administrators of a linux server, we often need to perform changes in configurations, install software or create users accounts for our collegues or guests. This can’t be done without some privileges, as a normal user can only modify its own personal folder, while the rest of the system is read-only.\nEvery Linux installation has a root user account. This root has all privileges and can access, create, modify, remove files from any folder, included system folders. Also has access to system processes and the kernel.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Managing users and permissions</span>"
+    ]
+  },
+  {
+    "objectID": "users.html#root-user",
+    "href": "users.html#root-user",
+    "title": "3  Managing users and permissions",
+    "section": "",
+    "text": "Note\n\n\n\nThis is why using the root account directly is discouraged, as it is a risk. We can, however, grant some privileges to some users to be able to act as root when needed.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Managing users and permissions</span>"
+    ]
+  },
+  {
+    "objectID": "users.html#sudo-access",
+    "href": "users.html#sudo-access",
+    "title": "3  Managing users and permissions",
+    "section": "3.2 sudo access",
+    "text": "3.2 sudo access\nsudo is the tool we are going to use to act as administrators (superusers). For example, if we want to check if there is any system update, we need to run apt update. Let’s see what happens when we run it as a normal user:\nvictor@aula:~$ apt update\nReading package lists... Done\nE: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)\nE: Unable to lock directory /var/lib/apt/lists/\nW: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)\nW: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)\nNow, let’s see what happens when run as a superuser:\nvictor@aula:~$ sudo apt update\n[sudo] password for victor: \nHit:1 http://mirror.hetzner.com/ubuntu/packages noble InRelease\nHit:2 http://mirror.hetzner.com/ubuntu/packages noble-updates InRelease                                            \nHit:3 http://mirror.hetzner.com/ubuntu/packages noble-backports InRelease                                          \nHit:4 http://mirror.hetzner.com/ubuntu/packages noble-security InRelease                                           \nHit:5 http://security.ubuntu.com/ubuntu noble-security InRelease                                                   \nHit:6 http://archive.ubuntu.com/ubuntu noble InRelease\nHit:7 http://archive.ubuntu.com/ubuntu noble-updates InRelease\nHit:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease\nReading package lists... Done\nBuilding dependency tree... Done\nReading state information... Done\n5 packages can be upgraded. Run 'apt list --upgradable' to see them.\nBut, when run by an user that don’t have sudo privileges, the command fails:\ntest_user@aula:~$ sudo apt update\n[sudo] password for test_user: \ntest_user is not in the sudoers file.\nThis means that test_user can’t modify or do anything harmful in the system, only access its own home folder and little else.\n\n\n\n\n\n\nTip\n\n\n\nIs always recommended to create users without sudo access, except for the person responsible of the server, the administrator. sudo access can always be granted later in case it’s needed.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Managing users and permissions</span>"
+    ]
+  },
+  {
+    "objectID": "users.html#creating-users",
+    "href": "users.html#creating-users",
+    "title": "3  Managing users and permissions",
+    "section": "3.3 Creating users",
+    "text": "3.3 Creating users\nTo create new users, we are going to use the useradd command. We are going to need serveral things:\n\nAn username\n\nAn user folder at /home/username (flag -m)\nA shell, in this case /usr/bin/bash (flag -s)\n(optional) A group like sudo in case the user is going to have administrative privileges (flag -G)\nA password for the user, we will add it after the user creation with passwd\n\nLet’s see an example:\nvictor@aula:~$ sudo useradd -m -s /usr/bin/bash -G sudo test_user_2\nvictor@aula:~$ sudo passwd test_user_2\nNew password: \nRetype new password: \npasswd: password updated successfully\nWe have succesfully created an user with administrative privileges. We can check it by login into the server with the newly created user and try to check for system updates:\ntest_user_2@aula:~$ sudo apt update\n[sudo] password for test_user_2: \nHit:1 http://mirror.hetzner.com/ubuntu/packages noble InRelease\nHit:2 http://mirror.hetzner.com/ubuntu/packages noble-updates InRelease                                            \nHit:3 http://mirror.hetzner.com/ubuntu/packages noble-backports InRelease                                          \nHit:4 http://mirror.hetzner.com/ubuntu/packages noble-security InRelease                                           \nHit:5 http://archive.ubuntu.com/ubuntu noble InRelease                                                             \nHit:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease\nHit:7 http://security.ubuntu.com/ubuntu noble-security InRelease\nHit:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease\nReading package lists... Done\nBuilding dependency tree... Done\nReading state information... Done\n5 packages can be upgraded. Run 'apt list --upgradable' to see them.\nIn case we need to modify something, we can use the usermod command. For example, to grant administrative privileges to the user_test user, we can do:\nvictor@aula:~$ sudo usermod -aG sudo test_user\n[sudo] password for victor: \nHere, the flags -aG sudo means add to sudo Group.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Managing users and permissions</span>"
+    ]
+  },
+  {
+    "objectID": "users.html#exercise",
+    "href": "users.html#exercise",
+    "title": "3  Managing users and permissions",
+    "section": "3.4 Exercise",
+    "text": "3.4 Exercise\n\n\n\n\n\n\nNoteExercise: Lets create users for everyone!\n\n\n\nIn this exercise you are going to work by pairs (if possible, by 3 people if not).\nUsing the test_user account (password test_user) you are going to create an user for your partner and give it a password. Then, you will have to check that everything worked as intended and both/all of you can access the server with your brand new aacounts.\nRemember, use useradd with the necessary flags for creating the user, and don’t forget to add the password with passwd or the new user will not be allowed to access the server.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Managing users and permissions</span>"
+    ]
+  },
+  {
+    "objectID": "users.html#deleting-users",
+    "href": "users.html#deleting-users",
+    "title": "3  Managing users and permissions",
+    "section": "3.5 Deleting users",
+    "text": "3.5 Deleting users\nIn order to maintain a healthy remote server, we also need to periodically remove old users that are not working anymore in the server. This can be done with userdel. For example, now that we don’t need anymore the test_user and test_user_2 users, we can safely remove them from the system, as well as their personal folders:\nvictor@aula:~$ sudo userdel -r test_user_2\n[sudo] password for victor: \nuserdel: test_user_2 mail spool (/var/mail/test_user_2) not found\nvictor@aula:~$ sudo userdel -r test_user\nuserdel: test_user mail spool (/var/mail/test_user) not found",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Managing users and permissions</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html",
+    "href": "navigation.html",
+    "title": "4  Navigation",
+    "section": "",
+    "text": "4.1 Linux folders structure (Filesystem Hierarchy Standard)\nIn this chapter we will learn the basics of the linux folder structure and how to create folders and files and navigate it.\nLinux filesystem follows the FHS (https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard). This hierarchy defines the names and location of the system folders, containing the necessary files and configurations to run the operative system.\nIn Linux, the base of the filesystem is /, and it serves a the root folder where the rest of the hierarchy resides. The most relevant folders for our course are:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#linux-folders-structure-filesystem-hierarchy-standard",
+    "href": "navigation.html#linux-folders-structure-filesystem-hierarchy-standard",
+    "title": "4  Navigation",
+    "section": "",
+    "text": "/home: Users’ personal folders\n\n/bin: Commands and tools (binaries) that are necessary to run and maintain the system.\n\n/etc: System wide configuration files.\n\n\n\n\n\n\n\nWarning\n\n\n\nThere is an important difference here between Windows and Linux, and is the character used to separate folders when describing a path to a file. In Linux it would be\n/home/victor/Documents/my_file.txt\nwhile in Windows is\nC:\\Users\\victor\\Documents\\my_file.txt",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#listing-files",
+    "href": "navigation.html#listing-files",
+    "title": "4  Navigation",
+    "section": "4.2 Listing files",
+    "text": "4.2 Listing files\nWhen you login in a linux server you will be at your user personal folder. It can be checked with the pwd (print working directory) command:\nvictor@aula:~$ pwd\n/home/victor\nIn this case, I’m in the folder victor (my personal folder), located at /home. To see what’s inside of the folder, we can use the ls (list) command:\nvictor@aula:~$ ls\nvictor@aula:~$ \nAs my user is new, and I haven’t created any file or subfolder yet, my personal folder is empty. But is it really?\nvictor@aula:~$ ls -a\n.  ..  .bash_history  .bash_logout  .bashrc  .cache  .cloud-locale-test.skip  .profile  .sudo_as_admin_successful\n\n\n\n\n\n\nTip\n\n\n\nMost linux commands and tools have a manual that can tell us the options (flags) we have available. In this case you can use man ls to see all the possibilities.\n\n\n\n\n\n\n\n\nNote\n\n\n\nFiles and folders in Linux starting with a dot (.) are hidden, and they don’t appear unless we use the -a flag.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#file-operations-create-copy-move-delete",
+    "href": "navigation.html#file-operations-create-copy-move-delete",
+    "title": "4  Navigation",
+    "section": "4.3 File operations (create, copy, move, delete)",
+    "text": "4.3 File operations (create, copy, move, delete)\nAs a normal user, we can access most of the folders (/bin, /etc…), but we can only modify our personal folder.\n\n\n\n\n\n\nNote\n\n\n\nWe will see later how to become a superuser with permissions to modify system configurations and installing new tools and software.\n\n\n\n4.3.1 Creating folders\nWe can create folders with mkdir (make directory). For example, if we are in our home folder and we want to create a folder named projects we do the following:\nvictor@aula:~$ mkdir projects\nAnd now if we check with ls we can see the new folder:\nvictor@aula:~$ ls -la\ntotal 36\ndrwxr-x--- 4 victor victor 4096 Jun 24 10:09 .\ndrwxr-xr-x 4 root   root   4096 Jun  2 15:17 ..\n-rw------- 1 victor victor  164 Jun 11 12:55 .bash_history\n-rw-r--r-- 1 victor victor  220 Jun  2 15:17 .bash_logout\n-rw-r--r-- 1 victor victor 3771 Jun  2 15:17 .bashrc\ndrwx------ 2 victor victor 4096 Jun  2 15:21 .cache\n-rw-r--r-- 1 victor victor    0 Jun  2 15:17 .cloud-locale-test.skip\n-rw------- 1 victor victor   20 Jun 24 09:22 .lesshst\n-rw-r--r-- 1 victor victor  807 Jun  2 15:17 .profile\ndrwxrwxr-x 2 victor victor 4096 Jun 24 10:09 projects\n-rw-r--r-- 1 victor victor    0 Jun  2 15:22 .sudo_as_admin_successful\nIf we want to create a hierarchy of folders, for example projects/CREAF/linux_course, we can do it using the -p flag. This flag tells mkdir to create any intermediate folder that don’t exists yet:\nvictor@aula:~$ mkdir -p projects/CREAF/linux_course\nvictor@aula:~$ ls -la projects/CREAF/\ntotal 12\ndrwxrwxr-x 3 victor victor 4096 Jun 24 10:16 .\ndrwxrwxr-x 3 victor victor 4096 Jun 24 10:16 ..\ndrwxrwxr-x 2 victor victor 4096 Jun 24 10:16 linux_course",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#moving-through-folders",
+    "href": "navigation.html#moving-through-folders",
+    "title": "4  Navigation",
+    "section": "4.4 Moving through folders",
+    "text": "4.4 Moving through folders\nTo move between folders we can use cd (change directory). So, to navigate to the recently created folder:\nvictor@aula:~$ cd projects/CREAF/linux_course\nvictor@aula:~/projects/CREAF/linux_course$ \nWe can see that the prompt has changed, indicating now that we are in the /home/victor/projects/CREAF.\n\n\n\n\n\n\nTip\n\n\n\nIn linux we can use relative paths or absolute paths. A relative path takes as base our current working directory as the base and buiold the path from there. An absolute path always start in the root folder (/). So, if we are in /home/victor and want to move to /home/victor/projects/CREAF/linux_course these two are equivalent:\n\nabsolute path: victor@aula:~$ cd /home/victor/projects/CREAF/linux_course\n\nrelative path: victor@aula:~$ cd projects/CREAF/linux_course",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#creating-empty-files",
+    "href": "navigation.html#creating-empty-files",
+    "title": "4  Navigation",
+    "section": "4.5 Creating empty files",
+    "text": "4.5 Creating empty files\nSometimes we need to create empty files to start working. This can be easily done with touch:\nvictor@aula:~/projects/CREAF/linux_course$ touch analysis.R\nvictor@aula:~/projects/CREAF/linux_course$ ls -la\ntotal 8\ndrwxrwxr-x 2 victor victor 4096 Jun 25 10:15 .\ndrwxrwxr-x 3 victor victor 4096 Jun 24 10:16 ..\n-rw-rw-r-- 1 victor victor    0 Jun 25 10:15 analysis.R",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#editing-files",
+    "href": "navigation.html#editing-files",
+    "title": "4  Navigation",
+    "section": "4.6 Editing files",
+    "text": "4.6 Editing files\nFor quick and short edits, we can use nano, a simple terminal editor available in most linux servers:\nvictor@aula:~/projects/CREAF/linux_course$ nano analysis.R",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#copying-files",
+    "href": "navigation.html#copying-files",
+    "title": "4  Navigation",
+    "section": "4.7 Copying files",
+    "text": "4.7 Copying files\nWe can copy files with cp, providing the source and the destination:\nvictor@aula:~/projects/CREAF/linux_course$ cp analysis.R analysis_old.R\nFor copying folders, we need the -r flag to recursively copy all files and folders inside.\n\n\n\n\n\n\nCaution\n\n\n\nIf the destination exists, it WILL BE OVERWRITTEN without any warning\n\n\nIf instead of copying we want to move the files from one folder to another, the we can use mv in the same way as we use cp.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "navigation.html#deleting-files",
+    "href": "navigation.html#deleting-files",
+    "title": "4  Navigation",
+    "section": "4.8 Deleting files",
+    "text": "4.8 Deleting files\nTo remove (delete) files we can use rm and the path to the file (using the -r flag for folders).\n\n\n\n\n\n\nCaution\n\n\n\nThis removes permanently the files or folders selected. There is no way back, so be sure what you really want to remove and double check the spelling.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Navigation</span>"
+    ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "5  Data",
+    "section": "",
+    "text": "5.1 Moving files\nWe saw in the previous chapter how to create and edit files. This can be useful in some cases, but most of the time we will need to transfer files or folders between our local computer and the server or the other way around.\nThere are different tools that can help us transfer data between computers through ssh, the same protocol we use to connect to remote servers:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#moving-files",
+    "href": "data.html#moving-files",
+    "title": "5  Data",
+    "section": "",
+    "text": "scp (secure copy). This is a command line utility found in all Linux, Mac and Windows that creates an SSH connection and tranfer the files.\n\nFileZilla. This is a graphical user interface that allows transfering files through different protocolos, SSH included.\n\n\n5.1.1 scp\nscp is a command line tool. That means that we will use the terminal to execute it. We can simply call the program without any arguments or flags to see a quick help:\nvictor@aula:~$ scp\nusage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]\n           [-i identity_file] [-J destination] [-l limit] [-o ssh_option]\n           [-P port] [-S program] [-X sftp_option] source ... target\n\n\n\n\n\n\nTip\n\n\n\nRemember, you can have a more detailed explanation of all the options by executing man scp.\n\n\nLet’s see how to use scp. In this example I’m going to copy a zip file from my Windows machine to the projects/CREAF/linux_course folder I created in the previous chapter.\nIf you want to replicate the example, change the file for one in your computer that you want to copy.\nIn this case we know that we need the port 2222, so we will have to use the -P flag to provide the port number. Also, we need a path to the source file in our computer and a path to the target (destination) file in the remote server.\nPS C:\\Users\\vgranda&gt; scp -P 2222 '.\\Documents\\ifn4_acoruna_tcm30-536596.zip' victor@144.76.203.10:~/projects/CREAF/linux_course/ifn_coruña.zip\nvictor@144.76.203.10's password:\nifn4_acoruna_tcm30-536596.zip                                                         100% 4076KB  83.9KB/s   00:48\nAnd that’s it. We can connect to the server and list the files in the linux_course folder to see if the file is really there:\nPS C:\\Users\\vgranda&gt; ssh -p 2222 victor@144.76.203.10\nvictor@144.76.203.10's password:\nvictor@aula:~$ ls -la projects/CREAF/linux_course/\ntotal 4084\ndrwxrwxr-x 2 victor victor    4096 Jun 29 13:41 .\ndrwxrwxr-x 3 victor victor    4096 Jun 24 10:16 ..\n-rw-rw-r-- 1 victor victor       0 Jun 25 10:15 analysis.R\n-rw-rw-r-- 1 victor victor 4173392 Jun 29 13:42 ifn_coruña.zip\n\n\n\n\n\n\nTip\n\n\n\nWhat happens when we want to copy a file from the remote server to our local computer? In this case we just simply indicate the source in the remote server and the target in our computer:\nPS C:\\Users\\vgranda&gt; scp -P 2222 victor@144.76.203.10:~/projects/CREAF/linux_course/ifn_coruña.zip '.\\Documents\\ifn_coruña.zip'\n\n\nTo copy folders the process is the same, but we have to add the -r flag to make the copy recursive to all files and subfolders contained in the folder we want to copy:\nPS C:\\Users\\vgranda&gt; scp -P 2222 -r '.\\Documents\\project_iris' victor@144.76.203.10:~/projects/CREAF/linux_course/\n\n\n5.1.2 FileZilla\nFileZilla (https://filezilla-project.org/) is a free and open source graphical interface to access and transfer files between computers. Is out of the scope of this course, but you can check their website to learn how to install it and use it.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#disk-space",
+    "href": "data.html#disk-space",
+    "title": "5  Data",
+    "section": "5.2 Disk space",
+    "text": "5.2 Disk space\nWhen transfering files to the server, is important to be aware of the available space in the disk. Not only the transfer will stop with an error if the disk is full, but some system process can be also affected as they can depend on having enopugh space to create temporal files.\nThere are two command line utilities that can help us to check the available space in disk, and also what folders and files are using that space\n\n5.2.1 df\ndf is an utility to quickly check the used and available space in the disk:\nvictor@aula:~$ df -h\nFilesystem      Size  Used Avail Use% Mounted on\ntmpfs           3.2G  944K  3.2G   1% /run\n/dev/md2        1.8T  2.9G  1.7T   1% /\ntmpfs            16G     0   16G   0% /dev/shm\ntmpfs           5.0M     0  5.0M   0% /run/lock\n/dev/md1        989M  202M  737M  22% /boot\ntmpfs           3.2G   12K  3.2G   1% /run/user/1001\nThe -h flag is just simply converting the space to human readable units (GB, TB, MB…)\n\n\n5.2.2 du\ndu is another utility that analyse the disk and tell us the size of folders and files:\nvictor@aula:~$ du -h -d 1 /home/victor\n4.0K    /home/victor/.cache\n4.2M    /home/victor/projects\n4.2M    /home/victor\nThe -h flag is the same as before and the -d 1 flag indicates to go only 1 level deep.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "permissions.html",
+    "href": "permissions.html",
+    "title": "6  File permissions",
+    "section": "",
+    "text": "6.1 How to change permissions and ownership\nNow that we have user accounts and administrative privileges we need to understand better differences between users and groups and also how file permissions works in linux.\nLet’s check with our users the contents of our personal folder with ls as we learn in the previous chapters, using the -la flags:\nLet’s focus in one of the lines\nPermissions and ownership can be changed. This allow us to create folders that any user in the same group can write to and read from. For this we need to:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>File permissions</span>"
+    ]
+  },
+  {
+    "objectID": "permissions.html#how-to-change-permissions-and-ownership",
+    "href": "permissions.html#how-to-change-permissions-and-ownership",
+    "title": "6  File permissions",
+    "section": "",
+    "text": "Create a group\n\nAdd your user to the new group\nCreate a folder\n\nChange the default owner group to the newly created group\n\nAdd other users to the newly created group\n\n\n6.1.1 Creating the group and the folder\ngroupadd allows us to create a group, and as we saw before, usermod can serve us to add our user to the group:\nvictor@aula:~$ sudo groupadd research\n[sudo] password for victor: \nvictor@aula:~$ sudo usermod -aG research victor\nWe need to exit and connect again for the changes to take effect. After that we can create the folder:\nvictor@aula:~$ mkdir research\nvictor@aula:~$ ls -la\ntotal 44\ndrwxr-x--- 6 victor victor 4096 Jun 30 13:24 .\ndrwxr-xr-x 5 root   root   4096 Jun 30 12:40 ..\n-rw------- 1 victor victor 1716 Jun 30 13:20 .bash_history\n-rw-r--r-- 1 victor victor  220 Jun  2 15:17 .bash_logout\n-rw-r--r-- 1 victor victor 3771 Jun  2 15:17 .bashrc\ndrwx------ 2 victor victor 4096 Jun  2 15:21 .cache\n-rw-r--r-- 1 victor victor    0 Jun  2 15:17 .cloud-locale-test.skip\n-rw------- 1 victor victor   20 Jun 30 13:23 .lesshst\ndrwx------ 3 victor victor 4096 Jun 29 15:30 .local\n-rw-r--r-- 1 victor victor  807 Jun  2 15:17 .profile\ndrwxrwxr-x 3 victor victor 4096 Jun 24 10:16 projects\ndrwxrwxr-x 2 victor victor 4096 Jun 30 13:24 research\n-rw-r--r-- 1 victor victor    0 Jun  2 15:22 .sudo_as_admin_successful\n\n\n6.1.2 Changing the ownership of the folder\nAs it is now, the research folder is only accessible by my user (victor) and by users belonging to the victor group. To change this we need to use chown:\nvictor@aula:~$ chown -R victor:research research\nvictor@aula:~$ ls -la\ntotal 44\ndrwxr-x--- 6 victor victor   4096 Jun 30 13:24 .\ndrwxr-xr-x 5 root   root     4096 Jun 30 12:40 ..\n-rw------- 1 victor victor   1716 Jun 30 13:20 .bash_history\n-rw-r--r-- 1 victor victor    220 Jun  2 15:17 .bash_logout\n-rw-r--r-- 1 victor victor   3771 Jun  2 15:17 .bashrc\ndrwx------ 2 victor victor   4096 Jun  2 15:21 .cache\n-rw-r--r-- 1 victor victor      0 Jun  2 15:17 .cloud-locale-test.skip\n-rw------- 1 victor victor     20 Jun 30 13:23 .lesshst\ndrwx------ 3 victor victor   4096 Jun 29 15:30 .local\n-rw-r--r-- 1 victor victor    807 Jun  2 15:17 .profile\ndrwxrwxr-x 3 victor victor   4096 Jun 24 10:16 projects\ndrwxrwxr-x 2 victor research 4096 Jun 30 13:24 research\n-rw-r--r-- 1 victor victor      0 Jun  2 15:22 .sudo_as_admin_successful\nThe -R flag makes the changes recursive to any file and subfolder contained in research.\nAlso, we maybe want that only the members in the research group can read or access the folder. For this we need to change the permissions with chmod:\nvictor@aula:~$ chmod -R u=rwx,g=rwx,o= research\nvictor@aula:~$ ls -la\ntotal 44\ndrwxr-x--- 6 victor victor   4096 Jun 30 13:32 .\ndrwxr-xr-x 5 root   root     4096 Jun 30 12:40 ..\n-rw------- 1 victor victor   1716 Jun 30 13:20 .bash_history\n-rw-r--r-- 1 victor victor    220 Jun  2 15:17 .bash_logout\n-rw-r--r-- 1 victor victor   3771 Jun  2 15:17 .bashrc\ndrwx------ 2 victor victor   4096 Jun  2 15:21 .cache\n-rw-r--r-- 1 victor victor      0 Jun  2 15:17 .cloud-locale-test.skip\n-rw------- 1 victor victor     20 Jun 30 13:32 .lesshst\ndrwx------ 3 victor victor   4096 Jun 29 15:30 .local\n-rw-r--r-- 1 victor victor    807 Jun  2 15:17 .profile\ndrwxrwxr-x 3 victor victor   4096 Jun 24 10:16 projects\ndrwxrwx--- 2 victor research 4096 Jun 30 13:24 research\n-rw-r--r-- 1 victor victor      0 Jun  2 15:22 .sudo_as_admin_successful\nNow we have a folder, /home/victor/research that can be accessed only by members of the research group.\n\n\n\n\n\n\nTip\n\n\n\nTo ensure that any new file created in the folder inherits the correct group, we can use:\nvictor@aula:~$ sudo chmod g+s research",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>File permissions</span>"
+    ]
+  },
+  {
+    "objectID": "permissions.html#exercise",
+    "href": "permissions.html#exercise",
+    "title": "6  File permissions",
+    "section": "6.2 Exercise",
+    "text": "6.2 Exercise\n\n\n\n\n\n\nNoteModifying permissions and ownership\n\n\n\nWork in pairs (or groups of 3) to create a folder that only both/any of you can access, write to and read from.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>File permissions</span>"
+    ]
+  },
+  {
+    "objectID": "apt.html",
+    "href": "apt.html",
+    "title": "7  Installing and updating software (system and apps)",
+    "section": "",
+    "text": "7.1 Software repositories\nKeeping the system updated is an important step in any server maintenance, not only Linux. An up-to-date system removes known security risks and provides new versions of the installed software.\nOne difference between a Linux system and a Windows system is that in Linux, every distribution (linux flavours) have its own curated repository from which you can install software. This repository is officially maintained by the distribution and is the recommended place from which install any tool you need. Only in the case that the software you want is not in the official repositories that we will need to install it manually, generallyu foloowing the instructions on the software web page.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing and updating software (system and apps)</span>"
+    ]
+  },
+  {
+    "objectID": "apt.html#updating-the-system",
+    "href": "apt.html#updating-the-system",
+    "title": "7  Installing and updating software (system and apps)",
+    "section": "7.2 Updating the system",
+    "text": "7.2 Updating the system\nIn Ubuntu (the linux distribution the server in this course uses), the tool to install and update the system is apt. As we’ve seen before, we need to have administrative privileges for being able to use it.\nTo check if there is updates available we use apt update, to install any available update, we use apt upgrade.\nvictor@aula:~$ sudo apt update\n[sudo] password for victor: \nvictor@aula:~$ sudo apt upgrade\nThis will set the system up to the last versions of all installed software.\n\n\n\n\n\n\nTip\n\n\n\nIn other distributions the command is different from apt:\n\nIn ArchLinux is pacman\n\nIn Fedora or RHEL is dfn",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing and updating software (system and apps)</span>"
+    ]
+  },
+  {
+    "objectID": "apt.html#installing-new-software",
+    "href": "apt.html#installing-new-software",
+    "title": "7  Installing and updating software (system and apps)",
+    "section": "7.3 Installing new software",
+    "text": "7.3 Installing new software\nInstalling software present in the distribution repositories is straight forward. We use the apt command with the install options. For example, if we want to install R, we can do:\nvictor@aula:~$ sudo apt install r-base\nReading package lists... Done\nBuilding dependency tree... Done\nReading state information... Done\nThe following packages were automatically installed and are no longer required:\n  bpfcc-tools bpftrace ieee-data libbpfcc libclang-cpp18 libclang1-18 libllvm18 python3-bpfcc python3-netaddr\n  ubuntu-kernel-accessories\nUse 'sudo apt autoremove' to remove them.\nThe following additional packages will be installed:\n  binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2 bzip2-doc cpp cpp-13\n  cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot fontconfig fontconfig-config fonts-dejavu-core\n  fonts-dejavu-mono g++ g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base\n  gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu gfortran gfortran-13 gfortran-13-x86-64-linux-gnu\n  gfortran-x86-64-linux-gnu icu-devtools libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl\n  libasan8 libatomic1 libauthen-sasl-perl libbinutils libblas-dev libblas3 libbz2-dev libcairo2 libcc1-0\n  libclone-perl libctf-nobfd0 libctf0 libdata-dump-perl libdatrie1 libdeflate0 libdpkg-perl libdrm-amdgpu1\n  libdrm-intel1 libegl-mesa0 libegl1 libencode-locale-perl libfakeroot libfile-basedir-perl\n  libfile-desktopentry-perl libfile-fcntllock-perl libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl\n  libfontconfig1 libgbm1 libgcc-13-dev libgfortran-13-dev libgfortran5 libgl1 libgl1-mesa-dri libgles2 libglvnd0\n  libglx-mesa0 libglx0 libgomp1 libgprofng0 libgraphite2-3 libharfbuzz0b libhtml-form-perl libhtml-format-perl\n  libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl\n  libhttp-date-perl libhttp-message-perl libhttp-negotiate-perl libhwasan0 libice6 libicu-dev libio-html-perl\n  libio-socket-ssl-perl libio-stringy-perl libipc-system-simple-perl libisl23 libitm1 libjbig0 libjpeg-dev\n  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev liblapack-dev liblapack3 liblerc4 libllvm20 liblsan0\n  liblwp-mediatypes-perl liblwp-protocol-https-perl liblzma-dev libmailtools-perl libmpc3 libncurses-dev\n  libnet-dbus-perl libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0\n  libpangoft2-1.0-0 libpaper-utils libpaper1 libpciaccess0 libpcre2-16-0 libpcre2-32-0 libpcre2-dev\n  libpcre2-posix3 libpixman-1-0 libpkgconf3 libpng-dev libpng-tools libquadmath0 libreadline-dev libsframe1\n  libsharpyuv0 libsm6 libstdc++-13-dev libtcl8.6 libthai-data libthai0 libtie-ixhash-perl libtiff6\n  libtimedate-perl libtk8.6 libtry-tiny-perl libtsan2 libubsan1 liburi-perl libvulkan1 libwayland-client0 libwebp7\n  libwww-perl libwww-robotrules-perl libx11-6 libx11-data libx11-protocol-perl libx11-xcb1 libxau6 libxaw7\n  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1\n  libxcb-xfixes0 libxcb1 libxcomposite1 libxcursor1 libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1\n  libxkbfile1 libxml-parser-perl libxml-twig-perl libxml-xpathengine-perl libxmu6 libxmuu1 libxpm4 libxrandr2\n  libxrender1 libxshmfence1 libxss1 libxt6t64 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 lto-disabled-list make\n  mesa-libgallium mesa-vulkan-drivers perl-openssl-defaults pkg-config pkgconf pkgconf-bin r-base-core r-base-dev\n  r-base-html r-cran-boot r-cran-class r-cran-cluster r-cran-codetools r-cran-foreign r-cran-kernsmooth\n  r-cran-lattice r-cran-mass r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart r-cran-spatial\n  r-cran-survival r-doc-html r-recommended unzip x11-common x11-utils x11-xserver-utils xauth xdg-utils zip\n  zlib1g-dev zutty\nSuggested packages:\n  binutils-doc gprofng-gui cpp-doc gcc-13-locales cpp-13-doc debian-keyring g++-multilib g++-13-multilib\n  gcc-13-doc gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-13-multilib gdb-x86-64-linux-gnu\n  gfortran-multilib gfortran-doc gfortran-13-multilib gfortran-13-doc libcoarrays-dev libdigest-hmac-perl\n  libgssapi-perl liblapack-doc bzr libio-compress-brotli-perl icu-doc libcrypt-ssleay-perl liblzma-doc ncurses-doc\n  readline-doc libstdc++-13-doc tcl8.6 tk8.6 libsub-name-perl libbusiness-isbn-perl libregexp-ipv6-perl\n  libauthen-ntlm-perl libunicode-map8-perl libunicode-string-perl xml-twig-tools make-doc debhelper elpa-ess\n  r-doc-info | r-doc-pdf r-mathlib texlive-base texlive-latex-base texlive-plain-generic texlive-fonts-recommended\n  texlive-fonts-extra texlive-extra-utils texlive-latex-recommended texlive-latex-extra texinfo mozilla\n  | www-browser mesa-utils nickle cairo-5c xorg-docs-core\nRecommended packages:\n  luit\nThe following NEW packages will be installed:\n  binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2 bzip2-doc cpp cpp-13\n  cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot fontconfig fontconfig-config fonts-dejavu-core\n  fonts-dejavu-mono g++ g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base\n  gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu gfortran gfortran-13 gfortran-13-x86-64-linux-gnu\n  gfortran-x86-64-linux-gnu icu-devtools libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl\n  libasan8 libatomic1 libauthen-sasl-perl libbinutils libblas-dev libblas3 libbz2-dev libcairo2 libcc1-0\n  libclone-perl libctf-nobfd0 libctf0 libdata-dump-perl libdatrie1 libdeflate0 libdpkg-perl libdrm-amdgpu1\n  libdrm-intel1 libegl-mesa0 libegl1 libencode-locale-perl libfakeroot libfile-basedir-perl\n  libfile-desktopentry-perl libfile-fcntllock-perl libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl\n  libfontconfig1 libgbm1 libgcc-13-dev libgfortran-13-dev libgfortran5 libgl1 libgl1-mesa-dri libgles2 libglvnd0\n  libglx-mesa0 libglx0 libgomp1 libgprofng0 libgraphite2-3 libharfbuzz0b libhtml-form-perl libhtml-format-perl\n  libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl\n  libhttp-date-perl libhttp-message-perl libhttp-negotiate-perl libhwasan0 libice6 libicu-dev libio-html-perl\n  libio-socket-ssl-perl libio-stringy-perl libipc-system-simple-perl libisl23 libitm1 libjbig0 libjpeg-dev\n  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev liblapack-dev liblapack3 liblerc4 libllvm20 liblsan0\n  liblwp-mediatypes-perl liblwp-protocol-https-perl liblzma-dev libmailtools-perl libmpc3 libncurses-dev\n  libnet-dbus-perl libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0\n  libpangoft2-1.0-0 libpaper-utils libpaper1 libpciaccess0 libpcre2-16-0 libpcre2-32-0 libpcre2-dev\n  libpcre2-posix3 libpixman-1-0 libpkgconf3 libpng-dev libpng-tools libquadmath0 libreadline-dev libsframe1\n  libsharpyuv0 libsm6 libstdc++-13-dev libtcl8.6 libthai-data libthai0 libtie-ixhash-perl libtiff6\n  libtimedate-perl libtk8.6 libtry-tiny-perl libtsan2 libubsan1 liburi-perl libvulkan1 libwayland-client0 libwebp7\n  libwww-perl libwww-robotrules-perl libx11-6 libx11-data libx11-protocol-perl libx11-xcb1 libxau6 libxaw7\n  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1\n  libxcb-xfixes0 libxcb1 libxcomposite1 libxcursor1 libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1\n  libxkbfile1 libxml-parser-perl libxml-twig-perl libxml-xpathengine-perl libxmu6 libxmuu1 libxpm4 libxrandr2\n  libxrender1 libxshmfence1 libxss1 libxt6t64 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 lto-disabled-list make\n  mesa-libgallium mesa-vulkan-drivers perl-openssl-defaults pkg-config pkgconf pkgconf-bin r-base r-base-core\n  r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster r-cran-codetools r-cran-foreign r-cran-kernsmooth\n  r-cran-lattice r-cran-mass r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart r-cran-spatial\n  r-cran-survival r-doc-html r-recommended unzip x11-common x11-utils x11-xserver-utils xauth xdg-utils zip\n  zlib1g-dev zutty\n0 upgraded, 230 newly installed, 0 to remove and 0 not upgraded.\nNeed to get 224 MB of archives.\nAfter this operation, 770 MB of additional disk space will be used.\nDo you want to continue? [Y/n] \nInstalling software not present in the repositories can be a little more challenging, but usually the software web page can help us. For example, if we want to install RStudio Server in our remote server, we can check the official instructions for Ubuntu at https://docs.posit.co/ide/server-pro/admin/getting_started/installation/install-rstudio-server.html",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing and updating software (system and apps)</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "9  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]
