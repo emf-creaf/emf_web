@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
 <link href="./apt.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -164,19 +198,26 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Monitoring the system</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#top-htop-and-btm" id="toc-top-htop-and-btm" class="nav-link active" data-scroll-target="#top-htop-and-btm"><span class="header-section-number">8.1</span> <code>top</code>, <code>htop</code> (and <code>btm</code>)</a></li>
+  <li><a href="#exploring-the-logs" id="toc-exploring-the-logs" class="nav-link" data-scroll-target="#exploring-the-logs"><span class="header-section-number">8.2</span> Exploring the logs</a>
+  <ul class="collapse">
+  <li><a href="#diagnositcs-dmesg" id="toc-diagnositcs-dmesg" class="nav-link" data-scroll-target="#diagnositcs-dmesg"><span class="header-section-number">8.2.1</span> Diagnositcs (<code>dmesg</code>)</a></li>
+  <li><a href="#logins-varlogauth.log" id="toc-logins-varlogauth.log" class="nav-link" data-scroll-target="#logins-varlogauth.log"><span class="header-section-number">8.2.2</span> Logins (<code>/var/log/auth.log</code>)</a></li>
+  <li><a href="#systemd-journaling" id="toc-systemd-journaling" class="nav-link" data-scroll-target="#systemd-journaling"><span class="header-section-number">8.2.3</span> SystemD journaling</a></li>
+  </ul></li>
+  <li><a href="#other-useful-tools" id="toc-other-useful-tools" class="nav-link" data-scroll-target="#other-useful-tools"><span class="header-section-number">8.3</span> Other useful tools</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -200,8 +241,131 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>One important thing we are going to need sometimes is to check the state of the system and the use of resources. We have seen previously a couple of tools to monitorize the disk space use and availability, now we are going to focus on system processes, memory as well as system monitoring (logs)</p>
+<section id="top-htop-and-btm" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="top-htop-and-btm"><span class="header-section-number">8.1</span> <code>top</code>, <code>htop</code> (and <code>btm</code>)</h2>
+<p>There is hundreds of <em>system monitors</em> in Linux. <code>top</code> is the common denominator bewteen distributions (is available in most distributions out of the box), but is a little outdated. <code>htop</code> is present in Ubuntu and can be installed as well in other distributions and is a modern version of <code>top</code>. But there is others, like <code>btm</code>, that we installed in the previous chapter.<br>
+If you are going to spend a lot of time looking at this, choose the one that gets done what you want in the easiest way.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To start any of them, you just type the name of the command. They will open in the terminal and in most of them you can also use the mouse to arrange columns and select processes.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Important concepts:</p>
+<ul>
+<li>RAM use: Virtual (reserved) and Resident (actually in use).<br>
+</li>
+<li>Swap: Especial reserved disk space intended to be use as RAM.<br>
+</li>
+<li>CPU use: usually expressed as percentage.<br>
+</li>
+<li>I/O status: Among other things, disk write and read rates.<br>
+</li>
+<li>User owning the process.</li>
+</ul>
+</div>
+</div>
+<p>At the end of the day, what you need is something that tells you how much memory that user is hoarding, how cluttered the I/O is and how much swap is in use to know why the server is not working as before. These tools give you exactly that.</p>
+</section>
+<section id="exploring-the-logs" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="exploring-the-logs"><span class="header-section-number">8.2</span> Exploring the logs</h2>
+<p>Other part of monitoring the system is being able to tell what happened, not only what is happening. For that, system processes usually maintain logs (text files detailing the activity).</p>
+<section id="diagnositcs-dmesg" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="diagnositcs-dmesg"><span class="header-section-number">8.2.1</span> Diagnositcs (<code>dmesg</code>)</h3>
+<p><code>dmesg</code> (<strong><u>d</u></strong>iagnostic <strong><u>mes</u></strong>sa<strong><u>g</u></strong>es) is the main log of the system. It prints the kernel message buffer, so it contains information about all system.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">victor@aula:~$</span> sudo dmesg</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">victor@aula:~$</span> sudo dmesg <span class="at">--level</span><span class="op">=</span>err+</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="logins-varlogauth.log" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="logins-varlogauth.log"><span class="header-section-number">8.2.2</span> Logins (<code>/var/log/auth.log</code>)</h3>
+<p>Login attempts (succesful or not) are usually logged at <code>/var/log/auth.log</code>. We can use <code>cat</code> to print the log on the console:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">victor@aula:~$</span> sudo cat /var/log/auth.log</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One of the wonders of Linux is that commands are <strong>pipeable</strong>. The previous log is very long, and is difficult to focus in the important part. We can pipe the result of <code>cat</code> to <code>grep</code>, a tool that allows to find text in a way that this</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> cat /var/log/auth.log <span class="kw">|</span> <span class="fu">grep</span> victor</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>will show only lines with <code>victor</code> in it.</p>
+</div>
+</div>
+</section>
+<section id="systemd-journaling" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="systemd-journaling"><span class="header-section-number">8.2.3</span> SystemD journaling</h3>
+<p>This is an introductory course, so we are not going to get deep in SystemD. For now we can say that is the first process started when we turn on the server and all other processes are children of this first one. These means that most of the services we have available in the system are launced by systemd, and hence, their logs can be explored with sytemd tools like <code>systemctl</code> and <code>journalctl</code>. Let’s see an example with the ssh.service (the one in charge of launching the SSH server we use to connect).</p>
+<p>First, the status of the service</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">victor@aula:~$</span> sudo systemctl status ssh</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">●</span> ssh.service <span class="at">-</span> OpenBSD Secure Shell server</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>     <span class="ex">Loaded:</span> loaded <span class="er">(</span><span class="ex">/usr/lib/systemd/system/ssh.service</span><span class="kw">;</span> <span class="ex">disabled</span><span class="kw">;</span> <span class="ex">preset:</span> enabled<span class="kw">)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>     <span class="ex">Active:</span> active <span class="er">(</span><span class="ex">running</span><span class="kw">)</span> <span class="ex">since</span> Tue 2026-06-30 11:02:56 CEST<span class="kw">;</span> <span class="ex">1</span> day 7h ago</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">TriggeredBy:</span> ● ssh.socket</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>       <span class="ex">Docs:</span> man:sshd<span class="er">(</span><span class="ex">8</span><span class="kw">)</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>             <span class="ex">man:sshd_config</span><span class="er">(</span><span class="ex">5</span><span class="kw">)</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>   <span class="ex">Main</span> PID: 123079 <span class="er">(</span><span class="ex">sshd</span><span class="kw">)</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Tasks:</span> 1 <span class="er">(</span><span class="ex">limit:</span> 38252<span class="kw">)</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>     <span class="ex">Memory:</span> 3.7M <span class="er">(</span><span class="ex">peak:</span> 56.7M<span class="kw">)</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="ex">CPU:</span> 1min 6.437s</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>     <span class="ex">CGroup:</span> /system.slice/ssh.service</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>             <span class="ex">└─123079</span> <span class="st">"sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:09 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: pam_unix<span class="er">(</span><span class="ex">sshd:auth</span><span class="kw">)</span><span class="bu">:</span> authentication failure<span class="kw">;</span> <span class="va">logname</span><span class="op">=&gt;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:10 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: Failed password for invalid user ftp1 from 103.52.115<span class="op">&gt;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:11 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: Received disconnect from 103.52.115.76 port 34424:11:<span class="op">&gt;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:11 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: Disconnected from invalid user ftp1 103.52.115.76 por<span class="op">&gt;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:30 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: Invalid user gitlab-runner from 210.183.21.53 port <span class="dv">43</span><span class="op">&gt;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:30 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: pam_unix<span class="er">(</span><span class="ex">sshd:auth</span><span class="kw">)</span><span class="bu">:</span> check pass<span class="kw">;</span> <span class="ex">user</span> unknown</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:30 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: pam_unix<span class="er">(</span><span class="ex">sshd:auth</span><span class="kw">)</span><span class="bu">:</span> authentication failure<span class="kw">;</span> <span class="va">logname</span><span class="op">=&gt;</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:32 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: Failed password for invalid user gitlab-runner from <span class="dv">2</span><span class="op">&gt;</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:33 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: Received disconnect from 210.183.21.53 port 43112:11:<span class="op">&gt;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:33 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: Disconnected from invalid user gitlab-runner 210.183.<span class="op">&gt;</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="ex">lines</span> 1-23/23 <span class="er">(</span><span class="ex">END</span><span class="kw">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>And now the logs (journal)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">victor@aula:~$</span> sudo journalctl <span class="at">-u</span> ssh</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:09 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: pam_unix<span class="er">(</span><span class="ex">sshd:auth</span><span class="kw">)</span><span class="bu">:</span> authentication failure<span class="kw">;</span> <span class="va">logname</span><span class="op">=&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:10 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: Failed password for invalid user ftp1 from 103.52.115<span class="op">&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:11 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: Received disconnect from 103.52.115.76 port 34424:11:<span class="op">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:11 aula sshd<span class="pp">[</span><span class="ss">145233</span><span class="pp">]</span>: Disconnected from invalid user ftp1 103.52.115.76 por<span class="op">&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Jul</span> 01 18:14:30 aula sshd<span class="pp">[</span><span class="ss">145240</span><span class="pp">]</span>: Invalid user gitlab-runner from 210.183.21.53 port <span class="dv">43</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="other-useful-tools" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="other-useful-tools"><span class="header-section-number">8.3</span> Other useful tools</h2>
+<ul>
+<li><code>lsblk</code> to list block devices (physical disks)<br>
+</li>
+<li><code>lsusb</code> to list USB devices (this sometimes include network cards and others)<br>
+</li>
+<li><code>lshw</code> to list hardware in the server<br>
+</li>
+<li><code>ip</code> to list network devices</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -611,9 +775,6 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

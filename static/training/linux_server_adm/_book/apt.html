@@ -199,12 +199,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Monitoring the system</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -218,6 +212,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#software-repositories" id="toc-software-repositories" class="nav-link active" data-scroll-target="#software-repositories"><span class="header-section-number">7.1</span> Software repositories</a></li>
   <li><a href="#updating-the-system" id="toc-updating-the-system" class="nav-link" data-scroll-target="#updating-the-system"><span class="header-section-number">7.2</span> Updating the system</a></li>
   <li><a href="#installing-new-software" id="toc-installing-new-software" class="nav-link" data-scroll-target="#installing-new-software"><span class="header-section-number">7.3</span> Installing new software</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">7.4</span> Exercise</a></li>
+  <li><a href="#removing-software" id="toc-removing-software" class="nav-link" data-scroll-target="#removing-software"><span class="header-section-number">7.5</span> Removing software</a></li>
   </ul>
 </nav>
     </div>
@@ -386,6 +382,28 @@ Tip
 <span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="ex">After</span> this operation, 770 MB of additional disk space will be used.</span>
 <span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="ex">Do</span> you want to continue<span class="pp">?</span> <span class="pp">[</span><span class="ss">Y/n</span><span class="pp">]</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Installing software not present in the repositories can be a little more challenging, but usually the software web page can help us. For example, if we want to install RStudio Server in our remote server, we can check the official instructions for Ubuntu at <a href="https://docs.posit.co/ide/server-pro/admin/getting_started/installation/install-rstudio-server.html">https://docs.posit.co/ide/server-pro/admin/getting_started/installation/install-rstudio-server.html</a></p>
+</section>
+<section id="exercise" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="exercise"><span class="header-section-number">7.4</span> Exercise</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Install software">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Install software
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One of you is going to install <code>btm</code> from the oficial repositories.</p>
+</div>
+</div>
+</section>
+<section id="removing-software" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="removing-software"><span class="header-section-number">7.5</span> Removing software</h2>
+<p>We can remove software from the official repositories with <code>apt remove</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">victor@aula:~$</span> sudo apt remove btm</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[sudo]</span> password for victor:</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

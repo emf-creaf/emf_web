@@ -280,13 +280,63 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "9  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "objectID": "apt.html#exercise",
+    "href": "apt.html#exercise",
+    "title": "7  Installing and updating software (system and apps)",
+    "section": "7.4 Exercise",
+    "text": "7.4 Exercise\n\n\n\n\n\n\nNoteInstall software\n\n\n\nOne of you is going to install btm from the oficial repositories.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing and updating software (system and apps)</span>"
+    ]
+  },
+  {
+    "objectID": "apt.html#removing-software",
+    "href": "apt.html#removing-software",
+    "title": "7  Installing and updating software (system and apps)",
+    "section": "7.5 Removing software",
+    "text": "7.5 Removing software\nWe can remove software from the official repositories with apt remove:\nvictor@aula:~$ sudo apt remove btm\n[sudo] password for victor:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing and updating software (system and apps)</span>"
+    ]
+  },
+  {
+    "objectID": "monitoring.html",
+    "href": "monitoring.html",
+    "title": "8  Monitoring the system",
+    "section": "",
+    "text": "8.1 top, htop (and btm)\nOne important thing we are going to need sometimes is to check the state of the system and the use of resources. We have seen previously a couple of tools to monitorize the disk space use and availability, now we are going to focus on system processes, memory as well as system monitoring (logs)\nThere is hundreds of system monitors in Linux. top is the common denominator bewteen distributions (is available in most distributions out of the box), but is a little outdated. htop is present in Ubuntu and can be installed as well in other distributions and is a modern version of top. But there is others, like btm, that we installed in the previous chapter.\nIf you are going to spend a lot of time looking at this, choose the one that gets done what you want in the easiest way.\nAt the end of the day, what you need is something that tells you how much memory that user is hoarding, how cluttered the I/O is and how much swap is in use to know why the server is not working as before. These tools give you exactly that.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Monitoring the system</span>"
+    ]
+  },
+  {
+    "objectID": "monitoring.html#top-htop-and-btm",
+    "href": "monitoring.html#top-htop-and-btm",
+    "title": "8  Monitoring the system",
+    "section": "",
+    "text": "Note\n\n\n\nTo start any of them, you just type the name of the command. They will open in the terminal and in most of them you can also use the mouse to arrange columns and select processes.\n\n\n\n\n\n\n\n\nTip\n\n\n\nImportant concepts:\n\nRAM use: Virtual (reserved) and Resident (actually in use).\n\nSwap: Especial reserved disk space intended to be use as RAM.\n\nCPU use: usually expressed as percentage.\n\nI/O status: Among other things, disk write and read rates.\n\nUser owning the process.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Monitoring the system</span>"
+    ]
+  },
+  {
+    "objectID": "monitoring.html#exploring-the-logs",
+    "href": "monitoring.html#exploring-the-logs",
+    "title": "8  Monitoring the system",
+    "section": "8.2 Exploring the logs",
+    "text": "8.2 Exploring the logs\nOther part of monitoring the system is being able to tell what happened, not only what is happening. For that, system processes usually maintain logs (text files detailing the activity).\n\n8.2.1 Diagnositcs (dmesg)\ndmesg (diagnostic messages) is the main log of the system. It prints the kernel message buffer, so it contains information about all system.\nvictor@aula:~$ sudo dmesg\nvictor@aula:~$ sudo dmesg --level=err+\n\n\n8.2.2 Logins (/var/log/auth.log)\nLogin attempts (succesful or not) are usually logged at /var/log/auth.log. We can use cat to print the log on the console:\nvictor@aula:~$ sudo cat /var/log/auth.log\n\n\n\n\n\n\nTip\n\n\n\nOne of the wonders of Linux is that commands are pipeable. The previous log is very long, and is difficult to focus in the important part. We can pipe the result of cat to grep, a tool that allows to find text in a way that this\nsudo cat /var/log/auth.log | grep victor\nwill show only lines with victor in it.\n\n\n\n\n8.2.3 SystemD journaling\nThis is an introductory course, so we are not going to get deep in SystemD. For now we can say that is the first process started when we turn on the server and all other processes are children of this first one. These means that most of the services we have available in the system are launced by systemd, and hence, their logs can be explored with sytemd tools like systemctl and journalctl. Let’s see an example with the ssh.service (the one in charge of launching the SSH server we use to connect).\nFirst, the status of the service\nvictor@aula:~$ sudo systemctl status ssh\n● ssh.service - OpenBSD Secure Shell server\n     Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: enabled)\n     Active: active (running) since Tue 2026-06-30 11:02:56 CEST; 1 day 7h ago\nTriggeredBy: ● ssh.socket\n       Docs: man:sshd(8)\n             man:sshd_config(5)\n   Main PID: 123079 (sshd)\n      Tasks: 1 (limit: 38252)\n     Memory: 3.7M (peak: 56.7M)\n        CPU: 1min 6.437s\n     CGroup: /system.slice/ssh.service\n             └─123079 \"sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups\"\n\nJul 01 18:14:09 aula sshd[145233]: pam_unix(sshd:auth): authentication failure; logname=&gt;\nJul 01 18:14:10 aula sshd[145233]: Failed password for invalid user ftp1 from 103.52.115&gt;\nJul 01 18:14:11 aula sshd[145233]: Received disconnect from 103.52.115.76 port 34424:11:&gt;\nJul 01 18:14:11 aula sshd[145233]: Disconnected from invalid user ftp1 103.52.115.76 por&gt;\nJul 01 18:14:30 aula sshd[145240]: Invalid user gitlab-runner from 210.183.21.53 port 43&gt;\nJul 01 18:14:30 aula sshd[145240]: pam_unix(sshd:auth): check pass; user unknown\nJul 01 18:14:30 aula sshd[145240]: pam_unix(sshd:auth): authentication failure; logname=&gt;\nJul 01 18:14:32 aula sshd[145240]: Failed password for invalid user gitlab-runner from 2&gt;\nJul 01 18:14:33 aula sshd[145240]: Received disconnect from 210.183.21.53 port 43112:11:&gt;\nJul 01 18:14:33 aula sshd[145240]: Disconnected from invalid user gitlab-runner 210.183.&gt;\nlines 1-23/23 (END)\nAnd now the logs (journal)\nvictor@aula:~$ sudo journalctl -u ssh\nJul 01 18:14:09 aula sshd[145233]: pam_unix(sshd:auth): authentication failure; logname=&gt;\nJul 01 18:14:10 aula sshd[145233]: Failed password for invalid user ftp1 from 103.52.115&gt;\nJul 01 18:14:11 aula sshd[145233]: Received disconnect from 103.52.115.76 port 34424:11:&gt;\nJul 01 18:14:11 aula sshd[145233]: Disconnected from invalid user ftp1 103.52.115.76 por&gt;\nJul 01 18:14:30 aula sshd[145240]: Invalid user gitlab-runner from 210.183.21.53 port 43&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Monitoring the system</span>"
+    ]
+  },
+  {
+    "objectID": "monitoring.html#other-useful-tools",
+    "href": "monitoring.html#other-useful-tools",
+    "title": "8  Monitoring the system",
+    "section": "8.3 Other useful tools",
+    "text": "8.3 Other useful tools\n\nlsblk to list block devices (physical disks)\n\nlsusb to list USB devices (this sometimes include network cards and others)\n\nlshw to list hardware in the server\n\nip to list network devices",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Monitoring the system</span>"
     ]
   }
 ]
